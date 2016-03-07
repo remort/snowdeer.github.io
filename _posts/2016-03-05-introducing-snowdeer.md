@@ -4,7 +4,7 @@ title: 블로그를 시작하며
 ---
 
 안녕하세요. 예전엔 [티스토리 블로그](http://snowbora.tistory.com)를 운영해왔었는데, 
-최근에 [GitHub]http://github.com/와 연동할 수 있는
+최근에 [GitHub](http://github.com/)와 연동할 수 있는
 [Jekyll](https://github.com/jekyll/jekyll) 블로그 시스템을 알게 되어 이쪽에서 새로운 시작을 해볼까 합니다.
 
 ### 이 블로그는 
