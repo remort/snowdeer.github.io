@@ -5,7 +5,7 @@ title:               SnowDeer's Programming Holic
 tagline:             'based on Lanyon theme'
 description:         ''
 url:                 http://snowdeer.github.io
-baseurl:             "http://snowdeer.github.io/"
+baseurl:             "http://snowdeer.github.io"
 paginate:            5
 
 # About/contact
