@@ -7,7 +7,7 @@ title: About
   안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 SnowDeer 입니다.
 </p>
 
-![Introducing My Family]({{ site.baseurl }}/assets/hello.jpg)
+![Introducing My Family]({{ site.baseurl }}/assets/about.jpg)
 
 개발자의 길을 걸어온 지도 어느새 15년이 넘었군요. 그럼에도 불구하고 여전히 공부할 것도 많고, 
 모르는 것도 많고 실수도 많습니다. 하지만 새로운 것을 배워가고 익혀나가는 것 또한 즐겁습니다 !!
