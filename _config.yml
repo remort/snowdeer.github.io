@@ -2,11 +2,12 @@
 
 # Setup
 title:               SnowDeer's Programming Holic
-tagline:             'based on Lanyon theme'
+tagline:             'for Power Programmer'
 description:         ''
 url:                 http://snowdeer.github.io
 baseurl:             "http://snowdeer.github.io"
 paginate:            5
+markdown: kramdown
 
 # About/contact
 author:
