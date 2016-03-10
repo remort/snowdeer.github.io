@@ -24,6 +24,7 @@ title: About
 업무상 어쩔 수 없이 C++로 다시 돌아가야 할 상황이 되었네요. 그래도 그냥 돌아가기만 하면 아쉬우니깐
 좀 더 업그레이드된 [C++11](https://ko.wikipedia.org/wiki/C%2B%2B11)을 공부하면서 C++ 환경에 적응해나가는게 조금은 더 재밌(?)을 것 같습니다. 
 
+
 # Career
 
 * 컴퓨터 과학 학부 및 대학원 졸업
@@ -32,7 +33,7 @@ title: About
 * Samsung Electronics (2007~)
 * 다수 Android Applications(ex. [SnowDeer WebScrapper](https://www.google.co.kr/?gfe_rd=cr&ei=Cv7fVoXSKunC8geIi4DADQ&gws_rd=ssl#q=snow+web+scrapper) )
 
-
+<!--
 # 그외
 
 * 울산 신정 초등학교
@@ -41,6 +42,7 @@ title: About
 * 연세대학교 컴퓨터 학부 & 대학원
 * 등산 동아리 ECHO 29th
 * Mensa Korea 
+-->
 
 # Blog
 이 블로그는 [Jekyll](https://github.com/jekyll/jekyll) 및 [Lanyon Theme](https://github.com/poole/lanyon)로 이루어져 있습니다.
