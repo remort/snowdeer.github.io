@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Counting Sort 알고리즘
+title: Counting Sort
+category: Algorithms
 ---
 
 <p class="message">

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Microsoft Home Use Program
+category: Application
 ---
 
 <p class="message">

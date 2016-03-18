@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 블로그를 시작하며
+category: Introduction
 ---
 
 안녕하세요. 예전엔 [티스토리 블로그](http://snowbora.tistory.com)를 운영해왔었는데, 

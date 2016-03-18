@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Merge Sort 알고리즘
+title: Merge Sort
+category: Algorithms
 ---
 
 <p class="message">
