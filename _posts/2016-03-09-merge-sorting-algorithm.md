@@ -66,7 +66,7 @@ offset1을 각각 증가시켜 줍니다.
 
 c++로 작성한 Merge Sort 코드입니다.
 
-{% highlight c %}
+```cpp
 int temp[MAX];
 void mergeSort(int* arr, int left, int right) {
     // 종료 조건: 나눌 수 없을 때까지 나눈다.
@@ -105,6 +105,6 @@ void mergeSort(int* arr, int left, int right) {
     }
 }
 
-{% endhighlight %}
+```
 
 정합 부분이 코드가 다소 길지만 그래도 이해하기가 쉬워서 저는 Merge Sort를 애용합니다.
