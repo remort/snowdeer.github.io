@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Sort
-category: Algorithms
+category: 알고리즘
 ---
 
 <p class="message">

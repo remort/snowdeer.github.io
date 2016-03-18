@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft Home Use Program
-category: Application
+category: 유용한 정보
 ---
 
 <p class="message">
