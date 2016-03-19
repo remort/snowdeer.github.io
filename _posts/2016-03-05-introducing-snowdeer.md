@@ -8,7 +8,7 @@ category: Introduction
 최근에 [GitHub](http://github.com/)와 연동할 수 있는
 [Jekyll](https://github.com/jekyll/jekyll) 블로그 시스템을 알게 되어 이쪽에서 새로운 시작을 해볼까 합니다.
 
-## 이 블로그는 
+### 이 블로그는 
 
 프로그래밍 쪽과 관련된 내용들 위주로 운영할 계획이며, 
 다음과 같은 내용들을 다뤄보고자 합니다.
@@ -19,7 +19,7 @@ category: Introduction
 * C++11
 * 그 외 각종 소식들
 
-## Jekyll 소개
+### Jekyll 소개
 
 정적인 웹페이지를 만들어주는 도구입니다. [Ruby](https://www.ruby-lang.org/ko/) 기반으로 되어 있으며,
 날짜 기반의 웹페이지들을 마치 블로그처럼 보여줄 수 있는 기능만을 제공하고 있습니다.
