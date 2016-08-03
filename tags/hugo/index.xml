@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/tags/hugo/</link>
-    <description>Recent content in Hugo on My New Hugo Site</description>
+    <title>Hugo on SnowDeer&#39;s Programming Holic</title>
+    <link>http://snowdeer.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on SnowDeer&#39;s Programming Holic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 30 Jul 2016 16:44:45 +0900</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://snowdeer.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>블로그를 시작하며</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/hello-hugo22/</link>
+      <link>http://snowdeer.github.io/post/hello-hugo22/</link>
       <pubDate>Sat, 30 Jul 2016 16:44:45 +0900</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/hello-hugo22/</guid>
+      <guid>http://snowdeer.github.io/post/hello-hugo22/</guid>
       <description>
 
 &lt;p&gt;안녕하세요. 예전엔 &lt;a href=&#34;http://snowbora.tistory.com&#34;&gt;티스토리 블로그&lt;/a&gt;를 운영해왔었는데,
@@ -74,10 +74,10 @@ int main(int argc, char** argv) {
     
     <item>
       <title>Hello Hugo!</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/hello-hugo/</link>
+      <link>http://snowdeer.github.io/post/hello-hugo/</link>
       <pubDate>Sat, 30 Apr 2016 16:44:45 +0900</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/hello-hugo/</guid>
+      <guid>http://snowdeer.github.io/post/hello-hugo/</guid>
       <description>&lt;p&gt;hello. ^^;
 I am SnowDeer.
 I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed analysis on how good companies became great.&lt;/p&gt;

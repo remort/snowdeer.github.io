@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>알고리즘 on My New Hugo Site</title>
-    <link>http://replace-this-with-your-hugo-site.com/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
-    <description>Recent content in 알고리즘 on My New Hugo Site</description>
+    <title>알고리즘 on SnowDeer&#39;s Programming Holic</title>
+    <link>http://snowdeer.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+    <description>Recent content in 알고리즘 on SnowDeer&#39;s Programming Holic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://snowdeer.github.io/categories/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Binary Indexed Tree</title>
-      <link>http://replace-this-with-your-hugo-site.com/post/2016-03-30-binary-indexed-tree/</link>
+      <link>http://snowdeer.github.io/post/2016-03-30-binary-indexed-tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://replace-this-with-your-hugo-site.com/post/2016-03-30-binary-indexed-tree/</guid>
+      <guid>http://snowdeer.github.io/post/2016-03-30-binary-indexed-tree/</guid>
       <description>
 
 &lt;p class=&#34;message&#34;&gt;
