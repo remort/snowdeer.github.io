@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SnowDeer&#39;s Programming Holic</title>
-    <link>http://snowdeer.github.io/</link>
-    <description>Recent content on SnowDeer&#39;s Programming Holic</description>
+    <title>프로필 on SnowDeer&#39;s Programming Holic</title>
+    <link>http://snowdeer.github.io/categories/%ED%94%84%EB%A1%9C%ED%95%84/</link>
+    <description>Recent content in 프로필 on SnowDeer&#39;s Programming Holic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016 Copyright Text</copyright>
     <lastBuildDate>Sat, 05 Mar 2016 21:06:45 +0900</lastBuildDate>
-    <atom:link href="http://snowdeer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://snowdeer.github.io/categories/%ED%94%84%EB%A1%9C%ED%95%84/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About</title>

@@ -3,46 +3,17 @@
   
   <url>
     <loc>http://snowdeer.github.io/</loc>
-    <lastmod>2016-07-30T16:44:45+09:00</lastmod>
+    <lastmod>2016-03-05T21:06:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://snowdeer.github.io/post/hello-hugo22/</loc>
-    <lastmod>2016-07-30T16:44:45+09:00</lastmod>
+    <loc>http://snowdeer.github.io/2016/03/05/about/</loc>
+    <lastmod>2016-03-05T21:06:45+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://snowdeer.github.io/post/today/</loc>
-    <lastmod>2016-07-26T20:30:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/hello-hugo/</loc>
-    <lastmod>2016-04-30T16:44:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/2016-03-30-binary-indexed-tree/</loc>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/2016-03-18-counting-sorting-algorithm/</loc>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/2016-03-19-heap/</loc>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/2016-03-09-merge-sorting-algorithm/</loc>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/2016-03-08-microsoft-office-home-use-program/</loc>
-  </url>
-  
-  <url>
-    <loc>http://snowdeer.github.io/post/2016-03-28-segment-tree/</loc>
+    <loc>http://snowdeer.github.io/2016/03/05/2016-03-05-introducing-snowdeer/</loc>
+    <lastmod>2016-03-05T21:06:45+09:00</lastmod>
   </url>
   
 </urlset>
