@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/</loc>
+    <lastmod>2016-07-30T16:44:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/hello-hugo22/</loc>
+    <lastmod>2016-07-30T16:44:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/today/</loc>
+    <lastmod>2016-07-26T20:30:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/hello-hugo/</loc>
+    <lastmod>2016-04-30T16:44:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/2016-03-30-binary-indexed-tree/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/2016-03-18-counting-sorting-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/2016-03-19-heap/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/2016-03-09-merge-sorting-algorithm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/2016-03-08-microsoft-office-home-use-program/</loc>
+  </url>
+  
+  <url>
+    <loc>http://replace-this-with-your-hugo-site.com/post/2016-03-28-segment-tree/</loc>
+  </url>
+  
+</urlset>

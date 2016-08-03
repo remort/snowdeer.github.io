@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/tech/</link>
+    <description>Recent content in Tech on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Jul 2016 16:44:45 +0900</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>블로그를 시작하며</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/hello-hugo22/</link>
+      <pubDate>Sat, 30 Jul 2016 16:44:45 +0900</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/post/hello-hugo22/</guid>
+      <description>
+
+&lt;p&gt;안녕하세요. 예전엔 &lt;a href=&#34;http://snowbora.tistory.com&#34;&gt;티스토리 블로그&lt;/a&gt;를 운영해왔었는데,
+최근에 &lt;a href=&#34;http://github.com/&#34;&gt;GitHub&lt;/a&gt;와 연동할 수 있는
+&lt;a href=&#34;https://github.com/jekyll/jekyll&#34;&gt;Jekyll&lt;/a&gt; 블로그 시스템을 알게 되어 이쪽에서 새로운 시작을 해볼까 합니다.&lt;/p&gt;
+
+&lt;h3 id=&#34;이-블로그는&#34;&gt;이 블로그는&lt;/h3&gt;
+
+&lt;p&gt;프로그래밍 쪽과 관련된 내용들 위주로 운영할 계획이며,
+다음과 같은 내용들을 다뤄보고자 합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Design Pattern&lt;/li&gt;
+&lt;li&gt;Algorithms&lt;/li&gt;
+&lt;li&gt;Android Development&lt;/li&gt;
+&lt;li&gt;C++11&lt;/li&gt;
+&lt;li&gt;그 외 각종 소식들&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;jekyll-소개&#34;&gt;Jekyll 소개&lt;/h3&gt;
+
+&lt;p&gt;정적인 웹페이지를 만들어주는 도구입니다. &lt;a href=&#34;https://www.ruby-lang.org/ko/&#34;&gt;Ruby&lt;/a&gt; 기반으로 되어 있으며,
+날짜 기반의 웹페이지들을 마치 블로그처럼 보여줄 수 있는 기능만을 제공하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;정적인 웹페이지로 이루어져 있기 때문에, &lt;a href=&#34;http://www.tistory.com/&#34;&gt;티스토리&lt;/a&gt;나 네이버 블로그 등과 같은
+화려하고 동적인 기능들은 제공하지 않습니다. 심지어 글 작성, 댓글 작성이나 알림, 통계 등의 다양한 기능들도
+지원하지 않습니다.&lt;/p&gt;
+
+&lt;p&gt;이러한 단점이 많은데도 &lt;a href=&#34;https://github.com/jekyll/jekyll&#34;&gt;Jekyll&lt;/a&gt;을 선택한 이유는&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;동적인 요소가 없기 때문에 DB 서버 등이 필요없고, 속도도 훨씬 빠릅니다.&lt;/li&gt;
+&lt;li&gt;정적인 문서 그 자체들로 이루어져 있기 떄문에 어떤 호스팅 서버에서도 동작할 수 있습니다.&lt;/li&gt;
+&lt;li&gt;전 세계 많은 사람들이 사용하고 있고, 다양한 Plugin이나 확장 기능이 있어서 입맛에 맞게 바꾸기가 쉽습니다.&lt;/li&gt;
+&lt;li&gt;새로운 걸 공부한다는 자체가 뭔가 재미가 있습니다. +_+&lt;/li&gt;
+&lt;li&gt;그리고 가장 마음에 든 것은 아래와 같은 Syntax Highlighting 입니다. 기존 블로그들에서도 이 기능은
+제공하고 있었지만, Jeykyll에서 훨씬 더 사용하기 쉽고 강력하게 지원을 해서 제가 사용하기에
+딱 좋네요!!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;{% highlight c %}
+int main(int argc, char** argv) {
+    printf(&amp;ldquo;Hello~ Welcome to SnowDeer&amp;rsquo;s Blog.\n&amp;rdquo;);&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;return 0;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;다만, 웹쪽 경험이 거의 없다보니 Jekyll 에 대해 이해를 하고 익숙해져가는 과정이 쉽지는 않았네요.
+조금씩 조금씩 공부해가면서 업데이트해나가다보면 언젠가는 익숙해지지 않을까 싶습니다.&lt;/p&gt;
+
+&lt;p&gt;Thanks !!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello Hugo!</title>
+      <link>http://replace-this-with-your-hugo-site.com/post/hello-hugo/</link>
+      <pubDate>Sat, 30 Apr 2016 16:44:45 +0900</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/post/hello-hugo/</guid>
+      <description>&lt;p&gt;hello. ^^;
+I am SnowDeer.
+I read &lt;strong&gt;Good to Great in January 2016&lt;/strong&gt;. An awesome read sharing detailed analysis on how good companies became great.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
