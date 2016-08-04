@@ -44,9 +44,9 @@ code:not(.hljs) {
   font-size: .8rem;
 }
 
-img {
+img[alt$="-fullwidth"] {
   width: 100%;
-  max-width: 100%;
+  display: block;
 }
 
 .share {
