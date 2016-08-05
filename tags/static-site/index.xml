@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on SnowDeer&#39;s Programming Holic</title>
-    <link>http://snowdeer.github.io/post/</link>
-    <description>Recent content in Posts on SnowDeer&#39;s Programming Holic</description>
+    <title>Static Site on SnowDeer&#39;s Programming Holic</title>
+    <link>http://snowdeer.github.io/tags/static-site/</link>
+    <description>Recent content in Static Site on SnowDeer&#39;s Programming Holic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2016 Copyright Text</copyright>
     <lastBuildDate>Wed, 03 Aug 2016 21:20:23 +0900</lastBuildDate>
-    <atom:link href="http://snowdeer.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://snowdeer.github.io/tags/static-site/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>정적 웹페이지 vs 동적 웹페이지</title>
@@ -58,47 +58,6 @@
 &lt;p&gt;이 블로그는 &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;로 만들어졌으며,
 그 외의 다른 플랫폼들도 구경하고 싶으면 &lt;a href=&#34;https://staticsitegenerators.net/&#34;&gt;여기&lt;/a&gt;에서 확인 할 수 있다.
 (평점으로 정렬하면 각 플랫폼의 평가도 확인할 수 있다. Hugo는 3위에 위치하고 있다.)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>http://snowdeer.github.io/2016/03/01/about/</link>
-      <pubDate>Tue, 01 Mar 2016 21:06:45 +0900</pubDate>
-      
-      <guid>http://snowdeer.github.io/2016/03/01/about/</guid>
-      <description>
-
-&lt;p&gt;안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 snowdeer 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://snowdeer.github.io/about/about.jpg&#34; alt=&#34;Introducing My Family -fullwidth&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;개발자의 길을 걸어온 지도 어느새 15년이 넘었군요. 그럼에도 불구하고 여전히 공부할 것도 많고,
-모르는 것도 많고 실수도 많습니다. 하지만 새로운 것을 배워가고 익혀나가는 것 또한 즐겁습니다 !!&lt;/p&gt;
-
-&lt;p&gt;어린 시절엔 왜 공부를 하지 않았었는지&amp;hellip; ㅜ_ㅜ;;;&lt;/p&gt;
-
-&lt;p&gt;요즘 관심 가는 분야는 다음과 같습니다.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Algorithm&lt;/li&gt;
-&lt;li&gt;Design Pattern&lt;/li&gt;
-&lt;li&gt;Android Development&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;안드로이드 어플리케이션 개발만 5년 정도 되어가다보니 Java가 가장 편리합니다만,
-업무상 어쩔 수 없이 C++도 같이 혼용해서 사용해야 할 상황이 되었습니다.
-그래서 이왕 다시 C++ 공부를 해야 하는 김에 좀 더 업그레이드된
-&lt;a href=&#34;https://ko.wikipedia.org/wiki/C%2B%2B11&#34;&gt;C++11&lt;/a&gt;을 공부하면서 C++ 환경에 적응하기로 마음 먹었습니다.&lt;/p&gt;
-
-&lt;h1 id=&#34;career&#34;&gt;Career&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;컴퓨터 과학 학부 및 대학원 졸업&lt;/li&gt;
-&lt;li&gt;3D Computer Graphics 전공(석사)&lt;/li&gt;
-&lt;li&gt;C2Technology (2000~2003, 의료 정보 솔루션 업체, 병역특례)&lt;/li&gt;
-&lt;li&gt;Samsung Electronics (2007~)&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
