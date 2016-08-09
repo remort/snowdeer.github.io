@@ -22,29 +22,51 @@ tag: markdown
 ###### 제목 6
 
 
+## 테이블 테스트
+
+Header | Header
+------ | ------
+Cell   | Cell  
+
+
+## 테이블 Allignment
+
+Header | Header | Header
+:----- | -----: | :----:
+Left   | Right  | Center
+
+
+
+
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
 
 
+## 수평선
+
 ---
 
+
+## 목록
 
 * 목록 1
 * 목록 2
 * 목록 3
 
 
+## 인용문
+
 > 안녕하세요. 여기는 snowdeer 블로그입니다.
 
 > > 인용문 안의 인용문
 
-> * 인용문 안의 목록 1
 
-> * 인용문 안의 목록 2
-
+## 정의
 
 Jekyll
 : 정적 웹페이지 플랫폼
 
+
+## Code Block
 
 ~~~
 int main(int argc, char** argv) {
@@ -71,3 +93,13 @@ int main(int argc, char** argv) {
     return 0;
 }
 </pre>
+
+
+At the end of episode five, it turns out that
+>! he's actually his father.
+
+
+_italic_ and **bold** text,
+inline `code in backticks`,
+and [basic links](http://example.com).
+
