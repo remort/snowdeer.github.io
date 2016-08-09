@@ -5,7 +5,7 @@ category: Introduction
 tag: markdown
 ---
 
-안녕하세요. 이 페이지는 Markdown을 테스트하기 위한 페이지입니다.
+안녕하세요. 이 페이지는 Markdown을 테스트하기 위한 페이지입니다.  
 각종 테마나 CSS 등에 따라 각 MarkDown이 어떻게 표현되는지를 확인하기 위한 용도입니다.
 
 
