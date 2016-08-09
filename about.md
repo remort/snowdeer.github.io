@@ -3,8 +3,8 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 snowdeer 입니다.
+<p class="message">	
+ 안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 snowdeer 입니다.
 </p>
 
 ![Introducing My Family]({{ site.baseurl }}/assets/about.jpg)
@@ -18,31 +18,22 @@ title: About
 
 * Algorithm
 * Design Pattern
-* C++11
+* Android Development
 
 안드로이드 어플리케이션 개발만 5년 정도 되어가다보니 Java가 가장 편리합니다만, 
-업무상 어쩔 수 없이 C++로 다시 돌아가야 할 상황이 되었네요. 그래도 그냥 돌아가기만 하면 아쉬우니깐
-좀 더 업그레이드된 [C++11](https://ko.wikipedia.org/wiki/C%2B%2B11)을 공부하면서 C++ 환경에 적응해나가는게 조금은 더 재밌(?)을 것 같습니다. 
+업무상 어쩔 수 없이 C++도 같이 혼용해서 사용해야 할 상황이 되었습니다.
+그래서 이왕 다시 C++ 공부를 해야 하는 김에 좀 더 업그레이드된 
+[C++11](https://ko.wikipedia.org/wiki/C%2B%2B11)을 공부하면서 C++ 환경에 적응하기로 마음 먹었습니다.
 
 
-# Career
+## Career
 
 * 컴퓨터 과학 학부 및 대학원 졸업
 * 3D Computer Graphics 전공(석사)
 * C2Technology (2000~2003, 의료 정보 솔루션 업체, 병역특례)
 * Samsung Electronics (2007~)
-* 다수 Android Applications(ex. [SnowDeer WebScrapper](https://www.google.co.kr/?gfe_rd=cr&ei=Cv7fVoXSKunC8geIi4DADQ&gws_rd=ssl#q=snow+web+scrapper) )
 
-<!--
-# 그외
 
-* 울산 신정 초등학교
-* 울산 학성 중학교
-* 경남 과학 고등학교 11th
-* 연세대학교 컴퓨터 학부 & 대학원
-* 등산 동아리 ECHO 29th
-* Mensa Korea 
--->
+## Blog
 
-# Blog
 이 블로그는 [Jekyll](https://github.com/jekyll/jekyll) 및 [Lanyon Theme](https://github.com/poole/lanyon)로 이루어져 있습니다.
