@@ -11,11 +11,11 @@ markdown: kramdown
 
 # About/contact
 author:
-  name:              SnowDeer
+  name:              snowdeer
 #  url:               
   email:             snowdeer0314@gmail.com
 
 # Custom vars
-version:             1.0.0
+version:             1.0.1
 
 disqus: snowdeer

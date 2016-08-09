@@ -4,7 +4,7 @@ title: About
 ---
 
 <p class="message">
-  안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 SnowDeer 입니다.
+  안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 snowdeer 입니다.
 </p>
 
 ![Introducing My Family]({{ site.baseurl }}/assets/about.jpg)
