@@ -21,6 +21,8 @@ tag: markdown
 
 ###### 제목 6
 
+<br>
+
 
 ## 테이블 테스트
 
@@ -28,6 +30,7 @@ Header | Header
 ------ | ------
 Cell   | Cell  
 
+<br>
 
 ## 테이블 Allignment
 
@@ -35,16 +38,19 @@ Header | Header | Header
 :----- | -----: | :----:
 Left   | Right  | Center
 
+<br>
 
 ## Keyboard
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
 
+<br>
 
 ## 수평선
 
 ---
 
+<br>
 
 ## 목록
 
@@ -52,6 +58,7 @@ Left   | Right  | Center
 * 목록 2
 * 목록 3
 
+<br>
 
 ## 인용문
 
@@ -60,12 +67,14 @@ Left   | Right  | Center
 
 > > 인용문 안의 인용문
 
+<br>
 
 ## 정의
 
 Jekyll
 : 정적 웹페이지 플랫폼
 
+<br>
 
 ## Code Block
 
@@ -107,6 +116,7 @@ inline `code in backticks`,
 and [basic links](http://snowdeer.github.io).
 
 
+<br>
 
 ## CSS 클래스 테스트
 

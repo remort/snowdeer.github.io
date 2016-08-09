@@ -5,8 +5,10 @@ category: Windows10
 tag: windows, virtual desktop
 ---
 
-> 가상 데스크탑은 마치 모니터를 여러 개 쓰는 것처럼 바탕 화면을 여러 개 쓸 수 있는
+가상 데스크탑은 마치 모니터를 여러 개 쓰는 것처럼 바탕 화면을 여러 개 쓸 수 있는
 기능으로 Windows 10에서 새로 추가된 기능입니다. 
+
+<br>
 
 ## 가상 데스크탑 실행
 
@@ -25,6 +27,7 @@ tag: windows, virtual desktop
 
 가상 데스크탑간 전환은 <kbd>Ctrl</kbd> + <kbd>Window</kbd> + ( <kbd>←</kbd> 또는 <kbd>→</kbd> )로 할 수 있습니다.
 
+<br>
 
 ## 가상 데스크탑 단축키 모음
 
@@ -33,12 +36,14 @@ tag: windows, virtual desktop
 * 가상 데스크탑 삭제 : <kbd>Ctrl</kbd> + <kbd>Window</kbd> + <kbd>F4</kbd>
 * 가상 데스크탑 전환 : <kbd>Ctrl</kbd> + <kbd>Window</kbd> + ( <kbd>←</kbd> 또는 <kbd>→</kbd> )
 
+<br>
 
 ## Windows 7 이하에서는?
 
 아쉽게도 가상 데스크탑은 Windows 10 부터 지원하는 기능입니다.
 하지만, 예전부터 MS에서 [Desktops](https://technet.microsoft.com/en-us/sysinternals/cc817881)라는 이름으로
-가상 데스크탑 프로그램을 제공해왔습니다. [여기](https://technet.microsoft.com/en-us/sysinternals/cc817881)에서
+가상 데스크탑 프로그램을 제공해왔습니다.  
+[여기](https://technet.microsoft.com/en-us/sysinternals/cc817881)에서
 받으실 수 있습니다.
 
 설치해서 실행하게 되면

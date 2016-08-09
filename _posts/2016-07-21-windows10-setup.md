@@ -9,6 +9,8 @@ tag: windows
 자꾸만 잊어버리는 것들이 있어서 메모 차원에서 간단히 할 일들을 적어보았습니다.  
 참고로 이 글은 지극히 개인적인 용도로 작성한 글입니다.
 
+<br>
+
 ## Windows & 드라이버 업데이트
 
 너무나 당연한 일입니다. 최우선적으로 하도록 합시다.  
@@ -21,6 +23,7 @@ tag: windows
 를 선택하면 됩니다.
 
 
+<br>
 
 ## 불필요한 어플 삭제
 
@@ -41,6 +44,7 @@ tag: windows
 참고로 저는 3D Builder, Skype, Office 365나 소개 및 게임 등의 어플들은 모두 삭제합니다.
 
 
+<br>
 
 ## 삭제되지 않는 어플은?
 
@@ -72,6 +76,8 @@ Get-AppxPackage -AllUsers *OneNote*
 Get-AppxPackage -AllUsers Microsoft.Office.OneNote | Remove-AppxPackage
 ~~~
 
+<br>
+
 ## 키보드 재입력 시간 조절
 
 지극히 개인적인 설정입니다.  
@@ -86,6 +92,7 @@ Get-AppxPackage -AllUsers Microsoft.Office.OneNote | Remove-AppxPackage
 에서 조절할 수 있습니다.
 
 
+<br>
 
 ## JDK 설치
 
@@ -94,6 +101,7 @@ Java 기반의 어플들을 설치하거나 실행할 때 JDK가 필요한 경�
 많아서 (대표적인 예로 Eclipse) 아예 미리 설치해 버리는게 편하더군요.
 개발용 PC에는 보통 필수적인 설치라고 볼 수 있습니다!!
 
+<br>
 
 ## 필요한 어플 설치
 

@@ -25,6 +25,7 @@ title: About
 그래서 이왕 다시 C++ 공부를 해야 하는 김에 좀 더 업그레이드된 
 [C++11](https://ko.wikipedia.org/wiki/C%2B%2B11)을 공부하면서 C++ 환경에 적응하기로 마음 먹었습니다.
 
+<br>
 
 ## Career
 
@@ -33,6 +34,7 @@ title: About
 * C2Technology (2000~2003, 의료 정보 솔루션 업체, 병역특례)
 * Samsung Electronics (2007~)
 
+<br>
 
 ## Blog
 
