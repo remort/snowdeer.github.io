@@ -56,6 +56,7 @@ Left   | Right  | Center
 ## 인용문
 
 > 안녕하세요. 여기는 snowdeer 블로그입니다.
+인용문 예제입니다.
 
 > > 인용문 안의 인용문
 
@@ -68,6 +69,8 @@ Jekyll
 
 ## Code Block
 
+#### 기본 Code Block
+
 ~~~
 int main(int argc, char** argv) {
     printf("Hello~ Welcome to SnowDeer's Blog.\n");
@@ -76,6 +79,7 @@ int main(int argc, char** argv) {
 }
 ~~~
 
+### Syntax Highlighter
 
 {% highlight c %}
 int main(int argc, char** argv) {
@@ -86,6 +90,8 @@ int main(int argc, char** argv) {
 {% endhighlight %}
 
 
+#### Google Prettyfy
+
 <pre class="prettyprint">
 int main(int argc, char** argv) {
     printf("Hello~ Welcome to SnowDeer's Blog.\n");
@@ -95,11 +101,8 @@ int main(int argc, char** argv) {
 </pre>
 
 
-At the end of episode five, it turns out that
->! he's actually his father.
-
 
 _italic_ and **bold** text,
 inline `code in backticks`,
-and [basic links](http://example.com).
+and [basic links](http://snwodeer.github.io).
 
