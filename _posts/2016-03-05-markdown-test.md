@@ -36,9 +36,9 @@ Header | Header | Header
 Left   | Right  | Center
 
 
+## Keyboard
 
-
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del *</kbd>
 
 
 ## 수평선
@@ -55,7 +55,7 @@ Left   | Right  | Center
 
 ## 인용문
 
-> 안녕하세요. 여기는 snowdeer 블로그입니다.
+> 안녕하세요. 여기는 snowdeer 블로그입니다.  
 인용문 예제입니다.
 
 > > 인용문 안의 인용문
@@ -79,7 +79,7 @@ int main(int argc, char** argv) {
 }
 ~~~
 
-### Syntax Highlighter
+#### Syntax Highlighter
 
 {% highlight c %}
 int main(int argc, char** argv) {
