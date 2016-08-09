@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Test
-category: Introduction
+category: Jekyll
 tag: markdown
 ---
 
@@ -38,7 +38,7 @@ Left   | Right  | Center
 
 ## Keyboard
 
-<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del *</kbd>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
 
 
 ## 수평선
@@ -90,7 +90,7 @@ int main(int argc, char** argv) {
 {% endhighlight %}
 
 
-#### Google Prettyfy
+#### Google Code Prettyfy
 
 <pre class="prettyprint">
 int main(int argc, char** argv) {
@@ -102,7 +102,28 @@ int main(int argc, char** argv) {
 
 
 
-_italic_ and **bold** text,
-inline `code in backticks`,
-and [basic links](http://snwodeer.github.io).
+_italic_ and **bold** text,  
+inline `code in backticks`,  
+and [basic links](http://snowdeer.github.io).
 
+
+
+## CSS 클래스 테스트
+
+#### message
+
+<p class="message">	
+안녕하세요.
+</p>
+
+#### lead
+
+<p class="lead">	
+안녕하세요.
+</p>
+
+#### container
+
+<p class="container">	
+안녕하세요.
+</p>
