@@ -38,7 +38,7 @@ Left   | Right  | Center
 
 ## Keyboard
 
-<kbd class="dark-keys">Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
 
 
 ## 수평선
