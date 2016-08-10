@@ -6,9 +6,9 @@ tag: windows, office, hup
 ---
 
 보통 컴퓨터에서 가장 많이 사용하는 프로그램 중 하나가 바로 오피스 프로그램이 아닐까 싶은데,
-10,800 원에 구매해서 사용할 수 있는 방법이 있어서 포스팅을 해봅니다.
+MS Office Professional Plus 2016을 10,800 원에 구매해서 사용할 수 있는 방법이 있어서 포스팅을 해봅니다.
 
-바로 [Microsoft Home Use Program](www.microsofthup.com/) 인데요, 
+바로 [Microsoft Home Use Program](http://www.microsofthup.com/) 인데요, 
 줄여서 HUP라고 많이 부릅니다.
 
 ![Introducing HUP]({{ site.baseurl }}/assets/2016-03-08-microsoft-office-home-use-program/2016-03-08-microsoft-office-home-use-program-01.png)
