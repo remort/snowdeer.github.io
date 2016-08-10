@@ -42,16 +42,16 @@ stable_sort란 특정 알고리즘을 지칭하는 이름은 아니고, 알고�
 
 자, 그럼 일단 개념부터 한 번 보면,
 
-<p class="message">
+~~~
 분할 정복 알고리즘 기반입니다. 분할을 해볼까요?
-</p>
+~~~
 
 ### 분할
 
 ![Divide]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/2016-03-09-merge-sorting-algorithm-01.png)
 
 그냥 무조건 1/2씩 나누기만 하면 됩니다.
-<br><br>
+<br>
 
 ### 정합
 
