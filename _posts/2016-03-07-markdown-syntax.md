@@ -93,10 +93,8 @@ Cell   | Cell
 
 ~~~
 [단어](주소)
-
-ex) [블로그](http://snowdeer.github.io/)
 ~~~
-[블로그](http://snowdeer.github.io/)
+
 
 
 <br>
