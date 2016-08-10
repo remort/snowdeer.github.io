@@ -23,6 +23,10 @@ Markdown | 출력 결과
 
 문단을 나누고자 할 때는 한 줄을 비우면 됩니다.
 
+Header | Header
+------ | ------
+Cell   | Cell  
+
 
 <br>
 
@@ -37,14 +41,37 @@ Markdown | 출력 결과
 ...
 ~~~
 
+<br>
 
 ## 이탤릭체, 볼드체
+
 ~~~
 *이탤릭체*, _이탤릭체_
 **볼드체**, __볼드체__
 ~~~
 
+<br>
+
 ## 인용
+
 ~~~
 > 인용하는 문구
+~~~
+
+<br>
+
+## 테이블
+
+~~~
+Header | Header
+------ | ------
+Cell   | Cell  
+~~~
+
+<br>
+
+## Keyboard
+
+~~~
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
 ~~~
