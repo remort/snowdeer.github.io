@@ -19,3 +19,6 @@ author:
 version:             1.0.1
 
 disqus: snowdeer
+
+googleanalytics:
+  account: UA-74926912-1
