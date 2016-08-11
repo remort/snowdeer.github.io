@@ -2,7 +2,7 @@
 layout: post
 title: Merge Sort
 category: 알고리즘
-tag: algorithm, merge, sort
+tag: [algorithm, merge, sort]
 ---
 
 ~~~

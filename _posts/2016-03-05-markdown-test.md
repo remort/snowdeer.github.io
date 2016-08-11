@@ -2,7 +2,7 @@
 layout: post
 title: Markdown Test
 category: Jekyll
-tag: markdown
+tag: [markdown]
 ---
 
 안녕하세요. 이 페이지는 Markdown을 테스트하기 위한 페이지입니다.  

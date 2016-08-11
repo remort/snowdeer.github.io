@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 설치 후 할 일
 category: Windows10
-tag: windows
+tag: [windows]
 ---
 
 윈도우 10을 사용하고 나서 초기화를 벌써 수 차례 진행하다 보니

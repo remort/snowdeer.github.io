@@ -2,7 +2,7 @@
 layout: post
 title: MS Office를 저렴하게 구매하는 법
 category: Windows10
-tag: windows, office, hup
+tag: [w]indows, office, hup]
 ---
 
 보통 컴퓨터에서 가장 많이 사용하는 프로그램 중 하나가 바로 오피스 프로그램이 아닐까 싶은데,

@@ -2,7 +2,7 @@
 layout: post
 title: Counting Sort
 category: 알고리즘
-tag: algorithm, counting, sort
+tag: [algorithm, counting, sort]
 ---
 
 ~~~

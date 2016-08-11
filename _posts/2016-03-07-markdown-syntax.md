@@ -2,7 +2,7 @@
 layout: post
 title: Markdown 문법
 category: Jekyll
-tag: markdown, syntax
+tag: [markdown, syntax]
 ---
 
 마크다운(Markdown) 문법에 대해서 간단히 포스팅해봅니다.

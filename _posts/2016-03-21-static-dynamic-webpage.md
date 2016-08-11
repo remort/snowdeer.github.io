@@ -2,7 +2,7 @@
 layout: post
 title: 정적 웹페이지 vs 동적 웹페이지
 category: Jekyll
-tag: jekyll
+tag: [jekyll, static, dynamic]
 ---
 
 

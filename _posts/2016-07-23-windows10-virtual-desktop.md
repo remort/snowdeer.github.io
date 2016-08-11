@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 가상 데스크탑
 category: Windows10
-tag: windows, virtual desktop
+tag: [windows, virtual desktop]
 ---
 
 가상 데스크탑은 마치 모니터를 여러 개 쓰는 것처럼 바탕 화면을 여러 개 쓸 수 있는
