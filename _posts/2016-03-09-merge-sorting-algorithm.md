@@ -46,14 +46,14 @@ stable_sort란 특정 알고리즘을 지칭하는 이름은 아니고, 알고�
 분할 정복 알고리즘 기반입니다. 분할을 해볼까요?
 ~~~
 
-### 분할
+## 분할
 
 ![Divide]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/2016-03-09-merge-sorting-algorithm-01.png)
 
 그냥 무조건 1/2씩 나누기만 하면 됩니다.
 <br>
 
-### 정합
+## 정합
 
 이렇게 나누어진 값들은 합치면서 정렬을 해줍니다.
 
@@ -79,7 +79,7 @@ offset1을 각각 증가시켜 줍니다.
 
 <br>
 
-### 코드
+## 코드
 
 c++로 작성한 Merge Sort 코드입니다.
 

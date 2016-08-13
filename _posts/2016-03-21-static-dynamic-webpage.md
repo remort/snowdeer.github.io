@@ -62,7 +62,9 @@ tag: [jekyll, static, dynamic]
 
 Jekyll과 Hugo는 서로 장단점이 있습니다.
 
-# Jekyll vs Hugo
+<br>
+
+## Jekyll vs Hugo
 
 Jekyll | Hugo
 ------ | ------

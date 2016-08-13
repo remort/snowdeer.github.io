@@ -14,6 +14,8 @@ tag: [process]
 고객의 요구사항을 분석하고 그리고 변화해가는 요구사항에 대응해나가기 위해서
 과거부터 다양한 소프트웨어 개발 프로세스들이 있었습니다.
 
+<br>
+
 ## 폭포수 모델(Waterfall Model)
 
 ![Image]({{ site.baseurl }}/assets/2016-08-13-software-development-process/Waterfall.gif)
@@ -35,6 +37,7 @@ tag: [process]
 (하지만 일반 회사의 윗 사람들은 좋아하는 방식입니다. 구간별로 일정을 잡아놓으면
 관리하기가 쉽거든요.)
 
+<br>
 
 ## 나선형 모델(Spiral Model)
 
@@ -54,6 +57,8 @@ tag: [process]
 성공 사례가 드물다는 단점이 있습니다.
 
 
+<br>
+
 ## 애자일(Agile)
 
 ![Image]({{ site.baseurl }}/assets/2016-08-13-software-development-process/agileMethodology.jpg)
@@ -69,6 +74,8 @@ tag: [process]
 하고 팀원간 협업을 강조하고 있습니다. 민첩함을 높이기 위해 
 소규모의 팀을 선호하는 경향이 있습니다.
 
+<br>
+
 스크럼(Scrum)
 : 30일마다 프로토타입을 만드는 애자일 방법론입니다. 개발 주기를 30일로 잡고,
 이를 스프린터(Sprint) 또는 이터레이션(Iteration)이라고 합니다.
@@ -79,6 +86,7 @@ XP(eXtreme Programming)
 : 의사소통, 피드백, 단순함, 용기, 존중에 가치를 두고 있는 방법론입니다.
 고객과 2주 정도의 반복 개발을 하며 테스트를 무척 강조합니다.
 
+<br>
 
 애자일도 다양한 단점을 갖고 있습니다. 문서 중심이 아니다보니 설계 문서 등이
 작성되지 않아 지원성(Supportability) 문제를 발생할 수도 있으며, 멤버들의 
