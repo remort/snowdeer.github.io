@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UML 클래스 다이어그램 기본
+title: UML 클래스 다이어그램
 category: UML
 tag: [uml]
 ---
