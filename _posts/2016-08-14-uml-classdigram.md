@@ -13,7 +13,7 @@ tag: [uml]
 ## 클래스 표기
 
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_005654.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_005654.png)
 
 클래스 속성(Attribute)이나 함수(Operation)들은 표기를 잘 안하지만 
 그래도 중요한 속성이나 함수가 있을 경우에는는 표기를 하기도 합니다.
@@ -50,7 +50,7 @@ tag: [uml]
 
 그리고 각각의 표기는 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/Uml_classes_en.svg.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/Uml_classes_en.svg.png)
 
 이 중에서 Aggregation과 Composition은 Association에 포함되고,
 Inheritance와 Realization은 클래스 상속이냐 인터페이스 구현이냐의 차이이기 때문에
@@ -64,11 +64,11 @@ Inheritance와 Realization은 클래스 상속이냐 인터페이스 구현이�
 
 클래스 다이어그램에서 가장 많이 쓰는 관계가 상속/구현인 것 같습니다.
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_161609.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_161609.png)
 
 클래스를 상속하는 경우는 Inheritance 또는 Generalization이라고 합니다.
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_162854.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_162854.png)
 
 그리고 인터페이스를 구현하는 경우는 Realization 또는 Implementation이라고 합니다.
 
@@ -83,7 +83,7 @@ C++의 경우는 구현이라는 것이 없어서 코드상에서는 구분이 �
 
 어떤 클래스가 다른 클래스를 참고하고 있을 때 사용합니다.
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_162151.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_162151.png)
 
 위 그림처럼 표기를 하며 A 클래스가 B 클래스의 영향을 받는 경우 의존(Dependency) 관계가 
 있다고 합니다. (물론 상속/구현/Association도 화살표가 가리키는 방향의 클래스가 수정이 되거나
@@ -101,20 +101,20 @@ Association과 가장 큰 차이는 Dependency는 A 클래스가 B 클래스의 
 Association은 Aggregation과 Composition으로 나누어집니다.
 (하지만 딱히 둘을 구분안하고 그냥 Association으로 사용해도 충분합니다.)
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_164009.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_164009.png)
 
 하지만, Aggregation과 Composition으로 구분해서 사용하겠다고 하면 
 각 클래스의 Life Cycle이 서로 동일한지 아닌지를 살펴보면 됩니다.
 
 예를 들어 아래 그림과 같이
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_162406.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_162406.png)
 
 Computer가 소멸하더라도 Monitor, Keyboard, Mouse는 여전히 남기 때문에 
 이런 관계는 Aggregation이라고 합니다.
 
 
-![Image]({{ site.baseurl }}/assets/2016-08-13-uml-classdigram-basic/20160814_162615.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_162615.png)
 
 하지만, Game이 사라지면 Play도 Score도 사라지기 때문에 이런 관계는 Composition이라고 합니다.
 
