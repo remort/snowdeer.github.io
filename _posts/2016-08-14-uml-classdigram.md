@@ -15,9 +15,6 @@ tag: [uml]
 
 ![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_005654.png)
 
-클래스 속성(Attribute)이나 함수(Operation)들은 표기를 잘 안하지만 
-그래도 중요한 속성이나 함수가 있을 경우에는는 표기를 하기도 합니다.
-
 위의 클래스를 코드로 작성하면 다음과 같습니다. 
 
 
