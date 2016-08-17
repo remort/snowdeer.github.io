@@ -18,21 +18,26 @@ tag: [uml]
 클래스 속성(Attribute)이나 함수(Operation)들은 표기를 잘 안하지만 
 그래도 중요한 속성이나 함수가 있을 경우에는는 표기를 하기도 합니다.
 
-클래스는 
+위의 클래스를 코드로 작성하면 다음과 같습니다. 
 
-* 클래스 이름
-* 속성
-* 함수
 
-순으로 표기를 하며 각 이름 앞에 붙는 기호는
-
-~~~
-+ : public
-- : private
-# : protected
-~~~
-
-입니다. 
+<pre class="prettyprint">
+public class Person {
+	public String name;
+	protected int age;
+	private String address;
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void eat() {
+	}
+	
+	private void sleep() {
+	}
+}
+</pre>
 
 
 <br>
