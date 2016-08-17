@@ -68,7 +68,7 @@ Inheritance와 Realization은 클래스 상속이냐 인터페이스 구현이�
 
 클래스를 상속하는 경우는 Inheritance 또는 Generalization이라고 합니다.
 
-![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_162854.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/implement.png)
 
 그리고 인터페이스를 구현하는 경우는 Realization 또는 Implementation이라고 합니다.
 
@@ -108,7 +108,7 @@ Association은 Aggregation과 Composition으로 나누어집니다.
 
 예를 들어 아래 그림과 같이
 
-![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/20160814_162406.png)
+![Image]({{ site.baseurl }}/assets/2016-08-14-uml-classdigram/aggregation.png)
 
 Computer가 소멸하더라도 Monitor, Keyboard, Mouse는 여전히 남기 때문에 
 이런 관계는 Aggregation이라고 합니다.
