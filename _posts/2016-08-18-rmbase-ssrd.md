@@ -9,9 +9,8 @@ SSRD는 System and Software Requirements Definition를 말합니다.
 시스템과 소프트웨어의 요구사항 정의를 한 문서이며, 
 템플릿은 [여기](https://www.google.co.kr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwi6rOH-58rOAhWDp5QKHWDYAZoQFgggMAA&url=http%3A%2F%2Fsunset.usc.edu%2Fresearch%2FMBASE%2FEPG%2Ftemplates%2Fversion2.3%2FSSRD_SODA_2_3_2_v1.doc&usg=AFQjCNHYu64ibbPAtqqAXpc7gyTLO5LfKQ&bvm=bv.129759880,d.dGo)에서 받을 수 있습니다.
 
-그리고 MBASE는 
-Measurable, Archievable, Relevant, Specific를 의미합니다.
-여기에 Timebound가 추가되면 SMART라고도 부른다고 하네요.
+그리고 MBASE는 Model-Based Architecture and Software Engineering를 의미합니다
+
 
 <br>
 
@@ -39,27 +38,68 @@ Win-Win Agreement(s) | <<The unique identifier(s) of the win-win agreement(s) fr
 
 <br>
 
-## Development Requirements
+### Development Requirements
+
 
 <br>
 
-### Budget and Schedule
-
-### Deployment Requirements
-
-### Transition Requirements
-
-### Support Environment Requirements
-
-<br>
-
-## Capability (Functional/Product) Requirements
+### Capability (Functional/Product) Requirements
 
 * CR-1: The system shall enable both customers and system administrators to create new orders
 * CR-2: The system shall enable both customers and system administrators to modify orders that have not yet been shipped
 * CR-3: The system shall enable both customers and system administrators to delete orders that have not yet been shipped
-* CR-4: The system shall enable customers, customer-relations personnel, and administrators to track orders, i.e., to determine:
-o	If an order has been shipped
-o	When an as yet un-shipped order is expected to be shipped, and the reason for delay in shipping if the order will not be shipped within the advertised window
+* CR-4: The system shall enable customers, customer-relations personnel, and administrators to track orders, i.e., to determine:  
+o	If an order has been shipped  
+o	When an as yet un-shipped order is expected to be shipped, and the reason for delay in shipping if the order will not be shipped within the advertised window  
 o	Where a shipped, but not yet delivered, order is located, and the expected delivery date
 * CR-5: The system shall take payment via Visa, MasterCard, American Express, and Diners Club
+
+
+Capability Requirement | <<A unique identifier of the capability requirement; should be of the form “CR-n,” where n is an integer; for example: “CR-1”, followed by a  short title of the capability requirement; for example: “create an order” or “order creation” >>
+Priority | <<The relative importance of this capability requirement to the client organization; using the MSCW (MoSCoW) prioritization scheme: M (Must have), S (Should have), C (Could have), W (Want to have)>>
+Description | <<A short description of the capability requirement; for example: “ The system shall enable both customers and system administrators to create new orders “>>
+Input(s) | <<The input(s) needed for this capability requirement’s function to be performed; e.g.: “a list of products”>>
+Source(s) | <<The source(s) of the input(s) needed for this capability requirement’s function to be performed; e.g.: “customer or administrator logged on to the system’s web site” >>
+Output(s) | <<The output(s) produced as a result of the performance of  this capability requirement’s function; for example: “a copy of the input plus name, address, phone number, and e-mail address of the customer who created the order” >>
+Destination(s) | <<The destination(s) of the output produced as a result of the performance of this capability requirement’s function; for example: “the financial processing system and the delivery processing system.”>>
+Precondition(s) | <<Describe the state(s) that relevant internal and external entities should be in before functionality is performed>>
+Post condition(s) | <<Describe the state(s) that relevant internal and external entities should be in after functionality is performed>>
+Win-Win Agreement(s) | <<The unique identifier of the win-win agreement(s) from which this capability requirement arises >>
+
+<br>
+
+### System Interface Requirements
+
+System Interface Requirement | <<Give a reference number and name>>
+Description | <<Describe any applicable requirements on how the software should interface with other software systems or users for input or output>>
+Priority | <<Describe what the priority of the requirement is; using the MSCW (MoSCoW) prioritization scheme: M (Must have), S (Should have), C (Could have), W (Want to have)>>
+Win-Win Agreement(s) | <<Give the win-win agreement(s) this interface requirement is traced from>>
+
+<br>
+
+### Level of Service (L.O.S.) Requirements
+
+Level of Service Requirement | <<Give a reference number and name>>
+Description | <<Describe this Level of Service Requirement>>
+Priority | <<Describe what the priority of the requirement is e.g. using the MSCW (MoSCoW) prioritization scheme: M (Must have), S (Should have), C (Could have), W (Want to have)>>
+Desired Level | <<Describe what the desired level of service is for this service requirement>>
+Accepted Level | << Describe what the acceptable level of service is for this service requirement>>
+Win-Win Agreement(s) | <<Give the win-win agreement(s) this level of service requirement is traced from>>
+
+
+그리고 MARS는 
+Measurable, Archievable, Relevant, Specific를 의미합니다.
+여기에 Timebound가 추가되면 SMART라고도 부른다고 하네요.
+
+Measurable | <<Indicate how this requirement can be measured with respect to the specific elements, include baselines, min and max tolerance, typical or excepted values, etc>>
+Achievable | <<Describe briefly an approach of how this requirements is to be satisfied, referring to the analysis in FRD for rationale as to why it is possible within the constraints of other requirements and the design specific in the SSAD>>
+Relevant | <<Describe the capability requirements this requirement is relevant to>>
+Specific | <<Describe what elements in particular within the capability requirement this requirement involves>>
+
+<br>
+
+### Versions, States and Modes
+
+<br>
+
+### Evolutionary Requirements
