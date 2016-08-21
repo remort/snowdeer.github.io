@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 객체지향 설계 원칙 - SOLID
-category: UML
-tag: [uml]
+category: 소프트웨어 설계
+tag: [설계, 원칙, SOLID]
 ---
 
 객체 지향 설계에서 유명한 5가지 원칙이 있습니다.

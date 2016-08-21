@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-@media (min-width: 50em) {
+@media (min-width: 60em) {
   .sidebar {
     font-size: .75rem; /* 14px */
   }
