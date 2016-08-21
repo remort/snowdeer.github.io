@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UML 시퀀스 다이어그램
+title: 시퀀스 다이어그램
 category: UML
 tag: [uml]
 ---
