@@ -23,29 +23,36 @@ tag: [requirement engineering]
 
 ## 요구 공학 프로세스 
 
-Process Activities
+### Process Activities
+
 * 요구사항 발견
 * 요구사항 분류
 * 우선 순위 및 협상
 * 문서화
 
-MBASE
-: Model Based Architecture Software Engineering
+### MBASE
 
-Model
-: Includes Product models, Process models, Property models, Success models.
+Model Based Architecture Software Engineering
 
-Model Clash
-: Model간 충돌
+### Model
 
-Model Integration
-: Choosing and/or reengineering models to reconcile their underlying assumptions.
+Includes Product models, Process models, Property models, Success models.
 
-LCO 
-: Life Cycle Object
+### Model Clash
 
-LCA
-: Life Cycle Architecture
+Model간 충돌
+
+### Model Integration
+
+Choosing and/or reengineering models to reconcile their underlying assumptions.
+
+### LCO 
+
+Life Cycle Object
+
+### LCA
+
+Life Cycle Architecture
 
 <br>
 
@@ -54,17 +61,20 @@ LCA
 * 자신이 스마트한 것 처럼 보여주려고 노력하지 마라
 * 자신이 고객(Stakeholder)을 스마트하다고 생각하는 것을 보여줘라.
 
-요구사항 추출 기법
+### 요구사항 추출 기법
+
 * Interview
 * Brain Storming
 * Observation
 * Presentation-Based Approaches
 
-ViRE
-: Value Innovative Requirements Engineering(가치 기반 요구 공학)
+### ViRE
 
-ERRC analysis
-: (Value를) Eliminate, Reduce, Raise, Create
+Value Innovative Requirements Engineering(가치 기반 요구 공학)
+
+### ERRC analysis
+
+(Value를) Eliminate, Reduce, Raise, Create
 
 <br>
 
@@ -73,6 +83,7 @@ ERRC analysis
 WinWin Approach
 
 Use 4-step solution approach
+
 * Seperate the people from the problem
 * Focus on interests, not positions (Ask Why? Why not?)
 * Invent options for mutual gain
@@ -80,7 +91,7 @@ Use 4-step solution approach
 
 Key Concept : Win Condition, Issue, Option, Aggreement
 
-![Image]({{ site.baseurl }}/assets/2016-08-19-requirement-engineering-keywords/winwin.png)
+![Image]({{ site.baseurl }}/assets/2016-08-19-requirement-engineering-keywords/winwin.jpg)
 
 <br> 
 
