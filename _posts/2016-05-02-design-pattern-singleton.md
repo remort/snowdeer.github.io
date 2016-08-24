@@ -14,7 +14,7 @@ tag: [pattern, singleton]
 
 싱글톤 패턴의 UML은 다음과 같습니다. 달랑 클래스 하나 뿐입니다.
 
-![Image]({{ site.baseurl }}/assets/201design-patterns/singleton.gif) 
+![Image]({{ site.baseurl }}/assets/design-patterns/singleton.gif) 
 
 싱글톤 패턴을 코드로 구현하면 다음과 같습니다. (다만, 아래의 코드는 멀티 쓰레드 환경에서 문제가 발생합니다.)
 
