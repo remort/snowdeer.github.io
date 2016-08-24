@@ -156,22 +156,22 @@ Create a level 1 decomposing the processes in level 0 and identifying data store
 
 ### Level 1
 
-![Image]({{ site.baseurl }}/assets/first-level-dfd[1].gif) 
+![Image]({{ site.baseurl }}/assets/first-level-dfd.gif) 
 
 <br>
 
 ### Level 2
 
-![Image]({{ site.baseurl }}/assets/second-level-dfd[1].gif) 
+![Image]({{ site.baseurl }}/assets/second-level-dfd.gif) 
 
 <br>
 
 ### Level 3
 
-![Image]({{ site.baseurl }}/assets/third-level-dfd[1].gif) 
+![Image]({{ site.baseurl }}/assets/third-level-dfd.gif) 
 
 <br>
 
 ### Level 4
 
-![Image]({{ site.baseurl }}/assets/fourth-level-dfd[1].gif) 
+![Image]({{ site.baseurl }}/assets/fourth-level-dfd.gif) 
