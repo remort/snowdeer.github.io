@@ -140,11 +140,11 @@ Create a level 0 diagram identifying the logical subsytems that may exist.
 
 Create a level 1 decomposing the processes in level 0 and identifying data stores.
 
-![Image]({{ site.baseurl }}/assets/20160824_222422.png) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/20160824_222422.png) 
 
-![Image]({{ site.baseurl }}/assets/20160824_222507.png) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/20160824_222507.png) 
 
-![Image]({{ site.baseurl }}/assets/20160824_222532.png) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/20160824_222532.png) 
 
 <br>
 
@@ -156,22 +156,22 @@ Create a level 1 decomposing the processes in level 0 and identifying data store
 
 ### Level 1
 
-![Image]({{ site.baseurl }}/assets/first-level-dfd.gif) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/first-level-dfd.gif) 
 
 <br>
 
 ### Level 2
 
-![Image]({{ site.baseurl }}/assets/second-level-dfd.gif) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/second-level-dfd.gif) 
 
 <br>
 
 ### Level 3
 
-![Image]({{ site.baseurl }}/assets/third-level-dfd.gif) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/third-level-dfd.gif) 
 
 <br>
 
 ### Level 4
 
-![Image]({{ site.baseurl }}/assets/fourth-level-dfd.gif) 
+![Image]({{ site.baseurl }}/assets/2016-08-24-data-flow-diagram/fourth-level-dfd.gif) 
