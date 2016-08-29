@@ -10,7 +10,7 @@ tag: [pattern, state]
 
 보통 State 패턴을 사용하지 않고, 각 상태마나 다른 동작을 하게 하기 위해서는
 
-<pre class="prettyprint">
+<pre class="prettyprint lang-java">
 if (현재 상태 == 낮) {
 	낮에 할 일();
 }	
@@ -33,7 +33,8 @@ else if (현재 상태 == 밤) {
 그리고 낮에는 이미지 갤러리, 밤에는 뮤직 프로그램이 실행되는 프로그램을 생각해보도록 하겠습니다.
 
 일단, 다음과 같은 인터페이스를 만들어봅니다. 
-<pre class="prettyprint">
+
+<pre class="prettyprint lang-java">
 public interface State {
 	public abstract void setTime(ContextManager cm, int hour);	
 	public abstract void setItem(Item item);					 
@@ -47,7 +48,7 @@ public interface State {
 다만 잦은 State 변경에 의해서 State를 재생성해야할 경우가 많다면, State를 
 매번 생성해야 할 필요가 있는지는 고민해보는 것이 좋습니다.
 
-<pre class="prettyprint">
+<pre class="prettyprint lang-java">
 public class DayState implements State {
 
 	private static DayState mInstance = new DayState();
@@ -86,7 +87,7 @@ public class DayState implements State {
 }
 </pre>
 
-<pre class="prettyprint">
+<pre class="prettyprint lang-java">
 public class NightState implements State {
 	private static NightState mInstance = new NightState();
 	private MusicLibrary mMusicLibrary = new MusicLibrary();
