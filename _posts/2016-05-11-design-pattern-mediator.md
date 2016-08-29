@@ -34,22 +34,46 @@ Mediator 패턴을 쓸 수 있는 경우를 들면 다음과 같은 시나리오
 
 Mediator 패턴은 크게 Mediator 인터페이스와 Colleague 인터페이스로 구성됩니다.
 <pre class="prettyprint lang-java">
-public interface Mediator {
-	public void addColleague(Colleague colleague);
-	public void removeColleague(Colleague colleague);
+public abstract class Mediator {
+	private ArrayList<Colleague> mColleagueList = new ArrayList<Colleague>();
+	
+	public void addColleague(Colleague colleague) {
+		mColleagueList.add(colleague);
+	}
+	
+	public void removeColleague(Colleague colleague) {
+		mColleagueList.remove(colleague);
+	}
+	
+	public void init() {
+		for(Colleague colleague : mColleagueList) {
+			colleague.init();
+		}
+	}
+	
+	public void fin() {
+		for(Colleague colleague : mColleagueList) {
+			colleague.fin();
+		}
+	}
 }
 </pre>
 
 <pre class="prettyprint lang-java">
-public interface Collegue {
-	public void setMediator(Mediator mediator);
-	public Mediator getMediator();
+public abstract class Colleague {
+	private Mediator mMediator;
+	
+	public void setMediator(Mediator mediator) {
+		mMediator = mediator;
+	}
+	
+	public Mediator getMediator() {
+		return mMediator;
+	}
+	
+	public abstract void init();
+	public abstract void fin();
 }
 </pre>
 
-사실 Mediator 패턴의 구현 방법은 다양합니다.
-
-Mediator로부터 각 Colleague를 생성하도록 할 수도 있고,
-Colleague 생성자에 Mediator를 넣도록 할 수도 있습니다.
-
-따라서 Mediator 패턴의 컨셉 및 장단점만 알고 있어도 괜찮을 것 같습니다.
+그리고 Mediator아 Colleague를 상속(구현)받는 클래스들을 구현하면 됩니다.
