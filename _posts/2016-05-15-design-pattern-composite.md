@@ -101,7 +101,7 @@ public class File extends Component {
 <pre class="prettyprint lang-java">
 public class Folder extends Component {
 	private String mName;
-	private ArrayList<Component> mChildList = new ArrayList<Component>();
+	private ArrayList&ltComponent&gt mChildList = new ArrayList&ltComponent&gt();
 
 	public Folder(String strName) {
 		mName = strName;
