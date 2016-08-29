@@ -54,11 +54,11 @@ Command들의 리스트를 이용하면 되는데, Stack, Queue, List 등 자유
 
 <pre class="prettyprint lang-java">
 public class MacroHandler implements Command {
-	private Stack<Command> mCommandStack = new Stack<Command>();
+	private Stack&lt;Command&gt; mCommandStack = new Stack&lt;Command&gt;();
 
 	@Override
 	public void execute() {
-		Iterator<Command> it = mCommandStack.iterator();
+		Iterator&lt;Command&gt; it = mCommandStack.iterator();
 		while (it.hasNext()) {
 			((Command) it.next()).execute();
 		}

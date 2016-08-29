@@ -101,7 +101,7 @@ public class File extends Component {
 <pre class="prettyprint lang-java">
 public class Folder extends Component {
 	private String mName;
-	private ArrayList&ltComponent&gt mChildList = new ArrayList&ltComponent&gt();
+	private ArrayList&lt;Component&gt; mChildList = new ArrayList&lt;Component&gt;();
 
 	public Folder(String strName) {
 		mName = strName;
@@ -115,7 +115,7 @@ public class Folder extends Component {
 	@Override
 	public int getSize() {
 		int _size = 0;
-		Iterator<Component> it = mChildList.iterator();
+		Iterator&lt;Component&gt; it = mChildList.iterator();
 		while (it.hasNext() == true) {
 			Component cp = (Component) it.next();
 			_size = _size + cp.getSize();
@@ -135,7 +135,7 @@ public class Folder extends Component {
 	protected void printList(String strPrefix) {
 		System.out.println(strPrefix + "/" + getName());
 
-		Iterator<Component> it = mChildList.iterator();
+		Iterator&lt;Component&gt; it = mChildList.iterator();
 		while (it.hasNext() == true) {
 			Component cp = (Component) it.next();
 			cp.printList(strPrefix + "/" + getName());
