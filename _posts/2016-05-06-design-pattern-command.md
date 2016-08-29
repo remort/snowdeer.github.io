@@ -52,7 +52,7 @@ public class DrawCommand implements Command {
 Command들의 리스트를 이용하면 되는데, Stack, Queue, List 등 자유롭게 써도 됩니다.  
 (여기서는 Undo, Redo 기능처럼 보이게 하기 위해 Stack을 사용했습니다.)
 
-<pre class="prettyprint">
+<pre class="prettyprint lang-java">
 public class MacroHandler implements Command {
 	private Stack<Command> mCommandStack = new Stack<Command>();
 
