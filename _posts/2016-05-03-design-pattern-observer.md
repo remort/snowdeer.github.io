@@ -26,7 +26,7 @@ public interface Observer {
 
 <pre class="prettyprint">
 public abstract class Subject {
-	private ArrayList<Observer> mObserverList = new ArrayList<Observer>();
+	private ArrayList&ltObserver&gt mObserverList = new ArrayList&ltObserver&gt();
 	
 	public void add(Observer observer) {
 		mObserverList.add(observer);
