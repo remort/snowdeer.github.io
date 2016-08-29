@@ -36,14 +36,15 @@ else if (현재 상태 == 밤) {
 
 <pre class="prettyprint lang-java">
 public interface State {
-	public abstract void setTime(ContextManager cm, int hour);	
-	public abstract void setItem(Item item);					 
-	public abstract void show();								
+	public abstract void setTime(ContextManager cm, int hour);
+	public abstract void setItem(Item item);
+	public abstract void show();
 	public abstract void close();
 }
 </pre>
 
 그리고, 각 상태는 다음과 같이 구현할 수 있습니다.
+
 여기서는 각 State를 Singleton으로 구현을 했는데, 이 부분은 자유롭습니다.
 다만 잦은 State 변경에 의해서 State를 재생성해야할 경우가 많다면, State를 
 매번 생성해야 할 필요가 있는지는 고민해보는 것이 좋습니다.
