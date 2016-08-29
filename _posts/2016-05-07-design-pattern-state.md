@@ -20,11 +20,11 @@ else if (현재 상태 == 밤) {
 </pre>
 
 와 같은 형태의 코드가 되는데, 각 함수마다 이런 식으로 분기문을 타게 되면 
-나중에 유지보수가 힘들어지는 경우가 발생할 수 있습니다. 
+나중에 유지 보수가 힘들어지는 경우가 발생할 수 있습니다. 
 
 이런 경우 State 패턴을 사용하면 코드가 깔끔해질 수 있습니다.
 
-먼저, State 패턴의 UML을 살펴보면 다음과 같습니다.
+State 패턴의 UML을 살펴보면 다음과 같습니다.
 
 ![Image]({{ site.baseurl }}/assets/design-patterns/state.gif) 
 
@@ -36,10 +36,10 @@ else if (현재 상태 == 밤) {
 
 <pre class="prettyprint lang-java">
 public interface State {
-	public abstract void setTime(ContextManager cm, int hour);
-	public abstract void setItem(Item item);
-	public abstract void show();
-	public abstract void close();
+	public void setTime(ContextManager cm, int hour);
+	public void setItem(Item item);
+	public void show();
+	public void close();
 }
 </pre>
 
