@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Authentication과 Authorization 차이
-category: 용어 설명
+category: Software 상식
 tag: [authentication, authorizatin]
 ---
 
