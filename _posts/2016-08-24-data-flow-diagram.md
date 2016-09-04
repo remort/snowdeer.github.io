@@ -2,10 +2,10 @@
 layout: post
 title: DFD (Data Flow Diagram)
 category: UML
-tag: [uml]
+tag: [uml, dfd, data flow diagram]
 ---
 
-일단, UML 카테고리에 넣긴 했지만 DFD(Data Flow Diagram)은 
+일단, UML 카테고리에 넣긴 했지만 [DFD(Data Flow Diagram)](https://en.wikipedia.org/wiki/Data_flow_diagram)은 
 UML은 아닙니다. DFD는 모델간의 관계를 표현하는게 아니라 데이터의 흐름을 표현합니다. 
 
 다만 UML이 DFD를 개량하는데서부터 시작했다는 점도 있고, 데이터 흐름을

@@ -5,9 +5,11 @@ category: Software 상식
 tag: [machine learning]
 ---
 
+~~~
 '머신 러닝(Machine Learning)'은 사람이 컴퓨터에게 직접 명령을 내리는 것이 아니라 컴퓨터가 스스로 다수의 데이터를 이용하여 학습을 하고, 자동으로 문제를 풀어나가는 기술을 말합니다.
+~~~
 
-Machine Learning는 구글의 [알파고](https://ko.wikipedia.org/wiki/%EC%95%8C%ED%8C%8C%EA%B3%A0) 로 인해서 갑자기 더 유명해졌습니다.
+[Machine Learning](https://ko.wikipedia.org/wiki/%EB%A8%B8%EC%8B%A0_%EB%9F%AC%EB%8B%9D)는 구글의 [알파고](https://ko.wikipedia.org/wiki/%EC%95%8C%ED%8C%8C%EA%B3%A0) 로 인해서 갑자기 더 유명해졌습니다.
 
 
 Machine Learning에 대해서 구체적인 예를 들어보도록 하겠습니다.
@@ -26,7 +28,7 @@ Machine Learning에 대해서 구체적인 예를 들어보도록 하겠습니�
 위의 예제와 같이 Machine Learning은 Rule 기반의 동작과는 거리가 좀 있습니다.
 
 
-보통 Machine Learning과 데이터 마이닝(Data Mining)이 같은 개념으로 
+보통 Machine Learning과 [데이터 마이닝(Data Mining)](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EB%A7%88%EC%9D%B4%EB%8B%9D)이 같은 개념으로 
 사용되기도 하는데, 사실은 조금 다른 특징이 있습니다.
 
 * Machine Learning는 대규모의 Training Data를 기반으로 학습을 하여

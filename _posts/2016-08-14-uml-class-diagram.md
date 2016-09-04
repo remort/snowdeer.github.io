@@ -2,10 +2,10 @@
 layout: post
 title: 클래스 다이어그램
 category: UML
-tag: [uml]
+tag: [uml, class diagram]
 ---
 
-클래스 다이어그램(Class Diagram)은 UML 중 가장 많이 사용하게 되는 다이어그램이 아닐까 싶습니다.
+[클래스 다이어그램(Class Diagram)](https://en.wikipedia.org/wiki/Class_diagram)은 UML 중 가장 많이 사용하게 되는 다이어그램이 아닐까 싶습니다.
 그래서 클래스 다이어그램에 대해 간단히 살펴보도록 하겠습니다.
 
 <br>

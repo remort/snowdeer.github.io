@@ -2,10 +2,10 @@
 layout: post
 title: 시퀀스 다이어그램
 category: UML
-tag: [uml]
+tag: [uml, sequence diagram]
 ---
 
-시퀀스 다이어그램(Class Diagram)은 참여자 사이의 시간 순서를 보여주는 다이어그램입니다.
+[시퀀스 다이어그램(Sequence Diagram)](https://en.wikipedia.org/wiki/Sequence_diagram)은 참여자 사이의 시간 순서를 보여주는 다이어그램입니다.
 시퀀스 다이어그램은 클래스 다이어그램과 함께 가장 많이 사용되는 UML입니다.
 
 아래는 시퀀스 다이어그램의 간단한 예시입니다.
