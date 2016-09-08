@@ -2,7 +2,7 @@
 layout: post
 title: 중재자(Mediator) 패턴
 category: 디자인패턴
-tag: [pattern, mediator]
+tag: [design pattern, mediator]
 ---
 
 중재자(Mediator) 패턴입니다.  

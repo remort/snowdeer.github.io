@@ -2,7 +2,7 @@
 layout: post
 title: 컴포지트(Composite) 패턴
 category: 디자인패턴
-tag: [pattern, composite]
+tag: [design pattern, composite]
 ---
 
 컴포지트(Composite) 패턴의 UML은 다음과 같습니다.

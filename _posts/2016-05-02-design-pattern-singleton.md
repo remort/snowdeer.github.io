@@ -2,7 +2,7 @@
 layout: post
 title: 싱글톤(Singleton) 패턴
 category: 디자인패턴
-tag: [pattern, singleton]
+tag: [design pattern, singleton]
 ---
 
 프로그램에서 단 하나의 인스턴스(Instance)만 존재하게 하고 싶을 때 사용하는 패턴입니다.

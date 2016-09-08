@@ -2,7 +2,7 @@
 layout: post
 title: 커맨드(Command) 패턴
 category: 디자인패턴
-tag: [pattern, command]
+tag: [design pattern, command]
 ---
 
 커맨드(Command) 패턴입니다.  

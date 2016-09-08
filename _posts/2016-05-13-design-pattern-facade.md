@@ -2,7 +2,7 @@
 layout: post
 title: 퍼샤드(Facade) 패턴
 category: 디자인패턴
-tag: [pattern, facade]
+tag: [design pattern, facade]
 ---
 
 퍼샤드(Facade) 패턴입니다.  

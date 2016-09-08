@@ -2,7 +2,7 @@
 layout: post
 title: 옵저버(Observer) 패턴
 category: 디자인패턴
-tag: [pattern, observer]
+tag: [design pattern, observer]
 ---
 
 가장 많이 사용되는 패턴 중 하나가 아닐까 싶습니다.

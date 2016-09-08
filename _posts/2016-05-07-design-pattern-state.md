@@ -2,7 +2,7 @@
 layout: post
 title: 스테이트(State) 패턴
 category: 디자인패턴
-tag: [pattern, state]
+tag: [design pattern, state]
 ---
 
 스테이트(Command) 패턴입니다.  

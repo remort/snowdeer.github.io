@@ -2,10 +2,10 @@
 layout: post
 title: 팩토리 메소드(Factory Method) 패턴
 category: 디자인패턴
-tag: [pattern, factory]
+tag: [design pattern, factory]
 ---
 
-[팩토리 메소드(Factory Method)](https://en.wikipedia.org/wiki/Factory_method_pattern) 패턴의 UML은 다음과 같습니다.
+[팩토리 메소드(Factory Method) 패턴](https://en.wikipedia.org/wiki/Factory_method_pattern)의 UML은 다음과 같습니다.
 
 ![Image]({{ site.baseurl }}/assets/design-patterns/factorymethod.png) 
 

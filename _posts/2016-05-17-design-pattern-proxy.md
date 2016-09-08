@@ -2,7 +2,7 @@
 layout: post
 title: 프록시(Proxy) 패턴
 category: 디자인패턴
-tag: [pattern, proxy]
+tag: [design pattern, proxy]
 ---
 
 프록시(Proxy) 패턴의 UML은 다음과 같습니다.
