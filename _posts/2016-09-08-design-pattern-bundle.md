@@ -13,64 +13,64 @@ UML은 [Headfirst Design Pattern](http://www.headfirstlabs.com/books/hfdp/)에 �
 
 ## Strategy Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/strategy.jpg)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/strategy.jpg)
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/strategy-1024x520.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/strategy-1024x520.png)
 
 <br>
 
 ## Decorator Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/decorator-pattern-c-0eu3bwi1.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/decorator-pattern-c-0eu3bwi1.png)
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/starbuzz-decorator.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/starbuzz-decorator.png)
 
 <br>
 
 ## Composite Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/composite_diagram.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/composite_diagram.png)
 
 <br>
 
 ## Observer Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/observer_pattern.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/observer_pattern.png)
 
 <br>
 
 ## Abstract Factory Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/abstract_factory_pattern.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/abstract_factory_pattern.png)
 
 <br>
 
 ## Command Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/command_diagram.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/command_diagram.png)
 
 <br>
 
 ## Adapter Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/adapter_diagram.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/adapter_diagram.png)
 
 <br>
 
 ## Facade Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/facade_and_the_principle_of_least_knowledge.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/facade_and_the_principle_of_least_knowledge.png)
 
 <br>
 
 ## Iterator Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/iterator_diagram.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/iterator_diagram.png)
 
 
 <br>
 
 ## Proxy Pattern
 
-![Image]({{ site.baseurl }}/assets/2016-08-15-uml-sequence-diagram/proxy_diagram1.png)
+![Image]({{ site.baseurl }}/assets/design-pattern-headfirst/proxy_diagram1.png)
 
