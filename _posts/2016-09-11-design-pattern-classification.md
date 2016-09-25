@@ -7,7 +7,7 @@ tag: [design pattern, classification]
 
 디자인 패턴을 Creational/Structural/Behavioral 특성으로 분류하면 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/2016-09-11-design-pattern-classification/object-oriented-design-patterns-4-638.jpg)
+![Image]({{ site.baseurl }}/assets/2016-09-11-design-pattern-classification/JavaDesignPatterns_Fig1.png)
 
 <br>
 
