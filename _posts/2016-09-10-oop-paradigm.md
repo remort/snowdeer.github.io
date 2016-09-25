@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 객체 지향 프로그램의 특징
-category: Software 상식
+category: 소프트웨어 설계
 tag: [object-oriented, oop]
 ---
 
