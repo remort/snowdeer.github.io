@@ -47,13 +47,17 @@ Dog 클래스와 Cat 클래스는 언제든지 Animal 클래스로 대체해서 
 메소드 레벨에서의 다형성은 대표적으로 '오버로딩(Overloading)'과 '오버라이딩(Overriding)'이
 있습니다.
 
+<br>
+
+## Overloading vs Overriding
+
 Overloading은 추가해서 더 싣는다고 생각하면 되며, 파라메터만 바꿔서 같은 이름의 메소드(함수)를
-생성할 수 있는 것을 말합니다.
+생성할 수 있는 것을 말합니다. 컴파일시에 결정되며 런타임 중에는 변경될 수 있습니다.
 
 Overriding은 아예 태우는 것이라고 생각하면 되며, 상속시 부모 클래스와 자식 클래스의 메소드가 같을
 경우 부모 클래스의 메소드 위에 자식 클래스를 태워서 실행시에 자식 클래스의 메소드가 호출되는 것을
-말합니다. Dynamic Binding을 위한 중요한 개념입니다.
+말합니다. Dynamic Binding을 위한 중요한 개념입니다. Dynamic Binding은 이름 그대로 런타임 중에
+변경될 수 있습니다.
 
- 
-
+![Image]({{ site.baseurl }}/assets/2016-09-10-oop-paradigm/overloading-vs-overriding.png)
 
