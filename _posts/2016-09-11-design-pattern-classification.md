@@ -13,13 +13,17 @@ tag: [design pattern, classification]
 
 ## Organizing Design Patterns by Purpose
 
-목적 | 설명
------- | ------
-Creation   | Concerns object creation
------- | ------
-Structural | Deals with composition of classes or object
------- | ------
-Behavioral | Characterizes ways in which classes or objects interact and distribute responsibility
+### Creation Patterns
+
+* Deal with initializing and configuring classes and objects
+
+### Structural Patterns
+
+* Deal with decoupling interface and implementation of classes and objects
+
+### Behavioral Patterns
+
+* Deal with dynamic interactions among societies of classes and objects
 
 <br>
 
