@@ -11,22 +11,18 @@ tag: [architecture style]
 
 ## Batch Sequential Architecture Style
 
-Header | Header
------- | ------
-Cell   | Cell 
------- | ------
-단점 | asdasd<br> asasd<br>123
------- | ------
-Cell   | Cell 
+장점
 
+* Simple divisions on subsystems
+* Each subsystem can be a stand-alone progrma working on input data and producing output data
 
+단점
 
-Header | Header
------- | ------
-장점 | Cell  
------- | ------
-단점 | asdasd<br>
-		asdasdsa<br>
-		asd 
------- | ------
-abc | asd
+* Implementation requires external control
+* It does not provide interactive interface
+* Concurrency is not supported and hence throughput remains low
+* High latency
+
+<br>
+
+## 
