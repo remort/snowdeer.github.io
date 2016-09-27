@@ -25,4 +25,17 @@ tag: [architecture style]
 
 <br>
 
-## 
+## Pipe and Filter Architecture Style
+
+장점
+
+* Concurrency : It provides high overall throughput for excessive data processing.
+* Reusability : Encapsulation of filters makes it easy to plug and play, and to substitute
+* Modifiability : It features low coupling between filters, less impact from adding new filters, and modifying the implementation of any existing filters as long as the I/O interfaces are unchanged.
+* Simplicity : It offers clear division between any two filters connected by a pipe.
+* Flexibility : It supports both sequential and parallel execution.
+
+단점
+
+* Dynamic Interaction 용으로는 적합하지 않음
+* Filter간 데이터 전송 및 Parsing 오버헤드
