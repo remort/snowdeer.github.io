@@ -13,10 +13,20 @@ tag: [architecture style]
 
 Header | Header
 ------ | ------
+Cell   | Cell 
+------ | ------
+단점 | asdasd<br> asasd<br>123
+------ | ------
+Cell   | Cell 
+
+
+
+Header | Header
+------ | ------
 장점 | Cell  
 ------ | ------
 단점 | asdasd<br>
 		asdasdsa<br>
-		asd |
+		asd 
 ------ | ------
 abc | asd
