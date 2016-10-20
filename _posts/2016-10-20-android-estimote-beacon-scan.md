@@ -26,7 +26,7 @@ dependencies {
 
 
 
-<pre class="prettyprint" style="font-size:0.8em;">
+<pre class="prettyprint" style="font-size:0.5em;">
 package snowdeer.sample.estimote;
 
 import android.graphics.Bitmap;
