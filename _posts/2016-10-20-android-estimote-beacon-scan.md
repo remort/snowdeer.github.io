@@ -26,7 +26,7 @@ dependencies {
 
 
 
-<pre class="prettyprint" style="font-size:1.6em;">
+<pre class="prettyprint" style="font-size:0.8em;">
 package snowdeer.sample.estimote;
 
 import android.graphics.Bitmap;
@@ -67,7 +67,8 @@ public class MainActivity extends AppCompatActivity {
         mLogView = (TextView)findViewById(R.id.log);
         mLogBuilder.setLength(0);
 
-        EstimoteSDK.initialize(getApplicationContext(), "estimotebeaconsample-ivb", "45f6fc31fd613624b0f24df41b121db6");
+        EstimoteSDK.initialize(getApplicationContext(),
+                "estimotebeaconsample-ivb", "45f6fc31fd613624b0f24df41b121db6");
 
         mBeaconManager = new BeaconManager(getApplicationContext());
         mDeviceScanner = new ConfigurableDevicesScanner(getApplicationContext());
