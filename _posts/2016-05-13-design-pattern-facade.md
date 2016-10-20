@@ -48,7 +48,7 @@ public class FacadeExample {
 	}
 }
 
-<pre class="prettyprint lang-java">
+</pre>
 
 예제는 간단합니다. 
 

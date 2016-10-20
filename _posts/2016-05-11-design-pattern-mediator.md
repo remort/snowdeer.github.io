@@ -33,7 +33,7 @@ Mediator 패턴을 쓸 수 있는 경우를 들면 다음과 같은 시나리오
 
 
 Mediator 패턴은 크게 Mediator 인터페이스와 Colleague 인터페이스로 구성됩니다.
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" style="font-size:0.7em;">
 public abstract class Mediator {
 	private ArrayList&lt;Colleague&gt; mColleagueList = new ArrayList&lt;Colleague&gt;();
 	

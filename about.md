@@ -47,7 +47,7 @@ title: About
 * AllShare Control
 * 교육 표준 LTI(Learning Tools Interoperability)
 * SPen 기반 학습 노트, 교사 노트
-* 재난안전망 eProse
+* 재난안전망 eProSe
 
 <br>
 

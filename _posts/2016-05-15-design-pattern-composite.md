@@ -98,7 +98,7 @@ public class File extends Component {
 }
 </pre>
 
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" style="font-size:0.7em;">
 public class Folder extends Component {
 	private String mName;
 	private ArrayList&lt;Component&gt; mChildList = new ArrayList&lt;Component&gt;();

@@ -18,7 +18,7 @@ Factory Method 패턴의 가장 큰 특징은 어떤 클래스의 인스턴스�
 
 예제를 보도록 하겠습니다.
 
-<pre class="prettyprint lang-java">
+<pre class="prettyprint lang-java" style="font-size:0.7em;">
 public abstract class Pizza {
 	String mName;
 	String mDough;
