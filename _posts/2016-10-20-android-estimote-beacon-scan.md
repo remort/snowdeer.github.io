@@ -124,10 +124,12 @@ public class MainActivity extends AppCompatActivity {
         deviceTypeList.add(DeviceType.NEARABLE);
         deviceTypeList.add(DeviceType.PROXIMITY_BEACON);
         mDeviceScanner.setDeviceTypes(deviceTypeList);
-        mDeviceScanner.scanForDevices(new ConfigurableDevicesScanner.ScannerCallback() {
+        mDeviceScanner.scanForDevices(
+                new ConfigurableDevicesScanner.ScannerCallback() {
 
             @Override
-            public void onDevicesFound(List&lt;ConfigurableDevicesScanner.ScanResultItem&gt; devices) {
+            public void onDevicesFound(
+                    List&lt;ConfigurableDevicesScanner.ScanResultItem&gt; devices) {
                 log("onDevicesFound : " + devices.size());
                 for(int i=0; i<devices.size(); i++) {
                     ConfigurableDevicesScanner.ScanResultItem item = devices.get(i);
