@@ -27,12 +27,27 @@ title: About
 
 <br>
 
+## License
+
+* 정보처리기사
+* MENSA Korea
+* Associate Architect (in Samsung)
+
+<br>
+
 ## Career
 
-* 컴퓨터 과학 학부 및 대학원 졸업
+* 경남 과학 고등학교 졸업
+* 연세대학교 컴퓨터 과학 학부 및 대학원 졸업
 * 3D Computer Graphics 전공(석사)
 * C2Technology (2000~2003, 의료 정보 솔루션 업체, 병역특례)
 * Samsung Electronics (2007~)
+* Navigation 및 위치 기반 서비스(LBS)
+* WiFi 기반 TV Remote Control
+* AllShare Control
+* 교육 표준 LTI(Learning Tools Interoperability)
+* SPen 기반 학습 노트, 교사 노트
+* 재난안전망 eProse
 
 <br>
 
