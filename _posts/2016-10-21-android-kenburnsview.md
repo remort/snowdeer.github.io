@@ -16,7 +16,7 @@ tag: [android, kenburns]
 [여기](https://github.com/flavioarfaria/KenBurnsView)에서 확인할 수 있으며, 
 Android Studio에서는 간단히 gradle에 다음 라인만 추가하면 KenBurnsView를 사용할 수 있습니다.
 
-<pre class="prettyprint">
+<pre class="prettyprint" style="font-size:0.7em;">
 dependencies {
     compile 'com.flaviofaria:kenburnsview:1.0.7'
 }
@@ -24,7 +24,7 @@ dependencies {
 
 실제로 사용할 때는 다음과 같이 XML에 KenburnsView를 배치하기만 하면 끝입니다.
 
-<pre class="prettyprint">
+<pre class="prettyprint" style="font-size:0.7em;">
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"

@@ -12,7 +12,7 @@ tag: [android, estimote, beacon]
 
 Android Studio 기준으로, 일단 build.gradle에 Estimote Beacon SDK에 대한 dependency를 추가해줍니다.
 
-<pre class="prettyprint">
+<pre class="prettyprint" style="font-size:0.7em;">
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.0.1'
