@@ -30,12 +30,6 @@ adb tcpip 5555
 restarting in TCP mode port: 5555
 ~~~
 
-* 그리고 스마트폰의 IP 주소를 얻기 위해서 다음과 같이 실행합니다.
-
-~~~
-adb shell ifconfig
-~~~
-
 * 이제 설정이 끝났습니다. USB를 해제해도 됩니다. 
 * PC에서 스마트폰에 연결하기 위해서는 다음과 같이 입력하면 됩니다.
 
