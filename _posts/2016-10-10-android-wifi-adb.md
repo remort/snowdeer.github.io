@@ -29,7 +29,7 @@ WiFi를 이용해서 ADB 연결을 시도하면 됩니다 !!
 adb tcpip 5555
 restarting in TCP mode port: 5555
 ~~~
- 
+
 * 그리고 스마트폰의 IP 주소를 얻기 위해서 다음과 같이 실행합니다.
 
 ~~~
