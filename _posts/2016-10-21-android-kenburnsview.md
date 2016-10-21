@@ -25,19 +25,19 @@ dependencies {
 실제로 사용할 때는 다음과 같이 XML에 KenburnsView를 배치하기만 하면 끝입니다.
 
 <pre class="prettyprint">
-&lt;?xml version="1.0" encoding="utf-8"?&rt;
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"&rt;
+    android:layout_height="match_parent"&gt;
 
     &lt;com.flaviofaria.kenburnsview.KenBurnsView
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/image" /&rt;
+        android:src="@drawable/image" /&gt;
 
-&lt;/RelativeLayout&rt;
+&lt;/RelativeLayout&gt;
 </pre>
 
 특별히 Java 코드를 따로 추가하지 않더라도 훌륭한 Ken Burns 효과를 보여주며, Java 코드를 통해 
