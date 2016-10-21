@@ -10,9 +10,8 @@ tag: [android, kenburns]
 
 아래 이미지를 보시면 한 눈에 아실 수 있으리라 생각됩니다.
 
-<figure class="animated_gif_frame">
-	<img src="https://github.com/flavioarfaria/KenBurnsView/blob/master/anim.gif" data-source="https://github.com/flavioarfaria/KenBurnsView/blob/master/anim.gif" width="800" height="450" />
-</figure>
+![KenBurns]({{ site.baseurl }}/assets/2016-10-21-android-kenburnsview/anim.gif)
+
 
 이미 아주 많은 사람들이 사용하고 있는 오픈소스가 있습니다.
 [여기](https://github.com/flavioarfaria/KenBurnsView)에서 확인할 수 있으며, 
