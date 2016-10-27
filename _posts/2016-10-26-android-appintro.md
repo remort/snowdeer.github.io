@@ -14,11 +14,9 @@ tag: [android, appintro]
 Android Studio에서는 간단히 gradle에 다음 라인만 추가하면 AppIntro 컴포넌트를 사용할 수 있습니다.
 
 <pre class="prettyprint" style="font-size:0.7em;">
-
 dependencies {
     compile 'com.github.paolorotolo:appintro:4.1.0'
 }
-
 </pre>
 
 실제로 사용하는 코드는 다음과 같습니다. Activity를 AppIntro 클래스를 상속받도록 하면
@@ -30,6 +28,15 @@ dependencies {
 
 
 <pre class="prettyprint" style="font-size:0.7em;">
+import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.os.Bundle;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.github.paolorotolo.appintro.AppIntro;
 
 public class SplashActivity extends AppIntro {
 
@@ -44,7 +51,8 @@ public class SplashActivity extends AppIntro {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             Window w = getWindow(); // in Activity's onCreate() for instance
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, 
+                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
 
         addSlide(mSplash1);
@@ -65,7 +73,8 @@ public class SplashActivity extends AppIntro {
     }
 
     @Override
-    public void onSlideChanged(@Nullable Fragment oldFragment, @Nullable Fragment newFragment) {
+    public void onSlideChanged(@Nullable Fragment oldFragment, 
+                               @Nullable Fragment newFragment) {
         super.onSlideChanged(oldFragment, newFragment);
     }
 
@@ -80,7 +89,6 @@ public class SplashActivity extends AppIntro {
         finish();
     }
 }
-
 </pre>
 
 
