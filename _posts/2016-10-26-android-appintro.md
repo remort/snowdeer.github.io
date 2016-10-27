@@ -14,9 +14,11 @@ tag: [android, appintro]
 Android Studio에서는 간단히 gradle에 다음 라인만 추가하면 AppIntro 컴포넌트를 사용할 수 있습니다.
 
 <pre class="prettyprint" style="font-size:0.7em;">
+
 dependencies {
     compile 'com.github.paolorotolo:appintro:4.1.0'
 }
+
 </pre>
 
 실제로 사용하는 코드는 다음과 같습니다. Activity를 AppIntro 클래스를 상속받도록 하면
@@ -28,6 +30,7 @@ dependencies {
 
 
 <pre class="prettyprint" style="font-size:0.7em;">
+
 public class SplashActivity extends AppIntro {
 
     Fragment mSplash1 = new SplashFragment1();
@@ -77,6 +80,7 @@ public class SplashActivity extends AppIntro {
         finish();
     }
 }
+
 </pre>
 
 
