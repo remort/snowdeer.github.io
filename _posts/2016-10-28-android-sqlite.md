@@ -287,7 +287,8 @@ public class DatabaseTestFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view =  inflater.inflate(R.layout.fragment_database_test, container, false);
+        View view =  inflater.inflate(R.layout.fragment_database_test,
+                container, false);
 
         view.findViewById(R.id.btn_get).setOnClickListener(mOnClickListener);
         view.findViewById(R.id.btn_add).setOnClickListener(mOnClickListener);
@@ -360,7 +361,8 @@ public class DatabaseTestFragment extends Fragment {
     }
 
     private void getBeaconList() {
-        ArrayList&lt;BeaconLog&gt; list = LncDBManager.getInstance().getBeaconLogList(getActivity());
+        ArrayList&lt;BeaconLog&gt; list = LncDBManager.getInstance()
+                .getBeaconLogList(getActivity());
         log("list size : " + list.size());
         for(int i=0; i<list.size(); i++) {
             BeaconLog item = list.get(i);
@@ -373,4 +375,5 @@ public class DatabaseTestFragment extends Fragment {
         LncDBManager.getInstance().clearBeaconLog(getActivity());
     }
 }
+
 </pre>
