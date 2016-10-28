@@ -71,8 +71,8 @@ public class SnowDBManager {
         return mInstance;
     }
 
-    public ArrayList<Wallet> getWalletList(Context context) {
-        ArrayList<Wallet> resultList = new ArrayList<>();
+    public ArrayList&lt;Wallet&gt; getWalletList(Context context) {
+        ArrayList&lt;Wallet&gt; resultList = new ArrayList&lt;&gt;();
 
         SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
         try {
@@ -172,8 +172,8 @@ public class SnowDBManager {
         dbHelper.close();
     }
 
-    public ArrayList<BeaconLog> getBeaconLogList(Context context) {
-        ArrayList<BeaconLog> resultList = new ArrayList<>();
+    public ArrayList&lt;BeaconLog&gt; getBeaconLogList(Context context) {
+        ArrayList&lt;BeaconLog&gt; resultList = new ArrayList&lt;&gt;();
 
         SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
         try {
@@ -360,7 +360,7 @@ public class DatabaseTestFragment extends Fragment {
     }
 
     private void getBeaconList() {
-        ArrayList<BeaconLog> list = LncDBManager.getInstance().getBeaconLogList(getActivity());
+        ArrayList&lt;BeaconLog&gt; list = LncDBManager.getInstance().getBeaconLogList(getActivity());
         log("list size : " + list.size());
         for(int i=0; i<list.size(); i++) {
             BeaconLog item = list.get(i);
