@@ -30,9 +30,11 @@ public class SnowSQLiteOpenHelper extends SQLiteOpenHelper {
     }
 
     public void onCreate(SQLiteDatabase db){
-        db.execSQL("CREATE TABLE " + TABLE_MY_WALLET + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+        db.execSQL("CREATE TABLE " + TABLE_MY_WALLET
+                + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "privateKey TEXT, publicKey TEXT, address TEXT);");
-        db.execSQL("CREATE TABLE " + TABLE_BEACON_HISTORY + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
+        db.execSQL("CREATE TABLE " + TABLE_BEACON_HISTORY
+                + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "inputTime TEXT, beaconId TEXT, rssi INTEGER);");
     }
 
