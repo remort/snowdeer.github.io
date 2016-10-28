@@ -63,10 +63,6 @@ import com.lnc.prototype.data.Wallet;
 
 import java.util.ArrayList;
 
-/**
- * Created by snowd on 2016-10-28.
- */
-
 public class SnowDBManager {
     private static final SnowDBManager mInstance = new SnowDBManager();
     private SnowDBManager() {}
