@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SQLite (외부 DB 파일 사용) 예제
+title: SQLite (외부 DB 파일 사용)
 category: Android
 tag: [android, sqlite]
 ---
