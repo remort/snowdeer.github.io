@@ -29,104 +29,104 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class SnowFileDBOpenHelper extends SQLiteOpenHelper {
 
-	private SQLiteDatabase sqlite;
+    private SQLiteDatabase sqlite;
 
-	private final Context mContext;
-	private final String mFolderPath;
-	private final static String mDBFileName = "snowdeer_db.sqlite";
-	
-	public SnowFileDBOpenHelper(Context context) {
-		super(context, mDBFileName, null, 1);
- 
-		mContext = context;
-		// Eclipse
-//		mFolderPath = Environment.getExternalStoragePublicDirectory(null) + "/Android/data/"
-//				+ context.getPackageName() + "/";
+    private final Context mContext;
+    private final String mFolderPath;
+    private final static String mDBFileName = "snowdeer_db.sqlite";
 
-		// Android Studio
-		mFolderPath = mContext.getExternalFilesDir(null) + "/";
-		
-	}
-	
-	@Override
-	public void onCreate(SQLiteDatabase db) {
-	}
+    public SnowFileDBOpenHelper(Context context) {
+        super(context, mDBFileName, null, 1);
 
-	@Override
-	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-	}
+        mContext = context;
+        // Eclipse
+		mFolderPath = Environment.getExternalStoragePublicDirectory(null) 
+                + "/Android/data/" + context.getPackageName() + "/";
 
-	public void checkDatabase() {
-		try {
-			checkFolderExist();
-			checkFileExist();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	private void checkFolderExist() throws IOException {
-		File targetFolder = new File(mFolderPath);
-		if (targetFolder.exists() == false) {
-			targetFolder.mkdirs();
-		}
-	}
+        // Android Studio
+        mFolderPath = mContext.getExternalFilesDir(null) + "/";
 
-	private void checkFileExist() throws IOException {
-		File targetFile = new File(mFolderPath + mDBFileName);
-		if (targetFile.exists() == false) {
-			copyDatabase();
-		}
-	}
+    }
 
-	private void copyDatabase() throws IOException {
-		InputStream inputStream = mContext.getAssets().open(mDBFileName);
+    @Override
+    public void onCreate(SQLiteDatabase db) {
+    }
 
-		String outFileName = mFolderPath + mDBFileName;
-		OutputStream outputStream = new FileOutputStream(outFileName);
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+    }
 
-		byte[] buffer = new byte[1024];
-		int length;
+    public void checkDatabase() {
+        try {
+            checkFolderExist();
+            checkFileExist();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-		while ((length = inputStream.read(buffer)) > 0) {
-			outputStream.write(buffer, 0, length);
-		}
+    private void checkFolderExist() throws IOException {
+        File targetFolder = new File(mFolderPath);
+        if (targetFolder.exists() == false) {
+            targetFolder.mkdirs();
+        }
+    }
 
-		outputStream.flush();
-		outputStream.close();
-		inputStream.close();
-	}
+    private void checkFileExist() throws IOException {
+        File targetFile = new File(mFolderPath + mDBFileName);
+        if (targetFile.exists() == false) {
+            copyDatabase();
+        }
+    }
 
-	public void openDataBase() throws SQLException {
-		String myPath = mFolderPath + mDBFileName;
-		sqlite = SQLiteDatabase.openDatabase(myPath, null,
-				SQLiteDatabase.NO_LOCALIZED_COLLATORS);
-	}
+    private void copyDatabase() throws IOException {
+        InputStream inputStream = mContext.getAssets().open(mDBFileName);
 
-	@Override
-	public synchronized void close() {
-		if (sqlite != null) {
-			sqlite.close();
-		}
+        String outFileName = mFolderPath + mDBFileName;
+        OutputStream outputStream = new FileOutputStream(outFileName);
 
-		super.close();
-	}
+        byte[] buffer = new byte[1024];
+        int length;
 
-	@Override
-	public SQLiteDatabase getReadableDatabase() {
-		checkDatabase();
-		openDataBase();
+        while ((length = inputStream.read(buffer)) > 0) {
+            outputStream.write(buffer, 0, length);
+        }
 
-		return sqlite;
-	}
-	
-	@Override
-	public SQLiteDatabase getWritableDatabase() {
-		checkDatabase();
-		openDataBase();
+        outputStream.flush();
+        outputStream.close();
+        inputStream.close();
+    }
 
-		return sqlite;
-	}
+    public void openDataBase() throws SQLException {
+        String myPath = mFolderPath + mDBFileName;
+        sqlite = SQLiteDatabase.openDatabase(myPath, null,
+                SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+    }
+
+    @Override
+    public synchronized void close() {
+        if (sqlite != null) {
+            sqlite.close();
+        }
+
+        super.close();
+    }
+
+    @Override
+    public SQLiteDatabase getReadableDatabase() {
+        checkDatabase();
+        openDataBase();
+
+        return sqlite;
+    }
+
+    @Override
+    public SQLiteDatabase getWritableDatabase() {
+        checkDatabase();
+        openDataBase();
+
+        return sqlite;
+    }
 }
 </pre>
 
@@ -141,127 +141,129 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class SnowFileDBQueryManager {
 
-	private static final String TABLE_SNOW = "TABLE_SNOW";
-	
-	private static SnowFileDBQueryManager mInstance = new SnowFileDBQueryManager();
+    private static final String TABLE_SNOW = "TABLE_SNOW";
 
-	private SnowFileDBQueryManager() {
-	}
+    private static SnowFileDBQueryManager mInstance
+            = new SnowFileDBQueryManager();
 
-	public static SnowFileDBQueryManager getInstance() {
-		return mInstance;
-	}
-	
-	public ArrayList&lt;SnowItem&gt; getSnowItemList(Context context) {
-		ArrayList&lt;SnowItem&gt; resultList = new ArrayList&lt;SnowItem&gt;();
+    private SnowFileDBQueryManager() {
+    }
 
-		SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
-		try {
-			String query = "SELECT _id, userInfo, address FROM " + TABLE_SNOW;
+    public static SnowFileDBQueryManager getInstance() {
+        return mInstance;
+    }
 
-			SQLiteDatabase db = dbHelper.getReadableDatabase();
-			Cursor cursor = db.rawQuery(query, null);
+    public ArrayList<SnowItem> getSnowItemList(Context context) {
+        ArrayList<SnowItem> resultList = new ArrayList<SnowItem>();
 
-			while (cursor.moveToNext()) {
-				SnowItem item =
-						new SnowItem(cursor.getInt(0),
-								cursor.getString(1),
-								cursor.getString(2));
-				resultList.add(item);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		dbHelper.close();
-		return resultList;
-	}
+        SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
+        try {
+            String query = "SELECT _id, userInfo, address FROM "
+                    + TABLE_SNOW;
 
-	public void addSnowItem(Context context, SnowItem item) {
-		SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            Cursor cursor = db.rawQuery(query, null);
 
-		try {
-			SQLiteDatabase db = dbHelper.getWritableDatabase();
-			ContentValues row = new ContentValues();
+            while (cursor.moveToNext()) {
+                SnowItem item = new SnowItem(cursor.getInt(0),
+                        cursor.getString(1),
+                        cursor.getString(2));
+                
+                resultList.add(item);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-			int id = 0;
-			if (item.id > 0) {
-				id = item.id;
-			} else {
-				id = getMaxSnowItemId(context);
-			}
+        dbHelper.close();
+        return resultList;
+    }
 
-			row.put("_id", id);
-			row.put("userInfo", item.userInfo);
-			row.put("address", item.address);
+    public void addSnowItem(Context context, SnowItem item) {
+        SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
 
-			db.insert(TABLE_SNOW, null, row);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		dbHelper.close();
-	}
+        try {
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues row = new ContentValues();
 
-	public void updateSnowItem(Context context, SnowItem item) {
-		SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
+            int id = 0;
+            if (item.id > 0) {
+                id = item.id;
+            } else {
+                id = getMaxSnowItemId(context);
+            }
 
-		try {
-			SQLiteDatabase db = dbHelper.getWritableDatabase();
-			ContentValues row = new ContentValues();
+            row.put("_id", id);
+            row.put("userInfo", item.userInfo);
+            row.put("address", item.address);
 
-			int id = 0;
-			if (item.id > 0) {
-				id = item.id;
-			} else {
-				id = getMaxSnowItemId(context);
-			}
+            db.insert(TABLE_SNOW, null, row);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        dbHelper.close();
+    }
 
-			row.put("_id", id);
-			row.put("userInfoId", item.userInfo);
-			row.put("address", item.address);
+    public void updateSnowItem(Context context, SnowItem item) {
+        SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
 
-			String strFilter = "_id = " + item.id;
-			db.update(TABLE_SNOW, row, strFilter, null);
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		dbHelper.close();
-	}
+        try {
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            ContentValues row = new ContentValues();
 
-	public void deleteSnowItem(Context context, SnowItem item) {
-		SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
+            int id = 0;
+            if (item.id > 0) {
+                id = item.id;
+            } else {
+                id = getMaxSnowItemId(context);
+            }
 
-		try {
-			SQLiteDatabase db = dbHelper.getWritableDatabase();
-			String strFilter = "_id = " + item.id;
-			
-			db.delete(TABLE_SNOW, strFilter, null);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		dbHelper.close();
-	}
+            row.put("_id", id);
+            row.put("userInfoId", item.userInfo);
+            row.put("address", item.address);
 
-	private int getMaxSnowItemId(Context context) {
-		int result = 0;
-		SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
-		try {
-			SQLiteDatabase db = dbHelper.getReadableDatabase();
-			Cursor cursor = db.rawQuery("SELECT MAX(_id) FROM " + TABLE_SNOW,
-					null);
+            String strFilter = "_id = " + item.id;
+            db.update(TABLE_SNOW, row, strFilter, null);
 
-			while (cursor.moveToNext()) {
-				result = cursor.getInt(0);
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		dbHelper.close();
-		result = result + 1;
-		
-		return result;
-	}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        dbHelper.close();
+    }
+
+    public void deleteSnowItem(Context context, SnowItem item) {
+        SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
+
+        try {
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+            String strFilter = "_id = " + item.id;
+
+            db.delete(TABLE_SNOW, strFilter, null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        dbHelper.close();
+    }
+
+    private int getMaxSnowItemId(Context context) {
+        int result = 0;
+        SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
+        try {
+            SQLiteDatabase db = dbHelper.getReadableDatabase();
+            Cursor cursor = db.rawQuery("SELECT MAX(_id) FROM " 
+                    + TABLE_SNOW, null);
+
+            while (cursor.moveToNext()) {
+                result = cursor.getInt(0);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        dbHelper.close();
+        result = result + 1;
+
+        return result;
+    }
 }
 </pre>
