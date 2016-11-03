@@ -97,3 +97,63 @@ ListView를 CardView 스타일로 보여주는 예제입니다.
         android:layout_width="match_parent"
         android:layout_height="match_parent"/&gt;
 </pre>
+
+<br>
+
+### 각 Item들을 출력하는 View
+
+<pre class="prettyprint" style="font-size:0.7em;">
+&lt;FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/layout_background"&gt;
+
+    &lt;LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/selector_card_background"
+        android:descendantFocusability="afterDescendants"&gt;
+
+        &lt;ImageView
+            android:src="@drawable/footprint"
+            android:layout_gravity="center_vertical"
+            android:layout_width="64dp"
+            android:layout_height="64dp" /&gt;
+
+        &lt;LinearLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"&gt;
+
+            &lt;TextView
+                android:id="@+id/tv_date"
+                android:textSize="14sp"
+                android:textColor="@color/darkgray"
+                android:text="2016-11-02 13:30:30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" /&gt;
+
+            &lt;TextView
+                android:id="@+id/tv_data"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="Beacon1 : 35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" /&gt;
+        &lt;/LinearLayout&gt;
+
+
+    &lt;/LinearLayout&gt;
+
+&lt;/FrameLayout&gt;
+</pre>
