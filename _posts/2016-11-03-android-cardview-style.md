@@ -12,7 +12,7 @@ ListView를 CardView 스타일로 보여주는 예제입니다.
 
 <br>
 
-## layer_card_background.xml 
+### layer_card_background.xml 
 
 <pre class="prettyprint" style="font-size:0.7em;">
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -39,7 +39,7 @@ ListView를 CardView 스타일로 보여주는 예제입니다.
 
 <br>
 
-## layer_card_background_selected.xml
+### layer_card_background_selected.xml
 
 <pre class="prettyprint" style="font-size:0.7em;">
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -66,7 +66,7 @@ ListView를 CardView 스타일로 보여주는 예제입니다.
 
 <br>
 
-## selector_card_background.xml
+### selector_card_background.xml
 
 <pre class="prettyprint" style="font-size:0.7em;">
 &lt;?xml version="1.0" encoding="utf-8"?&gt;
@@ -82,7 +82,7 @@ ListView를 CardView 스타일로 보여주는 예제입니다.
 
 <br>
 
-## ListView
+### ListView
 
 <pre class="prettyprint" style="font-size:0.7em;">
 &lt;ListView
