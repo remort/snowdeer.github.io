@@ -7,7 +7,7 @@ tag: [android, appintro]
 
 일반적인 AppIntro 화면은 대략 다음과 같은 형태를 하고 있습니다.
 
-![KenBurns](https://github.com/PaoloRotolo/AppIntro/raw/master/art/intro.png) 
+![image](https://github.com/PaoloRotolo/AppIntro/raw/master/art/intro.png) 
 
 많은 사람들이 사용하고 있는 오픈소스가 있습니다.
 [여기](https://github.com/PaoloRotolo/AppIntro)에서 확인할 수 있으며, 
