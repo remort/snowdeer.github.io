@@ -35,6 +35,6 @@ OSX에서의 화면 캡쳐는 참...;;;
 * <kbd>command</kbd> + <kbd>shift</kbd> + <kbd>4</kbd>
 
 화면에 십자가 커서가 나타나면 캡쳐하고 싶은 윈도우로 커서를 이동시킵니다.
-그리고 <kbd>space<kbd> 키를 누르면 됩니다.
+그리고 <kbd>space</kbd> 키를 누르면 됩니다.
 
 
