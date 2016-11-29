@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OSX Node.js 설치하기
+title: OSX에서 Node.js 설치하기
 category: Node.js
 tag: [osx, Node.js]
 ---
@@ -63,28 +63,29 @@ export NVM_DIR="/Users/snowdeer/.nvm"
 
 터미널에서
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 touch .bash_profile
-~~~
+</pre>
+
 를 입력합니다.
 
 그리고 'ls -a' 명령어를 통해 .bash_profile 파일이 잘 만들어졌는지 확인합니다.
 
 이후, 터미널에서
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 open -e .bash_profile
-~~~
+</pre>
 
 명령어를 이용해서 .bash_profile 파일을 에디터기에서 열도록 합시다.
 (GUI 에디터이기 때문에 겁먹을 필요 없습니다.)
 
 여기에 다음과 같이 nvm 설치시 나왔던 환경 변수 코드를 입력해줍니다.
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 export NVM_DIR="/Users/snowdeer/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-~~~
+</pre>
 
 ![image]({{ site.baseurl }}/assets/2016-11-15-osx-nodejs-install/2.png)
 
@@ -106,37 +107,37 @@ nvm에 대한 사용법은 GitHub의 nvm 페이지의 Usage 항목을 보시는�
 
 간단하게 설명드리면,
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 nvm install node
-~~~
+</pre>
 
 을 통해 Node.js를 설치할 수 있습니다.
 특정 버전의 설치를 원할 경우
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 nvm install v7.2.0
-~~~
+</pre>
 
 와 같이 설치할 수도 있으며, 안정적인 stable 버전의 설치를 원할 경우
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 nvm install stable
-~~~
+</pre>
 
 명령어를 내릴 수도 있습니다.
 설치할 수 있는 버전 리스트는
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 nvm ls-remote
-~~~
+</pre>
 
 명령어를 통해 확인할 수 있습니다.
 
 만약 여러 버전의 Node.js를 설치한 경우는
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 nvm use v4.2.6
-~~~
+</pre>
 
 명령어를 통해 해당 버전의 Node.js로 사용 선택할 수 있습니다.
 
