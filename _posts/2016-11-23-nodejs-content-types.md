@@ -1,49 +1,30 @@
 ---
 layout: post
-title: Node.js Event 처리
+title: Content Type 종류
 category: Node.js
-tag: [Node.js, event]
+tag: [Node.js, content types]
 ---
 
-Node.js에서 이벤트는 EventEmitter를 통해서 전달할 수 있습니다.
-EventEmitter를 상속받은 후, on()과 once(), emit() 메소드를 사용할 수 있습니다.
+Node.js 뿐 아니라, 일반적인 Content Type의 종류들입니다.
+Content Type에 설정할 수 있는 이 값들을 MIME(Multipurpose Internet Mail Extensions) 타입이라고 하며,
+다음과 같은 값들을 가질 수 있습니다.
 
-간단하게 다음과 같은 코드를 이용해서 테스트해보도록 하겠습니다.
+Content Type | Description
+------ | ------
+text/plain | 평범한 텍스트  
+text/html | HTML 문서  
+text/xml | XML 문서
+text/css | CSS 문서
+image/gif | GIF 이미지 파일
+image/jpeg | JPEG 이미지 파일
+image/png | PNG 이미지 파일
+video/mpeg | MPEG 비디오 파일
+video/quicktime | QuickTime 비디오 파일
+audio/mp3 | MP3 음악 파일
+application/msword | MS WORD 문서 파일
+application/pdf | PDF 문서 파일
+application/zip | ZIP 압축 파일
 
-먼저, 이벤트를 받을 객체입니다. "MyEventEmitter.js" 파일로 생성했습니다.
-
-<pre class="prettyprint" style="font-size:0.7em;">
-var util = require("util");
-var EventEmitter = require("events").EventEmitter;
-
-var MyEventEmitter = function () {
-    this.on("hello", function () {
-       console.log("MyEventEmitter : hello !!");
-    });
-}
-
-util.inherits(MyEventEmitter, EventEmitter);
-
-module.exports = MyEventEmitter;
-</pre>
-
-
-그리고 이벤트를 전송할 코드를 만들어보겠습니다. 저는 "EventEmitterCaller.js"로 만들었습니다.
-
-<pre class="prettyprint" style="font-size:0.7em;">
-var MyEventEmitter = require("./MyEventEmitter");
-
-var myEventEmitter = new MyEventEmitter();
-myEventEmitter.emit("hello");
-
-console.log("MyEventEmitter에 'hello' 이벤트를 전달했습니다.");
-</pre>
-
-<br>
-
-실행결과는 다음과 같습니다.
-
-<pre class="prettyprint" style="font-size:0.7em;">
-MyEventEmitter : hello !!
-MyEventEmitter에 'hello' 이벤트를 전달했습니다.
-</pre>
+여기에 예시로 든 값 외에도 무지하게 많은 종류의 값들이 있으며,
+MIME 타입에 대한 자세한 설명은 [여기](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)에서
+확인하실 수 있습니다.

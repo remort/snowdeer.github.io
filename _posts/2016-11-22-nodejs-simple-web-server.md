@@ -1,30 +1,83 @@
 ---
 layout: post
-title: Content Type 종류
+title: 간단한 웹 서버 생성하기
 category: Node.js
-tag: [Node.js, content types]
+tag: [Node.js, web server]
 ---
 
-Node.js 뿐 아니라, 일반적인 Content Type의 종류들입니다.
-Content Type에 설정할 수 있는 이 값들을 MIME(Multipurpose Internet Mail Extensions) 타입이라고 하며,
-다음과 같은 값들을 가질 수 있습니다.
+Node.js로 만드는 간단한 웹 서버입니다.
 
-Content Type | Description
------- | ------
-text/plain | 평범한 텍스트  
-text/html | HTML 문서  
-text/xml | XML 문서
-text/css | CSS 문서
-image/gif | GIF 이미지 파일
-image/jpeg | JPEG 이미지 파일
-image/png | PNG 이미지 파일
-video/mpeg | MPEG 비디오 파일
-video/quicktime | QuickTime 비디오 파일
-audio/mp3 | MP3 음악 파일
-application/msword | MS WORD 문서 파일
-application/pdf | PDF 문서 파일
-application/zip | ZIP 압축 파일
+웹 서버를 만들어 실행한 뒤, 클라이언트의 접속이나 요청으로 발생하는 이벤트는 다음과 같습니다.
 
-여기에 예시로 든 값 외에도 무지하게 많은 종류의 값들이 있으며,
-MIME 타입에 대한 자세한 설명은 [여기](https://www.w3.org/Protocols/rfc1341/4_Content-Type.html)에서
-확인하실 수 있습니다.
+* connection : 클라이언트가 접속할 때 발생합니다. IP 주소나 port를 알 수 있습니다.
+* request : 클라이언트의 request 입니다. response를 통해 클라이언트에게 응답할 수 있습니다.
+
+
+<pre class="prettyprint" style="font-size:0.7em;">
+var http = require("http");
+
+var server = http.createServer();
+var port = 3000;
+
+server.listen(port, function() {
+    console.log("Simple web server is started... (port : %d)", port);
+});
+
+server.on("connection", function(socket) {
+    var addr = socket.address();
+    console.log("Client(%s, %d) is connected.", addr.address, addr.port);
+});
+
+server.on("request", function(request, response) {
+    console.log("Client is requested");
+    console.dir("request");
+
+    response.writeHead(200, {"Content-Type" : "text/plain"});
+    response.end("Hello, SnowDeer's Node.js\n");
+});
+
+server.on("close", function() {
+    console.log("Simple web server is closed.");
+});
+</pre>
+
+<br>
+
+그럼 여기에, Response에 이미지를 실어보내는 코드도 작성해 보겠습니다.
+
+<pre class="prettyprint" style="font-size:0.7em;">
+var http = require("http");
+var fs = require("fs");
+
+var server = http.createServer();
+var port = 3000;
+
+server.listen(port, function() {
+    console.log("Simple web server is started... (port : %d)", port);
+});
+
+server.on("connection", function(socket) {
+    var addr = socket.address();
+    console.log("Client(%s, %d) is connected.", addr.address, addr.port);
+});
+
+server.on("request", function(request, response) {
+    console.log("Client is requested");
+    console.dir("request");
+
+    var filename = "image.png";
+    fs.readFile(filename, function (error, data) {
+        response.writeHead(200, {"Content-Type" : "image/png"});
+        response.write(data);
+        response.end();
+    });
+});
+
+server.on("close", function() {
+    console.log("Simple web server is closed.");
+});
+</pre>
+
+웹브라우저에서 접속하면 다음과 같은 화면이 출력됩니다.
+
+![image -fullwidth]({{ site.baseurl }}/assets/2016-11-22-nodejs-simple-web-server/1.png)
