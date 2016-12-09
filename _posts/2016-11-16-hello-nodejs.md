@@ -2,7 +2,7 @@
 layout: post
 title: Hello. Node.js
 category: Node.js
-tag: [osx, Node.js]
+tag: [Node.js]
 ---
 
 앞서 설치한 Node.js로 간단한 프로그램을 만들어보도록 하겠습니다.
@@ -11,14 +11,14 @@ tag: [osx, Node.js]
 그리고는 다음과 같은 코드를 작성합니다.
 
 <pre class="prettyprint" style="font-size:0.7em;">
-var http = require('http');
+var http = require("http");
 
 http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type' : 'text/plain'});
+    res.writeHead(200, {"Content-Type" : "text/plain"});
     res.end("Hello, SnowDeer's Node.js\n");
-}).listen(3000, '127.0.0.1');
+}).listen(3000, "127.0.0.1");
 
-console.log('Server is Running...');
+console.log("Server is Running...");
 </pre>
 
 자, 이제 실행을 해봅시다. 해당 js 파일이 있는 위치에서 
