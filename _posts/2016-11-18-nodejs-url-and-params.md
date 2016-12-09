@@ -31,7 +31,7 @@ console.log("ei : " + params.ei);
 실행 결과는 다음과 같습니다.
 
 
-<pre class="prettyprint" style="font-size:0.7em;">
+~~~
 # 원본 URL : https://www.google.co.kr/?gfe_rd=cr&ei=LixKWJnOGtTC8geL06zgBQ#q=snowdeer+web+scraper
 # 현재 URL 정보
 Url {
@@ -53,4 +53,4 @@ Url {
 { gfe_rd: 'cr', ei: 'LixKWJnOGtTC8geL06zgBQ' }
 gfe_rd : cr
 ei : LixKWJnOGtTC8geL06zgBQ
-</pre>
+~~~
