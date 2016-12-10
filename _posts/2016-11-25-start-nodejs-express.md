@@ -5,7 +5,7 @@ category: Node.js
 tag: [Node.js, express, osx]
 ---
 
-OSX에서 Node.js Express 설치는 간단합니다.
+OSX에서 Node.js Express 설치는 간단합니다.  
 이미 [OSX에 Node.js는 설치](http://snowdeer.github.io/node.js/2016/11/15/osx-nodejs-install.html)되어 있다는
 가정하에 터미널에서 다음과 같이 입력합니다.
 
