@@ -18,7 +18,7 @@ Android Studio에서는 gradle에 해당 내용을 세팅해야 합니다.
 app의 build.gradle 파일을 엽니다. 
 그리고 아래와 같이
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 signingConfigs{
         releaseWithSignedKey {
             storeFile file("SampleKeyStore.jks")
@@ -27,12 +27,12 @@ signingConfigs{
             keyPassword "password2"
         }
     }
-~~~
+</pre>
 
 항목을 만들어줍니다.
 그리고, buildType에 아래와 같이
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 buildTypes {
         release {
             minifyEnabled false
@@ -40,11 +40,11 @@ buildTypes {
             signingConfig signingConfigs.releaseWithSignedKey
         }
     }
-~~~
+</pre>
 
 와 같이 설정해주면 됩니다. Debug 모드에서도 Signed Key를 참조하게 하려면?
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 buildTypes {
         release {
             minifyEnabled false
@@ -55,7 +55,7 @@ buildTypes {
             signingConfig signingConfigs.releaseWithSignedKey
         }
     }
-~~~
+</pre>
 
 와 같이 추가로 작성을 해주면 됩니다.
 
@@ -64,16 +64,16 @@ buildTypes {
 
 이 때는 Project의 gradle.properties에
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 SIGNED_STORE_FILE=SampleKeyStore.jks
 SIGNED_STORE_PASSWORD=password1
 SIGNED_KEY_ALIAS=sample
 SIGNED_KEY_PASSWORD=password2
-~~~
+</pre>
 
 와 같이 작성하고, build.gradle에는
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 signingConfigs{
         releaseWithSignedKey {
             storeFile file(SIGNED_STORE_FILE)
@@ -82,7 +82,7 @@ signingConfigs{
             keyPassword SIGNED_KEY_PASSWORD
         }
     }
-~~~
+</pre>
 
 와 같이 변경해줍니다.
 
@@ -91,7 +91,7 @@ signingConfigs{
 
 참고로, 전체 build.gradle 파일 첨부합니다.
 
-~~~
+<pre class="prettyprint" style="font-size:0.7em;">
 apply plugin: 'com.android.application'
 
 android {
@@ -139,4 +139,4 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
-~~~
+</pre>
