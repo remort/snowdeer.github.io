@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Awareness API 사용 코드 예제
+title: Google Awareness API 코드 예제
 category: Android
 tag: [android, google, awareness]
 ---
