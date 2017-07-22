@@ -1,0 +1,60 @@
+# Site Info
+title: Code Holic
+tagline: 'SnowDeer''s Code Holic'
+description: '프로그래밍을 좋아하는 개발자 SnowDeer의 블로그입니다.'
+baseurl: ""
+url: http://snowdeer.github.io
+logo: '/public/logo.png'
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0
+
+# About/contact
+author:
+  name: snowdeer
+  description: 프로그래밍을 좋아하는 초보 프로그래머입니다.
+  #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  contact:
+    #linkedin:  https://www.linkedin.com/in/snowdeer
+    github:    https://github.com/snowdeer
+    facebook:  https://www.facebook.com/snowdeer.seo
+    #twitter:   https://twitter.com/snowdeer
+    email:     mailto:snowdeer0314@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/blog/'
+  Blog:
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { 알고리즘: '/blog/categories/#알고리즘' }
+    #- { Tags: '/blog/tags/' }
+  About:
+    - '/about/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/my_family.jpg
+  caption: My Family
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-74926912-1' # leave blank if you don't want google analytics
+disqus_short_name: 'snowdeer' # leave blank if you don't want disqus
