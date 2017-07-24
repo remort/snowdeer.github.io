@@ -2,6 +2,8 @@
 layout: post
 title: Markdown 문법
 category: 블로그
+permalink: /blog/:year/:month/:day/:title/
+
 tag: [markdown, syntax]
 ---
 

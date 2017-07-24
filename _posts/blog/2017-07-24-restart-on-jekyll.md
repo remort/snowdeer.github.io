@@ -2,6 +2,8 @@
 layout: post
 title: GitHub Pages에서 다시 시작
 category: 블로그
+permalink: /blog/:year/:month/:day/:title/
+
 tag: [jekyll]
 ---
 

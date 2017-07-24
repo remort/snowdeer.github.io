@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 라즈베리파이 블루투스 페어링하기
+title: 블루투스 페어링하기
 category: 라즈베리파이
-tag: [라즈베리파이]
+permalink: /raspberry/:year/:month/:day/:title/
+
+tag: [라즈베리파이, 블루투스]
 ---
 
 라즈베리 파이(Raspberry PI)와 블루투스 기기간의 페어링하는 방법입니다. 터미널 명령어를 이용한 블루투스 페이렁 방법을 소개합니다.

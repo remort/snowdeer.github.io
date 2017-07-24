@@ -2,6 +2,8 @@
 layout: post
 title: Markdown Test
 category: 블로그
+permalink: /blog/:year/:month/:day/:title/
+
 tag: [markdown]
 ---
 
