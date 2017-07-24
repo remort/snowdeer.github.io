@@ -37,11 +37,14 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - '/blog/'
+    - '/blog/categories/'
   Blog:
     - '/blog/'
-    - { Categories: '/blog/categories/' }
-    - { 알고리즘: '/blog/categories/#알고리즘' }
+    - { 전체 목록: '/blog/categories/' }
+    - { 블로그: '/blog/categories/#Blog' }
+    - { 안드로이드: '/blog/categories/#Android' }
+    - { C++: '/blog/categories/#C++' }
+    - { Linux: '/blog/categories/#Linux' }
     #- { Tags: '/blog/tags/' }
   About:
     - '/about/'

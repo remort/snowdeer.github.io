@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Markdown Test
-category: Jekyll
+category: Blog
 tag: [markdown]
 ---
 
-안녕하세요. 이 페이지는 Markdown을 테스트하기 위한 페이지입니다.  
-이 글은 각종 테마나 CSS 등에 따라 각 MarkDown이 어떻게 표현되는지를 확인하기 
-위해서 작성되었습니다.
+안녕하세요. 이 페이지는 Markdown이 화면에 어떻게 렌더링되는지 확인하기 위해서
+작성한 테스트 페이지입니다.
 
 <br>
 
@@ -85,7 +84,7 @@ Jekyll
 ~~~
 int main(int argc, char** argv) {
     printf("Hello~ Welcome to SnowDeer's Blog.\n");
-  
+
     return 0;
 }
 ~~~
@@ -95,7 +94,7 @@ int main(int argc, char** argv) {
 {% highlight c %}
 int main(int argc, char** argv) {
     printf("Hello~ Welcome to SnowDeer's Blog.\n");
-  
+
     return 0;
 }
 {% endhighlight %}
@@ -106,7 +105,7 @@ int main(int argc, char** argv) {
 <pre class="prettyprint">
 int main(int argc, char** argv) {
     printf("Hello~ Welcome to SnowDeer's Blog.\n");
-  
+
     return 0;
 }
 </pre>
@@ -124,18 +123,18 @@ and [basic links](http://snowdeer.github.io).
 
 #### message
 
-<p class="message">	
+<p class="message">
 안녕하세요.
 </p>
 
 #### lead
 
-<p class="lead">	
+<p class="lead">
 안녕하세요.
 </p>
 
 #### container
 
-<p class="container">	
+<p class="container">
 안녕하세요.
 </p>
