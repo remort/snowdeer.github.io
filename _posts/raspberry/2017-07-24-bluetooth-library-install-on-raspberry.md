@@ -27,7 +27,7 @@ sudo apt-get install build-essential libbluetooth-dev
 sudo nano /etc/systemd/system/dbus-org.bluez.service
 ~~~
 
-nano를 이용해서 dbus-org.bluez.service 파일을 열고, 그 안에
+nano를 이용해서 `dbus-org.bluez.service` 파일을 열고, 그 안에
 
 ~~~
 ExecStart=/usr/lib/bluetooth/bluetoothd
@@ -39,14 +39,14 @@ ExecStart=/usr/lib/bluetooth/bluetoothd
 ExecStart=/usr/lib/bluetooth/bluetoothd --compat
 ~~~
 
-와 같이 '--compat' 옵션을 붙여줍니다.
+와 같이 `--compat` 옵션을 붙여줍니다.
 
 
 <br>
 
 ## .bashrc 편집
 
-그 다음 현재 라즈베리파이의 홈 폴더의 '.bashrc' 파일을 열어서
+그 다음 현재 라즈베리파이의 홈 폴더의 `.bashrc` 파일을 열어서
 
 ~~~
 nano /home/pi/.bashrc

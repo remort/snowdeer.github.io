@@ -100,7 +100,7 @@ Project > Properties > C/C++ General > Preprocessor Include Paths, Macros etc에
 
 ![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/06.png)
 
-그 이후 C/C++ Index Rebuild 를 수행해주면 Eclipse IDE가 C++11 문법을 정상적으로 인식하기 시작합니다.
+그 이후 `C/C++ Index Rebuild` 를 수행해주면 Eclipse IDE가 C++11 문법을 정상적으로 인식하기 시작합니다.
 
 <br>
 

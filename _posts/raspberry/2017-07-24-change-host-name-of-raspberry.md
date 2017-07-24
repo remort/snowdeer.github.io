@@ -18,8 +18,8 @@ tag: [라즈베리파이, 블루투스]
 sudo nano /etc/hostname
 ~~~
 
-기본 이름으로 'raspberrypi'가 입력되어 있을 텐데, 원하는 이름으로 변경합니다.
-저 같은 경우는 'snowdeer-raspberry'로 변경했습니다.
+기본 이름으로 `raspberrypi`가 입력되어 있을 텐데, 원하는 이름으로 변경합니다.
+저 같은 경우는 `snowdeer-raspberry`로 변경했습니다.
 
 <br>
 
@@ -31,5 +31,5 @@ DNS 매핑을 관리하는 파일입니다.
 sudo nano /etc/hosts
 ~~~
 
-'127.0.0.1 raspberrypi'로 되어 있는 부분을 '127.0.0.1 snowdeer-raspberry'로
+`127.0.0.1 raspberrypi`로 되어 있는 부분을 `127.0.0.1 snowdeer-raspberry`로
 변경하시면 됩니다.
