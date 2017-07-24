@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Test
-category: Blog
+category: 블로그
 tag: [markdown]
 ---
 

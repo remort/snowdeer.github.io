@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub Pages에서 다시 시작
-category: Blog
+category: 블로그
 tag: [jekyll]
 ---
 

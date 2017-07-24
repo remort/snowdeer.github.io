@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown 문법
-category: Blog
+category: 블로그
 tag: [markdown, syntax]
 ---
 

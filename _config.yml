@@ -3,7 +3,7 @@ title: Code Holic
 tagline: 'SnowDeer''s Code Holic'
 description: '프로그래밍을 좋아하는 개발자 SnowDeer의 블로그입니다.'
 baseurl: ""
-url: http://snowdeer.github.io
+url: https://snowdeer.github.io
 logo: '/public/logo.png'
 
 # Site configurations
@@ -37,14 +37,16 @@ author:
 # Navigation (2nd level links supported)
 nav:
   Home:
-    - '/blog/categories/'
-  Blog:
     - '/blog/'
-    - { 전체 목록: '/blog/categories/' }
-    - { 블로그: '/blog/categories/#Blog' }
-    - { 안드로이드: '/blog/categories/#Android' }
+  Categories:
+    - '/blog/categories/'
+    # - { Categories All: '/blog/categories/' }
+    - { 블로그: '/blog/categories/#블로그' }
+    - { Android: '/blog/categories/#Android' }
     - { C++: '/blog/categories/#C++' }
     - { Linux: '/blog/categories/#Linux' }
+    - { BlockChain: '/blog/categories/#BlockChain' }
+    - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
     #- { Tags: '/blog/tags/' }
   About:
     - '/about/'
