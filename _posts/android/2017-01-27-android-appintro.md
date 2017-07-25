@@ -2,7 +2,7 @@
 layout: post
 title: App Intro(가이드 도움말) 화면 꾸미기
 category: Android
-tag: [Android, UX]
+tag: [Android, UX, Open Source]
 ---
 
 일반적인 AppIntro 화면은 대략 다음과 같은 형태를 하고 있습니다.

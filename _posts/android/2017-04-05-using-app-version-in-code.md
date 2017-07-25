@@ -2,7 +2,7 @@
 layout: post
 title: 현재 Application Version을 코드에서 사용하기
 category: Android
-tag: [Android]
+tag: [Android, Android Studio]
 ---
 
 안드로이드 App을 개발할 때 App Version을 소스 코드내에서 활용하고 싶을 때가 있습니다.

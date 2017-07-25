@@ -2,7 +2,7 @@
 layout: post
 title: Butter Knife 라이브러리 사용법
 category: Android
-tag: [Android, Open Source]
+tag: [Android, UX, Open Source]
 ---
 
 안드로이드 GUI 개발을 하다보면, 가장 귀찮은 것 중 하나가 화면에 컴포넌트를 하나

@@ -2,7 +2,7 @@
 layout: post
 title: Ctrl + C 키 이벤트 가로채기
 category: C++
-tag: [C++11]
+tag: [C++11, Event]
 ---
 
 Linux에서 작동하는 코드입니다. (Cygwin에서 빌드하면 윈도우에서도 작동합니다.)

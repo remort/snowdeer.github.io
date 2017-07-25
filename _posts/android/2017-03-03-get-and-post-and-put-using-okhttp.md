@@ -2,7 +2,7 @@
 layout: post
 title: OkHttp를 활용한 GET, POST
 category: Android
-tag: [Android, Http]
+tag: [Android, Http, Open Source]
 ---
 
 [OkHttp](http://square.github.io/okhttp/)는 HTTP 및 HTTP/2 통신을 보다 쉽게 할 수 있도록

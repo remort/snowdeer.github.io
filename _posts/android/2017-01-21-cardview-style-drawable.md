@@ -2,7 +2,7 @@
 layout: post
 title: CardView 스타일 Drawable
 category: Android
-tag: [Android]
+tag: [Android, UX]
 ---
 
 안드로이드 L(롤리팝) 부터 [CardView](https://developer.android.com/training/material/lists-cards.html?hl=ko)라는

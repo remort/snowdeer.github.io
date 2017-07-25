@@ -2,7 +2,7 @@
 layout: post
 title: URL 주소를 이용하여 ImageView에 이미지 채우기 (Glide 활용)
 category: Android
-tag: [Android, UX]
+tag: [Android, UX, Open Source]
 ---
 
 ## URL 주소를 이용한 이미지 로딩

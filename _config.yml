@@ -45,6 +45,8 @@ nav:
     - { 블로그: '/blog/categories/#블로그' }
     - { Android: '/blog/categories/#Android' }
     - { C++: '/blog/categories/#C++' }
+    - { 알고리즘: '/blog/categories/#알고리즘' }
+    - { Tips: '/blog/categories/#Tips' }
     - { 디자인패턴: '/blog/categories/#디자인패턴' }
     - { Linux: '/blog/categories/#Linux' }
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }

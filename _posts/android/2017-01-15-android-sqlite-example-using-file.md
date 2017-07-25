@@ -1,392 +1,270 @@
 ---
 layout: post
-title: SQLite 사용 예제
+title: SQLite 사용 예제(별도 DB 파일 사용할 경우)
 category: Android
 tag: [Android, SQL]
 ---
 
-안드로이드 SQLite 예제 코드입니다. 직접 코드를 이용해서 Database를 생성할 수도 있고,
-[SQLiteManager](https://addons.mozilla.org/ko/firefox/addon/sqlite-manager/)와
-같은 외부 Tool을 이용해서 Database를 생성할 수도 있습니다.
+이번에는 [SQLiteManager](https://addons.mozilla.org/ko/firefox/addon/sqlite-manager/)와
+같은 외부 Tool을 이용해서 미리 만들어 놓은 DB 파일과 연동할 때 사용하는 예제코드를 포스팅 해봅니다.
 
-저는 외부 Tool을 사용하는 것을 선호하긴 하지만(나중에 수정이나 유지 보수가 쉬워서),
-장단점이 있는 것 같습니다. 이번 포스팅에서는 코드를 이용해서 Database를 사용하는 예제를 올려보도록 하겠습니다.
+저는 외부 Tool을 이용하는 것을 선호합니다. GUI 상에서 Database의 수정이나 관리를 쉽게
+할 수 있고, 각종 SQL 스크립트도 쉽게 사용할 수 있기 때문입니다. 또한 각 Table에 입력된
+데이터들을 눈으로 확인하기도 쉬워서 SQLiteManager를 주로 사용합니다.
 
-안드로이드에서는 SQLite를 좀 더 사용하기 쉽도록 Helper 클래스를 제공하고 있습니다.
-Helper 클래스를 이용하여 Database를 생성하거나 변경, 업그레이드 등을 쉽게 할 수 있습니다.
-다음과 같은 코드를 이용해서 Database를 생성하고, Table들을 생성할 수 있습니다.
+안드로이드에서 제공하는 SQLite Helper 클래스를 조금 수정하여, DB 파일과 연동할 수
+있도록 해보겠습니다.
 
 <br>
+## SnowFileDBOpenHelper.java
+<pre class="prettyprint">import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
-## SnowSQLiteOpenHelper.java
-
-<pre class="prettyprint">import android.content.Context;
+import android.content.Context;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class SnowSQLiteOpenHelper extends SQLiteOpenHelper {
+public class SnowFileDBOpenHelper extends SQLiteOpenHelper {
 
-  public static final String TABLE_MY_WALLET = "TABLE_MY_WALLET";
-  public static final String TABLE_BEACON_HISTORY = "TABLE_BEACON_HISTORY";
+  private SQLiteDatabase sqlite;
 
-  public SnowSQLiteOpenHelper(Context context) {
-    super(context, "snowdeer.db", null, 1);
+  private final Context mContext;
+  private final String mFolderPath;
+  private final static String mDBFileName = "snowdeer_db.sqlite";
+
+  public SnowFileDBOpenHelper(Context context) {
+    super(context, mDBFileName, null, 1);
+
+    mContext = context;
+    // Eclipse
+    mFolderPath = Environment.getExternalStoragePublicDirectory(null)
+        + "/Android/data/" + context.getPackageName() + "/";
+
+    // Android Studio
+    mFolderPath = mContext.getExternalFilesDir(null) + "/";
+
   }
 
+  @Override
   public void onCreate(SQLiteDatabase db) {
-    db.execSQL("CREATE TABLE " + TABLE_MY_WALLET
-        + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-        "privateKey TEXT, publicKey TEXT, address TEXT);");
-    db.execSQL("CREATE TABLE " + TABLE_BEACON_HISTORY
-        + "(_id INTEGER PRIMARY KEY AUTOINCREMENT," +
-        "inputTime TEXT, beaconId TEXT, rssi INTEGER);");
   }
 
+  @Override
   public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-    db.execSQL("DROP TABLE IF EXISTS " + TABLE_MY_WALLET);
-    db.execSQL("DROP TABLE IF EXISTS " + TABLE_BEACON_HISTORY);
+  }
 
-    onCreate(db);
+  public void checkDatabase() {
+    try {
+      checkFolderExist();
+      checkFileExist();
+    } catch(IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+  private void checkFolderExist() throws IOException {
+    File targetFolder = new File(mFolderPath);
+    if(targetFolder.exists() == false) {
+      targetFolder.mkdirs();
+    }
+  }
+
+  private void checkFileExist() throws IOException {
+    File targetFile = new File(mFolderPath + mDBFileName);
+    if(targetFile.exists() == false) {
+      copyDatabase();
+    }
+  }
+
+  private void copyDatabase() throws IOException {
+    InputStream inputStream = mContext.getAssets().open(mDBFileName);
+
+    String outFileName = mFolderPath + mDBFileName;
+    OutputStream outputStream = new FileOutputStream(outFileName);
+
+    byte[] buffer = new byte[1024];
+    int length;
+
+    while( (length = inputStream.read(buffer)) &amp; gt;
+    0){
+      outputStream.write(buffer, 0, length);
+    }
+
+    outputStream.flush();
+    outputStream.close();
+    inputStream.close();
+  }
+
+  public void openDataBase() throws SQLException {
+    String myPath = mFolderPath + mDBFileName;
+    sqlite = SQLiteDatabase.openDatabase(myPath, null,
+        SQLiteDatabase.NO_LOCALIZED_COLLATORS);
+  }
+
+  @Override
+  public synchronized void close() {
+    if(sqlite != null) {
+      sqlite.close();
+    }
+
+    super.close();
+  }
+
+  @Override
+  public SQLiteDatabase getReadableDatabase() {
+    checkDatabase();
+    openDataBase();
+
+    return sqlite;
+  }
+
+  @Override
+  public SQLiteDatabase getWritableDatabase() {
+    checkDatabase();
+    openDataBase();
+
+    return sqlite;
   }
 }
 </pre>
 
 <br>
+## SnowFileDBQueryManager.java
 
-그리고 SQL의 CRUD(Create, Retrieve, Update, Delete) 기능을 수행하는 Manager
-클래스를 하나 추가합니다. 테이블(Table) 별로 따로 두는 것이 더 바람직하지만, 
-여기서는 편의를 위해 하나의 클래스에 모두 모아놓았습니다.
-(Database 규모에 따라 모두 모아놓는 것이 편리할 때도 있습니다.)
-
-<br>
-
-## SnowDBManager.java
-
-<pre class="prettyprint">import android.content.ContentValues;
+<pre class="prettyprint">import java.util.ArrayList;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.lnc.prototype.data.BeaconLog;
-import com.lnc.prototype.data.Wallet;
+public class SnowFileDBQueryManager {
 
-import java.util.ArrayList;
+  private static final String TABLE_SNOW = "TABLE_SNOW";
 
-public class SnowDBManager {
+  private static SnowFileDBQueryManager mInstance
+      = new SnowFileDBQueryManager();
 
-  private static final SnowDBManager mInstance = new SnowDBManager();
+  private SnowFileDBQueryManager() {
+  }
 
-  private SnowDBManager() {}
-
-  public static SnowDBManager getInstance() {
+  public static SnowFileDBQueryManager getInstance() {
     return mInstance;
   }
 
-  public ArrayList&lt;Wallet&gt; getWalletList(Context context) {
-    ArrayList&lt;Wallet&gt; resultList = new ArrayList&lt;&gt;();
+  public ArrayList getSnowItemList(Context context) {
+    ArrayList resultList = new ArrayList();
 
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
+    SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
     try {
+      String query = "SELECT _id, userInfo, address FROM "
+          + TABLE_SNOW;
 
       SQLiteDatabase db = dbHelper.getReadableDatabase();
-      Cursor cursor = db.rawQuery(
-          "SELECT _id, privateKey, publicKey, address FROM "
-              + SnowSQLiteOpenHelper.TABLE_MY_WALLET,
-          null);
+      Cursor cursor = db.rawQuery(query, null);
 
       while(cursor.moveToNext()) {
-        int id = cursor.getInt(0);
-        String privateKey = cursor.getString(1);
-        String publicKey = cursor.getString(2);
-        String address = cursor.getString(3);
+        SnowItem item = new SnowItem(cursor.getInt(0),
+            cursor.getString(1),
+            cursor.getString(2));
 
-        Wallet wallet = new Wallet(id, privateKey, publicKey, address);
-        resultList.add(wallet);
+        resultList.add(item);
       }
-      cursor.close();
     } catch(Exception e) {
       e.printStackTrace();
     }
 
     dbHelper.close();
-
     return resultList;
   }
 
-  public void addWallet(Context context, Wallet item) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
+  public void addSnowItem(Context context, SnowItem item) {
+    SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
 
     try {
       SQLiteDatabase db = dbHelper.getWritableDatabase();
-
       ContentValues row = new ContentValues();
 
-      row.put("privateKey", item.privateKey);
-      row.put("publicKey", item.publicKey);
+      int id = 0;
+      if(item.id &gt; 0) {
+        id = item.id;
+      } else {
+        id = getMaxSnowItemId(context);
+      }
+
+      row.put("_id", id);
+      row.put("userInfo", item.userInfo);
       row.put("address", item.address);
 
-      db.insert(SnowSQLiteOpenHelper.TABLE_MY_WALLET, null, row);
-
-      db.close();
+      db.insert(TABLE_SNOW, null, row);
     } catch(Exception e) {
       e.printStackTrace();
     }
     dbHelper.close();
   }
 
-  public void updateWallet(Context context, Wallet item) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
+  public void updateSnowItem(Context context, SnowItem item) {
+    SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
 
     try {
       SQLiteDatabase db = dbHelper.getWritableDatabase();
-      String filter = "_id = " + item.id;
       ContentValues row = new ContentValues();
 
-      row.put("privateKey", item.privateKey);
-      row.put("publicKey", item.publicKey);
+      int id = 0;
+      if(item.id &gt; 0) {
+        id = item.id;
+      } else {
+        id = getMaxSnowItemId(context);
+      }
+
+      row.put("_id", id);
+      row.put("userInfoId", item.userInfo);
       row.put("address", item.address);
 
-      db.update(SnowSQLiteOpenHelper.TABLE_MY_WALLET, row, filter, null);
-      db.close();
+      String strFilter = "_id = " + item.id;
+      db.update(TABLE_SNOW, row, strFilter, null);
+
     } catch(Exception e) {
       e.printStackTrace();
     }
     dbHelper.close();
   }
 
-  public void deleteWallet(Context context, Wallet item) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
+  public void deleteSnowItem(Context context, SnowItem item) {
+    SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
 
     try {
       SQLiteDatabase db = dbHelper.getWritableDatabase();
-      String filter = "_id = " + item.id;
+      String strFilter = "_id = " + item.id;
 
-      db.delete(SnowSQLiteOpenHelper.TABLE_MY_WALLET, filter, null);
-      db.close();
+      db.delete(TABLE_SNOW, strFilter, null);
     } catch(Exception e) {
       e.printStackTrace();
     }
     dbHelper.close();
   }
 
-  public void clearWallet(Context context) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
-
+  private int getMaxSnowItemId(Context context) {
+    int result = 0;
+    SnowFileDBOpenHelper dbHelper = new SnowFileDBOpenHelper(context);
     try {
-      SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-      db.delete(SnowSQLiteOpenHelper.TABLE_MY_WALLET, "", null);
-      db.close();
-    } catch(Exception e) {
-      e.printStackTrace();
-    }
-    dbHelper.close();
-  }
-
-  public ArrayList&lt;BeaconLog&gt; getBeaconLogList(Context context) {
-    ArrayList&lt;BeaconLog&gt; resultList = new ArrayList&lt;&gt;();
-
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
-    try {
-
       SQLiteDatabase db = dbHelper.getReadableDatabase();
-      Cursor cursor = db.rawQuery(
-          "SELECT _id, inputTime, beaconId, rssi FROM "
-              + SnowSQLiteOpenHelper.TABLE_BEACON_HISTORY,
-          null);
+      Cursor cursor = db.rawQuery("SELECT MAX(_id) FROM "
+          + TABLE_SNOW, null);
 
       while(cursor.moveToNext()) {
-        int id = cursor.getInt(0);
-        String inputTime = cursor.getString(1);
-        String beaconId = cursor.getString(2);
-        int rssi = cursor.getInt(3);
-
-        BeaconLog beaconLog = new BeaconLog(id, inputTime, beaconId, rssi);
-        resultList.add(beaconLog);
+        result = cursor.getInt(0);
       }
-      cursor.close();
     } catch(Exception e) {
       e.printStackTrace();
     }
 
     dbHelper.close();
+    result = result + 1;
 
-    return resultList;
-  }
-
-  public void addBeaconLog(Context context, BeaconLog item) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
-
-    try {
-      SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-      ContentValues row = new ContentValues();
-
-      row.put("inputTime", item.inputTime);
-      row.put("beaconId", item.beaconId);
-      row.put("rssi", item.rssi);
-
-      db.insert(SnowSQLiteOpenHelper.TABLE_BEACON_HISTORY, null, row);
-
-      db.close();
-    } catch(Exception e) {
-      e.printStackTrace();
-    }
-    dbHelper.close();
-  }
-
-  public void updateBeaconLog(Context context, BeaconLog item) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
-
-    try {
-      SQLiteDatabase db = dbHelper.getWritableDatabase();
-      String filter = "_id = " + item.id;
-      ContentValues row = new ContentValues();
-
-      row.put("inputTime", item.inputTime);
-      row.put("beaconId", item.beaconId);
-      row.put("rssi", item.rssi);
-
-      db.update(SnowSQLiteOpenHelper.TABLE_BEACON_HISTORY, row, filter, null);
-      db.close();
-    } catch(Exception e) {
-      e.printStackTrace();
-    }
-    dbHelper.close();
-  }
-
-  public void deleteBeaconLog(Context context, BeaconLog item) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
-
-    try {
-      SQLiteDatabase db = dbHelper.getWritableDatabase();
-      String filter = "_id = " + item.id;
-
-      db.delete(SnowSQLiteOpenHelper.TABLE_BEACON_HISTORY, filter, null);
-      db.close();
-    } catch(Exception e) {
-      e.printStackTrace();
-    }
-    dbHelper.close();
-  }
-
-  public void clearBeaconLog(Context context) {
-    SnowSQLiteOpenHelper dbHelper = new SnowSQLiteOpenHelper(context);
-
-    try {
-      SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-      db.delete(SnowSQLiteOpenHelper.TABLE_BEACON_HISTORY, "", null);
-      db.close();
-    } catch(Exception e) {
-      e.printStackTrace();
-    }
-    dbHelper.close();
-  }
-}
-</pre>
-
-<br>
-
-그리고 테스트는 다음과 같은 코드를 이용해서 간단하게 해볼 수 있습니다.
-
-## 사용 예제
-<pre class="prettyprint">
-public class DatabaseTestFragment extends Fragment {
-
-  private static final String TAG = "snowdeer";
-  private TextView mLogView;
-  private StringBuilder mLogBuilder = new StringBuilder();
-  private Handler mHandler = new Handler();
-
-  @Override
-  public View onCreateView(LayoutInflater inflater, ViewGroup container,
-      Bundle savedInstanceState) {
-    View view = inflater.inflate(R.layout.fragment_database_test,
-        container, false);
-
-    view.findViewById(R.id.btn_get).setOnClickListener(mOnClickListener);
-    view.findViewById(R.id.btn_add).setOnClickListener(mOnClickListener);
-    view.findViewById(R.id.btn_update).setOnClickListener(mOnClickListener);
-    view.findViewById(R.id.btn_delete).setOnClickListener(mOnClickListener);
-    view.findViewById(R.id.btn_clear).setOnClickListener(mOnClickListener);
-
-    view.findViewById(R.id.btn_clear_log).setOnClickListener(mOnClickListener);
-
-    mLogView = (TextView) view.findViewById(R.id.log);
-    mLogBuilder.setLength(0);
-
-    log("RPC Test Screen");
-
-    return view;
-  }
-
-  private void log(String message) {
-    mLogBuilder.append("\n");
-    mLogBuilder.append(message);
-    mHandler.post(new Runnable() {
-      @Override
-      public void run() {
-        if(mLogView != null) {
-          mLogView.setText(mLogBuilder.toString());
-        }
-      }
-    });
-    Log.i(TAG, "[snowdeer] " + message);
-  }
-
-  private View.OnClickListener mOnClickListener = new View.OnClickListener() {
-
-    @Override
-    public void onClick(View view) {
-      switch(view.getId()) {
-        case R.id.btn_get:
-          getBeaconList();
-          break;
-
-        case R.id.btn_add:
-          addBeaconLog();
-          break;
-
-        case R.id.btn_update:
-          break;
-
-        case R.id.btn_delete:
-          break;
-
-        case R.id.btn_clear:
-          clearBeaconLog();
-          break;
-
-        case R.id.btn_clear_log:
-          clearLog();
-          break;
-      }
-    }
-  };
-
-  private void clearLog() {
-    mLogBuilder.setLength(0);
-    mLogView.setText("");
-  }
-
-  private void addBeaconLog() {
-    BeaconLog beaconLog = new BeaconLog("2016-10-28 17:50", "BeaconId", 150);
-    LncDBManager.getInstance().addBeaconLog(getActivity(), beaconLog);
-  }
-
-  private void getBeaconList() {
-    ArrayList&lt;BeaconLog&gt; list = LncDBManager.getInstance()
-        .getBeaconLogList(getActivity());
-    log("list size : " + list.size());
-    for(int i = 0; i &lt; list.size(); i++) {
-      BeaconLog item = list.get(i);
-      log((i + 1) + ". (" + item.inputTime + ", "
-          + item.id + ", " + item.rssi + ")");
-    }
-  }
-
-  private void clearBeaconLog() {
-    LncDBManager.getInstance().clearBeaconLog(getActivity());
+    return result;
   }
 }</pre>

@@ -2,7 +2,7 @@
 layout: post
 title: Android Studio Gradle 에서 빌드시 Signed Key 설정하기
 category: Android
-tag: [Android]
+tag: [Android, Android Studio]
 ---
 
 Android Studio에서 빌드할 때 Signed Key를 설정하는 방법을 포스팅하도록 하겠습니다.

@@ -2,7 +2,7 @@
 layout: post
 title: Ken Burns Effect View
 category: Android
-tag: [Android, UX]
+tag: [Android, UX, Open Source]
 ---
 
 [Ken Burns Effect](https://en.wikipedia.org/wiki/Ken_Burns_effect)는

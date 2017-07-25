@@ -2,7 +2,7 @@
 layout: post
 title: Gradle 빌드 오류 ‘No matching client found for package name’ 해결법
 category: Android
-tag: [Android, ADB]
+tag: [Android, Android Studio]
 ---
 
 Android Studio에서 Google Service를 사용하는 어플을 개발하다가 패키지 이름(Package Name)을

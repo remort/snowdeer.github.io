@@ -2,7 +2,7 @@
 layout: post
 title: ViewPager 사용 예제
 category: Android
-tag: [Android, ViewPager]
+tag: [Android, UX]
 ---
 
 안드로이드 ViewPager를 활용하는 간단한 예제 코드입니다.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: App의 설치 또는 삭제 이벤트 획득하기
+title: Application의 설치 또는 삭제 이벤트 획득하기
 category: Android
 tag: [Android, Event]
 ---
