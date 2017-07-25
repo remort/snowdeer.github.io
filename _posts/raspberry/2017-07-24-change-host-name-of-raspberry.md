@@ -19,13 +19,20 @@ sudo nano /etc/hostname
 ~~~
 
 기본 이름으로 `raspberrypi`가 입력되어 있을 텐데, 원하는 이름으로 변경합니다.
-저 같은 경우는 `snowdeer-raspberry`로 변경했습니다.
+저 같은 경우는 `snowdeer-raspberry`로 변경했습니다. 
 
 <br>
 
 ## /etc/hosts
 
-DNS 매핑을 관리하는 파일입니다.
+DNS 매핑을 관리하는 파일입니다. 이 부분을 제대로 설정하지 않으면
+종종 다음과 같은 오류 메세지를 볼 수 있습니다.
+
+~~~
+sudo: unable to resolve host snowdeer-raspberry
+~~~
+
+다음 명령어를 이용해서 `hosts' 파일을 열어줍니다. 
 
 ~~~
 sudo nano /etc/hosts
