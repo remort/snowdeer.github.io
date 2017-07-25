@@ -45,9 +45,11 @@ nav:
     - { 블로그: '/blog/categories/#블로그' }
     - { Android: '/blog/categories/#Android' }
     - { C++: '/blog/categories/#C++' }
+    - { 디자인패턴: '/blog/categories/#디자인패턴' }
     - { Linux: '/blog/categories/#Linux' }
-    - { BlockChain: '/blog/categories/#BlockChain' }
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
+    - { BlockChain: '/blog/categories/#BlockChain' }
+
     #- { Tags: '/blog/tags/' }
   About:
     - '/about/'
