@@ -13,7 +13,9 @@ Activity간 데이터를 이동시킬 때는 그 데이터를 Serializable(또�
 것으로 충분합니다.
 
 <br>
+
 ## MyObject.java
+
 <pre class="prettyprint">class MyObject implements Serializable {
 
   int nID;
@@ -27,7 +29,10 @@ Activity간 데이터를 이동시킬 때는 그 데이터를 Serializable(또�
 <br>
 
 Activity 코드들은 각각 다음과 같습니다.
+<br>
+
 ## firstActivity.java
+
 <pre class="prettyprint">import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -61,7 +66,9 @@ public class firstActivity extends Activity {
 }
 </pre>
 <br>
+
 ## secondActivity.java
+
 <pre class="prettyprint">import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

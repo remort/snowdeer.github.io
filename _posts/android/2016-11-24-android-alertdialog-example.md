@@ -9,7 +9,9 @@ tag: [Android, UX]
 
 좀 더 자세한 정보와 예제 코드는 [여기를 참조](https://developer.android.com/reference/android/app/AlertDialog.html)하시면 됩니다.
 <br>
+
 ## 예제 코드
+
 <pre class="prettyprint">package com.lnc.datacafe;
 
 

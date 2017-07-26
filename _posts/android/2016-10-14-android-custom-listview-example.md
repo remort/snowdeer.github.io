@@ -18,7 +18,9 @@ ViewHolder 패턴을 사용하면 최초에 한 번 findViewById 함수로 찾�
 
 아래는 ViewHolder 패턴을 적용한 예제입니다.
 <br>
+
 ## item_view_log.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:id="@+id/layout_background"
@@ -46,7 +48,9 @@ ViewHolder 패턴을 사용하면 최초에 한 번 findViewById 함수로 찾�
 
 &lt;/LinearLayout&gt;</pre>
 <br>
+
 ## LogListAdapter.java
+
 <pre class="prettyprint">public class LogListAdapter extends BaseAdapter {
 
   private final Context mContext;

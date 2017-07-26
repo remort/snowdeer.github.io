@@ -11,7 +11,9 @@ tag: [algorithm, tree]
 트리 형태의 데이터 구조입니다.
 
 <br>
+
 ## Segment Tree 구조
+
 Segment Tree는 완전 이진 트리이며, 부모 노드는 각 자식 노드들의 범위에 대한 정보를
 갖고 있습니다. 각 노드간의 관계는 아래와 같습니다.
 
@@ -46,6 +48,7 @@ Segment Tree는 완전 이진 트리이며, 부모 노드는 각 자식 노드�
 <br>
 
 ## 구간별 최소값 조회
+
 이제, Segment Tree를 이용한 구간별 최소값 조회를 한 번 해보도록 하겠습니다.
 예를 들어, 1번째 노드부터 7번째 노드까지의 최소값을 구해보겠습니다.
 
@@ -55,7 +58,9 @@ Segment Tree는 완전 이진 트리이며, 부모 노드는 각 자식 노드�
 더욱 속도 차이가 많이 나게 될 것입니다.
 
 <br>
+
 ## 데이터 갱신
+
 데이터 갱신을 할 경우 Segment Tree는 해당 범위를 포함하고 있는 모든 부모
 노드들의 값을 다시 업데이트해줘야 합니다.
 
@@ -71,7 +76,9 @@ Segment Tree는 완전 이진 트리이며, 부모 노드는 각 자식 노드�
 <br.
 
 ## 코드
+
 ### Segment Tree 정의
+
 Segment Tree의 구조를 보면 실제 데이터보다 약 2배만큼의 저장 공간을 더 사용하고 있습니다.
 (실제 데이터 공간과 그 범위를 관리하는 부모 노드들의 공간을 합치면 약 2배가 됩니다.)
 
@@ -113,6 +120,7 @@ void debug() {
 <br>
 
 ### 데이터 갱신
+
 각 노드들에 인덱스를 매겨보면,
 
 ![SegmentTree]({{ site.baseurl }}/assets/2016-03-28-segment-tree/07.png)
@@ -135,7 +143,9 @@ void debug() {
     }
 }</pre>
 <br>
+
 ### 데이터 조회
+
 데이터 조회 부분이 좀 복잡한데, 다음과 같은 재귀 함수를 이용해서 조회를 할 수 있습니다.
 <pre class="prettyprint">// left, right : 구하고자 하는 값의 범위
 // segment_left, segment_right : 현재 Segment의 구간
@@ -161,7 +171,9 @@ int query(int left, int right, int segment_left,
     return getMin(left_value, right_value);
 }</pre>
 <br>
+
 ## 전체 소스 코드
+
 <pre class="prettyprint">#include &lt;stdio.h&gt;
 
 static const int MAX_TREE_SIZE = 100000;

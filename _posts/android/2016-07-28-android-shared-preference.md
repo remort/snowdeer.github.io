@@ -15,7 +15,9 @@ Shared Preference는 key-value 방식으로 데이터를 저장합니다.
 다음은 Shared Preference를 사용하는 예제 코드입니다.
 
 <br>
+
 ## SnowPreferenceManager.java
+
 <pre class="prettyprint">package com.lnc.cuppadata.gui.renewal.main;
 
 import android.content.Context;

@@ -10,13 +10,17 @@ tag: [Android, Time]
 더 편리하더군요. 그래서 저는 시간 관련 함수들을 TimeUtils Class로 만들어서 사용하고 있습니다.
 
 <br>
+
 ## 현재 시간을 Long 값으로 리턴하는 코드
+
 <pre class="prettyprint">public static long getTimeAsLong() {
   Calendar calendar = Calendar.getInstance();
   return calendar.getTimeInMillis();
 }</pre>
 <br>
+
 ## 현재 시간을 String으로 리턴하는 코드
+
 <pre class="prettyprint">public static String getTimeAsString(String format) {
   Date date = new Date(getTimeAsLong());
   SimpleDateFormat sdf = new SimpleDateFormat(format,
@@ -25,7 +29,9 @@ tag: [Android, Time]
   return sdf.format(date);
 }</pre>
 <br>
+
 ## 입력받은 시간(String)을 Long으로 리턴하는 코드
+
 <pre class="prettyprint">public static Long getTimeAsLong(String format, String text) {
   try {
     SimpleDateFormat sdf = new SimpleDateFormat(format,
@@ -38,7 +44,9 @@ tag: [Android, Time]
   return new Long(-1);
 }</pre>
 <br>
+
 ## 입력받은 시간(Long)을 String으로 리턴하는 코드
+
 <pre class="prettyprint">public static String getTimeAsString(String format, long time) {
   Date date = new Date(time);
   SimpleDateFormat sdf = new SimpleDateFormat(format,
@@ -47,7 +55,9 @@ tag: [Android, Time]
   return sdf.format(date);
 }</pre>
 <br>
+
 ## 오늘 시작 시간을 Long으로 리턴하는 코드
+
 <pre class="prettyprint">public static Long getTodayFrom() {
   String date = SnowTimeUtil.getTimeAsString("yyyy-MM-dd");
   long time = SnowTimeUtil.getTimeAsLong("yyyy-MM-dd", date);
@@ -61,7 +71,9 @@ tag: [Android, Time]
   return calendar.getTimeInMillis();
 }</pre>
 <br>
+
 ## 오늘 종료 시간을 Long으로 리턴하는 코드
+
 <pre class="prettyprint">public static Long getTodayTo() {
   String date = SnowTimeUtil.getTimeAsString("yyyy-MM-dd");
   long time = SnowTimeUtil.getTimeAsLong("yyyy-MM-dd", date);

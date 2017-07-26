@@ -45,7 +45,9 @@ Binary Indexed Tree는 이진수 값을 인덱스로 활용해서 구간별 최�
 와 같은 형태로 데이터 구조를 가져갈 수 있습니다.
 
 <br>
+
 ## Binary Indexed Tree 구조
+
 실제로 값을 넣어보도록 하겠습니다.
 
 ![BIT]({{ site.baseurl }}/assets/2016-03-30-binary-indexed-tree/04.png)
@@ -64,6 +66,7 @@ Binary Indexed Tree는 이진수 값을 인덱스로 활용해서 구간별 최�
 <br>
 
 ## Binary Indexed Tree를 이용한 구간 합 구하기
+
 Binary Indexed Tree를 이용하면 구간 합을 아주 빠르게 구할 수 있습니다.
 예를 들어, 1 번째 노드부터 7 번째 노드까지의 구간 합은
 
@@ -72,6 +75,7 @@ Binary Indexed Tree를 이용하면 구간 합을 아주 빠르게 구할 수 �
 <br>
 
 ## Binary Indexed Tree의 노드 인덱스
+
 Binary Indexed Tree의 각 노드별 인덱스를 구할 수 있으면, Binary Indexed Tree를
 사용할 수 있는 준비는 거의 끝났다고 볼 수 있습니다.
 
@@ -103,6 +107,7 @@ bit 연산을 통해서 얻을 수 있습니다. 즉, 현재 인덱스 값에 �
 <br>
 
 ## Binary Indexed Tree 값 업데이트 및 구간 합 구하기
+
 Binary Indexed Tree에 값을 업데이트하거나 구간 합을 구하는 방법은 Segment Tree에서의
 방법과 비슷합니다. Segment Tree와 마찬가지로 자식 노드의 값이 변경이 되면 부모 노드의
 값들을 전부 업데이트해야 합니다.
@@ -119,7 +124,9 @@ Binary Indexed Tree에 값을 업데이트하거나 구간 합을 구하는 방�
 직접 코드로 확인해보도록 하겠습니다.
 
 <br>
+
 ## 코드 (정의)
+
 <pre class="prettyprint">static const int MAX_TREE_SIZE = 100000;
 static const int INFINITE = 9999999;
 int data[] = { 0, 2, 4, 1, 7, 3, 6, 2, 5, };
@@ -141,7 +148,9 @@ void debug() {
     printf("\n");
 }</pre>
 <br>
+
 ## 코드 (데이터 갱신)
+
 <pre class="prettyprint">void update(int index, int value) {
     while (index &lt;= N) {
         bit[index] = bit[index] + value;
@@ -151,6 +160,7 @@ void debug() {
 <br>
 
 ## 코드 (1부터 N까지 구간 합)
+
 <pre class="prettyprint">int sum(int index) {
     int sum = 0;
     while (index &gt; 0) {
@@ -162,6 +172,7 @@ void debug() {
 }</pre>
 
 ## 코드 (전체 소스 코드)
+
 <pre class="prettyprint">#include &lt;stdio.h&gt;
 
 static const int MAX_TREE_SIZE = 100000;

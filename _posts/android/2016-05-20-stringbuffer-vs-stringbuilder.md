@@ -14,7 +14,9 @@ void log(String message) {
   strLog = strLog + message + "\n";
 }</pre>
 <br>
+
 ## String
+
 String은 Immutable 하기 때문에 한 번 할당되면 메모리 공간이 변하지 않습니다.
 무슨 말이냐면, 위의 예제에서 strLog 라는 변수에 'strLog + message + "\n"' 이라는 값을 넣게 되면,
 새로운 String 인스턴스가 생기고 기존의 String은 제거가 되게 됩니다.
@@ -25,10 +27,12 @@ String은 Immutable 하기 때문에 한 번 할당되면 메모리 공간이 �
 두 클래스는 append() 메소드를 이용하여 기존에 할당받은 메모리 공간을 유연하게 늘리면서
 사용을 하게 됩니다. 그래서 메모리 할당과 삭제가 빈번하게 일어나는 일을 방지할 수 있습니다.
 
-그러면 StringBuffer와 StringBuilder의 차이점은 무엇일까요?
+그러면 StringBuffer와 StringBuilder의 차이점을 알아보도록 하겠습니다.
 
 <br>
+
 ## StringBuffer vs StringBuilder
+
 StringBuffer와 StringBuilder는 겉으로 보기에 크게 차이가 없습니다.
 다만, 내부적으로 StringBuffer는 synchronized 키워드가 있어서 멀티쓰레드(Multi-Thread) 환경에서
 좀 더 안전하다는 장점이 있습니다. 대신 성능은 StringBuilder 보다 약간 떨어지겠죠?
