@@ -43,14 +43,14 @@ nav:
     - '/blog/categories/'
     # - { Categories All: '/blog/categories/' }
     - { 블로그: '/blog/categories/#블로그' }
-    - { Android: '/blog/categories/#Android' }
-    - { C++: '/blog/categories/#C++' }
+    - { Android: '/blog/categories/#android' }
+    - { C++: '/blog/categories/#c' }
     - { 알고리즘: '/blog/categories/#알고리즘' }
-    - { Tips: '/blog/categories/#Tips' }
+    - { Tips: '/blog/categories/#tips' }
     - { 디자인패턴: '/blog/categories/#디자인패턴' }
-    - { Linux: '/blog/categories/#Linux' }
+    - { Linux: '/blog/categories/#linux' }
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
-    - { BlockChain: '/blog/categories/#BlockChain' }
+    - { BlockChain: '/blog/categories/#blockchain' }
 
     #- { Tags: '/blog/tags/' }
   About:
