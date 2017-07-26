@@ -119,4 +119,5 @@ void Log::e(const char* format, ...) {
 
   printf("[%s] %s\n", gLogTag, message);
   LOGE("%s", message);
-}</pre>
+}
+</pre>
