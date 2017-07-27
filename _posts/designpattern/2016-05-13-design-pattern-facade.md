@@ -14,7 +14,7 @@ Facade 패턴이라고 합니다.
 
 Facade 패턴의 UML을 살펴보면 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/facade.png)
+![Image](/assets/design-patterns/facade.png)
 
 Facade 패턴은 클래스의 은닉화, 캡슐화와 아주 깊은 관련이 있습니다.
 어떤 클래스의 구조가 아주 다양하고 복잡하다고 하더라도 그걸 사용하는 개발자들은
@@ -29,7 +29,8 @@ Facade 패턴은 클래스의 은닉화, 캡슐화와 아주 깊은 관련이 �
 
 <br>
 
-## 예제 코드
+# 예제 코드
+
 <pre class="prettyprint">public class FacadeExample {
 
   private MusicPlayer mMusicPlayer = new MusicPlayer();

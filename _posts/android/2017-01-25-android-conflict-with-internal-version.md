@@ -17,7 +17,9 @@ Warning:WARNING: Dependency org.apache.httpcomponents:httpclient:4.3.5 is ignore
 삽입해주면 해결이 됩니다.
 
 <br>
-## build.gradle
+
+# build.gradle
+
 <pre class="prettyprint">...
 android {
    ...

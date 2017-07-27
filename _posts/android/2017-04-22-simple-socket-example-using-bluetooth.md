@@ -11,7 +11,9 @@ tag: [Android, Bluetooth]
 또한, 두 단말간의 페어링(Pairing) 단계는 이미 되었다고 가정하고 건너뛰도록 하겠습니다.
 
 <br>
-## 권한(Permission) 추가
+
+# 권한(Permission) 추가
+
 블루투스 통신을 사용하기 위해서는 아래 두 권한이 필요합니다. `AndroidManifest.xml` 파일에 추가해주시면 됩니다.
 <pre class="prettyprint">&lt;uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /&gt;
 &lt;uses-permission android:name="android.permission.BLUETOOTH" /&gt;
@@ -19,15 +21,20 @@ tag: [Android, Bluetooth]
 </pre>
 
 <br>
-## 상수값 설정
+
+# 상수값 설정
+
 <pre class="prettyprint">public class SnowConstant {
   public static final UUID BLUETOOTH_UUID_SECURE = UUID.fromString( "fa87c0d0-afac-11de-8a39-0800200c9a66" );
   public static final UUID BLUETOOTH_UUID_INSECURE = UUID.fromString( "8ce255c0-200a-11e0-ac64-0800200c9a66" );
 }</pre>
 
 <br>
-## 서버
-### fragment_btserver.xml
+
+# 서버
+
+## fragment_btserver.xml
+
 <pre class="prettyprint">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
@@ -58,7 +65,9 @@ tag: [Android, Bluetooth]
 
 &lt;/LinearLayout&gt;</pre>
 <br>
-### BTServerFragment.java
+
+## BTServerFragment.java
+
 <pre class="prettyprint">public class BTServerFragment extends Fragment {
 
   Handler handler = new Handler();
@@ -127,7 +136,9 @@ tag: [Android, Bluetooth]
   }
 }</pre>
 <br>
-### BluetoothServer.java
+
+## BluetoothServer.java
+
 <pre class="prettyprint">public class BluetoothServer {
 
   BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();
@@ -280,8 +291,11 @@ tag: [Android, Bluetooth]
   }
 }</pre>
 <br>
-## 클라이언트
-### fragment_btclient.xml
+
+# 클라이언트
+
+## fragment_btclient.xml
+
 <pre class="prettyprint">&lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
@@ -318,7 +332,9 @@ tag: [Android, Bluetooth]
 
 &lt;/LinearLayout&gt;</pre>
 <br>
-### BTClientFragment.java
+
+## BTClientFragment.java
+
 <pre class="prettyprint">public class BTClientFragment extends Fragment {
 
   Handler handler = new Handler();
@@ -390,7 +406,9 @@ tag: [Android, Bluetooth]
   }
 }</pre>
 <br>
-### BluetoothClient.java
+
+## BluetoothClient.java
+
 <pre class="prettyprint">public class BluetoothClient {
 
   BluetoothAdapter btAdapter = BluetoothAdapter.getDefaultAdapter();

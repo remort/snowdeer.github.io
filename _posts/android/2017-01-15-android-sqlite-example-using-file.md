@@ -16,7 +16,9 @@ tag: [Android, SQL]
 있도록 해보겠습니다.
 
 <br>
-## SnowFileDBOpenHelper.java
+
+# SnowFileDBOpenHelper.java
+
 <pre class="prettyprint">import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -133,7 +135,8 @@ public class SnowFileDBOpenHelper extends SQLiteOpenHelper {
 </pre>
 
 <br>
-## SnowFileDBQueryManager.java
+
+# SnowFileDBQueryManager.java
 
 <pre class="prettyprint">import java.util.ArrayList;
 import android.content.ContentValues;

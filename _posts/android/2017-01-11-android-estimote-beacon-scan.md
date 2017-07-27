@@ -10,11 +10,14 @@ tag: [Android, Beacon]
 
 <br>
 
-## SDK 다운로드
+# SDK 다운로드
+
 그리고 Estimote SDK는 [여기(GitHub)에서 다운](https://github.com/Estimote/Android-SDK) 받을 수 있습니다.
 
 <br>
-## Dependency 추가
+
+# Dependency 추가
+
 Android Studio 기준으로, 일단 build.gradle에 Estimote Beacon SDK에 대한 dependency를 추가합니다.
 
 <br>
@@ -28,7 +31,9 @@ Android Studio 기준으로, 일단 build.gradle에 Estimote Beacon SDK에 대�
 }</pre>
 
 <br>
-## 예제 코드
+
+# 예제 코드
+
 그런 다음, 다음과 같은 코드로 주위에 있는 Estimote Beacon들을 간단하게 스캔할 수 있습니다.
 
 

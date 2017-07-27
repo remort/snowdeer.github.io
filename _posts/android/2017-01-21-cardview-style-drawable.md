@@ -12,7 +12,9 @@ CardView와 유사한 형태의 Drawable를 만들어보고자 합니다.
 먼저 drawable 폴더에 각 xml 파일들을 작성합니다.
 
 <br>
-## layer_card_background.xml
+
+# layer_card_background.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;layer-list xmlns:android="http://schemas.android.com/apk/res/android"&gt;
   &lt;item&gt;
@@ -33,8 +35,11 @@ CardView와 유사한 형태의 Drawable를 만들어보고자 합니다.
     &lt;/shape&gt;
   &lt;/item&gt;
 &lt;/layer-list&gt;</pre>
-&nbsp;
-<h3>layer_card_background_selected.xml</h3>
+
+<br>
+
+# layer_card_background_selected.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;layer-list xmlns:android="http://schemas.android.com/apk/res/android"&gt;
   &lt;item&gt;
@@ -57,7 +62,9 @@ CardView와 유사한 형태의 Drawable를 만들어보고자 합니다.
 &lt;/layer-list&gt;</pre>
 
 <br>
-## selector_card_background.xml
+
+# selector_card_background.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 
 &lt;selector xmlns:android="http://schemas.android.com/apk/res/android"&gt;
@@ -67,8 +74,11 @@ CardView와 유사한 형태의 Drawable를 만들어보고자 합니다.
 
   &lt;item android:drawable="@drawable/layer_card_background" /&gt;
 &lt;/selector&gt;</pre>
-&nbsp;
-<h3>ListView</h3>
+
+<br>
+
+# ListView
+
 <pre class="prettyprint">&lt;ListView
   android:cacheColorHint="@android:color/transparent"
   android:divider="@null"
@@ -81,7 +91,9 @@ CardView와 유사한 형태의 Drawable를 만들어보고자 합니다.
   android:layout_width="match_parent"
   android:listSelector="@android:color/transparent" /&gt;</pre>
 <br>
-## 각 Item들을 출력하는 View
+
+# 각 Item들을 출력하는 View
+
 <pre class="prettyprint">&lt;FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/layout_background"

@@ -7,13 +7,15 @@ tag: [Android, UX, Open Source]
 
 일반적인 AppIntro 화면은 대략 다음과 같은 형태를 하고 있습니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-01-27-android-appintro/01.png)
+![image -fullwidth](/assets/2017-01-27-android-appintro/01.png)
 
 
 많은 사람들이 사용하고 있는 오픈소스가 있으며, [여기에서 확인](https://github.com/PaoloRotolo/AppIntro)할
 수 있습니다.
 <br>
-## Dependency 설정
+
+# Dependency 설정
+
 Android Studio에서는 간단히 gradle에 다음 라인만 추가하면 AppIntro 컴포넌트를 사용할 수 있습니다.
 <pre class="prettyprint">dependencies {
     compile 'com.github.paolorotolo:appintro:4.1.0'
@@ -25,7 +27,9 @@ Android Studio에서는 간단히 gradle에 다음 라인만 추가하면 AppInt
 그리고 중요한 점은 onCreate() 함수 내에서 setContentView() 함수는 지워야 한다는 점입니다.
 각각의 Intro 화면들은 Fragment를 상속받아서 구현할 수 있습니다.
 <br>
-## SplashActivity.java
+
+# SplashActivity.java
+
 <pre class="prettyprint">import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.Nullable;

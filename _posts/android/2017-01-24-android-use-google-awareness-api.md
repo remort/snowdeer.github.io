@@ -7,10 +7,12 @@ tag: [Android, Google API]
 
 Google Awareness API 사용 예제입니다. 일단 앞서 포스팅한
 [Google API Key 등록]({{ site.baseurl }}/android/2017/01/23/android-how-to-use-google-api-key/)을
-먼저 해야 합니다. Google API Key를 획득했다면 다음과 같이 manifest.xml 에 해당 키 정보를 기입해줍니다.
+먼저 해야 합니다. Google API Key를 획득했다면 다음과 같이 `AndroidManifest.xml` 에 해당 키 정보를 기입해줍니다.
 
 <br>
-## Manifest.xml
+
+# AndroidManifest.xml
+
 <pre class="prettyprint">&lt;application
   android:allowBackup="true"
   android:icon="@mipmap/ic_launcher"
@@ -31,7 +33,9 @@ Google Awareness API 사용 예제입니다. 일단 앞서 포스팅한
   &lt;/activity&gt;
 &lt;/application&gt;</pre>
 <br>
-## Activity_main.xml
+
+# Activity_main.xml
+
 그리고 간단한 버튼 4개를 배치해서 테스트를 하기 위한 activity_main.xml 코드는 다음과 같습니다.
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -80,7 +84,9 @@ Google Awareness API 사용 예제입니다. 일단 앞서 포스팅한
   &lt;/ScrollView&gt;
 &lt;/LinearLayout&gt;</pre>
 <br>
-## MainActivity.java
+
+# MainActivity.java
+
 마지막으로, MainActivity.java 코드입니다.
 <pre class="prettyprint">package com.datacafe.googleawarenessapi;
 

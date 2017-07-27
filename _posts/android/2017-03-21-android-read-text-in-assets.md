@@ -15,7 +15,9 @@ Android Studio 기준으로 Assets 폴더는 `/app/src/main/assets`에 위치하
 예제 코드는 다음과 같습니다.
 
 <br>
-## PolicyActivity.java
+
+# PolicyActivity.java
+
 <pre class="prettyprint">import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

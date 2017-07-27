@@ -10,7 +10,8 @@ C++ 에서 사용할 수 있는 Log 클래스입니다. 안드로이드 NDK 환�
 
 <br>
 
-## Log.h
+# Log.h
+
 <pre class="prettyprint">#ifndef SNOWDEER_LOG_H
 #define SNOWDEER_LOG_H
 
@@ -31,7 +32,8 @@ class Log {
 
 <br>
 
-## Log.cc
+# Log.cc
+
 <pre class="prettyprint">#include "Log.h"
 
 #include &lt;cstdio&gt;

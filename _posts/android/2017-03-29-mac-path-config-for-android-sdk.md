@@ -11,7 +11,8 @@ Mac에서도 방법은 비슷합니다. 다만, Mac에서 Android SDK가 설치�
 Path 등록을 못하는 경우가 종종 있습니다.
 
 <br>
-## Mac에서 Android SDK가 설치되는 폴더
+
+# Mac에서 Android SDK가 설치되는 폴더
 사용자가 임의로 폴더 위치를 수정하지 않았다면, 기본적으로 Android SDK는 다음 위치에 설치됩니다.
 
 ~~~
@@ -19,7 +20,8 @@ Path 등록을 못하는 경우가 종종 있습니다.
 ~~~
 
 <br>
-## .bash_profile 수정
+
+# .bash_profile 수정
 환경 변수를 등록하기 위해서 `.bash_profile`을 수정하면 됩니다. 터미널에서 `nano`를 이용해서
 수정을 해도 되고, 편하게 GUI 상의 `텍스트편집기`를 이용해서 수정을 해도 됩니다.
 기본적으로 `.bash_profile`은 속성이 '숨김(Hidden)'으로 되어있습니다.

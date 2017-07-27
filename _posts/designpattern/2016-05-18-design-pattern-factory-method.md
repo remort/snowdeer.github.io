@@ -9,7 +9,7 @@ tag: [디자인패턴]
 
 [팩토리 메소드(Factory Method) 패턴](https://en.wikipedia.org/wiki/Factory_method_pattern)의 UML은 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/factorymethod.png)
+![Image](/assets/design-patterns/factorymethod.png)
 
 '메소드'라는 단어를 생략하고 팩토리 패턴이라고도 불리우는 팩토리 메소드(Factory Method) 패턴에
 대해서 알아보도록 하겠습니다.
@@ -20,7 +20,8 @@ Factory Method 패턴의 가장 큰 특징은 어떤 클래스의 인스턴스�
 
 <br>
 
-## 예제 코드
+# 예제 코드
+
 예제를 보도록 하겠습니다.
 <pre class="prettyprint">public abstract class Pizza {
 
@@ -57,7 +58,9 @@ Factory Method 패턴의 가장 큰 특징은 어떤 클래스의 인스턴스�
 }
 </pre>
 <br>
+
 이렇게 Pizza 라는 추상 클래스를 만들고, Pizza를 상속하는 다양한 Pizza 클래스를 만듭니다.
+
 <pre class="prettyprint">class CheesePizza extends Pizza {
   // TODO
 }
@@ -75,7 +78,9 @@ class VeggiePizza extends Pizza {
 }
 </pre>
 <br>
+
 그리고 Pizza를 만들어주는 추상 클래스인 PizzaStore를 만들도록 하겠습니다.
+
 <pre class="prettyprint">public abstract class PizzaStore {
 
   public PizzaStore() {
@@ -96,7 +101,9 @@ class VeggiePizza extends Pizza {
 }
 </pre>
 <br>
+
 마찬가지로 PizzaStore를 상속받는 Concrete Class들을 만들어주면 됩니다.
+
 <pre class="prettyprint">class CheesePizzaStore extends PizzaStore {
 
   @Override

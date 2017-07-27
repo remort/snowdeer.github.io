@@ -5,7 +5,7 @@ category: BlockChain
 tag: [BlockChain]
 ---
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-06-26-how-to-hacking-blockchain/01.jpg)
+![image -fullwidth](/assets/2017-06-26-how-to-hacking-blockchain/01.jpg)
 
 <br>
 
@@ -18,7 +18,7 @@ tag: [BlockChain]
 
 <br>
 
-## 블록체인 분기
+# 블록체인 분기
 
 비트코인에서는 종종 다음 블록이 동시에 발견되는 경우가 발생합니다. 아무래도 전 세계에
 뿌려져있는 노드들이 많다 보니 그 중에서는 다음 블록의 해시값을 동시에 찾는 노드들도
@@ -31,7 +31,7 @@ tag: [BlockChain]
 그 값을 전달받게 됩니다. 이 때 시간차가 발생하게 되면 각 노드들은 먼저 전달받은
 노드의 정보를 우선시하고 나중에 전달받은 정보는 무시하게 됩니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-06-26-how-to-hacking-blockchain/02.png)
+![image -fullwidth](/assets/2017-06-26-how-to-hacking-blockchain/02.png)
 
 결국 위 그림과 비슷한 형태로 2개 이상의 체인이 발생하는 현상이 발생하게 되고,
 이 경우 각자 자기가 알고 있는 진짜 블록을 기반으로 그 다음 블록의 해시값을 계산하게 됩니다.
@@ -43,7 +43,7 @@ tag: [BlockChain]
 
 <br>
 
-## 51퍼센트 공격
+# 51퍼센트 공격
 
 자, 그러면 51퍼센트 공격은 어떤 방식으로 이루어질 수 있는지 알아보겠습니다.
 

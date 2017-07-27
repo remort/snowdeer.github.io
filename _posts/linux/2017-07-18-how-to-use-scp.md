@@ -5,7 +5,8 @@ category: Linux
 tag: [Linux 명령어]
 ---
 
-## SCP (Secure Copy)
+# SCP (Secure Copy)
+
 SCP(Secure Copy) 명령어는 원격의 파일이나 폴더를 복사하는 Linux 명령어입니다.
 SCP 명령어는 다음과 같은 형태로 사용할 수 있습니다.
 

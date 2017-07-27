@@ -15,13 +15,13 @@ tag: [라즈베리파이, 블루투스]
 bluetoothctl
 ~~~
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-11-bluetooth-pairing-on-raspberry/01.png)
+![image -fullwidth](/assets/2017-07-11-bluetooth-pairing-on-raspberry/01.png)
 
 위 스크린샷과 같이 프롬프트가 ‘[bluetooth]’로 바뀌면, 이제 블루투스 명령어들을 사용할 수 있습니다.
 
 이 상태에서 사용할 수 있는 블루투스 명령어들은 다음과 같습니다. (명령어 ‘help’를 통해 확인할 수 있습니다.)
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-11-bluetooth-pairing-on-raspberry/02.png)
+![image -fullwidth](/assets/2017-07-11-bluetooth-pairing-on-raspberry/02.png)
 
 <br>
 
@@ -31,7 +31,7 @@ bluetoothctl
 show
 ~~~
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-11-bluetooth-pairing-on-raspberry/03.png)
+![image -fullwidth](/assets/2017-07-11-bluetooth-pairing-on-raspberry/03.png)
 
 <br>
 
@@ -45,7 +45,7 @@ scan on
 scan off
 ~~~
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-11-bluetooth-pairing-on-raspberry/04.png)
+![image -fullwidth](/assets/2017-07-11-bluetooth-pairing-on-raspberry/04.png)
 
 <br>
 
@@ -74,7 +74,7 @@ pair [MAC Address]
 trust [MAC Address]
 ~~~
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-11-bluetooth-pairing-on-raspberry/05.png)
+![image -fullwidth](/assets/2017-07-11-bluetooth-pairing-on-raspberry/05.png)
 
 <br>
 

@@ -9,7 +9,8 @@ tag: [Android, UX]
 
 <br>
 
-## Layout 코드
+# Layout 코드
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
@@ -37,7 +38,8 @@ tag: [Android, UX]
 경우의 코드인데, Activity에서 사용할 경우에도 큰 차이는 없습니다.
 <br>
 
-## Java 코드
+# Java 코드
+
 <pre class="prettyprint">package com.lnc.prototype.ui.main;
 
 import android.os.Bundle;

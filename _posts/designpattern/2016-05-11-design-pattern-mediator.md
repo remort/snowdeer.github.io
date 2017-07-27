@@ -18,7 +18,7 @@ Colleague들끼리는 서로를 알지 못하기 때문에 특정 작업을 요�
 
 Mediator 패턴의 UML은 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/mediator.png)
+![Image](/assets/design-patterns/mediator.png)
 
 Mediator 패턴을 쓸 수 있는 경우는 다음과 같은 시나리오를 들 수 있습니다.
 
@@ -41,7 +41,8 @@ Mediator 패턴을 쓸 수 있는 경우는 다음과 같은 시나리오를 들
 
 <br>
 
-## 예제 코드
+# 예제 코드
+
 Mediator 패턴은 크게 Mediator 인터페이스와 Colleague 인터페이스로 구성됩니다.
 <pre class="prettyprint">public abstract class Mediator {
 

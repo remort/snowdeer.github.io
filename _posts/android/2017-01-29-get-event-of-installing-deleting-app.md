@@ -9,7 +9,9 @@ tag: [Android, Event]
 전달됩니다. 즉, BroadcastReceiver를 등록해놓은 각 App들의 설치/삭제 이벤트를 수신할 수 있습니다.
 
 <br>
-## Manifest.xml
+
+# AndroidManifest.xml
+
 manifest.xml에 다음과 같이 BroadcastReceiver를 추가해줍니다.
 <pre class="prettyprint">&lt;receiver android:name=".PackageEventReceiver"&gt;
     &lt;intent-filter&gt;
@@ -20,7 +22,9 @@ manifest.xml에 다음과 같이 BroadcastReceiver를 추가해줍니다.
     &lt;/intent-filter&gt;
 &lt;/receiver&gt;</pre>
 <br>
-## PackageEventReceiver.java
+
+# PackageEventReceiver.java
+
 <pre class="prettyprint">import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -42,7 +46,9 @@ public class PackageEventReceiver extends BroadcastReceiver {
   }
 }</pre>
 <br>
-## Event Receiver 등록
+
+# Event Receiver 등록
+
 <pre class="prettyprint">private PackageEventReceiver mPackageEventReceiver = new PackageEventReceiver();
 
 private void registerPackageEventReceiver() {

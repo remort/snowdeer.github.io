@@ -18,7 +18,7 @@ Helper 클래스를 이용하여 Database를 생성하거나 변경, 업그레�
 
 <br>
 
-## SnowSQLiteOpenHelper.java
+# SnowSQLiteOpenHelper.java
 
 <pre class="prettyprint">import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -60,7 +60,7 @@ public class SnowSQLiteOpenHelper extends SQLiteOpenHelper {
 
 <br>
 
-## SnowDBManager.java
+# SnowDBManager.java
 
 <pre class="prettyprint">import android.content.ContentValues;
 import android.content.Context;
@@ -290,7 +290,8 @@ public class SnowDBManager {
 
 그리고 테스트는 다음과 같은 코드를 이용해서 간단하게 해볼 수 있습니다.
 
-## 사용 예제
+# 사용 예제
+
 <pre class="prettyprint">
 public class DatabaseTestFragment extends Fragment {
 

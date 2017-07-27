@@ -9,6 +9,7 @@ tag: [Android, UX, Open Source]
 추가하는 것입니다.
 
 예를 들어 화면에 버튼을 추가한다고 하면 다음과 같은 작업들을 거쳐야 합니다.
+
 <ul>
  	<li>XML Layout에 버튼을 추가한다.</li>
  	<li>해당 Activity(Fragment)에서 그 컴포넌트에 해당하는 변수를 추가한다.
@@ -17,6 +18,7 @@ ex) private Button button;</li>
 ex) button = (Button)findViewById(R.id.button)</li>
  	<li>그 버튼에 setOnClickListener를 통해 이벤트를 등록한다.</li>
 </ul>
+
 컴포넌트가 몇 개 안 될 경우는 큰 문제가 안되는데, 컴포넌트가 많아질수록
 위 코드들은 감당이 안 될 정도로 많아지고 복잡해집니다. 이럴 때 'Butter Knife' 라이브러리를
 사용하면 코드량이 상당히 줄어듭니다. (사실, 이런 식으로 별거 아닌 코드를 Wrapping 하는
@@ -28,7 +30,9 @@ ex) button = (Button)findViewById(R.id.button)</li>
 버전에 따라 문법이 조금씩 바뀌고 있는데, 여기서는 현재 최신 버전인 8.5.1 기준으로 사용해보겠습니다.
 
 <br>
-## gradle 세팅
+
+# gradle 세팅
+
 <pre class="prettyprint">dependencies {
     ...
     compile 'com.jakewharton:butterknife:8.5.1'
@@ -37,7 +41,9 @@ ex) button = (Button)findViewById(R.id.button)</li>
 }
 </pre>
 <br>
-## activity_main.xml
+
+# activity_main.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
@@ -72,13 +78,17 @@ ex) button = (Button)findViewById(R.id.button)</li>
 
 &lt;/LinearLayout&gt;</pre>
 <br>
-## strings.xml
+
+# strings.xml
+
 <pre class="prettyprint">&lt;resources&gt;
   &lt;string name="app_name"&gt;ButterKnifeSample&lt;/string&gt;
   &lt;string name="title"&gt;Hello. Butter Knife&lt;/string&gt;
 &lt;/resources&gt;</pre>
 <br>
-## MainActivity.java
+
+# MainActivity.java
+
 여기서 가장 중요한 부분은 onCreate() 함수 내의 다음 코드입니다.
 <pre class="prettyprint">ButterKnife.bind(this);</pre>
 위 코드를 호출해주어야 각 View들이 바인딩(Binding)이 됩니다.
@@ -123,7 +133,9 @@ public class MainActivity extends AppCompatActivity {
   ;
 }</pre>
 <br>
-## Fragment 에서의 예제
+
+# Fragment 에서의 예제
+
 <pre class="prettyprint">public class FancyFragment extends Fragment {
 
   @BindView(R.id.button1)
@@ -141,7 +153,9 @@ public class MainActivity extends AppCompatActivity {
   }
 }</pre>
 <br>
-## ListView 등에서 사용하는 Adapter 및 ViewHolder 예제
+
+# ListView 등에서 사용하는 Adapter 및 ViewHolder 예제
+
 <pre class="prettyprint">public class MyAdapter extends BaseAdapter {
 
   @Override
@@ -174,7 +188,9 @@ public class MainActivity extends AppCompatActivity {
   }
 }</pre>
 <br>
-## 이벤트 등록 예제
+
+# 이벤트 등록 예제
+
 <pre class="prettyprint">@OnClick(R.id.submit)
 public void submit(View view) {
   // TODO submit data to server...

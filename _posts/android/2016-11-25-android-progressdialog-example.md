@@ -11,8 +11,11 @@ UX 컴포넌트입니다. 원형, 선형 등과 같이 다양한 형태의 Progr
 
 좀 더 자세한 정보는 [여기를 참조](https://developer.android.com/reference/android/app/ProgressDialog.html)하시면
 됩니다.
+
 <br>
-## 예제 코드
+
+# 예제 코드
+
 <pre class="prettyprint">private ProgressDialog mProgressDialog;
 
 private void showProgressDialog(String message) {

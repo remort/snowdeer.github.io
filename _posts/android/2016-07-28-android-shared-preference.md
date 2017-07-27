@@ -16,7 +16,7 @@ Shared Preference는 key-value 방식으로 데이터를 저장합니다.
 
 <br>
 
-## SnowPreferenceManager.java
+# SnowPreferenceManager.java
 
 <pre class="prettyprint">package com.lnc.cuppadata.gui.renewal.main;
 

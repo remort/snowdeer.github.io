@@ -25,9 +25,12 @@ tag: [디자인패턴]
 이런 경우 State 패턴을 사용하면 코드를 깔끔하게 관리할 수 있습니다.
 State 패턴의 UML은 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/state.gif)
+![Image](/assets/design-patterns/state.gif)
 
-## 예제 코드
+<br>
+
+# 예제 코드
+
 예제를 살펴 보도록 하겠습니다. 여기서는 아까의 예제와 같이 낮/밤이라는 '상태'를
 각각 클래스화하도록 할 것입니다. 그리고 낮에는 이미지 갤러리,
 밤에는 뮤직 프로그램이 실행되는 프로그램을 생각해보도록 하겠습니다.

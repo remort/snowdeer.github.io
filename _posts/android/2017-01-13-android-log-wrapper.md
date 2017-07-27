@@ -11,7 +11,8 @@ tag: [Android]
 별도로 Log 클래스를 두는 것이 편리합니다.
 
 <br>
-## Log 클래스 코드
+
+# Log 클래스 코드
 
 <pre class="prettyprint">package snowdeer.util;
 

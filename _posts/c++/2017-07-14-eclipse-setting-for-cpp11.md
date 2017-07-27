@@ -5,7 +5,7 @@ category: C++
 tag: [C++11, Eclipse]
 ---
 
-## C++11
+# C++11
 
 C언어는 지금도 계속해서 발전하고 있습니다. 2011년 C++11 규격이 정해졌으며,
 그 이후에도 계속하여 발전하고 있습니다. 지금은 현재 C++14, C++17 까지 나온 상태입니다.
@@ -16,7 +16,8 @@ C언어는 지금도 계속해서 발전하고 있습니다. 2011년 C++11 규�
 
 <br>
 
-## Eclipse for C++11
+# Eclipse for C++11
+
 Visual Studio나 CLion 등 좋은 C++ IDE가 많이 있지만, 회사에서는 아무래도 Eclipse를
 많이 사용하게 되네요. 아마도 라이센스를 크게 신경쓸 필요가 없어서이지 않을까 싶습니다.
 그래서 Eclipse에서 C++11 이상을 지원하는 방법을 포스팅해봅니다.
@@ -25,7 +26,7 @@ MinGW가 아니더라도 Cygwin 등 기타 다른 컴파일러에서도 거의 �
 
 <br>
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/01.png)
+![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/01.png)
 
 일단 새로운 프로젝트를 시작하고 컴파일러를 MinGW를 선택합니다.
 (굳이 새로운 프로젝트를 시작할 필요없이 세팅에서 바로 설정을 할 수도 있지만,
@@ -34,7 +35,7 @@ MinGW가 아니더라도 Cygwin 등 기타 다른 컴파일러에서도 거의 �
 
 <br>
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/02.png)
+![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/02.png)
 
 ~~~
 Project > Properties > C/C++ Build / Settings > Tool Settings에서 [GCC C++ Compiler] 항목과 [GCC C Compiler] 항목에서 [Miscellaneous] 항목을 찾습니다. 그리고 [Other flags] 뒷 부분에 다음 옵션을 추가합니다.
@@ -77,7 +78,7 @@ int main(void) {
 
 <br>
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/04.png)
+![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/04.png)
 
 컴파일 및 빌드는 잘되지만, Eclipse의 에디터에서는 오류가 난 것처럼 표시되고 있습니다.
 그냥 무시하고 개발을 진행해도 되지만, 시각적으로 상당히 불편합니다. 이럴거면 IDE를 사용하는
@@ -87,7 +88,7 @@ int main(void) {
 
 <br>
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/05.png)
+![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/05.png)
 
 ~~~
 Project > Properties > C/C++ General > Preprocessor Include Paths, Macros etc에서 [Providers] 탭을 선택한 다음 [CDT GCC Built-in Compiler Settings MinGW] 항목을 선택합니다. 그리고 아래쪽에 있는 Flag 설정 칸에 다음 옵션을 추가해줍니다.
@@ -98,12 +99,12 @@ Project > Properties > C/C++ General > Preprocessor Include Paths, Macros etc에
 <br>
 
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/06.png)
+![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/06.png)
 
 그 이후 `C/C++ Index Rebuild` 를 수행해주면 Eclipse IDE가 C++11 문법을 정상적으로 인식하기 시작합니다.
 
 <br>
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-14-eclipse-setting-for-cpp11/07.png)
+![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/07.png)
 
 이제 깔끔하게 Eclipse에서 C++11 이상의 문법들로 프로그램을 작성할 수 있습니다.

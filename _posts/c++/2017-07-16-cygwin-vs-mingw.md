@@ -12,7 +12,7 @@ tag: [C++11, Cygwin, MinGW]
 
 <br>
 
-## Cygwin vs MinGW
+# Cygwin vs MinGW
 
 Cygwin과 MinGW는 둘 다 태생은 비슷합니다. Cygwin은 Windows에서 Linux 환경을 에뮬레이팅하기
 위하여 Windows로 포팅된 UNIX 기반 소프트웨어입니다. 그리고, MinGW은 Cygwin 1.3.3 버전에서
@@ -29,7 +29,7 @@ MinGW의 목표는 Windows에서 GNU 툴을 사용하기 위한 최소한의 환
 
 <br>
 
-## MinGW의 C++11 thread 지원 문제
+# MinGW의 C++11 thread 지원 문제
 
 MinGW에서 C++11의 thread를 정식으로 지원하지 않는 문제점이 있습니다.
 덕분에 MinGW에서 Thread 관련 요소를 사용하려고 하면(특히 Mutex) 컴파일조차 되지 않고
@@ -40,7 +40,7 @@ MinGW에서 C++11의 thread를 정식으로 지원하지 않는 문제점이 있
 
 <br>
 
-## MSYS
+# MSYS
 
 [MSYS](http://www.mingw.org/wiki/MSYS)는 MinGW에서 bash나 make 등의 명령어를 수행할 수 있게
 해주는 커맨드 쉘(Command Shell)입니다. Cygwin의 경우는 UNIX 대부분의 환경을 에뮬레이팅해주고 있지만,
@@ -52,7 +52,7 @@ Cygwin이나 MSYS나 간단히 개발용으로 사용하기에는 큰 차이 없
 
 <br>
 
-## 설치 용량 차이
+# 설치 용량 차이
 
 대부분 하드디스크의 용량은 넉넉하다보니 설치 용량 차이가 큰 의미는 없을 수 있는데,
 그래도 살짝 언급해봅니다. C++ 개발을 위한 MinGW의 설치 용량은 350MB 수준입니다.

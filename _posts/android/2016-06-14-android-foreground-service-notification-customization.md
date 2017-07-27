@@ -10,7 +10,7 @@ tag: [Android, Service]
 
 <br>
 
-## Background Service
+# Background Service
 
 우리가 흔히 말하는 서비스가 백그라운드 서비스 형태입니다. 시스템의 메모리가 부족할 경우
 시스템이 해당 서비스를 강제로 종료시킬 수 있습니다. onStartCommand()의 파라메터를 이용하여,
@@ -22,7 +22,7 @@ tag: [Android, Service]
 </ul>
 <br>
 
-## Foreground Service
+# Foreground Service
 
 서비스의 우선 순위가 높아서, 시스템의 메모리가 부족하더라도 강제로 종료시키지 않습니다.
 대신 상태바에 Notification이 표시됩니다. 과거에는 상태바에 Notification을 표시하지 않고도
@@ -31,7 +31,7 @@ Foreground Service로 실행할 수가 있었는데, 현재는 구글 정책으�
 
 <br>
 
-## Foreground Service 만들기
+# Foreground Service 만들기
 
 서비스는 기본적으로 Background Service 입니다. Foreground Service를 만들기 위해서는
 서비스 내부에 다음과 같은 코드를 작성하면 됩니다.
@@ -42,14 +42,14 @@ Foreground Service로 실행할 수가 있었는데, 현재는 구글 정책으�
 
 <br>
 
-## Customize Notification 예제
+# Customize Notification 예제
 
 이 때, Notification의 모습을 바꾸고 싶을 때는 어떻게 하면 될까요? 다음과 같은 코드를
 이용해서 Notification의 모습을 바꿔줄 수 있습니다.
 
 <br>
 
-## notification_foreground.xml
+# notification_foreground.xml
 
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -90,7 +90,7 @@ Foreground Service로 실행할 수가 있었는데, 현재는 구글 정책으�
 
 <br>
 
-## SampleService.java
+# SampleService.java
 
 <pre class="prettyprint">RemoteViews remoteViews = new RemoteViews(getPackageName(),
     R.layout.notification_foreground);

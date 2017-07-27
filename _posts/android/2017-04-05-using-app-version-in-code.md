@@ -11,7 +11,9 @@ Eclipse의 경우에는 App Version이 `manifest.xml` 파일 내에 정의되어
 Android Studio에서는 `build.gradle` 내에 버전이 입력되어 있습니다.
 
 <br>
-## build.gradle
+
+# build.gradle
+
 App Version은 build.gradle 내에 다음과 같이 설정됩니다.
 <pre class="prettyprint">android {
     compileSdkVersion 25
@@ -26,10 +28,14 @@ App Version은 build.gradle 내에 다음과 같이 설정됩니다.
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     ...</pre>
-<br.
+<br>
+
+<br>
 
 그리고 안드로이드 소스내에서 App Version을 가져오는 코드는 다음과 같습니다.
-## 소스 코드
+
+# 소스 코드
+
 <pre class="prettyprint">private String getAppVersion() {
   try {
     PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(

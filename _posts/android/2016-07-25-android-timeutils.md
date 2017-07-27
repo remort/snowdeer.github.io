@@ -11,7 +11,7 @@ tag: [Android, Time]
 
 <br>
 
-## 현재 시간을 Long 값으로 리턴하는 코드
+# 현재 시간을 Long 값으로 리턴하는 코드
 
 <pre class="prettyprint">public static long getTimeAsLong() {
   Calendar calendar = Calendar.getInstance();
@@ -19,7 +19,7 @@ tag: [Android, Time]
 }</pre>
 <br>
 
-## 현재 시간을 String으로 리턴하는 코드
+# 현재 시간을 String으로 리턴하는 코드
 
 <pre class="prettyprint">public static String getTimeAsString(String format) {
   Date date = new Date(getTimeAsLong());
@@ -30,7 +30,7 @@ tag: [Android, Time]
 }</pre>
 <br>
 
-## 입력받은 시간(String)을 Long으로 리턴하는 코드
+# 입력받은 시간(String)을 Long으로 리턴하는 코드
 
 <pre class="prettyprint">public static Long getTimeAsLong(String format, String text) {
   try {
@@ -56,7 +56,7 @@ tag: [Android, Time]
 }</pre>
 <br>
 
-## 오늘 시작 시간을 Long으로 리턴하는 코드
+# 오늘 시작 시간을 Long으로 리턴하는 코드
 
 <pre class="prettyprint">public static Long getTodayFrom() {
   String date = SnowTimeUtil.getTimeAsString("yyyy-MM-dd");
@@ -72,7 +72,7 @@ tag: [Android, Time]
 }</pre>
 <br>
 
-## 오늘 종료 시간을 Long으로 리턴하는 코드
+# 오늘 종료 시간을 Long으로 리턴하는 코드
 
 <pre class="prettyprint">public static Long getTodayTo() {
   String date = SnowTimeUtil.getTimeAsString("yyyy-MM-dd");

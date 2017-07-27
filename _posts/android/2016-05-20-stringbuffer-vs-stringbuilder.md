@@ -15,7 +15,7 @@ void log(String message) {
 }</pre>
 <br>
 
-## String
+# String
 
 String은 Immutable 하기 때문에 한 번 할당되면 메모리 공간이 변하지 않습니다.
 무슨 말이냐면, 위의 예제에서 strLog 라는 변수에 'strLog + message + "\n"' 이라는 값을 넣게 되면,
@@ -31,7 +31,7 @@ String은 Immutable 하기 때문에 한 번 할당되면 메모리 공간이 �
 
 <br>
 
-## StringBuffer vs StringBuilder
+# StringBuffer vs StringBuilder
 
 StringBuffer와 StringBuilder는 겉으로 보기에 크게 차이가 없습니다.
 다만, 내부적으로 StringBuffer는 synchronized 키워드가 있어서 멀티쓰레드(Multi-Thread) 환경에서

@@ -10,14 +10,18 @@ tag: [Android, UX]
 대충 안드로이드 상태바는 다음과 같은 형태로 표현할 수 있습니다.
 <br>
 
-## 1) 아무런 설정을 안 해줬을 때의 기본적인 상태바
-![image -fullwidth]({{ site.baseurl }}/assets/2017-04-14-android-transparent-status-bar/01.png)
-<Br>
-## 2) 색상을 입힌 상태바
-![image -fullwidth]({{ site.baseurl }}/assets/2017-04-14-android-transparent-status-bar/02.png)
+# 1) 아무런 설정을 안 해줬을 때의 기본적인 상태바
+
+![image -fullwidth](/assets/2017-04-14-android-transparent-status-bar/01.png)
 <br>
-## 3) 투명 처리를 한 상태바
-![image -fullwidth]({{ site.baseurl }}/assets/2017-04-14-android-transparent-status-bar/03.png)
+
+# 2) 색상을 입힌 상태바
+
+![image -fullwidth](/assets/2017-04-14-android-transparent-status-bar/02.png)
+<br>
+
+# 3) 투명 처리를 한 상태바
+![image -fullwidth](/assets/2017-04-14-android-transparent-status-bar/03.png)
 
 과거에는 완전히 투명한 상태바도 표현할 수 있었는데, 지금은 반투명 상태로 표현되고 있습니다.
 
@@ -26,7 +30,9 @@ tag: [Android, UX]
 일단, 반투명 상태의 상태바는 다음과 같은 테마를 적용하여 구현할 수 있습니다.
 
 <br>
-## styles.xml
+
+# styles.xml
+
 <pre class="prettyprint">&lt;style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"&gt;
   &lt;!-- Customize your theme here. --&gt;
   &lt;item name="colorPrimary"&gt;@color/colorPrimary&lt;/item&gt;

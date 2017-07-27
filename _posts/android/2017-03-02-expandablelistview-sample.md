@@ -9,7 +9,7 @@ Android에서 다음 그림과 같이 Depth가 존재하는 ListView를 만들�
 여러 가지 방법이 있긴 한데, 가장 간편하게 만들 수 있는 방법으로는 ExpandableListView를
 사용하는 방법이 있습니다. 이 UI 컴포넌트는 Android SDK에 기본으로 포함되어 있습니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-03-02-expandablelistview-sample/01.png)
+![image -fullwidth](/assets/2017-03-02-expandablelistview-sample/01.png)
 
 위와 같은 화면을 구현하려면 크게 다음과 같은 요소들을 구현해주면 됩니다.
 
@@ -19,7 +19,9 @@ Android에서 다음 그림과 같이 Depth가 존재하는 ListView를 만들�
  	<li class="clear">ExpandableListView의 Adapter</li>
 </ul>
 <br>
-## item_view_setting_parent.xml
+
+# item_view_setting_parent.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:id="@+id/layout_background"
@@ -47,7 +49,9 @@ Android에서 다음 그림과 같이 Depth가 존재하는 ListView를 만들�
 
 &lt;/LinearLayout&gt;</pre>
 <br>
-## item_view_setting_child.xml
+
+# item_view_setting_child.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   android:id="@+id/layout_background"
@@ -76,7 +80,9 @@ Android에서 다음 그림과 같이 Depth가 존재하는 ListView를 만들�
 
 &lt;/LinearLayout&gt;</pre>
 <br>
-## fragment_device_setting.xml
+
+# fragment_device_setting.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -116,11 +122,11 @@ Android에서 다음 그림과 같이 Depth가 존재하는 ListView를 만들�
     app:layout_behavior="@string/appbar_scrolling_view_behavior" /&gt;
 
 &lt;/android.support.design.widget.CoordinatorLayout&gt;
-
-
 </pre>
 <br>
-## DeviceSettingExpandableAdapter.java
+
+# DeviceSettingExpandableAdapter.java
+
 <pre class="prettyprint">import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;

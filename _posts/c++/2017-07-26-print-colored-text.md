@@ -15,7 +15,7 @@ ANSI Escape Codesms 터미널에서 텍스트 포맷을 제어하기 위해 만�
 이 기능을 지원하지 않는 것 같습니다.
 <br>
 
-## ANSI Escape Code
+# ANSI Escape Code
 
 ------ | ------ | ------
 Code	 | Effect	 | Note
@@ -56,7 +56,8 @@ Code	 | Effect	 | Note
 
 
 <br>
-## ANSI Color
+
+# ANSI Color
 
 ------ | ------
 Code	 | Effect
@@ -100,11 +101,12 @@ Code	 | Effect
 
 <br>
 
-## 소스 코드
+# 소스 코드
+
 위와 같은 ANSI Color 색상을 printf 함수나 cout 함수 등을 통해 쉽게 출력할 수 있도록
 예제 코드는 다음과 같습니다.
 
-### Log.h
+## Log.h
 
 <pre class="prettyprint">
 #ifndef LITOSERVICE_UTILS_LOG_H_
@@ -127,7 +129,8 @@ class Log {
 </pre>
 
 <br>
-### Log.cc
+
+## Log.cc
 
 <pre class="prettyprint">
 #include &lt;Log.h&gt;

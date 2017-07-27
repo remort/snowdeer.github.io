@@ -14,7 +14,7 @@ Activity간 데이터를 이동시킬 때는 그 데이터를 Serializable(또�
 
 <br>
 
-## MyObject.java
+# MyObject.java
 
 <pre class="prettyprint">class MyObject implements Serializable {
 
@@ -31,7 +31,7 @@ Activity간 데이터를 이동시킬 때는 그 데이터를 Serializable(또�
 Activity 코드들은 각각 다음과 같습니다.
 <br>
 
-## firstActivity.java
+# firstActivity.java
 
 <pre class="prettyprint">import android.app.Activity;
 import android.content.Intent;
@@ -67,7 +67,7 @@ public class firstActivity extends Activity {
 </pre>
 <br>
 
-## secondActivity.java
+# secondActivity.java
 
 <pre class="prettyprint">import android.app.Activity;
 import android.content.Intent;

@@ -9,7 +9,7 @@ tag: [디자인패턴]
 
 컴포지트(Composite) 패턴의 UML은 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/composite.gif)
+![Image](/assets/design-patterns/composite.gif)
 
 컴포지트 패턴의 개념은 각 객체들을 동일화시키겠다는 것입니다.
 조금 다르게 표현하자면 추상적인 상위 클래스 하나를 만들고, 그 클래스를 상속받는 다양한
@@ -24,7 +24,9 @@ tag: [디자인패턴]
 이루어져 있으며, 폴더 아래에는 폴더들이 있을 수 있고, 또한 파일들이 있을 수 있습니다.
 
 <br>
-## 예제 코드
+
+# 예제 코드
+
 컴포지트 패턴은 다음과 같이 Component, Leaf, Composite 로 구성됩니다.
 <pre class="prettyprint">public abstract class Component {
 

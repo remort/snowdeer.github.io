@@ -5,7 +5,8 @@ category: Android
 tag: [Android, UX, Open Source]
 ---
 
-## URL 주소를 이용한 이미지 로딩
+# URL 주소를 이용한 이미지 로딩
+
 이미지의 URL 주소를 알고 있을 때, 그 이미지를 ImageView에 그리는 방법은 다음과 같습니다.
 <ul>
  	<li>이미지를 다운로드한다.</li>
@@ -30,7 +31,9 @@ ImageView의 레퍼런스 저장도 필요합니다. 또한 이러한 것들은 
 한 적이 있습니다. 물론, 그만큼 공부는 많이 되긴 했습니다.
 
 <br>
-## Glide
+
+# Glide
+
 이러한 것들을 한 꺼번에 해소해주기 위해서 오픈 소스 활용을 추천합니다. 오픈 소스는
 유명한 것들이 많이 있는데, 5년 정도 전만 하더라도 저는
 [Android Universal Image Loader](https://github.com/nostra13/Android-Universal-Image-Loader)를
@@ -38,8 +41,10 @@ ImageView의 레퍼런스 저장도 필요합니다. 또한 이러한 것들은 
 하지만, 지금은 [Glide](https://github.com/bumptech/glide) 라이브러리를 사용해보려고 합니다.
 Glide는 구글이 인수한 Bump라는 회사에서 사용한 이미지 로딩 라이브러리입니다.
 
-<br.
-## 사용 방법
+<br>
+
+# 사용 방법
+
 Gradle에 다음 코드를 추가해줍니다.
 <pre class="prettyprint">dependencies{
     compile'com.github.bumptech.glide:glide:3.7.0'

@@ -9,7 +9,7 @@ tag: [BlockChain, Bitcoin]
 한 장의 그림으로 나름 친절하게 설명을 하고 있는 것 같아서 포스팅을 해봅니다.
 그림에 이미 많은 설명이 되어 있어서 별도의 설명은 필요없을 것 같습니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-03-how-to-work-bitcoin-transaction/01.jpg)
+![image -fullwidth](/assets/2017-07-03-how-to-work-bitcoin-transaction/01.jpg)
 
 <br>
 

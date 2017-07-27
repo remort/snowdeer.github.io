@@ -14,7 +14,9 @@ Eclipse를 사용하다가 가끔씩 `Failed to create the Java Virtual Machine`
 (하지만, 역시 Eclipse에서 Android Studio로 갈아타는게 제일 좋은거 같습니다.)
 
 <br>
-## 수정 전 eclipse.ini
+
+# 수정 전 eclipse.ini
+
 <pre class="prettyprint">-startup
 plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
 --launcher.library
@@ -36,7 +38,9 @@ openFile
 -Declipse.buildId=v21.0.1-543035
 </pre>
 <br>
-## 수정 후 eclipse.ini
+
+# 수정 후 eclipse.ini
+
 <pre class="prettyprint">-startup
 
 plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar

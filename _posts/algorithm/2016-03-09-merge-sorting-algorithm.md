@@ -26,6 +26,7 @@ Quick Sort와 Merge Sort를 비교해보면 다음과 같습니다.
 </ul>
 
 <br>
+
 참고로 C++ 표준 라이브러리인 STL 에서는 2가지의 sort 함수를 제공하고 있는데,
 일반적인 sort는 Quick Sort, stable_sort는 Merge Sort를 사용하고 있다고 합니다.
 
@@ -33,30 +34,30 @@ Quick Sort와 Merge Sort를 비교해보면 다음과 같습니다.
 
 <br>
 
-## 분할
+# 분할
 
 분할 정복 기반의 알고리즘이기 때문에 일단 분할을 합니다. 다음과 같이
  1/2씩 나누기만 하면 됩니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/01.png)
+![image -fullwidth](/assets/2016-03-09-merge-sorting-algorithm/01.png)
 
 <br>
 
-## 정합
+# 정합
 
 이렇게 나누어진 값들을 이제 합치면서 정렬을 해줍니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/02.png)
+![image -fullwidth](/assets/2016-03-09-merge-sorting-algorithm/02.png)
 정렬 방법은 다음과 같습니다.
-![image -fullwidth]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/03.png)
+![image -fullwidth](/assets/2016-03-09-merge-sorting-algorithm/03.png)
 
-![image -fullwidth]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/04.png)
+![image -fullwidth](/assets/2016-03-09-merge-sorting-algorithm/04.png)
 
-![image -fullwidth]({{ site.baseurl }}/assets/2016-03-09-merge-sorting-algorithm/05.png)
+![image -fullwidth](/assets/2016-03-09-merge-sorting-algorithm/05.png)
 
 <br>
 
-## 코드
+# 코드
 
 실제 코드로 확인해보도록 하겠습니다. 다음은 C++ 코드입니다.
 

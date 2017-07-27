@@ -12,7 +12,7 @@ Linux에서 작동하는 코드입니다. (Cygwin에서 빌드하면 윈도우�
 <kbd>Ctrl</kbd> + <kbd>C</kbd> 키 이벤트를 가로챌 수 있습니다.
 
 
-## 예제 코드
+# 예제 코드
 
 <pre class="prettyprint">#include &lt;cstdio&gt;
 #include &lt;sys/stat.h&gt;
@@ -46,6 +46,6 @@ int main(void) {
 }</pre>
 
 
-## 실행 화면
+# 실행 화면
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-07-18-cpp11-ctrl-c-event-hooking/01.png)
+![image -fullwidth](/assets/2017-07-18-cpp11-ctrl-c-event-hooking/01.png)

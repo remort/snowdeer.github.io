@@ -11,7 +11,7 @@ C++로 구현된 메세지 및 메세지큐 예제입니다. 헤더 파일로만
 
 <br>
 
-## Message.h
+# Message.h
 
 <pre class="prettyprint">#ifndef SNOWDEER_MESSAGE_H
 #define SNOWDEER_MESSAGE_H
@@ -35,7 +35,7 @@ class Message {
 
 <br>
 
-## MessageQueue.h
+# MessageQueue.h
 
 <pre class="prettyprint">#ifndef SNOWDEER_MESSAGEQUEUE_H
 #define SNOWDEER_MESSAGEQUEUE_H
@@ -95,7 +95,7 @@ class MessageQueue {
 
 <br>
 
-## MessageHandler.h
+# MessageHandler.h
 
 <pre class="prettyprint">#ifndef SNOWDEER_MESSAGE_H
 #define SNOWDEER_MESSAGE_H
@@ -119,7 +119,8 @@ class Message {
 
 <br>
 
-## MessageHandler.cc
+# MessageHandler.cc
+
 <pre class="prettyprint">#include "MessageHandler.h"
 
 MessageHandler::MessageHandler() {

@@ -18,15 +18,16 @@ Error:Execution failed for task ':app:processDebugGoogleServices'.
 ~~~
 
 <br>
-## 해결법
+
+# 해결법
 해결법은 다음과 같았습니다.
 
 먼저 Android Studio의 네비게이션 Bar의 보기 방식을 `Project`로 바꿔줍니다.
 (기본은 `Android`로 되어 있습니다.)
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-03-18-android-gradle-build-error-no-matching-client-found-for-package-name/01.png)
+![image -fullwidth](/assets/2017-03-18-android-gradle-build-error-no-matching-client-found-for-package-name/01.png)
 그러면 'app' 폴더 아래 다음 이미지와 같이 'google-service.json' 파일이 보일 것입니다.
-![image -fullwidth]({{ site.baseurl }}/assets/2017-03-18-android-gradle-build-error-no-matching-client-found-for-package-name/02.png)
+![image -fullwidth](/assets/2017-03-18-android-gradle-build-error-no-matching-client-found-for-package-name/02.png)
 이 파일의 내부에서
 
 <pre class="prettyprint">"client": [

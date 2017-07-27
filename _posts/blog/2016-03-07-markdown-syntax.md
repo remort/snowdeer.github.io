@@ -17,7 +17,7 @@ tag: [markdown, syntax]
 
 <br>
 
-## 제목
+# 제목
 
 제목은 다음과 같이 사용할 수 있습니다.
 
@@ -31,7 +31,7 @@ tag: [markdown, syntax]
 <br>
 
 
-## 줄바꿈
+# 줄바꿈
 
 마크다운에서 줄바꿈은 문장 맨 끝에 스페이스 두 번을 넣으면 됩니다.
 
@@ -42,7 +42,7 @@ tag: [markdown, syntax]
 
 <br>
 
-## 문단 나누기
+# 문단 나누기
 
 문단을 나누고자 할 때는 한 줄을 비우면 됩니다.
 
@@ -56,7 +56,7 @@ tag: [markdown, syntax]
 
 
 
-## *이탤릭체*, **볼드체**, ~~취소선~~
+# *이탤릭체*, **볼드체**, ~~취소선~~
 
 ~~~
 *이탤릭체*, _이탤릭체_
@@ -66,7 +66,7 @@ tag: [markdown, syntax]
 
 <br>
 
-## 인용
+# 인용
 
 ~~~
 > 인용하는 문구
@@ -74,7 +74,7 @@ tag: [markdown, syntax]
 
 <br>
 
-## 테이블
+# 테이블
 
 ~~~
 Header | Header
@@ -84,7 +84,7 @@ Cell   | Cell
 
 <br>
 
-## Keyboard
+# Keyboard
 
 ~~~
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd>
@@ -92,7 +92,7 @@ Cell   | Cell
 
 <br>
 
-## 하이퍼링크
+# 하이퍼링크
 
 ~~~
 [단어](주소)
@@ -102,7 +102,7 @@ Cell   | Cell
 
 <br>
 
-## 이미지 삽입
+# 이미지 삽입
 
 ~~~
 ![사진 이름](주소)

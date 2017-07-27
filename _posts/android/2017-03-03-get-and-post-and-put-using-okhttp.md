@@ -9,8 +9,10 @@ tag: [Android, Http, Open Source]
 다양한 기능을 제공해주는 Android 및 Java 용 라이브러리입니다. 오픈 소스로 되어 있으며
 [GitHub에서 소스 확인 및 다운로드](https://github.com/square/okhttp)할 수 있습니다.
 
-<Br>
-## Gradle 설정
+<br>
+
+# Gradle 설정
+
 build.gradle에 다음 라인을 추가해줍니다.
 
 ~~~
@@ -18,7 +20,9 @@ compile 'com.squareup.okhttp3:okhttp:3.6.0'
 ~~~
 
 <br>
-## GET 예제
+
+# GET 예제
+
 <pre class="prettyprint">public boolean getUserInfo(final Context context) {
 
   try {
@@ -51,7 +55,8 @@ compile 'com.squareup.okhttp3:okhttp:3.6.0'
 }</pre>
 <br>
 
-## POST 예제
+# POST 예제
+
 <pre class="prettyprint">private boolean updatetMetaInfo(JsonItemMetaInfo metaInfo) {
 
   try {
@@ -81,7 +86,9 @@ compile 'com.squareup.okhttp3:okhttp:3.6.0'
   return false;
 }</pre>
 <br>
-## PUT 예제
+
+# PUT 예제
+
 <pre class="prettyprint">public boolean registerAppToken(JsonToken token) {
   try {
     OkHttpClient client = new OkHttpClient();

@@ -6,6 +6,7 @@ tag: [BlockChain]
 ---
 
 블록체인의 종류는 그 성격에 따라 크게 3가지 형태로 나눌 수 있습니다.
+
 <ul>
  	<li>퍼블릭 블록체인(Public Blockchain)</li>
  	<li>프라이빗 블록체인(Private Blockchain)</li>
@@ -23,7 +24,9 @@ tag: [BlockChain]
 일반적인 경우에서 둘을 엄격하게 나눌 필요는 없을 것 같습니다.
 
 <br>
-## 퍼블릭 블록체인
+
+# 퍼블릭 블록체인
+
 퍼블릭 블록체인은 누구나 참여할 수 있고, 또 누구나 운영할 수 있습니다.
 즉, 운영 주체가 광범위하기도 하면서 또 불분명하기 때문에 법적 구속력에 상대적으로 자유롭습니다.
 그리고 누구나 데이터를 읽을 수 있기 때문에 투명성 또한 더 크게 보장이 되는 장점도 있습니다.
@@ -46,7 +49,9 @@ tag: [BlockChain]
 마이닝(Mining)이라고 불리우는 채굴 과정을 통해서 획득할 수 있습니다.
 
 <br>
-## 프라이빗 블록체인
+
+# 프라이빗 블록체인
+
 프라이빗 블록체인은 퍼블릭 블록체인과 정반대의 장단점을 가지고 있습니다.
 운영주체가 명확하기 때문에 법적인 규제를 준수해야 합니다.
 
@@ -58,9 +63,10 @@ tag: [BlockChain]
 드들의 권한들도 다르게 설정할 수 있기 때문에 운영상의 자유도도 보장이 되는 등 여러 가지 장점들이 있습니다.
 
 <br>
-## 퍼블릭 블록체인 vs 프라이빗 블록체인
+
+# 퍼블릭 블록체인 vs 프라이빗 블록체인
 다음은 퍼블릭 블록체인과 프라이빗 블록체인을 비교한 표입니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-06-19-public-blockchain-vs-private-blockchain/01.jpg)
+![image -fullwidth](/assets/2017-06-19-public-blockchain-vs-private-blockchain/01.jpg)
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-06-19-public-blockchain-vs-private-blockchain/02.png)
+![image -fullwidth](/assets/2017-06-19-public-blockchain-vs-private-blockchain/02.png)

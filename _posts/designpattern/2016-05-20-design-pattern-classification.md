@@ -11,11 +11,14 @@ tag: [디자인패턴]
 
 <br>
 
-![image]({{ site.baseurl }}/assets/2016-05-20-design-pattern-classification/01.png)
+![image](/assets/2016-05-20-design-pattern-classification/01.png)
 
 <br>
-## Organizing Design Patterns by Purpose
-### Creation Patterns
+
+# Organizing Design Patterns by Purpose
+
+## Creation Patterns
+
 <ul>
  	<li>Deal with initializing and configuring classes and objects</li>
 </ul>
@@ -29,8 +32,10 @@ tag: [디자인패턴]
 </ul>
 <br>
 
-## Organizing Design Patterns by Scope
-### Class Patterns
+# Organizing Design Patterns by Scope
+
+## Class Patterns
+
 <ul>
  	<li>Deal with relatinships between classes and their subclasses</li>
  	<li>Relationships established through inheritance, so they are fixed at compile time(static)</li>

@@ -13,7 +13,9 @@ API 버전 18부터 사용가능하며, 원할하게 쓰려면 API 버전 19 이
 `manifest.xml`에 다음과 같이 서비스를 등록해주면 됩니다.
 
 <br>
-## AndroidManifest.xml
+
+# AndroidManifest.xml
+
 <pre class="prettyprint">&lt;application
   android:allowBackup="true"
   android:icon="@mipmap/ic_launcher"
@@ -32,7 +34,9 @@ API 버전 18부터 사용가능하며, 원할하게 쓰려면 API 버전 19 이
 <br>
 
 그리고, Java 코드는 다음과 같습니다.
-## SnowNotificationListenerService.java
+
+# SnowNotificationListenerService.java
+
 <pre class="prettyprint">import android.app.Notification;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -98,7 +102,9 @@ startActivity(intent);</pre>
 하지만, 위 코드를 매번 호출하는 것은 사용자에게 상당히 번거로운 일이기 때문에, 다음과 같은 코드를 이용해서 기존에 사용자가 해당 App에 권한을 부여한 적이 있는지 확인하는 것이 좋습니다.
 
 <br>
-## MainActivity.java
+
+# MainActivity.java
+
 <pre class="prettyprint">import android.content.Intent;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;

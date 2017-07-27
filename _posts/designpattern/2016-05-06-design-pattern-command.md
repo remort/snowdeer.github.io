@@ -18,10 +18,12 @@ tag: [디자인패턴]
 <br>
 커맨드 패턴의 UML은 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/command.png)
+![Image](/assets/design-patterns/command.png)
 
 <br>
-## 예제 코드
+
+# 예제 코드
+
 커맨드 패턴의 예제는 다음과 같습니다.
 <pre class="prettyprint">public interface Command {
 

@@ -16,12 +16,15 @@ tag: [Android, ADB]
 물론, Wi-Fi 기반으로 연결하긴 하지만 최초에 한 번은 케이블을 이용해서 연결을 해줘야 합니다.
 
 <br>
-## 설정 방법
+
+# 설정 방법
+
 <ul>
  	<li>먼저 노트북과 스마트폰을 동일 공유기에 접속시켜 줍니다.</li>
  	<li>스마트폰을 USB 케이블을 이용해서 노트북에 연결합니다.</li>
  	<li>cmd 명령어를 통해서 다음과 같이 실행합니다.</li>
 </ul>
+
 ~~~
 adb tcpip 5555
 restarting in TCP mode port: 5555
@@ -32,6 +35,7 @@ restarting in TCP mode port: 5555
 <ul>
  	<li>그리고 다음 명령어를 통해서 스마트폰의 IP Address를 알아냅니다.</li>
 </ul>
+
 ~~~
 adb shell ifconfig
 ~~~
@@ -40,13 +44,16 @@ adb shell ifconfig
  	<li>이제 끝났습니다. 케이블 연결을 해제해도 됩니다.</li>
  	<li>PC에서 스마트폰에 ADB 연결을 하기 위해서는 다음 명령어를 입력하면 됩니다.</li>
 </ul>
+
 ~~~
 adb connect [IP Address]:5555
 ex) adb connect 192.168.0.140:5555
 ~~~
+
 <ul>
  	<li>현재 ADB 연결이 잘 되어 있는지 확인하기 위해서는 다음 명령어를 입력하면 됩니다.</li>
 </ul>
+
 ~~~
 C:>adb devices
 List of devices attached

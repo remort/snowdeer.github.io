@@ -7,7 +7,7 @@ tag: [Android, UX]
 
 요즘 나오는 App들은 Navigation Drawer를 사용한 UX가 많습니다.
 
-![image -fullwidth]({{ site.baseurl }}/assets/2017-04-15-android-navigation-drawer-example/01.png)
+![image -fullwidth](/assets/2017-04-15-android-navigation-drawer-example/01.png)
 
 <br>
 
@@ -19,7 +19,9 @@ tag: [Android, UX]
 (res 폴더 아래 menu 폴더 아래 만들어 주시면 됩니다.)
 
 <br>
-## activity_main_drawer.xml
+
+# activity_main_drawer.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;menu xmlns:android="http://schemas.android.com/apk/res/android"&gt;
 
@@ -39,7 +41,9 @@ tag: [Android, UX]
 <br>
 
 그리고, 액티비티에서 사용할 레이아웃은 다음과 같이 작성합니다.
-## activity_main.xml
+
+# activity_main.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -66,7 +70,9 @@ tag: [Android, UX]
 
 &lt;/android.support.v4.widget.DrawerLayout&gt;</pre>
 <br>
-## app_bar_main.xml
+
+# app_bar_main.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -97,7 +103,9 @@ tag: [Android, UX]
 
 &lt;/android.support.design.widget.CoordinatorLayout&gt;</pre>
 <br>
-## nav_header_main.xml
+
+# nav_header_main.xml
+
 <pre class="prettyprint">&lt;?xml version="1.0" encoding="utf-8"?&gt;
 &lt;LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -136,7 +144,9 @@ tag: [Android, UX]
 <br>
 
 그리고 실제 Java 코드는 다음과 같이 작성하면 됩니다.
-## MainActivity.java
+
+# MainActivity.java
+
 <pre class="prettyprint">public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
 

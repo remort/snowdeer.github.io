@@ -12,7 +12,7 @@ tag: [라즈베리파이, 블루투스]
 
 <br>
 
-## /etc/hostname
+# /etc/hostname
 
 ~~~
 sudo nano /etc/hostname
@@ -23,7 +23,7 @@ sudo nano /etc/hostname
 
 <br>
 
-## /etc/hosts
+# /etc/hosts
 
 DNS 매핑을 관리하는 파일입니다. 이 부분을 제대로 설정하지 않으면
 종종 다음과 같은 오류 메세지를 볼 수 있습니다.

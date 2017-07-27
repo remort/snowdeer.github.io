@@ -12,7 +12,7 @@ tag: [Linux 명령어]
 
 <br>
 
-## 프로그램 실행
+# 프로그램 실행
 
 터미널에서 랜딩봇을 실행하는 명령어는 다음과 같습니다.
 (다음 번에 터미널에서 복사해서 붙여넣기 편하게 하기 위해서 적어봅니다.)
@@ -38,7 +38,8 @@ ps -efc | grep python
 또한 실행중인 프로그램을 잠깐 멈추는 방법은 <kbd>Ctrl</kbd> + <kbd>Z</kbd> 키를 누르면 됩니다. 프로그램은 'Stopped' 상태가 됩니다.
 <br>
 
-## Job control commands in Linux
+# Job control commands in Linux
+
 <ul>
  	<li>jobs : 작업 리스트를 출력합니다.</li>
  	<li>bg [job id] : 해당 id의 작업을 백그라운드로 보냅니다. '&amp;'를 이용해서 프로그램을 실행한 거랑 동일한 효과입니다. 백그라운드로 보내면서 프로그램은 'Running' 상태가 됩니다.</li>

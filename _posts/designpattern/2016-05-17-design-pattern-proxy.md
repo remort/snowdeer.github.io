@@ -9,7 +9,7 @@ tag: [디자인패턴]
 
 프록시(Proxy) 패턴의 UML은 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/proxy.gif)
+![Image](/assets/design-patterns/proxy.gif)
 
 Proxy는 어떤 작업을 대신해줄 수 있는 '대리인'이라고 생각하면 됩니다.
 
@@ -25,7 +25,8 @@ Proxy로 구성되어 있습니다. Proxy에서 양쪽간의 인터페이스를 
 
 <br>
 
-## 예제 코드
+# 예제 코드
+
 예제를 들어보도록 하겠습니다. 프린터라는 클래스에 대한 Proxy를 두는 예제인데,
 이름을 바꾸는 등의 간단한 작업은 실제 프린터가 하지 않고, 프린터의 Proxy가 수행합니다.
 하지만, '출력'과 같이 Proxy가 할 수 없는 일은 실제 프린터가 수행하는 예제입니다.

@@ -16,10 +16,12 @@ tag: [디자인패턴]
 옵저버 패턴은 특정 인스턴스에 이벤트 리스너(EventListener)를 달고 대기하고 있다가
 그 인스턴스에 이벤트가 발생하면 그 결과를 통보(Notify)받는 방식이며 UML로 표현하면 다음과 같습니다.
 
-![Image]({{ site.baseurl }}/assets/design-patterns/observer.png)
+![Image](/assets/design-patterns/observer.png)
 
 <br>
-## 예제 코드
+
+# 예제 코드
+
 예제 코드는 다음과 같이 간단히 작성할 수 있습니다.
 <pre class="prettyprint">public interface Observer {
 
