@@ -23,23 +23,23 @@ URL을 이용해서 HTTP 기반으로 이미지를 다운로드하는 코드입�
 # URL을 이용하여 Bitmap 가져오는 함수
 
 <pre class="prettyprint">
-private Bitmap getImageFromURL(String strImageURL) {
-    Bitmap imgBitmap = null;
+private Bitmap getImageFromURL(String imageUrl) {
+    Bitmap bitmap = null;
 
     try {
-      URL url = new URL(strImageURL);
+      URL url = new URL(imageUrl);
       URLConnection connection = url.openConnection();
       connection.connect();
 
       int size = conn.getContentLength();
       BufferedInputStream bis = new BufferedInputStream(connection.getInputStream(), size);
-      imgBitmap = BitmapFactory.decodeStream(bis);
+      bitmap = BitmapFactory.decodeStream(bis);
 
       bis.close();
     } catch (Exception e) {
       e.printStackTrace();
     }
 
-    return imgBitmap;
+    return bitmap;
   }
 </pre>
