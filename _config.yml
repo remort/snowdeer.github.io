@@ -27,7 +27,6 @@ version: 1.0
 author:
   name: snowdeer
   description: 프로그래밍을 좋아하는 개발자 SnowDeer입니다.
-  #gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     #linkedin:  https://www.linkedin.com/in/snowdeer
     github:    https://github.com/snowdeer
@@ -45,8 +44,11 @@ nav:
     - { 블로그: '/blog/categories/#블로그' }
     - { Android: '/blog/categories/#android' }
     - { C++: '/blog/categories/#c' }
+    - { Python: '/blog/categories/#python' }
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }
+    - { 개발상식: '/blog/categories/#개발상식' }
+    - { S/W Architecture: '/blog/categories/#s-w-architecture' }
     - { 디자인패턴: '/blog/categories/#디자인패턴' }
     - { Linux: '/blog/categories/#linux' }
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
