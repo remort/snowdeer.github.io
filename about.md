@@ -4,27 +4,23 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  안녕하세요. 프로그래밍을 좋아하는 평범한 S/W 개발자 snowdeer 입니다.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+개발자의 길을 걸어온 지도 어느새 20년을 바라보고 있군요. 그럼에도 여전히 공부할 것도 많고, 
+모르는 것도 많고 실수도 많습니다. 하지만, 아직까지는 새로운 것을 만나고 배우고 익혀나가는 과정이 즐겁습니다 !!
 
-There are currently two themes built on Poole:
+<br>
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+# Career
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+* 3D Computer Graphics - Ray Tracing 전공(석사)
+* C2Technology (2000~2003, 의료 정보 솔루션 업체, 병역특례)
+* Samsung Electronics (2007~)
+* 차량/보행자용 Navigation 및 위치 기반 서비스(LBS)
+* WiFi 기반 TV Remote Control
+* AllShare Control
+* 교육 표준 LTI(Learning Tools Interoperability)
+* SPen 기반 학습 노트, 교사 노트
+* 재난안전망 eProSe Framework
+* 블록체인기반 데이터 거래 시스템
