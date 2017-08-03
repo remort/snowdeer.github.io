@@ -9,7 +9,7 @@ Android에서 다음 그림과 같이 Depth가 존재하는 ListView를 만들�
 여러 가지 방법이 있긴 한데, 가장 간편하게 만들 수 있는 방법으로는 ExpandableListView를
 사용하는 방법이 있습니다. 이 UI 컴포넌트는 Android SDK에 기본으로 포함되어 있습니다.
 
-![image -fullwidth](/assets/2017-03-02-expandablelistview-sample/01.png)
+![image](/assets/2017-03-02-expandablelistview-sample/01.png)
 
 위와 같은 화면을 구현하려면 크게 다음과 같은 요소들을 구현해주면 됩니다.
 

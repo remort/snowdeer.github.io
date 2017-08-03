@@ -12,16 +12,16 @@ tag: [Android, UX]
 
 # 1) 아무런 설정을 안 해줬을 때의 기본적인 상태바
 
-![image -fullwidth](/assets/2017-04-14-android-transparent-status-bar/01.png)
+![image](/assets/2017-04-14-android-transparent-status-bar/01.png)
 <br>
 
 # 2) 색상을 입힌 상태바
 
-![image -fullwidth](/assets/2017-04-14-android-transparent-status-bar/02.png)
+![image](/assets/2017-04-14-android-transparent-status-bar/02.png)
 <br>
 
 # 3) 투명 처리를 한 상태바
-![image -fullwidth](/assets/2017-04-14-android-transparent-status-bar/03.png)
+![image](/assets/2017-04-14-android-transparent-status-bar/03.png)
 
 과거에는 완전히 투명한 상태바도 표현할 수 있었는데, 지금은 반투명 상태로 표현되고 있습니다.
 

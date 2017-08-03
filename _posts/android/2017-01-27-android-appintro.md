@@ -7,7 +7,7 @@ tag: [Android, UX, Open Source]
 
 일반적인 AppIntro 화면은 대략 다음과 같은 형태를 하고 있습니다.
 
-![image -fullwidth](/assets/2017-01-27-android-appintro/01.png)
+![image](/assets/2017-01-27-android-appintro/01.png)
 
 
 많은 사람들이 사용하고 있는 오픈소스가 있으며, [여기에서 확인](https://github.com/PaoloRotolo/AppIntro)할

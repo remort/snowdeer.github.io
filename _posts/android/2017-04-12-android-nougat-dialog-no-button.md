@@ -7,11 +7,11 @@ tag: [Android, UX]
 
 안드로이드 7.0 Nougat에서 다음 이미지와 같이 Dialog들의 버튼이 사라져 버리는 현상이 있습니다.
 
-![image -fullwidth](/assets/2017-04-12-android-nougat-dialog-no-button/01.png)
+![image](/assets/2017-04-12-android-nougat-dialog-no-button/01.png)
 
 AlertDialog 뿐만 아니라 PickerDialog 들도 마찬가지 현상이 발생했습니다.
 
-![image -fullwidth](/assets/2017-04-12-android-nougat-dialog-no-button/02.png)
+![image](/assets/2017-04-12-android-nougat-dialog-no-button/02.png)
 
 기존에 잘 되던 코드였는데, 갑자기 안드로이드 7.0을 올린 사람들에게 이런 반응이 나와서
 찾아보니 7.0 부터는 Dialog에 테마(theme)를 적용해야 하는 정책이 생겼다고 합니다.

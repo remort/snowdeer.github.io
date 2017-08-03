@@ -48,4 +48,4 @@ int main(void) {
 
 # 실행 화면
 
-![image -fullwidth](/assets/2017-07-18-cpp11-ctrl-c-event-hooking/01.png)
+![image](/assets/2017-07-18-cpp11-ctrl-c-event-hooking/01.png)

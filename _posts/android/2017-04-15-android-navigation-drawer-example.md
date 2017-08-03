@@ -7,7 +7,7 @@ tag: [Android, UX]
 
 요즘 나오는 App들은 Navigation Drawer를 사용한 UX가 많습니다.
 
-![image -fullwidth](/assets/2017-04-15-android-navigation-drawer-example/01.png)
+![image](/assets/2017-04-15-android-navigation-drawer-example/01.jpg)
 
 <br>
 
