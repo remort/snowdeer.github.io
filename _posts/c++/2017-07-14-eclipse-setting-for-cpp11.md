@@ -26,7 +26,7 @@ MinGW가 아니더라도 Cygwin 등 기타 다른 컴파일러에서도 거의 �
 
 <br>
 
-![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/01.png)
+![image](/assets/2017-07-14-eclipse-setting-for-cpp11/01.png)
 
 일단 새로운 프로젝트를 시작하고 컴파일러를 MinGW를 선택합니다.
 (굳이 새로운 프로젝트를 시작할 필요없이 세팅에서 바로 설정을 할 수도 있지만,
@@ -99,7 +99,7 @@ Project > Properties > C/C++ General > Preprocessor Include Paths, Macros etc에
 <br>
 
 
-![image -fullwidth](/assets/2017-07-14-eclipse-setting-for-cpp11/06.png)
+![image](/assets/2017-07-14-eclipse-setting-for-cpp11/06.png)
 
 그 이후 `C/C++ Index Rebuild` 를 수행해주면 Eclipse IDE가 C++11 문법을 정상적으로 인식하기 시작합니다.
 
