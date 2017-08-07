@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 머신 러닝(Machine Learning)
-category: 개발상식
-permalink: /common-sense/:year/:month/:day/:title/
+category: 머신러닝
+permalink: /machine-learning/:year/:month/:day/:title/
 
 tag: [머신러닝]
 ---
