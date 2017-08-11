@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Git 사용 방법
-category: Tips
+title: Git 사용 방법 요약
+category: Git
 tag: [git]
 ---
 

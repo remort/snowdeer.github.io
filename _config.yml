@@ -48,6 +48,7 @@ nav:
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }
     - { 개발상식: '/blog/categories/#개발상식' }
+    - { Git: '/blog/categories/#git' }
     - { 머신러닝: '/blog/categories/#머신러닝' }
     - { S/W Architecture: '/blog/categories/#s-w-architecture' }
     - { 디자인패턴: '/blog/categories/#디자인패턴' }
