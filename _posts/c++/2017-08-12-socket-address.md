@@ -71,11 +71,31 @@ uint32_t ntohl(uint32_t networklong);
 
 다음과 같은 코드 형태로 사용할 수 있습니다.
 
+## Server Address
+
 <pre class="prettyprint">
-  sockaddr_in addr;
-  memset(addr.sin_zero, 0, sizeof(addr.sin_zero));
-  addr.sin_family = AF_INET;
-  addr.sin_port = htons(80);
-  addr.sin_addr.s_addr = inet_addr("192.168.0.10");
-  addr.sin_len = sizeof(addr);
+  struct sockaddr_in server_address;
+  memset(server_address.sin_zero, 0, sizeof(server_address.sin_zero));
+  server_address.sin_family = AF_INET;
+  server_address.sin_addr.s_addr = htonl(INADDR_ANY);
+  server_address.sin_port = htons(80);
+  server_address.sin_len = sizeof(server_address);
 </pre>
+
+여기서 `INADDR_ANY`는 서버로 들어오는 모든 데이터를 송수신하기위한 상수값입니다.
+
+
+<br>
+
+## Client Address
+
+<pre class="prettyprint">
+  struct sockaddr_in client_address;
+  memset(client_address.sin_zero, 0, sizeof(client_address.sin_zero));
+  client_address.sin_family = AF_INET;
+  client_address.sin_port = htons(80);
+  client_address.sin_addr.s_addr = inet_addr("192.168.0.10");
+  client_address.sin_len = sizeof(client_address);
+</pre>
+
+`inet_addr()` 함수의 경우, `htonl()`을 사용할 필요 없이 문자열의 값을 `long` 값으로 변환해주는 함수입니다.
