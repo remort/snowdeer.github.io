@@ -9,11 +9,22 @@ tag: [C++]
 
 # sockaddr 구조체
 
+## MacOS 용 sockaddr
+
 <pre class="prettyprint">
 struct sockaddr {
-	__uint8_t	sa_len;		/* total length */
-	sa_family_t	sa_family;	/* [XSI] address family */
-	char		sa_data[14];	/* [XSI] addr value (actually larger) */
+  __uint8_t sa_len;        /* total length */
+  sa_family_t sa_family;    /* [XSI] address family */
+  char sa_data[14];    /* [XSI] addr value (actually larger) */
+};
+</pre>
+
+## Cygwin 용 sockaddr
+
+<pre class="prettyprint">
+struct sockaddr {
+  sa_family_t sa_family;    /* address family, AF_xxx	*/
+  char sa_data[14];    /* 14 bytes of protocol address	*/
 };
 </pre>
 
@@ -27,13 +38,29 @@ IPv4 패킷용 주소를 만들기 위해서는 `sockaddr_in` 자료형을 사�
 
 # sockaddr_in 구조체
 
+## MacOS 용 sockaddr_in
+
 <pre class="prettyprint">
 struct sockaddr_in {
-	__uint8_t	sin_len;
-	sa_family_t	sin_family;
-	in_port_t	sin_port;
-	struct	in_addr sin_addr;
-	char		sin_zero[8];
+  __uint8_t sin_len;
+  sa_family_t sin_family;
+  in_port_t sin_port;
+  struct in_addr sin_addr;
+  char sin_zero[8];
+};
+</pre>
+
+## Cygwin용 sockaddr_in
+
+<pre class="prettyprint">
+struct sockaddr_in {
+  sa_family_t sin_family;    /* Address family		*/
+  in_port_t sin_port;    /* Port number			*/
+  struct in_addr sin_addr;    /* Internet address		*/
+
+  /* Pad to size of `struct sockaddr'. */
+  unsigned char __pad[__SOCK_SIZE__ - sizeof(short int)
+      - sizeof(unsigned short int) - sizeof(struct in_addr)];
 };
 </pre>
 
