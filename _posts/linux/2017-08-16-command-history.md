@@ -48,10 +48,11 @@ stty stop undef
 sudo nano .bashrc
 ~~~
 
-그리고 파일 맨 끝에 다음 문구를 추가해줍니다.
+그리고 파일 맨 끝에 다음 문구를 추가해줍니다. 기본적으로 세팅되어 있는 값은 HISTSIZE=1000, HISTFILESIZE=2000 입니다. (라즈베리안 기준)
 
 ~~~
-export HISTSIZE 10000
-export HISTFILESIZE 10000
+export HISTSIZE=10000
+export HISTFILESIZE=10000
 ~~~
 
+수정한 후 터미널을 다시 접속하면 적용이 되며, 적용 여부는 `export -p` 명령어로 확인할 수 있습니다.
