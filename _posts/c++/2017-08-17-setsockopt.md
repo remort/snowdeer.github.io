@@ -9,12 +9,20 @@ tag: [C++]
 소켓의 송수신 동작을 `setsockopt()` 함수를 이용해서 다양한 옵션으로 제어할 수 있습니다.
 
 <pre class="prettyprint">
-int setsockopt(SOCKET socket, int level, int optname, const char* optval, int optlen);
+int setsockopt(SOCKET socket, int level, int optname, const void* optval, int optlen);
 </pre>
 
-`level`과 `optname`을 쌍으로 해서 옵션의 종류를 지정합니다. `level`은 옵션의 범주를 나타내는 정수값이며, `optname`은 개별 옵션을 뜻합니다.
+* socket : 소켓의 번호
+* level : 옵션의 종류. 보통 `SOL_SOCKET`와 `IPPROTO_TCP` 중 하나를 사용
+* optname : 설정을 위한 소켓 옵션의 번호
+* optval : 설정 값이 저장된 주소값.
+* optlen : optval 버퍼의 크기
 
-`optval`은 옵션 값이 담겨진 포인터 주소값입니다. 항상 `const char*`로 캐스팅해서 넘겨야 합니다. 예를 들어 `SO_REUSEADDR`을 설정하려면 다음과 같이 호출해야 합니다.
+<br>
+
+## 예제 
+
+예를 들어 `SO_REUSEADDR`을 설정하려면 다음과 같이 호출합니다.
 
 <pre class="prettyprint">
 int reuseAddress = 1;
@@ -29,12 +37,30 @@ setsockopt(socket, SOL_SOCKET, (const char*)&reuseAddress, sizeof(reuseAddress))
 
 값 | 자료형 | 설명
 --- | --- | ---
-SO_RCV_BUF | int | 해당 소켓이 수신용으로 사용할 버퍼의 크기를 지정. 수신된 데이터는 프로세스가 `recv()`나 `recvfrom()`을 호출할 때까지 버퍼에 쌓여있게 됨. TCP 대역폭은 윈도우의 크기에 좌우되며, 소켓의 수신 버퍼 크기보다 커질 수 없기 때문에 이 값을 변경하면 대역폭에 큰 영향을 미치게 됨.
-SO_REUSEADDR | BOOL(int) | 네트워크 계층이 다른 소켓에 이미 할당된 IP 주소와 포트가 있을 때 중복해서 바인딩하는 것을 허용할지 결정하는 옵션. 관리자 권한이 있어야 이 옵션이 실행되는 운영체제도 있음.
-SO_RECVTIMEO | DWORD(timeval) | 수신 동작의 Blocking 제한 시간을 설정. Windows에서는 msec 단위임.
-SO_SND_BUF | int | 송신용으로 쓸 버퍼의 크기를 지정. 송신 대역폭은 링크 계층에 좌우됨. 프로세스에서 링크 계층의 한도 이상으로 데이터를 보내고자 할 때 나머지 데이터를 송신 버퍼에 저장함. TCP 통신에서는 소켓이 송신한 데이터의 확인 응답을 받을 때까지 재전송용으로 패킷을 쌓아두는데 이 때 이 버퍼를 사용함. 전송 버퍼가 가득찰 경우 자리가 생길 때까지 `send()`나 `sendto()` 호출이 Blocking 됨.
-SO_SNDTIMEO | DWORD(timeval) | 송신 동작의 Blocking 제한 시간을 설정.
-SO_KEEPALIVE | BOOL(int) | TCP 통신에서만 유효. 일정 시간마다 연결 유지 상태를 체크함.
+SO_REUSEADDR | BOOL | 이미 사용된 주소를 재사용하도록 함
+SO_RCV_BUF | int | 수신용 버퍼의 크기 지정
+SO_SND_BUF | int | 송신용 버퍼의 크기 지정
+SO_RECVTIMEO | DWORD(timeval) | 수신시 Blocking 제한 시간을 설정 
+SO_SNDTIMEO | DWORD(timeval) | 송신시 Blocking 제한 시간을 설정
+SO_KEEPALIVE | BOOL | TCP 통신에서만 유효. 일정 시간마다 연결 유지 상태를 체크.
+SO_LINGER | struct LINGER | 소켓을 닫을 때 남은 데이터의 처리 규칙 지정
+SO_DONTLINGER | BOOL | 소켓을 닫을때 남은 데이터를 보내기 위해서 블럭되지 않도록 함
+SO_DONTROUTE | BOOL | 라우팅(Routing)하지 않고 직접 인터페이스로 전송
+SO_BROADCAST | BOOL | 브로드캐스트 사용 가능 여부
+
+<br>
+
+## SO_REUSEADDR 옵션
+
+소켓 사용시 만약 다음과 같은 에러가 발생하는 경우가 있습니다. 
+
+~~~
+bind error : Address already in use
+~~~
+
+보통 소켓을 사용하는 프로그램은 강제 종료되었지만, 커널단에서 해당 소켓을 바인딩해서 사용하고 있기 때문에 발생하는 에러입니다.
+
+이 경우 `SO_REUSEADDR` 옵션을 이용해서 기존에 바인딩된 주소를 다시 사용할 수 있게 할 수 있습니다.
 
 <br>
 
@@ -56,3 +82,26 @@ TCP_NODELAY | BOOL(int) | 소켓에 [네이글 알고리즘(Nagle Algorithm)](ht
 int opt_val = TRUE;
 setsockopt(sock, IPPROTO_TCP, TCP_NODELAY, &opt_val, sizeof(opt_val));
 </pre>
+
+<br>
+
+## SO_LINGER 옵션
+
+`linger` 구조체는 다음과 같은 형태로 되어 있습니다.
+<pre class="prettyprint">
+struct linger {
+  int l_onoff;
+  int l_linger;
+}
+</pre>
+
+* l_onoff : linger 옵션의 On/Off 여부
+* l_linger : 기다리는 시간
+
+위의 두 개의 변수 값에 따라 3 가지의 close 방식이 존재합니다.
+
+1. l_onoff == 0 : 소켓의 기본 설정 l_linger에 관계없이 버퍼에 있는 모든 데이터를 전송. `close()`는 바로 리턴을 하지만 백그라운드에서 이러한 작업이 이루어짐.
+
+2. l_onoff > 0, l_linger == 0 : `close()`는 바로 리턴하며, 버퍼에 있는 데이터는 버림. TCP 연결 상태에서는 상대편 호스트에게 리셋을 위한 `RST` 패킷 전송. hard 혹은 abortive 종료라고 부름.
+
+3. l_onoff > 0, l_linger > 0 : 버퍼에 남아있는 모든 데이터를 보내며, 그 동안 `close()`는 블럭되어 대기함.
