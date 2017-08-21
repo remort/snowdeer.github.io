@@ -1,7 +1,7 @@
 # Site Info
 title: Code Holic
-tagline: 'SnowDeer''s Code Holic'
-description: '프로그래밍을 좋아하는 개발자 SnowDeer의 블로그입니다.'
+tagline: 'snowdeer''s Code Holic'
+description: '매일매일 배워나가는 개발자 snowdeer의 블로그입니다.'
 baseurl: ""
 url: https://snowdeer.github.io
 logo: '/public/logo.png'
@@ -26,7 +26,7 @@ version: 1.0
 # About/contact
 author:
   name: snowdeer
-  description: 프로그래밍을 좋아하는 개발자 SnowDeer입니다.
+  description: 매일매일 공부하는 snowdeer입니다.
   contact:
     #linkedin:  https://www.linkedin.com/in/snowdeer
     github:    https://github.com/snowdeer
@@ -56,7 +56,7 @@ nav:
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
     - { BlockChain: '/blog/categories/#blockchain' }
 
-    #- { Tags: '/blog/tags/' }
+    - { Tags: '/blog/tags/' }
   About:
     - '/about/'
 
@@ -66,9 +66,9 @@ category_page: '/blog/categories/'
 
 hero:
   image: /public/img/hello_page.jpg
-  caption: 안녕하세요. 반갑습니다. 다같이 프로그래밍을 공부해봐요. ^^;
+  caption: 안녕하세요. snowdeer's Code Holic입니다.;
 
-# Puglins
-mathjax: true # whether support mathjax
-google_analytics_token: 'UA-74926912-1' # leave blank if you don't want google analytics
-disqus_short_name: 'snowdeer' # leave blank if you don't want disqus
+# Pugl-In
+mathjax: true
+google_analytics_token: 'UA-74926912-1'
+disqus_short_name: 'snowdeer'
