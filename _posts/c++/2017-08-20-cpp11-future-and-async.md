@@ -14,7 +14,7 @@ Thread 결과값은 다음과 같은 코드를 이용해서 획득가능합니�
 `get()` 부분은 Blocking 되어 대기합니다.
 
 <pre class="prettyprint">
-  future<T> fut = ...; 
+  future&lt;T&gt; fut = ...; 
   T res = fut.get();
 </pre>
 
