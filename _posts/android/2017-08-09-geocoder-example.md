@@ -2,7 +2,7 @@
 layout: post
 title: Geocoder를 이용한 주소 및 위도/경도 변환 예제
 category: Android
-tag: [Android]
+tag: [Android, Location]
 ---
 
 안드로이드에서는 위도/경도를 이용해서 주소값을 획득하거나 반대로 주소값을 이용해서 위도/경도를 획득할 수 있는 `Geocoder`라는 클래스를 제공하고 있습니다.

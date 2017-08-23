@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'call_once'를 이용한 Singleton 패턴
+title: call_once를 이용한 Singleton 패턴
 category: C++
 tag: [C++]
 ---
