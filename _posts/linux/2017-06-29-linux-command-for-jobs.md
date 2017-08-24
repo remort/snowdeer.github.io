@@ -2,7 +2,7 @@
 layout: post
 title: 작업 관련 명령어들
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 
 최근에 []구글 클라우드 플랫폼(GCP, Google Cloud Platform)](https://console.cloud.google.com/)을

@@ -2,7 +2,7 @@
 layout: post
 title: 키워드 'virtual' 심화 탐구
 category: C++
-tag: [C++]
+tag: [C++, CleanCode]
 ---
 
 C++에서 자주 쓰이는 `virtual` 키워드에 대해서 알아보도록 하겠습니다. 

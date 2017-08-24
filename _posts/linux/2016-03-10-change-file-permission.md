@@ -3,7 +3,7 @@ layout: post
 title: chmod 명령어를 이용한 파일 권한 설정
 
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 
 보통 리눅스/유닉스에서 파일의 읽기/쓰기 등의 권한 설정을 할 때 `chmod` 명령어를

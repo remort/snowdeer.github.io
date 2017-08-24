@@ -56,7 +56,9 @@ nav:
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
     - { BlockChain: '/blog/categories/#blockchain' }
 
-    - { Tags: '/blog/tags/' }
+  Tags: 
+    - '/blog/tags/'
+
   About:
     - '/about/'
 

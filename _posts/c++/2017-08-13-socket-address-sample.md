@@ -2,7 +2,7 @@
 layout: post
 title: SocketAddress 및 SocketAddressFactory 예제
 category: C++
-tag: [C++]
+tag: [C++, 네트워크]
 ---
 # SocketAddress.h
 

@@ -2,7 +2,7 @@
 layout: post
 title: Grep 사용법
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 # Grep
 

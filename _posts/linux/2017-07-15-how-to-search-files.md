@@ -2,7 +2,7 @@
 layout: post
 title: 파일 검색
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어, 검색]
 ---
 
 리눅스에서 파일을 찾는 방법은 `find` 명령어를 이용해서 찾을 수 있습니다.

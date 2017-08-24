@@ -4,7 +4,7 @@ title: Binary Indexed Tree
 category: 알고리즘
 permalink: /algorithm/:year/:month/:day/:title/
 
-tag: [algorithm, tree]
+tag: [알고리즘, 트리]
 ---
 
 Binary Indexed Tree는 이진수 값을 인덱스로 활용해서 구간별 최소/최대/합 등을

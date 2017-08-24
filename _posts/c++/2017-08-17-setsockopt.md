@@ -2,7 +2,7 @@
 layout: post
 title: 소켓 옵션 설정하기(setsockopt)
 category: C++
-tag: [C++]
+tag: [C++, 네트워크]
 ---
 # setsockopt
 

@@ -4,7 +4,7 @@ title: GitHub Pages에서 다시 시작
 category: 블로그
 permalink: /blog/:year/:month/:day/:title/
 
-tag: [jekyll]
+tag: [blog, jekyll]
 ---
 
 작년에 [GitHub Pages](https://pages.github.com/)에서 블로그를 운영했었습니다.

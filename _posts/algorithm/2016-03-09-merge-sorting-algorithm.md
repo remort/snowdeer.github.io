@@ -4,7 +4,7 @@ title: Merge Sort
 category: 알고리즘
 permalink: /algorithm/:year/:month/:day/:title/
 
-tag: [Algorithm, Sort]
+tag: [알고리즘, 정렬]
 ---
 
 알고리즘 공부를 하다보면 간단한 정렬 알고리즘 하나 정도는 알아두는 편이 좋습니다.

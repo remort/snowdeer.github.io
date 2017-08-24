@@ -2,7 +2,7 @@
 layout: post
 title: IntelliJ에 Google Style Formatter 적용하기(Android Studio, WebStrom 등)
 category: Tips
-tag: [IDE, Formatter]
+tag: [IDE, Formatter, Tips]
 ---
 
 IntelliJ에 Google Style의 Formatter를 적용하는 방법입니다.

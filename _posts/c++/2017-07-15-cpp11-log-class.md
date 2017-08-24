@@ -2,7 +2,7 @@
 layout: post
 title: C++용 Log 클래스
 category: C++
-tag: [C++11]
+tag: [C++11, Debug]
 ---
 
 C++ 에서 사용할 수 있는 Log 클래스입니다. 안드로이드 NDK 환경이나 Windows 환경 등에서도 사용할 수

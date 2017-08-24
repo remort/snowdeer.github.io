@@ -4,7 +4,7 @@ title: 정적 웹페이지 vs 동적 웹페이지
 category: 블로그
 permalink: /blog/:year/:month/:day/:title/
 
-tag: [jekyll]
+tag: [blog]
 ---
 
 

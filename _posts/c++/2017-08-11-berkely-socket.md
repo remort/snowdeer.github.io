@@ -2,7 +2,7 @@
 layout: post
 title: 버클리 소켓(Berkely Socket)에 대하여 
 category: C++
-tag: [C++]
+tag: [C++, 네트워크]
 ---
 # 버클리 소켓이란
 

@@ -4,7 +4,7 @@ title: Authentication과 Authorization 차이
 category: 개발상식
 permalink: /common-sense/:year/:month/:day/:title/
 
-tag: [용어]
+tag: [용어, Security]
 ---
 
 Authentication과 Authorization를 많이 섞어서 쓰거나 혼동해서 쓰는 경우가 많은데, 이 둘의 차이가 무엇인지 포스팅해보도록 하겠습니다.

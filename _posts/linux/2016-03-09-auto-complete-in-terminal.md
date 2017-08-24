@@ -3,7 +3,7 @@ layout: post
 title: 터미널 apt-get에서 Tab 키 눌렀을 때 패키지 이름 자동 완성 안 될 때
 
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 
 터미널에서 <kbd>Tab</kbd>을 누르면 기본적으로 그 알파벳으로 시작하는 폴더, 파일, 패키지 등을

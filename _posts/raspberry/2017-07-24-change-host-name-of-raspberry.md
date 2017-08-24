@@ -4,7 +4,7 @@ title: 라즈베리파이 호스팅 네임 변경
 category: 라즈베리파이
 permalink: /raspberry/:year/:month/:day/:title/
 
-tag: [라즈베리파이, 블루투스]
+tag: [라즈베리파이]
 ---
 
 라즈베리파이의 호스팅 네임(Hosting Name)을 변경하는 방법입니다. 라즈베리파이의

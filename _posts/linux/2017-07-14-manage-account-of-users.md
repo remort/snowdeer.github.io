@@ -2,7 +2,7 @@
 layout: post
 title: 사용자 계정 관리하기
 category: Linux
-tag: [Linux 명령어, Account]
+tag: [리눅스 명령어, 계정 관리]
 ---
 
 # 계정 생성

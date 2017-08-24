@@ -2,7 +2,7 @@
 layout: post
 title: Cygwin vs MinGW
 category: C++
-tag: [C++11, Cygwin, MinGW]
+tag: [C++11, 컴파일러]
 ---
 
 개인용 노트 PC에 C++ 개발 환경을 설정하기 위해서 [Cygwin](https://www.cygwin.com/)과

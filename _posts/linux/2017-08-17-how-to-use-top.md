@@ -2,7 +2,7 @@
 layout: post
 title: Top 사용법
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 # 시스템 모니터링
 

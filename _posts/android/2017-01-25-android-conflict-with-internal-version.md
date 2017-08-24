@@ -2,7 +2,7 @@
 layout: post
 title: Apache's Http Library 충돌 해결 방법
 category: Android
-tag: [Android, Apache]
+tag: [Android, Apache, 문제 해결]
 ---
 
 [Apache's Http Library](https://hc.apache.org/httpcomponents-client-4.3.x/android-port.html)와

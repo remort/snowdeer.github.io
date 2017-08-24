@@ -2,7 +2,7 @@
 layout: post
 title: 명령어 이력 좀 더 효율적으로 사용하기
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 # 명령어 이력
 

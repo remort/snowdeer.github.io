@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu Server에 Desktop GUI 설치하기
 category: Linux
-tag: [Linux]
+tag: [리눅스]
 ---
 
 # Ubuntu Server

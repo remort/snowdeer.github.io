@@ -2,7 +2,7 @@
 layout: post
 title: Android Studio 단축키 모음
 category: Android
-tag: [Android, IDE]
+tag: [Android, IDE, Tips]
 ---
 안드로이드 스튜디오를 보다 편리하게 사용할 수 있는 단축키들입니다.
 
@@ -16,3 +16,4 @@ Find Action | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>
 Formatter 적용(Reformatting) | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>
 파라메터 정보(Parameter Info) | <kbd>Ctrl</kbd> + <kbd>P</kbd>
 최근 파일(Recent Files) | <kbd>Ctrl</kbd> + <kbd>E</kbd>
+이전/다음 변경 내역 이동 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>←</kbd> 또는 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd>

@@ -4,7 +4,7 @@ title: Counting Sort
 category: 알고리즘
 permalink: /algorithm/:year/:month/:day/:title/
 
-tag: [Algorithm, Sort]
+tag: [알고리즘, 정렬]
 ---
 
 카운팅 정렬(Counting Sort)는 O(N) 성능을 가지는 정렬 알고리즘입니다.

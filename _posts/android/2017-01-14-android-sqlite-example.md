@@ -2,7 +2,7 @@
 layout: post
 title: SQLite 사용 예제
 category: Android
-tag: [Android, SQL]
+tag: [Android, 데이터베이스]
 ---
 
 안드로이드 SQLite 예제 코드입니다. 직접 코드를 이용해서 Database를 생성할 수도 있고,

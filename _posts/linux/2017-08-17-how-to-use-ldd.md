@@ -2,7 +2,7 @@
 layout: post
 title: Ldd 사용법
 category: Linux
-tag: [Linux 명령어]
+tag: [리눅스 명령어]
 ---
 # 실행 파일은 있는데 필요한 라이브러리가 없는 경우
 

@@ -2,7 +2,7 @@
 layout: post
 title: 블루투스 기반 소켓 통신 예제
 category: Android
-tag: [Android, Bluetooth]
+tag: [Android, 블루투스, 네트워크]
 ---
 
 안드로이드에서 블루투스(Bluetooth)를 이용하여 간단하게 단말간 통신할 수 있는 코드를 포스팅해봅니다.

@@ -2,7 +2,7 @@
 layout: post
 title: Eclipse 실행 할 때 Failed to create the Java Virtual Machine 오류 뜰 때
 category: Android
-tag: [Android, Eclipse]
+tag: [Android, Eclipse, IDE, 문제 해결]
 ---
 
 이제는 Android Studio 만을 사용하고 있어서 거의 필요가 없는 글일 수도 있지만,

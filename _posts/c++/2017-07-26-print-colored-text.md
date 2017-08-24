@@ -2,7 +2,7 @@
 layout: post
 title: 콘솔창에 Colored Text 출력하기
 category: C++
-tag: [C++11]
+tag: [C++11, Debug]
 ---
 
 [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)와 같은

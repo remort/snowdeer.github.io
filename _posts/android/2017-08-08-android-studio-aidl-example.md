@@ -2,7 +2,7 @@
 layout: post
 title: 모듈간 AIDL 통신 예제
 category: Android
-tag: [Android]
+tag: [Android, Service]
 ---
 
 안드로이드 스튜디오(Android Studio)에서 모듈간 AIDL 통신을 하는 예제 코드입니다. 기존에 Eclipse에서 프로젝트간 AIDL 통신을 할 때에 비해 약간의 차이점이 있긴 했습니다. (예를 들어 Android Studio에서는 `aidl` 전용 폴더를 만들어서 따로 관리한다던지 등)

@@ -2,7 +2,7 @@
 layout: post
 title: ListView의 가장 아래쪽으로 자동 스크롤 시키기
 category: Android
-tag: [Android]
+tag: [Android, UX]
 ---
 
 안드로이드 ListView의 가장 아래쪽 아이템으로 자동 스크롤 시키는 코드입니다.

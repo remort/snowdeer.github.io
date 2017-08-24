@@ -2,7 +2,7 @@
 layout: post
 title: assert 활용하기
 category: C++
-tag: [C++, CleanCode]
+tag: [C++, CleanCode, Debug]
 ---
 
 `assert`를 잘 쓰면 개발에 꽤 유용할 때가 많습니다. 

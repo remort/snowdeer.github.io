@@ -4,7 +4,7 @@ title: Segment Tree
 category: 알고리즘
 permalink: /algorithm/:year/:month/:day/:title/
 
-tag: [algorithm, tree]
+tag: [알고리즘, 트리]
 ---
 
 세그먼트 트리(Segment Tree)는 구간별 최대값, 최소값 등을 빠르게 구할 수 있게 해주는

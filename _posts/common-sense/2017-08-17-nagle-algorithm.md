@@ -4,7 +4,7 @@ title: 네이글 알고리즘(Nagle Algorithm)
 category: 개발상식
 permalink: /common-sense/:year/:month/:day/:title/
 
-tag: [용어]
+tag: [용어, 네트워크]
 ---
 # 일반적인 TCP 통신 방법
 
@@ -46,5 +46,3 @@ setsockopt(sock, IPPROTO_TCP, TCP_NODELAY, &opt_val, sizeof(opt_val));
 
 * 값이 `TRUE` 또는 `1` 이면 Off
 * 값이 `FALSE` 또는 `2` 이면 On
-
-

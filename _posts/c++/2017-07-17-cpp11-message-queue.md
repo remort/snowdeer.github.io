@@ -2,7 +2,7 @@
 layout: post
 title: Message 및 Message Queue
 category: C++
-tag: [C++11]
+tag: [C++11, Thread]
 ---
 
 메세지(Message)와 메세지큐(MessageQueue)는 이벤트(Event)들을 한 곳에서 처리하거나 멀티 쓰레드(Multi-thread) 환경에서 쓰레드간 이벤트를 전달할 때 유용하게 사용됩니다.

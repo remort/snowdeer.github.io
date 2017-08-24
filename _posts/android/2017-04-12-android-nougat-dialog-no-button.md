@@ -2,7 +2,7 @@
 layout: post
 title: 7.0(Nougat) 에서 Dialog 들의 버튼들이 보이지 않는 현상
 category: Android
-tag: [Android, UX]
+tag: [Android, UX, 문제 해결]
 ---
 
 안드로이드 7.0 Nougat에서 다음 이미지와 같이 Dialog들의 버튼이 사라져 버리는 현상이 있습니다.

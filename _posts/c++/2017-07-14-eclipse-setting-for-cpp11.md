@@ -2,7 +2,7 @@
 layout: post
 title: Eclipse에서 C++11 이상 지원하도록 설정하는 방법
 category: C++
-tag: [C++11, Eclipse]
+tag: [C++11, IDE, Eclipse]
 ---
 
 # C++11

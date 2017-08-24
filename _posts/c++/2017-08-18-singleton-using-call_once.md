@@ -2,7 +2,7 @@
 layout: post
 title: call_once를 이용한 Singleton 패턴
 category: C++
-tag: [C++]
+tag: [C++, Thread, 디자인패턴]
 ---
 # Thread-Safe Singleton
 

@@ -2,7 +2,7 @@
 layout: post
 title: 프로세스 관리하기
 category: Linux
-tag: [Linux 명령어, Process]
+tag: [리눅스 명령어, 프로세스]
 ---
 
 # 리눅스 프로세스

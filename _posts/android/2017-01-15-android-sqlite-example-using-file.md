@@ -2,7 +2,7 @@
 layout: post
 title: SQLite 사용 예제(별도 DB 파일 사용할 경우)
 category: Android
-tag: [Android, SQL]
+tag: [Android, 데이터베이스]
 ---
 
 이번에는 [SQLiteManager](https://addons.mozilla.org/ko/firefox/addon/sqlite-manager/)와

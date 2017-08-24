@@ -2,7 +2,7 @@
 layout: post
 title: 메소드 개수가 65536개 이상일 때 빌드가 안되는 현상
 category: Android
-tag: [Android, Android Studio]
+tag: [Android, Android Studio, 문제 해결]
 ---
 
 안드로이드 어플리케이션을 개발할 때 메소드 개수가 65536개 이상이 되어 빌드가 되지 않는

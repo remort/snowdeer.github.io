@@ -2,7 +2,7 @@
 layout: post
 title: Log Class
 category: Android
-tag: [Android]
+tag: [Android, Debug]
 ---
 
 안드로이드 Log 기능을 Wrapping한 클래스 코드입니다.
