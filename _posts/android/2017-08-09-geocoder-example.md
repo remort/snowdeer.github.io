@@ -32,7 +32,7 @@ import android.location.Geocoder;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GeoCodeUtil {
+public class GeocodeUtil {
   final Geocoder geocoder;
 
   public static class GeoLocation {
@@ -46,7 +46,7 @@ public class GeoCodeUtil {
     }
   }
 
-  public GeoCodeUtil(Context context) {
+  public GeocodeUtil(Context context) {
     geocoder = new Geocoder(context);
   }
 
