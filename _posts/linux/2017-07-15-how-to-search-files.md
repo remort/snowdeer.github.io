@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 파일 검색
+title: Find 사용법 - 파일 검색
 category: Linux
 tag: [리눅스 명령어, 검색]
 ---

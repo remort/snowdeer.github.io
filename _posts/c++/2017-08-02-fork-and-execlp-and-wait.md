@@ -28,8 +28,9 @@ int main(void) {
     execlp("/bin/ls", "ls", nullptr);
     exit(127);
   } else {
-    printf("This is the parent.\n");
-    wait(0);
+    printf("This is the parent.\n");    
+    int status;
+    waitpid(pid, &status, 0);
     printf("The child just ended\n");
   }
 
