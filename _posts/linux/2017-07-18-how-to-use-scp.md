@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SCP 사용법
+title: scp 사용법
 category: Linux
 tag: [리눅스 명령어, 복사]
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nano 사용법
+title: nano 사용법
 category: Linux
 tag: [리눅스 명령어]
 ---

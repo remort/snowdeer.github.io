@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tmux 사용법
+title: tmux 사용법
 category: Linux
 tag: [리눅스 명령어]
 ---

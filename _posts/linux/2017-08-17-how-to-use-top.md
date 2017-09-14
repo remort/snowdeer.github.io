@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top 사용법
+title: top 사용법
 category: Linux
 tag: [리눅스 명령어]
 ---

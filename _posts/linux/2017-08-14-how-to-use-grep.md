@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grep 사용법
+title: grep 사용법
 category: Linux
 tag: [리눅스 명령어]
 ---
