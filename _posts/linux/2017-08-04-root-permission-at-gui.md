@@ -1,10 +1,9 @@
 ---
 layout: post
-title: GUI에서 Root 권한 획득하기
-category: 라즈베리파이
-permalink: /raspberry/:year/:month/:day/:title/
+title: gksu 사용법 - root 권한으로 GUI 어플 실행하기
+category: Linux
 
-tag: [라즈베리파이, 리눅스]
+tag: [리눅스 명령어]
 ---
 
 라즈베리파이 뿐만 아니라 우분투(Ubuntu)에서도 동일하게 적용되는 방법입니다.
