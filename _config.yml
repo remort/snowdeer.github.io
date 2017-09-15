@@ -55,6 +55,8 @@ nav:
     - { Linux: '/blog/categories/#linux' }
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
     - { BlockChain: '/blog/categories/#blockchain' }
+    - { Windows: '/blog/categories/#windows' }
+    - { MAC OS: '/blog/categories/#mac-os' }
 
   Tags: 
     - '/blog/tags/'
