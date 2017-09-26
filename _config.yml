@@ -57,6 +57,7 @@ nav:
     - { BlockChain: '/blog/categories/#blockchain' }
     - { Windows: '/blog/categories/#windows' }
     - { MAC OS: '/blog/categories/#mac-os' }
+    # - { 안드로이드 Apps: '/blog/categories/#안드로이드-apps' }
 
   Tags: 
     - '/blog/tags/'
