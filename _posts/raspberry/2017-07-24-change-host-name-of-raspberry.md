@@ -40,3 +40,9 @@ sudo nano /etc/hosts
 
 `127.0.0.1 raspberrypi`로 되어 있는 부분을 `127.0.0.1 snowdeer-raspberry`로
 변경하시면 됩니다.
+
+<br>
+
+# raspi-config
+
+더 편리한 방법은 `raspi-config` 프로그래을 이용하는 방법입니다. [여기를 참조](/raspberry/2017/09/02/raspberry-raspi-config)하세요.
