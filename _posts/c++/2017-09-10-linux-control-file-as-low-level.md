@@ -58,7 +58,7 @@ O_SYNC | 쓰기 연산마다 버퍼(Buffer)없이 디스크에 바로 저장
 새로운 파일을 생성하는 함수입니다. 보통 `open()` 함수로 대체해서 쓸 수 있기 때문에 그리 많이 사용되지는 않습니다.
 
 <pre class="prettyprint">
-int create(const char *path, mode_t mode);
+int creat(const char *path, mode_t mode);
 </pre>
 
 <br>
