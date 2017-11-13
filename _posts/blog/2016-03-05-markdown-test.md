@@ -31,7 +31,7 @@ tag: [markdown]
 
 Header | Header
 ------ | ------
-Cell   | Cell  
+Cell   | Cell
 
 <br>
 
