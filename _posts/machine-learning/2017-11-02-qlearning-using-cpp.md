@@ -17,7 +17,7 @@ tag: [머신러닝]
 
 여기서는 Q-Learning 방법을 이용하여 미로 찾기를 하는 강화 학습 코드를 살펴보도록 하겠습니다.
 
-![Image](/assets/2017-11-02-qlearning-using-cpp/01.jpg) 
+![Image](/assets/2017-11-02-qlearning-using-cpp/01.png) 
 
 위 그림과 같은 미로가 있으며, 가장 마지막 노드인 `s14`에 도착하면 보상을 주도록 했습니다.
 
