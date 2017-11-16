@@ -24,15 +24,15 @@ Python 3.x 기반의 코드입니다.
 <pre class="prettyprint">
 from bs4 import BeautifulSoup
 
-html = """
-<html>
-    <body>
-        <h1>Hello, BeautifulSoup</h1>
-        <p>This is a example.</p>
-        <p>BeautifulSoup helps to scrap web page easily.</p>
-    </body>
-</heml>
-"""
+html = &quot;&quot;&quot;
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, BeautifulSoup&lt;/h1&gt;
+        &lt;p&gt;This is a example.&lt;/p&gt;
+        &lt;p&gt;BeautifulSoup helps to scrap web page easily.&lt;/p&gt;
+    &lt;/body&gt;
+</html>
+&quot;&quot;&quot;
 
 soup = BeautifulSoup(html, "html.parser")
 
@@ -52,15 +52,15 @@ print("p1 = " + p2.string)
 <pre class="prettyprint">
 from bs4 import BeautifulSoup
 
-html = """
-<html>
-    <body>
-        <h1 id="title">Hello, BeautifulSoup</h1>
-        <p id="first">This is a example.</p>
-        <p>BeautifulSoup helps to scrap web page easily.</p>
-    </body>
-</heml>
-"""
+html = &quot;&quot;&quot;
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, BeautifulSoup&lt;/h1&gt;
+        &lt;p&gt;This is a example.&lt;/p&gt;
+        &lt;p&gt;BeautifulSoup helps to scrap web page easily.&lt;/p&gt;
+    &lt;/body&gt;
+</html>
+&quot;&quot;&quot;
 
 soup = BeautifulSoup(html, "html.parser")
 
