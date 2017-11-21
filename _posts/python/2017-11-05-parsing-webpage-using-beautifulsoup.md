@@ -5,101 +5,72 @@ category: Python
 tag: [Python]
 ---
 
-Python 3.x 기반의 코드입니다.
+Python 3.x 기반에서 동작하는 TCP 기반의 Echo Server/Client 예제입니다.
 
-# BeautifulSoup 라이브러리 설치
-
-`pip`를 이용해서 설치합니다. 콘솔창에서 다음 명령어를 입력합니다.
-
-~~~
-> pip install beautifulsoup4
-~~~
-
-<br>
-
-# 예제 코드
-
-## 기본적인 사용법
+# TCP Echo Server
 
 <pre class="prettyprint">
-from bs4 import BeautifulSoup
+import socketserver
+import sys
 
-html = &quot;&quot;&quot;
-&lt;html&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Hello, BeautifulSoup&lt;/h1&gt;
-        &lt;p&gt;This is a example.&lt;/p&gt;
-        &lt;p&gt;BeautifulSoup helps to scrap web page easily.&lt;/p&gt;
-    &lt;/body&gt;
-</html>
-&quot;&quot;&quot;
+class TcpEchoServerHandler(socketserver.BaseRequestHandler):
+    def handle(self):
+        print('Client is connected : {0}'.format(self.client_address[0]))
+        sock = self.request
 
-soup = BeautifulSoup(html, "html.parser")
+        buffer = sock.recv(1024)
+        received_message = str(buffer, encoding='utf-8')
+        print('Received : {0}'.format(received_message))
+        sock.send(buffer)
+        sock.close()
 
-h1 = soup.html.body.h1
-p1 = soup.html.body.p
-p2 = p1.next_sibling.next_sibling
+if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        print('{0} <Bind IP>'.format(sys.argv[0]))
+        sys.exit()
 
-print("h1 = " + h1.string)
-print("p1 = " + p1.string)
-print("p1 = " + p2.string)
+    bindIP = sys.argv[1]
+    bindPort = 10070
+
+    server = socketserver.TCPServer((bindIP, bindPort), TcpEchoServerHandler)
+
+    print("Start Echo-Server")
+    server.serve_forever()
 </pre>
 
 <br>
 
-## id 요소를 활용한 파싱
+# TCP Echo Client
 
 <pre class="prettyprint">
-from bs4 import BeautifulSoup
+import socket
+import sys
 
-html = &quot;&quot;&quot;
-&lt;html&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Hello, BeautifulSoup&lt;/h1&gt;
-        &lt;p&gt;This is a example.&lt;/p&gt;
-        &lt;p&gt;BeautifulSoup helps to scrap web page easily.&lt;/p&gt;
-    &lt;/body&gt;
-</html>
-&quot;&quot;&quot;
+serverPort = 10070
 
-soup = BeautifulSoup(html, "html.parser")
+if __name__ == '__main__':
+    if len(sys.argv) < 4:
+        print('{0} <BindIP> <Server IP> <Message>'.format(sys.argv[0]))
+        sys.exit()
 
-h1 = soup.find(id="title")
-p1 = soup.find(id="first")
+    bindIP = sys.argv[1]
+    serverIP = sys.argv[2]
+    message = sys.argv[3]
 
-print("h1 = " + h1.string)
-print("p1 = " + p1.string)
-</pre>
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.bind((bindIP, 0))
 
-<br>
+    try:
+        sock.connect((serverIP, serverPort))
 
-또한 아래의 코드를 이용하여 파싱이 잘 되었는지 확인할 수 있습니다.
+        buffer = bytes(message, encoding='utf-8')
+        sock.send(buffer)
+        print('Sended message : {0}'.format(message))
 
-<pre class="prettyprint">
-soup = BeautifulSoup(html, "html.parser")
-print(soup.prettify())
-</pre>
+        buffer = sock.recv(1024)
+        received_message = str(buffer, encoding='utf-8')
+        print('Received message : {0}'.format(received_message))
 
-<br>
-
-## 기상청 페이지 정보 파싱하기
-
-<pre class="prettyprint">
-import urllib.request as req
-from bs4 import BeautifulSoup
-
-REST_API = "http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp"
-values = {
-    'stnId': '108'
-}
-url = REST_API + "?" + "stnId=108"
-res = req.urlopen(url)
-
-soup = BeautifulSoup(res, "html.parser")
-
-title = soup.find("title")
-wf = soup.find("wf")
-
-print("title = " + title.string)
-print("wf = " + wf.string)
+    finally:
+        sock.close()
 </pre>
