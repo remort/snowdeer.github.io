@@ -26,7 +26,7 @@ class TcpEchoServerHandler(socketserver.BaseRequestHandler):
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
-        print('{0} <Bind IP>'.format(sys.argv[0]))
+        print('{0} [Bind IP]'.format(sys.argv[0]))
         sys.exit()
 
     bindIP = sys.argv[1]
@@ -50,7 +50,7 @@ serverPort = 10070
 
 if __name__ == '__main__':
     if len(sys.argv) < 4:
-        print('{0} <BindIP> <Server IP> <Message>'.format(sys.argv[0]))
+        print('{0} [BindIP] [Server IP] [Message]'.format(sys.argv[0]))
         sys.exit()
 
     bindIP = sys.argv[1]
