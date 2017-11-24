@@ -4,6 +4,7 @@ title: 파일 입출력
 category: Python
 tag: [Python]
 ---
+# Python에서의 파일 입출력
 
 일반적으로 파일 입출력(IO, Input/Output)은 다음과 같은 형태를 가집니다.
 

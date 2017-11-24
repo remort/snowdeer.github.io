@@ -4,10 +4,9 @@ title: TCP Echo Server/Client
 category: Python
 tag: [Python]
 ---
+# Echo Server
 
 Python 3.x 에서 동작하는 TCP 기반의 Echo Server/Client 예제 코드입니다.
-
-# Echo Server
 
 <pre class="prettyprint">
 import socketserver
