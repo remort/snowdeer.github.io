@@ -42,7 +42,7 @@ nav:
     - '/blog/categories/'
     # - { Categories All: '/blog/categories/' }
     - { 블로그: '/blog/categories/#블로그' }
-    - { Android: '/blog/categories/#android' }
+    - { Android & Java: '/blog/categories/#android' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
     - { 알고리즘: '/blog/categories/#알고리즘' }
