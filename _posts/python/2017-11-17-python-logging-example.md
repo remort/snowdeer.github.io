@@ -123,17 +123,18 @@ if __name__ == '__main__':
 asctime | %(asctime)s | 날짜 시간, 밀리세컨드까지 출력. ex) 2017.11.17 12:31:45,342
 created | %(created)f | 생성 시간 출력
 filename | %(filename)s | 파일명
-funcname | %(funcname)s | 함수명
-levelname | %(levelname)s | 로그 레벨
+funcnName | %(funcName)s | 함수명
+levelname | %(levelname)s | 로그 레벨(DEBUG, INFO, WARNING, ERROR, CRITICAL)
+levelno | %(levelno)s | 로그 레벨을 수치화해서 출력(10, 20, 30, ...)
 lineno | %(lineno)d | 소스의 라인 넘버
 module | %(module)s | 모듈 이름
 msecs | %(msecs)d | 로그 생성 시간에서 밀리세컨드 시간 부분만 출력
 message | %(message)s | 로그 메시지
 name | %(name)s | 로그 이름
 pathname | %(pathname)s | 소스 경로
-process | %(process)d | 프로세스(Process) Id
+process | %(process)d | 프로세스(Process) ID
 processName | %(processName)s | 프로세스 이름
-thread | %(thread)d | Thread Id
+thread | %(thread)d | Thread ID
 threadName | %(threadName)s | Thread Name
 
 <br>
