@@ -2,7 +2,7 @@
 layout: post
 title: 우분투(Ubuntu) 14.04 한글 키보드 설치
 category: Linux
-tag: [리눅스 명령어, JDK]
+tag: [리눅스 설정, Ubuntu]
 ---
 # 한글 키보드 설치
 
@@ -24,7 +24,7 @@ Ubuntu 14.04 LTS 버전 기준으로 한글 키보드를 설치하는 방법입�
 
 ## 오른쪽 한/영키(Alt 키)를 이용한 한/영 전환
 
-Unbuntu에서는 기본적으로 오른쪽 <kbd>Alt</kbd> 키가 검색 기능으로 맵핑이 되어 있습니다. 한/영 전환 키로 활용하고 싶으면 다음과 같이 세팅하시면 됩니다.
+Unbuntu에서는 기본적으로 오른쪽 <kbd>Alt</kbd> 키가 커맨드 실행 기능으로 맵핑이 되어 있습니다. 한/영 전환 키로 활용하고 싶으면 다음과 같이 세팅하시면 됩니다.
 
 * `System Setting`에서 `Keyboard` 실행
 * `Shortcuts` 탭 선택한 후 `Typing` 항목 선택
