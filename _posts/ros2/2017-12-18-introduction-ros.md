@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ROS 소개
-category: Tips
+category: ROS
 tag: [ROS]
 ---
 
