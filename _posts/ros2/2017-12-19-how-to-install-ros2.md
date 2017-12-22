@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ROS 2.0 설치 방법
-category: ROS
+category: ROS2
 tag: [ROS]
 ---
 

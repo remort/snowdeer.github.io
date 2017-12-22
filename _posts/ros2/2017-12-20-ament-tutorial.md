@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ROS 2.0 개발 환경 세팅
-category: ROS
+category: ROS2
 tag: [ROS]
 ---
 
