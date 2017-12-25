@@ -9,6 +9,34 @@ tag: [ROS]
 
 # snow_publisher_using_class
 
+## package.xml
+
+<pre class="prettyprint">
+&lt;?xml version="1.0"?&gt;
+&lt;?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;
+&lt;package format="2"&gt;
+  &lt;name&gt;snow_publisher&lt;/name&gt;
+  &lt;version&gt;0.4.0&lt;/version&gt;
+  &lt;description&gt;Snow ROS Message Publisher&lt;/description&gt;
+  &lt;maintainer email="snowdeer0314@gmail.com"&gt;snowdeer&lt;/maintainer&gt;
+  &lt;license&gt;Apache License 2.0&lt;/license&gt;
+
+  &lt;buildtool_depend&gt;ament_cmake&lt;/buildtool_depend&gt;
+
+  &lt;build_depend&gt;rclcpp&lt;/build_depend&gt;
+  &lt;build_depend&gt;std_msgs&lt;/build_depend&gt;
+
+  &lt;exec_depend&gt;rclcpp&lt;/exec_depend&gt;
+  &lt;exec_depend&gt;std_msgs&lt;/exec_depend&gt;
+  
+  &lt;export&gt;
+    &lt;build_type&gt;ament_cmake&lt;/build_type&gt;
+  &lt;/export&gt;
+&lt;/package&gt;
+</pre>
+
+<br>
+
 ## CMakeLists.txt
 
 <pre class="prettyprint">
@@ -94,6 +122,34 @@ int main(int argc, char * argv[]) {
 <br>
 
 # snow_subscriber_using_class
+
+## package.xml
+
+<pre class="prettyprint">
+&lt;?xml version="1.0"?&gt;
+&lt;?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?&gt;
+&lt;package format="2"&gt;
+  &lt;name&gt;snow_subscriber&lt;/name&gt;
+  &lt;version&gt;0.4.0&lt;/version&gt;
+  &lt;description&gt;Snow ROS Message Subscriber&lt;/description&gt;
+  &lt;maintainer email="snowdeer0314@gmail.com"&gt;snowdeer&lt;/maintainer&gt;
+  &lt;license&gt;Apache License 2.0&lt;/license&gt;
+
+  &lt;buildtool_depend&gt;ament_cmake&lt;/buildtool_depend&gt;
+
+  &lt;build_depend&gt;rclcpp&lt;/build_depend&gt;
+  &lt;build_depend&gt;std_msgs&lt;/build_depend&gt;
+
+  &lt;exec_depend&gt;rclcpp&lt;/exec_depend&gt;
+  &lt;exec_depend&gt;std_msgs&lt;/exec_depend&gt;
+  
+  &lt;export&gt;
+    &lt;build_type&gt;ament_cmake&lt;/build_type&gt;
+  &lt;/export&gt;
+&lt;/package&gt;
+</pre>
+
+<br>
 
 ## CMakeLists.txt
 
