@@ -2,7 +2,7 @@
 layout: post
 title: ROS 용어 정리
 category: ROS2
-tag: [ROS, QT]
+tag: [ROS]
 ---
 # ROS Terminology
 
