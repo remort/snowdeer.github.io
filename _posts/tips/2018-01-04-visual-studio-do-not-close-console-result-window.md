@@ -2,7 +2,7 @@
 layout: post
 title: Visual Studio 2017 기준 C++ 프로그램 실행 후 콘솔창 안 닫히도록 하기
 category: Tips
-tag: [IDE, Formatter, Tips]
+tag: [IDE, Visual Studio, Tips]
 ---
 
 과거에는 프로그램을 작성한 후 <kbd>Ctrl</kbd> + <kbd>F5</kbd>를 누르면 콘솔 창이 닫히지 않아서 결과를 확인하기가 용이했습니다. 
