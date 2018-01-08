@@ -25,8 +25,8 @@ $$
 $$
 output = 
 \begin{cases}
-0, ( w_1 x_1 + w2 x_2 + ... + w_i x_i $\le$ θ ) \\
-1, () w_1 x_1 + w2 x_2 + ... + w_i x_i > θ )
+0, ( w_1 x_1 + w2 x_2 + ... + w_i x_i \le θ ) \\
+1, ( w_1 x_1 + w2 x_2 + ... + w_i x_i > θ )
 \end{cases}
 $$
 
@@ -65,3 +65,20 @@ $ x_1 $ | $ x_2 $ | y
 1 | 1 | 0
 
 `NAND` 게이트는 `AND` 앞에 `Not`이 붙었기 때문에 (w1, w2, θ) 조합을 간단히 (-0.5, -0.5, -0.7) 등과 같은 값을 입력해도 충분히 구현할 수 있습니다. 물론 조합의 경우의 수는 엄청 많습니다.
+
+<br>
+
+## 퍼셉트론 구현하기
+
+퍼셉트론은 다음과 같이 간단한 코드로 구현할 수 있습니다. (Python 코드입니다.)
+
+<pre class="prettyprint">
+def AND(x1, x2):
+    w1, w2, theta = 0.5, 0.5, 0.7
+    value = x1 * w1 + x2 * w2
+    if value <= theta:
+        return 0
+    elif value >= theta:
+        return 1
+</pre>
+
