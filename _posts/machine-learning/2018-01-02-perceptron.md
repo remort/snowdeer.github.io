@@ -89,8 +89,8 @@ def AND(x1, x2):
 $$
 output = 
 \begin{cases}
-0 ( b + w_1 x_1 + w2 x_2 + ... + w_i x_i \le θ ) \\
-1 ( b + w_1 x_1 + w2 x_2 + ... + w_i x_i > θ )
+0 ( b + w_1 x_1 + w2 x_2 + ... + w_i x_i \le 0 ) \\
+1 ( b + w_1 x_1 + w2 x_2 + ... + w_i x_i > 0 )
 \end{cases}
 $$
 
