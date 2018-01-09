@@ -15,10 +15,10 @@ env는 Python의 독립적인 가상의 실행 환경(Environment)를 말합니�
 ## env 생성
 
 ~~~
-$ conda create -n snowdeer_env python=3.6
+$ conda create -n snowdeer_env python=3.5
 ~~~
 
-Python 3.5 버전의 'snowdeer_env'라는 이름으로 `env`를 생성합니다.
+Python 3.5 버전의 'snowdeer_env'라는 이름으로 `env`를 생성합니다. (현재 Windows에서 Keras를 설치할 거면 Python 버전을 3.6이 아닌 3.5로 해야 합니다.)
 
 <br>
 
@@ -54,9 +54,26 @@ $ conda env remove -n snowdeer_env
 
 <br>
 
-## env에 tensorflow 설치
+## env에 Tensorflow, Keras 설치
 
 ~~~
 $ activate snowdeer_env
-$ conda install -c conda-forge tensorflow
+
+$ pip install tensorflow
+
+$ pip install keras
+~~~
+
+Tensorflow와 Keras의 설치 확인은 다음 명령어를 이용해서 확인할 수 있습니다.
+
+~~~
+$ python
+
+$ import tensorflow as tf
+
+$ print(tf.__version__)
+1.4.0
+
+$ import keras
+Using TensorFlow backend.
 ~~~
