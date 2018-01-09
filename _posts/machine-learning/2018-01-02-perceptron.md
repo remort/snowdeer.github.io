@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 퍼셉트론
+title: 퍼셉트론(Perceptron)
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

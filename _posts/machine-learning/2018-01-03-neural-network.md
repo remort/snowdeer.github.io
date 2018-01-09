@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 신경망
+title: 신경망(Neural Network)
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 
@@ -45,7 +45,7 @@ y = h(b + w_1 x_1 + w_2 + x_2 + ... w_i x_i) \\
 h(x) = 
 \begin{cases}
 0 ( x \le 0 ) \\
-1 ( x> 0 )
+1 ( x > 0 )
 \end{cases}
 $$
 
