@@ -6,7 +6,7 @@ tag: [ROS, OpenCV]
 ---
 # 카메라 이미지 Subscriber
 
-원본 소스 참고는 [여기](https://github.com/ros2/demos/blob/master/image_tools/src/showimage.cpp)를 했습니다.
+[여기](https://github.com/ros2/demos/blob/master/image_tools/src/showimage.cpp) 소스 코드를 참고했습니다.
 
 ## main.cpp
 

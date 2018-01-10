@@ -91,26 +91,6 @@ int main(int argc, char** argv) {
 }
 ~~~
 
-#### Syntax Highlighter
-
-{% highlight c %}
-int main(int argc, char** argv) {
-    printf("Hello~ Welcome to SnowDeer's Blog.\n");
-
-    return 0;
-}
-{% endhighlight %}
-
-
-#### Google Code Prettyfy
-
-<pre class="prettyprint">
-int main(int argc, char** argv) {
-    printf("Hello~ Welcome to SnowDeer's Blog.\n");
-
-    return 0;
-}
-</pre>
 
 
 
@@ -140,3 +120,25 @@ and [basic links](http://snowdeer.github.io).
 <p class="container">
 안녕하세요.
 </p>
+
+
+#### Default Syntax Highlighter
+
+{% highlight c %}
+int main(int argc, char** argv) {
+    printf("Hello~ Welcome to SnowDeer's Blog.\n");
+
+    return 0;
+}
+{% endhighlight %}
+
+
+#### Google Code Prettyfy
+
+<pre class="prettyprint">
+int main(int argc, char** argv) {
+    printf("Hello~ Welcome to SnowDeer's Blog.\n");
+
+    return 0;
+}
+</pre>
