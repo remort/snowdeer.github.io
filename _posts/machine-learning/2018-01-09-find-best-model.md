@@ -130,3 +130,24 @@ print('\nAccuracy: {:.4f}'.format(model.evaluate(X, Y)[1]))
 </pre>
 
 실행해보면 `./model` 폴더 아래에 수많은 `.hdf5` 파일들이 생겼음을 확인할 수 있습니다. 파일명은 `epoch` 값과 `val_loss(오차율)`이므로 가장 최종적으로 생긴 파일이 가장 성능이 좋은 모델이 됩니다.
+
+<br>
+
+## 학습 자동 중단
+
+반복문을 돌면서 최고 성능의 모델을 찾아낼 때, 초반에 최고 성능의 모델이 찾아져서 그 보다 더 좋은 성능의 모델이 더 이상 발견되지 않는 경우가 있습니다. 이런 경우 학습을 중단하도록 하는 기능을 Keras에서는 `EarlyStopping()`이라는 함수로 제공하고 있습니다. 
+
+<pre class="prettyprint">
+from keras.callbacks import EarlyStopping
+
+# ...
+
+cb_early_stopping = EarlyStopping(monitor='val_loss', patience=100)
+
+# ...
+
+model.fit(X, Y, validation_split=0.2, epochs=5000, batch_size=500,
+          callbacks=[EarlyStopping])
+</pre>
+
+위와 같은 코드를 이용해서 구현하면 `epoch` 횟수가 총 5,000번이지만, 중간에 더 좋은 성능의 모델이 100번동안 발견이 되지 않으면 학습을 멈추게 됩니다.
