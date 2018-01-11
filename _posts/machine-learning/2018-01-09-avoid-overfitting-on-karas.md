@@ -94,7 +94,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam',
 model.fit(X_train, Y_train, epochs=100, batch_size=5)
 
 # 테스트 데이터를 이용해서 검증
-print('\nAccuracy: %.4f' % (model.evaluate(X_validation, Y_validation)[1]))
+print('\nAccuracy: {:.4f}'.format(model.evaluate(X_validation, Y_validation)[1]))
 </pre>
 
 <br>
@@ -148,5 +148,5 @@ for train, validation in skf.split(X, Y):
   accuracy.append(k_accuracy)
 
 # 전체 검증 결과 출력
-print('\nK-fold cross validation Accuracy: ', accuracy)
+print('\nK-fold cross validation Accuracy: {}'.format(accuracy))
 </pre>

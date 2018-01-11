@@ -44,7 +44,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam',
 model.fit(X, Y, epochs=50, batch_size=10)
 
 # 결과 출력
-print('\nAccuracy: %.4f' % (model.evaluate(X, Y)[1]))
+print('\nAccuracy: {:.4f}'.format(model.evaluate(X, Y)[1]))
 </pre>
 
 <br>
