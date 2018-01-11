@@ -10,7 +10,7 @@ tag: [머신러닝, Python, Keras]
 
 Keras를 활용하여 폐암 수술 환자의 생존율을 예측하는 예제 코드입니다. 
 
-예제 데이터는 [여기]((/assets/machine-learning/thoraric_surgery.csv))에서 받을 수 있습니다.
+예제 데이터는 [여기](/assets/machine-learning/thoraric_surgery.csv)에서 받을 수 있습니다.
 
 <br>
 
