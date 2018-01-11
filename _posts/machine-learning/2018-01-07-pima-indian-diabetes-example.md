@@ -10,7 +10,7 @@ tag: [머신러닝, Python, Keras]
 
 Keras를 활용하여 피마 인디언들의 당뇨병 예측하는 예제 코드입니다. 
 
-예제 데이터는 [여기]((/assets/machine-learning/pima-indians-diabetes.csv))에서 받을 수 있습니다.
+예제 데이터는 [여기](/assets/machine-learning/pima-indians-diabetes.csv)에서 받을 수 있습니다.
 
 <br>
 
