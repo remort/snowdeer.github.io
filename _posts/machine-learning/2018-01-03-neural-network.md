@@ -18,11 +18,11 @@ tag: [머신러닝]
 
 신경망을 간단하게 그림으로 표현하면 다음과 같습니다.
 
-![Image](/assets/machine-learning/004.png) 
+![Image](/assets/machine-learning/004.png)
 
 데이터가 입력되는 쪽을 `Input`, 결과값이 출력되는 쪽을 `Output`, 그리고 그 사이를 `Hidden`이라고 합니다. 층이 많아지면 아래의 그림과 같은 모습이 됩니다.
 
-![Image](/assets/machine-learning/005.png) 
+![Image](/assets/machine-learning/005.png)
 
 <br>
 
@@ -66,9 +66,9 @@ $$
 
 그림으로 표현하면 아래와 같은 그림이 되고,
 
-![Image](/assets/machine-learning/006.jpg) 
+![Image](/assets/machine-learning/006.jpg)
 
 조금 더 간결하게 표현하면 다음과 같이 표현됩니다.
 
-![Image](/assets/machine-learning/007.png) 
+![Image](/assets/machine-learning/007.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 최적 모델 찾기(Karas)
+title: 최적 모델 찾기(Keras)
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 
