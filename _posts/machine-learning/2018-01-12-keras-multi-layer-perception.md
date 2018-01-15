@@ -40,7 +40,6 @@ model.add(Dense(12, input_dim=8, activation='relu'))
 * sigmoid : 주로 출력층에서 사용합니다.
 * softmax : 출력값들의 합이 `1.0`이 되도록 하는 함수로 보통 출력층에서 사용합니다.
 
-
 <br>
 
 ## compile 옵션
