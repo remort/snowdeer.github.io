@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 아이리스 꽃 품종 예측하기(Keras, 다중 범주 분류)
+title: [Keras] 아이리스 꽃 품종 예측하기(다중 범주 분류)
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

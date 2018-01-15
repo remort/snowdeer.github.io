@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Epoch와 오차(Loss)간 관게를 그래프로 확인하기(Karas)
+title: [Keras] Epoch와 오차(Loss)간 관게를 그래프로 확인하기
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

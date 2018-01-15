@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 폐암 수술 환자의 생존율 예측 예제(Keras)
+title: [Keras] 폐암 수술 환자의 생존율 예측 예제
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 
