@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [블록체인 소개자료] 1. 분산 장부
+title: 블록체인 소개자료 - (1) 분산 장부
 category: BlockChain
 tag: [BlockChain]
 ---
