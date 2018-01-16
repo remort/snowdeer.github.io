@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] 피마 인디언들의 당뇨병 예측
+title: Keras - 피마 인디언들의 당뇨병 예측
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

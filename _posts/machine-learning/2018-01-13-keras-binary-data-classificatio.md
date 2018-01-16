@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] 이진 데이터 분류 예제
+title: Keras - 이진 데이터 분류 예제
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

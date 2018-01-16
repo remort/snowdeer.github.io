@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] 다층 퍼셉트론(MLP, Multi-Layer Perception) 
+title: Keras - 다층 퍼셉트론(MLP, Multi-Layer Perception) 
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

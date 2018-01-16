@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] History 기능 사용하기
+title: Keras - History 기능 사용하기
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

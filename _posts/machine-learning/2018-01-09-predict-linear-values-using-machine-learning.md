@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] 선형 회귀 구현
+title: Keras - 선형 회귀 구현
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

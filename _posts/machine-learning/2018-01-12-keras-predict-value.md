@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] 수치 예측하기 예제
+title: Keras - 수치 예측하기 예제
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

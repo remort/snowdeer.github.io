@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] Overfitting 회피하기
+title: Keras - Overfitting 회피하기
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

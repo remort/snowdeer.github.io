@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] MNIST 손글씨 인식하기
+title: Keras - MNIST 손글씨 인식하기
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] Model.fit 옵션
+title: Keras - Model.fit 옵션
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 

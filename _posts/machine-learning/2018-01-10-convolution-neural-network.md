@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Keras] CNN(Convolution Neural Network) 예제
+title: Keras - CNN(Convolution Neural Network) 예제
 category: 머신러닝
 permalink: /machine-learning/:year/:month/:day/:title/
 
