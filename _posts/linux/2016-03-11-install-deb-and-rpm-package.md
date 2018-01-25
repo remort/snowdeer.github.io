@@ -3,7 +3,7 @@ layout: post
 title: 우분투(Ubuntu)에서 deb, rpm 파일 설치하기
 
 category: Linux
-tag: [리눅스 명령어]
+tag: [리눅스 명령어, Ubuntu]
 ---
 
 확장자가 deb이거나 또는 rpm인 파일은 리눅스에서 사용하는 프로그램 설치 패키지입니다. GUI 화면에서라면 더블 클릭이나 Installer 등을 연계하여 바로 설치할 수 있는데, 여기서는 터미널 명령어로 알아보도록 하겠습니다.

@@ -22,12 +22,56 @@ Docker는 기본적으로 Linux를 사용합니다. 즉, Linux 없이는 동작�
 
 ## Docker 설치 명령어
 
-Ubuntu 기준으로 다음 명령어를 터미널 상에서 입력합니다.
+공식 문서는 [여기](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#set-up-the-repository)를 참조하세요. 
+
+<br>
+
+### 필요 모듈 설치
 
 ~~~
 $ sudo apt-get update
 
-$ sudo apt-get install docker.io
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
 ~~~
 
-설치 후 `docker` 명령어가 잘 실행되는지 확인합니다.
+<br>
+
+### Docker 공식 GPG 키 다운로드
+
+~~~
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+~~~
+
+<br>
+
+### Repository 추가
+
+~~~
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+~~~
+
+<br>
+
+### Docker 설치
+
+~~~
+$ sudo apt-get update
+
+$ sudo apt-get install docker-ce
+~~~
+
+<br>
+
+### Docker 실행 확인
+
+~~~
+$ sudo docker run hello-world
+~~~
+
+위 명령어를 실행하면 `hello-world` 이미지를 내려받고 실행할 것입니다.

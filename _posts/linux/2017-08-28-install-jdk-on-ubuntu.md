@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu에 JDK 설치하는 방법
 category: Linux
-tag: [리눅스 명령어, JDK]
+tag: [리눅스 명령어, JDK, Ubuntu]
 ---
 # Ubuntu에 JDK 설치하는 방법
 
@@ -12,7 +12,7 @@ tag: [리눅스 명령어, JDK]
 
 다만, 여기에서 내려 받는 파일은 확장자가 `rpm`으로 되어 있습니다. 이 경우, `deb` 확장자로 변경해주어야 설치를 할 수 있습니다.
 
-[`rpm` 파일을 `deb` 파일로 변경](linux/2016/03/11/install-deb-and-rpm-package)하고 나면 다음 명령어를 이용해서 JDK를 설치할 수 있습니다.
+[rpm 파일을 deb 파일로 변경](linux/2016/03/11/install-deb-and-rpm-package)하고 나면 다음 명령어를 이용해서 JDK를 설치할 수 있습니다.
 
 ~~~
 $ sudo dpkg -i jdk1.8.0-144_1.8.014401_amd64.deb
