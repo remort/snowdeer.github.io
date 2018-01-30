@@ -59,6 +59,7 @@ nav:
     - { MAC OS: '/blog/categories/#mac-os' }
     - { ROS2: '/blog/categories/#ros2' }
     - { Docker: '/blog/categories/#docker' }
+    - { Go: '/blog/categories/#go' }
 
   Tags: 
     - '/blog/tags/'
