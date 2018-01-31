@@ -46,7 +46,7 @@ if __name__ == '__main__':
 아래와 같은 코드를 이용해서 URL 경로를 파라메터로 받을 수 있습니다.
 
 <pre class="prettyprint">
-@app.route('/hello/<name>')
+@app.route('/hello/&lt;name&gt;')
 def hello_to(name):
     return 'Hello, {}'.format(name)
 </pre>
@@ -71,7 +71,7 @@ def hello():
     return 'Hello'
 
 
-@app.route('/hello/<name>')
+@app.route('/hello/&lt;name&gt;')
 def hello_to(name):
     return 'Hello, {}'.format(name)
 
