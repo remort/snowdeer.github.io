@@ -24,16 +24,54 @@ Linux가 Ubuntu, Fedora, Debian 등 다양한 형태로 파편화가 되어 있�
 
 다음과 같은 형태로 사용하면 됩니다.
 
+### Store의 프로그램 검색
+
 ~~~
-$ snap find "visual studio code"
+$ snap find <text to search>
+
+ex) snap find "visual studio code"
 ~~~
 
 위 명령어를 입력하면 'Visual Studio Code'에 대한 정보가 나오고 패키지명과 Class Snap 여부를 확인할 수 있습니다.
+
+<br>
+
+### 프로그램 설치
 
 ![image](/assets/linux/003.png)
 
 따라서 위와 같은 경우는 아래 명령어를 이용해서 프로그램을 설치할 수 있습니다.
 
 ~~~
-$ sudo snap install vscode --classic
+$ snap install <snap name>
+
+ex) sudo snap install vscode --classic
+~~~
+
+<br>
+
+### 프로그램 업데이트
+
+만약 기존에 설치한 프로그램을 업데이트하고 싶을 때는 `refresh` 옵션을 이용하면 됩니다.
+
+~~~
+$ snap refresh <snap name>
+~~~
+
+<br>
+
+### 모든 프로그램 업데이트
+
+모든 프로그램을 업데이트할 경우엔 다음 명령어를 입력합니다.
+
+~~~
+$ sudo snap refresh
+~~~
+
+<br>
+
+### 프로그램 삭제
+
+~~~
+$ sudo snap remove <snap name>
 ~~~
