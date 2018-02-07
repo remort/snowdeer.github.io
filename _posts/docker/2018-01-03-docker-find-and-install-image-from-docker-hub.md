@@ -2,7 +2,7 @@
 layout: post
 title: Docker Hub로부터 이미지 검색 및 다운로드
 category: Docker
-permalink: /blog/:year/:month/:day/:title/
+permalink: /docker/:year/:month/:day/:title/
 
 tag: [Docker]
 ---

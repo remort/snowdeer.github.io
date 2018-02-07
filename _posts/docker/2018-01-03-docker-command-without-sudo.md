@@ -2,7 +2,7 @@
 layout: post
 title: Docker 유저 권한 추가(sudo 없이 Docker 명령어 실행하는 방법)
 category: Docker
-permalink: /blog/:year/:month/:day/:title/
+permalink: /docker/:year/:month/:day/:title/
 
 tag: [Docker]
 ---

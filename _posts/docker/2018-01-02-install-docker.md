@@ -2,7 +2,7 @@
 layout: post
 title: Docker 설치하기
 category: Docker
-permalink: /blog/:year/:month/:day/:title/
+permalink: /docker/:year/:month/:day/:title/
 
 tag: [Docker]
 ---

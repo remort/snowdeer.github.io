@@ -2,7 +2,7 @@
 layout: post
 title: 가상 머신과 Docker
 category: Docker
-permalink: /blog/:year/:month/:day/:title/
+permalink: /docker/:year/:month/:day/:title/
 
 tag: [Docker]
 ---

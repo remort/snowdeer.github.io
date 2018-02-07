@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Wordpress 이미지와 MySQL 이미지 연결(Link)하는 예제
+title: Wordpress 이미지와 MySQL 이미지 연결(Link) 예제
 category: Docker
-permalink: /blog/:year/:month/:day/:title/
+permalink: /docker/:year/:month/:day/:title/
 
 tag: [Docker]
 ---

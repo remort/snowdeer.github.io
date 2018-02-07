@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 컨테이너 실행
+title: 컨테이너 실행 명령어
 category: Docker
-permalink: /blog/:year/:month/:day/:title/
+permalink: /docker/:year/:month/:day/:title/
 
 tag: [Docker]
 ---
@@ -80,6 +80,8 @@ $ docker exec <container name> <command>
 ex) docker exec snowdeer_docker echo "Hello, SnowDeer"
 ~~~
 
+`exec` 명령어는 현재 실행 중인 컨테이너에만 사용할 수 있으며, 중지 상태의 컨테이너에는 사용할 수 없습니다.
+
 <br>
 
 ## 컨테이너 삭제
@@ -89,3 +91,5 @@ ex) docker exec snowdeer_docker echo "Hello, SnowDeer"
 ~~~
 $ docker rm snowdeer_docker
 ~~~
+
+`docker run` 명령을 이용해서 컨테이너를 실행할 때 `--rm` 옵션을 붙이면 컨테이너 종료시 해당 컨테이너가 자동으로 삭제되기 때문에 편리하게 연습용으로 편리하게 사용할 수 있습니다.
