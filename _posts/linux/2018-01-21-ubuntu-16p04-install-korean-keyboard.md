@@ -30,7 +30,7 @@ Unbuntu에서는 기본적으로 오른쪽 <kbd>Alt</kbd> 키가 커맨드 실�
 
 * `System Settings`에서 `Keyboard` 실행
 * `Shortcuts` 탭 선택한 후 `Typing` 항목 선택
-* 모든 항목(`Switch to next source`, `Switch to previous source`, `Alternative Characters Key`)을 `Disabled`로 설정
+* 모든 항목(`Switch to next source`, `Switch to previous source`, `Alternative Characters Key`)을 `Disabled`로 설정(<kbd>Back</kbd> 키를 누르면 `Disabled`가 됨)
 * `Compose Key` 항목을 `Right Alt`로 변경
 * `Switch to next source`를 선택한 다음 오른쪽 <kbd>Alt</kbd> 키(<kbd>한/영</kbd> 키)를 누르면 `Multikey`라는 항목으로 값이 설정됨
 
