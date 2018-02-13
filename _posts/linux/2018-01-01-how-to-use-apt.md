@@ -18,3 +18,5 @@ apt-get -d install [package name] | 해당 패키지를 `/var/cache/apt/archives
 apt-get autoclean | 불완전하게 다운로드된 패키지나 오래된 패키지를 삭제함
 apt-get clean | `/var/cache/apt/archives`에 저장된 캐시 파일들을 모두 삭제
 apt-get remove [package name] | 해당 패키지와 그 설정 파일들을 보두 삭제. `--purge` 옵션은 설정 파일을 보존하는 옵션
+
+그 외에도 `-f` 옵션은 의존성 문제가 발생했을 때 시스템을 정상적으로 만들어주는 옵션이며, `-u` 옵션은 업그레이드된 패키지를 보여줍니다. 설정 파일까지 모두 삭제하는 `-purge` 옵션도 있습니다.
