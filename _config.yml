@@ -42,25 +42,32 @@ nav:
     - '/blog/categories/'
     # - { Categories All: '/blog/categories/' }
     - { 블로그: '/blog/categories/#블로그' }
+    
+    - { Docker: '/blog/categories/#docker' }
+    - { Kubernetes: '/blog/categories/#kubernetes' }
+    
     - { Android: '/blog/categories/#android' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
+    - { Go: '/blog/categories/#go' }
+    
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }
     - { 개발상식: '/blog/categories/#개발상식' }
     - { Git: '/blog/categories/#git' }
+    - { BlockChain: '/blog/categories/#blockchain' }
+    
     - { 머신러닝: '/blog/categories/#머신러닝' }
     - { S/W Architecture: '/blog/categories/#s-w-architecture' }
     - { 디자인패턴: '/blog/categories/#디자인패턴' }
+    
     - { Linux: '/blog/categories/#linux' }
-    - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
-    - { BlockChain: '/blog/categories/#blockchain' }
     - { Windows: '/blog/categories/#windows' }
+    
     - { MAC OS: '/blog/categories/#mac-os' }
+    - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
     - { ROS2: '/blog/categories/#ros2' }
-    - { Docker: '/blog/categories/#docker' }
-    - { Go: '/blog/categories/#go' }
-
+    
   Tags: 
     - '/blog/tags/'
 

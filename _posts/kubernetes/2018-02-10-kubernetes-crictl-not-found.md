@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Kubernetes - crictl not found in system path
-category: Docker
-permalink: /docker/:year/:month/:day/:title/
+title: crictl not found in system path 오류 발생시
+category: Kubernetes
+permalink: /kubernetes/:year/:month/:day/:title/
 
 tag: [Kubernetes]
 ---
