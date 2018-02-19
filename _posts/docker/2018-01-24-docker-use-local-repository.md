@@ -67,7 +67,7 @@ $ docker commit -m "Snow Nginx" snow-nginx snow-nginx:0.1
 ~~~
 $ docker tag snow-nginx:0.1 localhost:5000/snow-nginx:0.1
 
-$ snowdeer@snowdeer-ubuntu:~/Workspace/docker_example$ docker push localhost:5000/snow-nginx:0.1
+$ docker push localhost:5000/snow-nginx:0.1
 
 The push refers to repository [localhost:5000/snow-nginx]
 fced5b294318: Pushed 

@@ -97,6 +97,18 @@ kubeadm join --token f4938e.4b23af938d801cf6 172.31.1.36:6443 --discovery-token-
 
 <br>
 
+## kubectl 권한 활성화
+
+다음 명령어를 실행해서 `kubectl` 명령어의 권한을 활성화해줍니다.
+
+~~~
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+~~~
+
+<br>
+
 ## Pod Network Add-On 설치
 
 본격적인 통신을 하기 위해서는 Pod Network Add-On을 설치해야 합니다. Kube-DNS를 비록하여 각종 어플리케이션을 배포(Deploy)하기 전에 네트워크 설정부터 해야 합니다. 네트워크 설정이 되기 전까지는 각 어플들은 실행되지 않을 것입니다.

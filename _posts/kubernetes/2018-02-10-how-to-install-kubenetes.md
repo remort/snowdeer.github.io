@@ -44,7 +44,7 @@ sudo apt-get update && apt-get install -y apt-transport-https
 
 ## Kubernetes Key 설치
 
-먼저 다음 명령어를 통해 Kubernetes 설치를 위한 Key를 다운로드 합니다. `sudo su` 명령어로 `root` 계정으로 변경 후 수행해야 합니다.
+먼저 다음 명령어를 통해 Kubernetes 설치를 위한 Key를 다운로드 합니다.
 
 ~~~
 sudo su
@@ -59,6 +59,14 @@ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add
 그 다음 `/etc/apt/sources.list.d/kubernetes.list` 파일을 만듭니다. 
 
 ~~~
+cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+EOF
+~~~
+
+또는 `nano` 명령어를 이용해서 생성할 수도 있습니다.
+
+~~~
 sudo nano /etc/apt/sources.list.d/kubernetes.list
 ~~~
 
@@ -70,19 +78,12 @@ deb http://apt.kubernetes.io/ kubernetes-xenial main
 
 을 추가합니다. 
 
-또는 `cat` 명령어를 이용해서 생성할 수도 있습니다.
-
-~~~
-cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
-deb http://apt.kubernetes.io/ kubernetes-xenial main
-EOF
-~~~
-
 <br>
 
 ## Kubernetes 설치
 
 ~~~
 apt-get update
+
 apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 ~~~
