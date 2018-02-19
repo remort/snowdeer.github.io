@@ -23,9 +23,9 @@ ssh snowdeer@10.13.152.45 -i ~/.ssh/snowdeer_aws.pem
 
 'ssh config' 파일의 위치는 `~/.ssh/config` 입니다. 폴더나 파일이 존재하지 않는다면 직접 만들면 됩니다. 해당 파일을 생성하고 권한은 다음과 같이 부여합니다.
 
-~~~
+<pre class="prettyprint">
 chmod 440 ~/.ssh/config
-~~~
+</pre>
 
 그리고 `config` 파일 내용은 다음과 같이 작성합니다.
 
@@ -52,6 +52,6 @@ Host node2
 
 사용법은 단순합니다. 단순히 `ssh <host name>`으로 명령을 내리면 됩니다.
 
-~~~
+<pre class="prettyprint">
 ex) ssh node1
-~~~
+</pre>
