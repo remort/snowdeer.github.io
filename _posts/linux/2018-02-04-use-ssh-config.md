@@ -1,8 +1,8 @@
 ---
 layout: post
-title: ssf Config 사용법
+title: ssh Config 사용법
 category: Linux
-tag: [Ubuntu]
+tag: [Linux, ssh]
 ---
 # ssh config
 
