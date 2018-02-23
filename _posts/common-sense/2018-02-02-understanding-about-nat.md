@@ -26,6 +26,8 @@ NAPT는 프라이빗 IP 주소와 글로벌 IP 주소를 N:1로 연결합니다.
 
 NAPT는 LAN에서 인터넷으로 접근할 때 출발지 IP 주소와 출발지 포트를 같이 변환합니다.
 
+Linux에서는 NAPT를 IP masquerade라고 부릅니다.
+
 <br>
 
 ![image](/assets/common-sense/001.png)

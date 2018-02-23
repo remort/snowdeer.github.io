@@ -45,6 +45,7 @@ nav:
     
     - { Docker: '/blog/categories/#docker' }
     - { Kubernetes: '/blog/categories/#kubernetes' }
+    - { OpenShift: '/blog/categories/#openshift' }
     
     - { Android: '/blog/categories/#android' }
     - { C++: '/blog/categories/#c' }
