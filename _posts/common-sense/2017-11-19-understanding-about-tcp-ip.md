@@ -4,7 +4,7 @@ title: TCP/IP 프로토콜에 대한 이해
 category: 개발상식
 permalink: /common-sense/:year/:month/:day/:title/
 
-tag: [용어]
+tag: [용어, 네트워크]
 ---
 # TCP/IP 프로토콜에 대한 이해
 

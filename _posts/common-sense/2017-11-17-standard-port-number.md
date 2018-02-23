@@ -4,7 +4,7 @@ title: 일반적으로 사용하는 포트 번호
 category: 개발상식
 permalink: /common-sense/:year/:month/:day/:title/
 
-tag: [용어]
+tag: [용어, 네트워크]
 ---
 # 일반적으로 사용하는 포트 번호 및 프로토콜
 
