@@ -37,16 +37,17 @@ $ sudo yum install docker-io
 ## CentOS 7
 
 <pre class="prettyprint">
-$ sudo yum install docker
+sudo yum install -y yum-utils
+
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+
+sudo yum makecache fast
+
+sudo yum install -y docker-ce
+
+sudo systemctl start docker
+
+sudo systemctl enable docker
+
+sudo gpasswd -a centos docker
 </pre>
-
-<br>
-
-## 설치 확인
-
-설치 확인은 `docker version` 명령어를 이용해서 할 수 있는데, 만약 Docker Daemon이 시작되지 않았다면 다음 명령어를 실행합니다.
-
-<pre class="prettyprint">
-$ sudo service docker start
-</pre>
-
