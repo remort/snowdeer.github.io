@@ -49,7 +49,7 @@ sudo sysctl -w net.ipv4.ip_forward=1
 
 sudo su
 
-cat<<EOF>> /etc/docker/daemon.json
+cat&lt;&lt;EOF&gt;&gt; /etc/docker/daemon.json
 {
     "insecure-registries" : ["172.30.0.0/16"]
 }

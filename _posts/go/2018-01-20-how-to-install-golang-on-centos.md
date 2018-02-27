@@ -33,7 +33,7 @@ $ sudo tar -C /usr/local -xvzf go1.10.linux-amd64.tar.gz
 <pre class="prettyprint">
 $ mkdir bin
 
-$ mkdir pk
+$ mkdir pkg
 
 $ mkdir src
 </pre>
