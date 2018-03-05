@@ -48,6 +48,7 @@ nav:
     - { OpenShift: '/blog/categories/#openshift' }
     
     - { Android: '/blog/categories/#android' }
+    - { Java: '/blog/categories/#java' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
     - { Go: '/blog/categories/#go' }
