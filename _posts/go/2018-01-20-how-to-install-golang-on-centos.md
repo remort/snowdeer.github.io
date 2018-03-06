@@ -28,7 +28,7 @@ $ wget https://dl.google.com/go/go1.10.linux-amd64.tar.gz
 $ sudo tar -C /usr/local -xvzf go1.10.linux-amd64.tar.gz
 </pre>
 
-그리고 작업하고자하는 디렉토리에 아래 디렉토리들을 생성해줍니다. (저같은 경우는 `/home/snowdeer/Workspace/go/` 디렉토리 아래에서 작업합니다.)
+그리고 작업하고자하는 디렉토리에 아래 디렉토리들을 생성해줍니다. (저같은 경우는 `/home/snowdeer/go/` 디렉토리 아래에서 작업합니다.)
 
 <pre class="prettyprint">
 $ mkdir bin
@@ -51,8 +51,8 @@ export PATH=$PATH:/usr/local/go/bin
 또한 `/home/snowdeer/.bash_profile` 파일에도 다음 라인을 추가합니다.
 
 <pre class="prettyprint">
-export GOBIN="$HOME/Workspace/go/bin"
-export GOPATH="$HOME/Workspace/go/src"
+export GOBIN="$HOME/go/bin"
+export GOPATH="$HOME/go"
 </pre>
 
 그런다음 터미널에서 다음 명령어를 입력해서 환경 변수를 시스템에 적용합니다.
