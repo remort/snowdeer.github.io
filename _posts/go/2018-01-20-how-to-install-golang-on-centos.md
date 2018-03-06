@@ -55,6 +55,8 @@ export GOBIN="$HOME/go/bin"
 export GOPATH="$HOME/go"
 </pre>
 
+또한 기존의 `PATH` 변수에 `GOBIN` 경로도 추가해줍니다.
+
 그런다음 터미널에서 다음 명령어를 입력해서 환경 변수를 시스템에 적용합니다.
 
 <pre class="prettyprint">

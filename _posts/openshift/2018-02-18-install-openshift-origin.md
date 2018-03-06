@@ -1,7 +1,7 @@
 ---
 layout: post
-title: OpenShift origin 설치 방법
-category: openshift
+title: OpenShift origin 설치 방법(CentOS 기준)
+category: OpenShift
 permalink: /openshift/:year/:month/:day/:title/
 
 tag: [OpenShift]
