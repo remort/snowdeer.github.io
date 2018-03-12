@@ -4,7 +4,7 @@ title: Go Project Deployment 템플릿
 category: OpenShift
 permalink: /openshift/:year/:month/:day/:title/
 
-tag: [OpenShift]
+tag: [OpenShift, Dockerfile]
 ---
 # Go 프로젝트 배포
 

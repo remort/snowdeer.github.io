@@ -4,7 +4,7 @@ title: Java Project Deployment 템플릿
 category: OpenShift
 permalink: /openshift/:year/:month/:day/:title/
 
-tag: [OpenShift]
+tag: [OpenShift, Dockerfile]
 ---
 # Java 프로젝트 배포
 
