@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 간단한 Web Framework 구현하기 (4) - Context 사용
+title: 간단한 Web Framework 구현하기 (4) - Context
 category: Go
 tag: [Go]
 ---

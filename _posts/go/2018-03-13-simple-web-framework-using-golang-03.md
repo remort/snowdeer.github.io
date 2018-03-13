@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 간단한 Web Framework 구현하기 (3) - Router 구현
+title: 간단한 Web Framework 구현하기 (3) - Router
 category: Go
 tag: [Go]
 ---

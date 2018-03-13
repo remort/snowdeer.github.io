@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 간단한 Web Framework 구현하기 (4) - Middleware 추가하기
+title: 간단한 Web Framework 구현하기 (4) - Middleware
 category: Go
 tag: [Go]
 ---

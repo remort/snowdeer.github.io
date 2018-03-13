@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 간단한 Web Framework 구현하기 (5) - 추상화
+title: 간단한 Web Framework 구현하기 (6) - Abstraction
 category: Go
 tag: [Go]
 ---
