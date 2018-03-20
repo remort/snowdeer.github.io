@@ -44,7 +44,6 @@ package main
 
 import (
 	"net/http"
-	"strings"
 )
 
 type router struct {
@@ -75,7 +74,7 @@ func (r *router) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 
 <br>
 
-## router에 정규식 정용
+## router에 정규식 적용
 
 ### main.go
 

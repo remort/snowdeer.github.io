@@ -20,7 +20,7 @@ tag: [Windows]
 
 ### 이미지 저장 파일 이름 포맷
 
-![image](/assets/2018-01-05-windows-picpick-settings/image_20180105-135851.png)
+![image](/assets/2018-01-05-windows-picpick-setting/image_20180105-135851.png)
 
 저는 단순 일련번호보다는 날짜, 시간 정보가 더 유용한 것 같아서 아래와 같은 포맷을 사용합니다.
 
@@ -32,10 +32,10 @@ image_%y%m%d-%h%n%s
 
 ### 이미지 저장 폴더 위치
 
-![image](/assets/2018-01-05-windows-picpick-settings/image_20180105-135946.png)
+![image](/assets/2018-01-05-windows-picpick-setting/image_20180105-135946.png)
 
 <br>
 
 ### 단축키
 
-![image](/assets/2018-01-05-windows-picpick-settings/image_20180105-140116.png)
+![image](/assets/2018-01-05-windows-picpick-setting/image_20180105-140116.png)
