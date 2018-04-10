@@ -28,11 +28,8 @@ tag: [디자인패턴]
 # 예제 코드
 
 컴포지트 패턴은 다음과 같이 Component, Leaf, Composite 로 구성됩니다.
-<pre class="prettyprint">public abstract class Component {
-
-  public abstract Component add(Component cp);
-
-  public abstract void remove(Component cp);
+<pre class="prettyprint">
+public abstract class Component {
 // ...
 }
 
@@ -41,107 +38,157 @@ public class Leaf extends Component {
 }
 
 public class Composite extends Component {
-
-  private ArrayList arrChildren = new ArrayList();
+  // ...
+  private ArrayList list = new ArrayList();
 
   public Component add(Component cp);
 
   public abstract void remove(Component cp);
-// ...
+  // ...
 }</pre>
 <br>
 
 위에서 언급했던 '파일 구조' 예제를 들어보도록 하겠습니다.
-<pre class="prettyprint">public abstract class Component {
+
+<br>
+
+## Component
+
+<pre class="prettyprint">
+public abstract class Entry {
 
   public abstract String getName();
 
   public abstract int getSize();
 
-  public Component add(Component component) throws Exception {
-    throw new IOException();
-  }
-
   public void printList() {
     printList("");
   }
 
-  protected abstract void printList(String strPrefix);
+  protected abstract void printList(String prefix);
 
+  @Override
   public String toString() {
     return getName() + "(" + getSize() + ")";
   }
 }
 </pre>
-<br>
-<pre class="prettyprint">public class File extends Component {
 
-  private String mName;
-  private int mSize;
+<br>
+
+## Leaf
+
+<pre class="prettyprint">
+public class File extends Entry {
+
+  String name;
+  int size;
 
   public File(String name, int size) {
-    mName = name;
-    mSize = size;
+    this.name = name;
+    this.size = size;
   }
 
   @Override
   public String getName() {
-    return mName;
+    return this.name;
   }
 
   @Override
   public int getSize() {
-    return mSize;
+    return this.size;
   }
 
   @Override
-  protected void printList(String strPrefix) {
-    System.out.println(strPrefix + "/" + getName());
+  protected void printList(String prefix) {
+    System.out.println(prefix + "/" + this);
   }
 }
 </pre>
+
 <br>
-<pre class="prettyprint">public class Folder extends Component {
 
-  private String mName;
-  private ArrayList&lt;Component&gt; mChildList = new ArrayList&lt;Component&gt;();
+## Composite
 
-  public Folder(String strName) {
-    mName = strName;
+<pre class="prettyprint">
+public class Directory extends Entry {
+
+  String name;
+  ArrayList&lt;Entry&gt; list = new ArrayList&lt;&gt;();
+
+  public Directory(String name) {
+    this.name = name;
+  }
+
+  public void add(Entry item) {
+    list.add(item);
+  }
+
+  public void remove(Entry item) {
+    list.remove(item);
   }
 
   @Override
   public String getName() {
-    return mName;
+    return this.name;
   }
 
   @Override
   public int getSize() {
-    int _size = 0;
-    Iterator&lt;Component&gt; it = mChildList.iterator();
-    while(it.hasNext() == true) {
-      Component cp = (Component) it.next();
-      _size = _size + cp.getSize();
+    int size = 0;
+
+    for (Entry item: list) {
+      size += item.getSize();
     }
 
-    return _size;
+    return size;
   }
 
   @Override
-  public Component add(Component component) {
-    mChildList.add(component);
-
-    return this;
-  }
-
-  @Override
-  protected void printList(String strPrefix) {
-    System.out.println(strPrefix + "/" + getName());
-
-    Iterator&lt;Component&gt; it = mChildList.iterator();
-    while(it.hasNext() == true) {
-      Component cp = (Component) it.next();
-      cp.printList(strPrefix + "/" + getName());
+  protected void printList(String prefix) {
+    System.out.println(prefix + "/" + this);
+    for (Entry item: list) {
+      item.printList(prefix + "/" + name);
     }
   }
-}</pre>
+}
+</pre>
+
+<br>
+
+## Main
+
+<pre class="prettyprint">
+public class Main {
+  public static void main(String[] args) {
+    Directory root = new Directory("root");
+    Directory user = new Directory("user");
+    Directory snowdeer = new Directory("snowdeer");
+    Directory media = new Directory("media");
+    Directory image = new Directory("image");
+    Directory music = new Directory("music");
+    Directory video = new Directory("video");
+
+    root.add(user);
+    root.add(media);
+    user.add(snowdeer);
+    media.add(image);
+    media.add(music);
+    media.add(video);
+
+    snowdeer.add(new File(".bashrc", 42));
+    snowdeer.add(new File(".profile", 36));
+
+    image.add(new File("cat.png", 122));
+    image.add(new File("dog.png", 56));
+    image.add(new File("bird.png", 465));
+
+    music.add(new File("twice.png", 4382));
+    music.add(new File("apink.png", 7726));
+
+    video.add(new File("frozen.mp4", 341242));
+
+    root.printList();
+  }
+}
+</pre>
