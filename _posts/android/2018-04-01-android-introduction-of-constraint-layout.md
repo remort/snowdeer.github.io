@@ -109,5 +109,4 @@ mConstraintSet1.applyTo(mConstraintLayout
 </pre>
 
 * 참고 : http://androidkt.com/constraintlayout-circular-positioning/
-* 참고 : https://medium.com/devnibbles/constraintlayout-circular-positioning-9489b11cb0e5
 * 참고 : https://www.captechconsulting.com/blogs/starting-out-with-constraint-layout-and-android-studios-visual-editor
