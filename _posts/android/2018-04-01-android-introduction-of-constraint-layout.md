@@ -95,7 +95,7 @@ app:layout_constraintDimensionRatio="h, 16:9"
 
 `Constraint Layout`은 컴포넌트의 재배치시 애니메이션 효과를 줄 수 있습니다.
 
-</pre class="prettyprint">
+<pre class="prettyprint">
 ConstraintSet mConstraintSet1 = new ConstraintSet(); // create a Constraint Set
 ConstraintSet mConstraintSet2 = new ConstraintSet(); // create a Constraint Set
 
