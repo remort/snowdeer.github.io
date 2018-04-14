@@ -43,13 +43,18 @@ Google Play 등의 마켓에서 해당 App을 설치할 때 사용자가 권한 
   }
 
   @Override
-  public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-      @NonNull int[] grantResults) {
+  public void onRequestPermissionsResult(int requestCode, String permissions[],
+      int[] grantResults) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
     switch (requestCode) {
       case PERMISSION_REQUEST_CODE:
-        Toast.makeText(getApplicationContext(), "Permission 완료", Toast.LENGTH_SHORT).show();
+        if (grantResults.length > 0
+            && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+          Toast.makeText(getApplicationContext(), "Permission 완료", Toast.LENGTH_SHORT).show();
+        } else {
+          Toast.makeText(getApplicationContext(), "Permission 실패", Toast.LENGTH_SHORT).show();
+        }
         break;
     }
   }
