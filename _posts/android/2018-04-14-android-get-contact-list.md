@@ -102,6 +102,26 @@ public class MainActivity extends AppCompatActivity {
     return list;
   }
 
+  private Bitmap getContactPicture(long contactId) {
+
+    Bitmap bm = null;
+
+    try {
+      InputStream inputStream = ContactsContract.Contacts
+          .openContactPhotoInputStream(getContentResolver(),
+              ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI, contactId));
+
+      if (inputStream != null) {
+        bm = BitmapFactory.decodeStream(inputStream);
+        inputStream.close();
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    return bm;
+  }
+
   class ContactInfo {
 
     long id;
