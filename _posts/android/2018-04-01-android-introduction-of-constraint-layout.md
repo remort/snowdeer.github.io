@@ -95,7 +95,7 @@ app:layout_constraintDimensionRatio="h, 16:9"
 
 `Constraint Layout`은 컴포넌트의 재배치시 애니메이션 효과를 줄 수 있습니다.
 
-</pre class="prettyprint">
+<pre class="prettyprint">
 ConstraintSet mConstraintSet1 = new ConstraintSet(); // create a Constraint Set
 ConstraintSet mConstraintSet2 = new ConstraintSet(); // create a Constraint Set
 
@@ -109,5 +109,4 @@ mConstraintSet1.applyTo(mConstraintLayout
 </pre>
 
 * 참고 : http://androidkt.com/constraintlayout-circular-positioning/
-* 참고 : https://medium.com/devnibbles/constraintlayout-circular-positioning-9489b11cb0e5
 * 참고 : https://www.captechconsulting.com/blogs/starting-out-with-constraint-layout-and-android-studios-visual-editor
