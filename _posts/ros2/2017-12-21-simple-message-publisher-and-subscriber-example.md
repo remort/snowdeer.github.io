@@ -192,7 +192,7 @@ int main(int argc, char * argv[]) {
   rclcpp::init(argc, argv);
   node = rclcpp::Node::make_shared("snowdeer_msg_subscriber");
 
-  auto subscription = node->create_subscription&ltstd_msgs::msg::String&gt;
+  auto subscription = node->create_subscription&lt;std_msgs::msg::String&gt;
       ("snowdeer_topic", callback_from_topic);
 
   rclcpp::spin(node);
