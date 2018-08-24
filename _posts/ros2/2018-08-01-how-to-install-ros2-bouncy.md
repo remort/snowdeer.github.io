@@ -45,11 +45,14 @@ sudo apt update && sudo apt install -y \
   git \
   python3-colcon-common-extensions \
   python3-pip \
-  python-rosdep2 \
   wget
 
 sudo apt install -y libpython3-dev
+
+sudo apt install -y python-rosdep
 </pre>
+
+여기에서 맨 아래에 있는 `python-rosdep` 항목 설치가 실패한다면 `python-rosdep2`로 이름 변경해서 설치를 시도해보세요. 
 
 <br>
 
@@ -98,7 +101,7 @@ sudo apt install --no-install-recommends -y \
 <pre class="prettyprint">
 mkdir -p ~/ros2_install
 cd ~/ros2_install
-tar xf ~/Downloads/ros2-bouncy-linux-bionic-x86_64
+tar xf ~/Downloads/ros2-bouncy-linux-bionic-x86_64.tar.bz2
 </pre>
 
 <br>
@@ -123,6 +126,8 @@ export RTI_LICENSE_FILE=path/to/rti_license.dat
 sudo apt update && sudo apt install -q -y \
         rti-connext-dds-5.3.1
 </pre>
+
+여기서 주의할 점은 RTI Connext 설치 도중 긴 스크롤 메시지를 읽고 `yes`를 타이핑해야 하는 절차가 있다는 점입니다. 
 
 <br>
 
