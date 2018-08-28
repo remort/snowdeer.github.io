@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 시간 관련 함수 코드
+title: 시간(Time) 관련 함수 코드
 category: Android
 tag: [Android, Time]
 ---
