@@ -23,3 +23,36 @@ ZSH_THEME="agnoster"
 <pre class="prettyprint">
 ZSH_THEME="random"
 </pre>
+
+<br>
+
+## 테마 색상(팔레트) 변경
+
+가독성이 좋은 `Solarize` 색상 테마로 변경하는 방법입니다. 저는 `Solarize` 색상 테마 안의 `Dark Theme`를 사용하고 있습니다.
+
+~~~
+sudo apt-get install dconf-cli
+
+git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
+cd ~/.solarized
+./install.sh
+
+This script will ask you which color scheme you want, and which Gnome Terminal profile to overwrite.
+
+Please note that there is no uninstall option yet. If you do not wish to overwrite any of your profiles, you should create a new profile before you run this script. However, you can reset your colors to the Gnome default, by running:
+
+    Gnome >= 3.8 dconf reset -f /org/gnome/terminal/legacy/profiles:/
+    Gnome < 3.8 gconftool-2 --recursive-unset /apps/gnome-terminal
+
+By default, it runs in the interactive mode, but it also can be run non-interactively, just feed it with the necessary options, see 'install.sh --help' for details.
+
+Please select a color scheme:
+1) dark
+2) dark_alternative
+3) light
+#? 1
+
+Please select a Gnome Terminal profile:
+1) Unnamed
+#? 1
+~~~
