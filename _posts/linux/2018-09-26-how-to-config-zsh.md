@@ -30,7 +30,7 @@ ZSH_THEME="random"
 
 가독성이 좋은 `Solarize` 색상 테마로 변경하는 방법입니다. 저는 `Solarize` 색상 테마 안의 `Dark Theme`를 사용하고 있습니다.
 
-<pre class="prettyprint">
+~~~
 sudo apt-get install dconf-cli
 
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
@@ -56,7 +56,6 @@ Please select a Gnome Terminal profile:
 1) Unnamed
 #? 1
 ~~~
-</pre>
 
 그런 다음 `.zshrc` 파일 맨 아래에 아래 항목을 추가합니다.
 
@@ -85,7 +84,7 @@ prompt_context() {
 
 ## .zshrc 예제
 
-<pre class="prettyprint">
+~~~
 # 프롬프트에서 컴퓨터 이름 삭제
 prompt_context() { 
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then 
@@ -114,4 +113,4 @@ export TERM=xterm
 
 # for ZSH AutoSuggestion
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
-</pre>
+~~~
