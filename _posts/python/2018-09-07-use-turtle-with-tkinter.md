@@ -50,7 +50,7 @@ class MyTurtle(turtle.RawTurtle):
         self.center_offset_x = WIDTH / 2
         self.center_offset_y = HEIGHT / 2
 
-        canvas.bind("<Button-1>", self.on_mouse_clicked)
+        canvas.bind("&lt;Button-1&gt;", self.on_mouse_clicked)
 
         self.is_moving = False
 
