@@ -74,19 +74,16 @@ eval `dircolors ~/.dir_colors/dircolors`
 
 `.zshrc` 파일 맨 아래에 아래 항목을 추가합니다.
 
-<pre class="prettyprint">
+~~~
 prompt_context() { 
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then 
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER" 
   fi 
-}
-</pre>
+~~~
 
 <br>
 
-## .zshrc 예제 
-
-## 예제
+## .zshrc 예제
 
 <pre class="prettyprint">
 # 프롬프트에서 컴퓨터 이름 삭제
