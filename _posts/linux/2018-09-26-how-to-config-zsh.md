@@ -56,3 +56,29 @@ Please select a Gnome Terminal profile:
 1) Unnamed
 #? 1
 ~~~
+
+그런 다음 `.zshrc` 파일 맨 아래에 아래 항목을 추가합니다.
+
+<pre class="prettyprint">
+eval `dircolors ~/.dir_colors/dircolors`
+</pre>
+
+그 다음 터미네이터의 `Preferences` 에서 `Profiles > Colors`의 `Built-in schemes` 항목을 엽니다. `Solarized dark` 항목이 추가되어 있는 것을 확인할 수 있습니다.
+
+저는 백그라운드 색을 `White on Black`으로 설정하며, `Palette` 항목은 `Solarized`로 설정하고 있습니다.
+
+<br>
+
+## 프롬프트에서 컴퓨터 이름 삭제 방법
+
+`.zshrc` 파일 맨 아래에 아래 항목을 추가합니다.
+
+~~~
+prompt_context() { 
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then 
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER" 
+  fi 
+~~~
+
+<br>
+
