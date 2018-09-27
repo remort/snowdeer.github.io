@@ -76,4 +76,42 @@ eval `dircolors ~/.dir_colors/dircolors`
 ~~~
 prompt_context() { 
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then 
-    
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER" 
+  fi 
+}
+~~~
+
+<br>
+
+## .zshrc 예제
+
+~~~
+# 프롬프트에서 컴퓨터 이름 삭제
+prompt_context() { 
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then 
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER" 
+  fi 
+}
+
+# 터미널 색상 테마 적용
+eval `dircolors ~/.dir_colors/dircolors`
+
+# for (i-search)
+stty stop undef
+
+# for Java
+export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
+# for Android
+export ANDROID_SDK=~/Android/Sdk
+export ANDROID_NDK=~/Android/Ndk/android-ndk-r17b
+export ANDROID_HOME=$ANDROID_SDK
+
+export PATH=$PATH:$ANDROID_SDK:$ANDROID_TOOLS:$ANDROID_NDK:$ANDROID_HOME/tools:$ANDROID_SDK/platform-tools
+
+# for TERM setting
+export TERM=xterm
+
+# for ZSH AutoSuggestion
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
+~~~
