@@ -70,7 +70,7 @@ eval `dircolors ~/.dir_colors/dircolors`
 
 <br>
 
-## 프롬프트에서 컴퓨터 이름 삭제하는 방법
+## 프롬프트에서 컴퓨터 이름 삭제 방법
 
 `.zshrc` 파일 맨 아래에 아래 항목을 추가합니다.
 

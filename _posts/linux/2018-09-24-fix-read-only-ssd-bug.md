@@ -14,14 +14,14 @@ tag: [리눅스]
 
 ## 경로 확인
 
-<pre class="prettyprint">
+~~~
 $ sudo df -Th
 Filesystem     Type      Size  Used Avail Use% Mounted on
 udev           devtmpfs  7.8G     0  7.8G   0% /dev
 tmpfs          tmpfs     1.6G  1.9M  1.6G   1% /run
 ...
 /dev/sdd1      vfat      932G   36G  896G   4% /media/snowdeer/PORTABLESSD
-</pre>
+~~~
 
 여기에서 외장 디스크의 `Filesystem` 이름과 `Mounted` 되어있는 경로 이름을 확인합니다.
 
@@ -37,7 +37,7 @@ $ sudo umount /media/snowdeer/PORTABLESSD
 
 ## 불필요한 파일 정리
 
-<pre class="prettyprint">
+~~~
 $ sudo dosfsck -a /dev/sdd1
 
 fsck.fat 4.1 (2017-01-24)
@@ -52,7 +52,7 @@ Free cluster summary wrong (29345789 vs. really 29345582)
   Auto-correcting.
 Performing changes.
 /dev/sdd1: 440012 files, 1170741/30516323 clusters
-</pre>
+~~~
 
 <br>
 
