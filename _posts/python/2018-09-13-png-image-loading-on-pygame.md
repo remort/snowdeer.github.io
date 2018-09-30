@@ -22,7 +22,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 
 
-class Player:
+class Player(object):
     def __init__(self):
         self.x = 100
         self.y = 300

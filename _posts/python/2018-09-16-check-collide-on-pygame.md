@@ -23,7 +23,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 
 
-class Raindrop:
+class Raindrop(object):
     def __init__(self):
         self.height = random.randint(4, 7)
         self.speed = random.randint(5, 10)
@@ -37,7 +37,7 @@ class Raindrop:
         pygame.draw.line(screen, white, (self.x, self.y), (self.x, self.y + self.height), 1)
 
 
-class Player:
+class Player(object):
     def __init__(self):
         self.x = 100
         self.y = 300

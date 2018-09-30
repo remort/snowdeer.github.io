@@ -23,7 +23,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 clock = pygame.time.Clock()
 
 
-class Raindrop:
+class Raindrop(object):
     def __init__(self):
         self.height = random.randint(4, 7)
         self.speed = random.randint(5, 10)
