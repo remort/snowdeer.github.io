@@ -34,4 +34,3 @@ plugins=(
 </pre>
 
 그 외에도 저는 [`wd`](https://github.com/mfaerevaag/wd) 같은 플러그인도 사용하고 있습니다.
-
