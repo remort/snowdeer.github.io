@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tinker를 이용해서 Image Loader 구현해보기
+title: Tkinter를 이용해서 Image Loader 구현해보기
 category: Python
-tag: [Python, tinker]
+tag: [Python, tkinter]
 ---
 # Tinker를 이용해서 Image Loader 구현해보기
 

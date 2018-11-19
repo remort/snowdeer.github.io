@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tinker 기본 Sample Window
+title: Tkinter 기본 Sample Window
 category: Python
-tag: [Python, tinker]
+tag: [Python, tkinter]
 ---
-# Tinker를 이용해서 Empty Window 만들어보기
+# Tkinter를 이용해서 Empty Window 만들어보기
 
-`tinker`를 이용해서 빈 Window를 만들어보는 예제입니다. 
+`tkinter`를 이용해서 빈 Window를 만들어보는 예제입니다. 
 
-만약 `tinker`가 설치되어 있지 않으면 다음 명령어를 이용해서 설치할 수 있습니다. (Ubuntu 기준)
+만약 `tkinter`가 설치되어 있지 않으면 다음 명령어를 이용해서 설치할 수 있습니다. (Ubuntu 기준)
 
 <pre class="prettyprint">
 sudo apt install python-tk
