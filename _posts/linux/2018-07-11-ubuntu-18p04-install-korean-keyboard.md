@@ -25,7 +25,7 @@ Ubuntu 18.04 LTS의 한글 입력기는 `iBus`로 되어 있습니다. 하지만
 
 설치는 다음과 같습니다.
 
-<pre class="prettyprint"
+<pre class="prettyprint">
 sudo apt install uim
 </pre>
 
