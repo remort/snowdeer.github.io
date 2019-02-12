@@ -74,6 +74,7 @@ eval `dircolors ~/.dir_colors/dircolors`
 
 ## 예제
 
+{%raw%}
 <pre class="prettyprint">
 # 터미널 색상 테마 적용
 eval `dircolors ~/.dir_colors/dircolors`
@@ -96,4 +97,12 @@ export TERM=xterm
 
 # for ZSH AutoSuggestion
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=cyan'
+
+# 프롬프트에서 컴퓨터 이름 삭제
+prompt_context() { 
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then 
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER" 
+  fi 
+}
 </pre>
+{%endraw%}
