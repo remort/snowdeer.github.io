@@ -42,10 +42,10 @@ nav:
     - '/blog/categories/'
     # - { Categories All: '/blog/categories/' }
     - { 블로그: '/blog/categories/#블로그' }
-    - { Linux: '/blog/categories/#linux' }
-
+    
     - { Android: '/blog/categories/#android' }
     - { Java: '/blog/categories/#java' }
+    - { Kotlin: '/blog/categories/#kotlin' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
     - { Node.js: '/blog/categories/#nodejs' }
@@ -62,6 +62,7 @@ nav:
     - { 디자인패턴: '/blog/categories/#디자인패턴' }
     
     - { Windows: '/blog/categories/#windows' }
+    - { Linux: '/blog/categories/#linux' }
     - { MAC OS: '/blog/categories/#mac-os' }
     - { 라즈베리파이: '/blog/categories/#라즈베리파이' }
     - { ROS2: '/blog/categories/#ros2' }
