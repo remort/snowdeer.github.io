@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kotlin 생성자
-category: Android, Kotlin
+category: Android
 tag: [Android, Kotlin]
 ---
 
