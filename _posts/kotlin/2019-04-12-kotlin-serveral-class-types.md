@@ -11,7 +11,7 @@ tag: [Kotlin]
 data class LogItem(val text: String, val timestamp: String)
 </pre>
 
-data 클래스는 데이터만을 갖는 클래스입니다. 반드시 디폴트 생성자를 선언해야 하며, 인자는 `val` 또는 `var` 키워드를 꼭 사용해야 합니다. 컴파일러는 자동으로 `equal()` 및 `toString()` 메소드를 생성해줍니다.
+data 클래스는 데이터만을 갖는 클래스입니다. 반드시 디폴트 생성자를 선언해야 하며, 인자는 `val` 또는 `var` 키워드를 꼭 사용해야 합니다. 컴파일러는 자동으로 `equal()` 및 `toString()` 함수를 생성해줍니다.
 
 <br>
 
