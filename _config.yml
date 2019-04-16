@@ -44,8 +44,8 @@ nav:
     - { 블로그: '/blog/categories/#블로그' }
     
     - { Android: '/blog/categories/#android' }
-    - { Java: '/blog/categories/#java' }
     - { Kotlin: '/blog/categories/#kotlin' }
+    - { Java: '/blog/categories/#java' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
     - { Node.js: '/blog/categories/#nodejs' }
