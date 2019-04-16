@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Kotlin 인터페이스
-category: Android
-tag: [Android, Kotlin]
+category: Kotlin
+tag: [Kotlin]
 ---
 
 ## interface

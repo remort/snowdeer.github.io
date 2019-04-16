@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Kotlin 생성자
-category: Android
-tag: [Android, Kotlin]
+category: Kotlin
+tag: [Kotlin]
 ---
 
 ## constructor 키워드

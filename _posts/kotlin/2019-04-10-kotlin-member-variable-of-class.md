@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Kotlin 멤버 변수 get/set
-category: Android
-tag: [Android, Kotlin]
+category: Kotlin
+tag: [Kotlin]
 ---
 
 코틀린에서는 변수 선언만 하면 컴파일러가 자동으로 `get/set` 함수를 생성해줍니다.

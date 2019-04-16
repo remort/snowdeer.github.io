@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Kotlin 상속
-category: Android
-tag: [Android, Kotlin]
+category: Kotlin
+tag: [Kotlin]
 ---
 
 ## 부모 클래스 구현하기
