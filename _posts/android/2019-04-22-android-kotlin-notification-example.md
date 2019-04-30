@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kotlin Notification 예제
-category: Android, Kotlin
+category: Android
 tag: [Android, Kotlin]
 ---
 
