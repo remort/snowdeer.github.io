@@ -5,6 +5,39 @@ category: Android
 tag: [Android]
 ---
 
+## build.gradle (프로젝트)
+
+<pre class="prettyprint">
+dependencies {
+    classpath 'com.android.tools.build:gradle:3.4.0'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    classpath 'com.google.gms:google-services:4.2.0'
+}
+</pre>
+
+<br>
+
+## build.gradle (모듈)
+
+<pre class="prettyprint">
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.android.gms:play-services:12.0.1'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+}
+</pre>
+
+<br>
+
 ## activity_main.xml
 
 <pre class="prettyprint">
