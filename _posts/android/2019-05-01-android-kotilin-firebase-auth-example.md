@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Firebase 회원 가입, 로그인 예제
+category: Android
 tag: [Android]
 ---
 
