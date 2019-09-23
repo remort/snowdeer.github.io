@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 코루틴(Coroutine) 간략 설명
-category: Kotlin
+category: Android
 tag: [Android, Kotlin]
 ---
 

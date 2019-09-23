@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 코루틴(Coroutine) Dispatchers.Main 사용하기
-category: Kotlin
+category: Android
 tag: [Android, Kotlin]
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SAM(Single Abstract Method)
-category: Kotlin
+category: Android
 tag: [Android, Kotlin]
 ---
 
