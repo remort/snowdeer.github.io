@@ -56,6 +56,12 @@ Keyboard 세팅은 건드릴 부분이 좀 많습니다.
 
 <br>
 
+### Display 해상도 변경
+
+`System Preferences` 에서 `Displays` 선택합니다. `Resolution` 항목을 취향껏 정해주면 되는데, 저는 최고 해상도로 설정했습니다.
+
+<br>
+
 ### Sharing 설정(ssh 서버 on)
 
 다른 PC에서 현재 맥북에 `ssh` 접속을 할 수 있도록 해줍니다.
@@ -157,6 +163,13 @@ git config --global core.quotepath false
 
 <br>
 
+## JDK (Java Runtime) 설치
+
+[여기](https://www.oracle.com/technetwork/java/javase/downloads/index.html?ssSourceSiteId=otnjp)에서 `dmg` 파일을 다운로드해서
+설치합니다.
+
+<br>
+
 ## 필요한 프로그램 설치
 
 * AppCleaner: [http://freemacsoft.net/appcleaner/](http://freemacsoft.net/appcleaner/)
@@ -171,6 +184,8 @@ git config --global core.quotepath false
 * CLion: [https://www.jetbrains.com/clion/download/#section=mac](https://www.jetbrains.com/clion/download/#section=mac)
 * IntelliJ: [https://www.jetbrains.com/idea/download/#section=mac](https://www.jetbrains.com/idea/download/#section=mac)
 * Wireshark: [https://www.wireshark.org/#download](https://www.wireshark.org/#download)
+
+* Hidden Bar: App Store - 설치후 <kbd>Command</kbd> 키를 이용해서 상단바의 아이콘을 왼쪽 영역으로 이동
 
 <br>
 

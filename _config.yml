@@ -50,6 +50,7 @@ nav:
     - { Python: '/blog/categories/#python' }
     - { Node.js: '/blog/categories/#nodejs' }
     - { Go: '/blog/categories/#go' }
+    - { Spring Boot: '/blog/categories/#spring-boot' }
     
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }
