@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Hello. World Sample
-category: OpenShift
+category: Node.js
 permalink: /openshift/:year/:month/:day/:title/
 
-tag: [OpenShift, Dockerfile]
+tag: [Node.js]
 ---
 # Hello Node.js
 
