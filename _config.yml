@@ -49,7 +49,7 @@ nav:
     - { Javascript: '/blog/categories/#javascript' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
-    - { Node.js: '/blog/categories/#nodejs' }
+    - { Node.js: '/blog/categories/#node.js' }
     - { Go: '/blog/categories/#go' }
     - { Spring Boot: '/blog/categories/#spring-boot' }
     - { React: '/blog/categories/#react' }
