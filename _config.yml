@@ -46,11 +46,13 @@ nav:
     - { Android: '/blog/categories/#android' }
     - { Kotlin: '/blog/categories/#kotlin' }
     - { Java: '/blog/categories/#java' }
+    - { Javascript: '/blog/categories/#javascript' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
     - { Node.js: '/blog/categories/#nodejs' }
     - { Go: '/blog/categories/#go' }
     - { Spring Boot: '/blog/categories/#spring-boot' }
+    - { React: '/blog/categories/#react' }
     
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }
