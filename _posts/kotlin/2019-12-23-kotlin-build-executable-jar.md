@@ -20,7 +20,7 @@ package com.snowdeer
 
 import java.lang.Thread.sleep
 
-fun main(args: Array<String>) {
+fun main(args: Array&lt;String&gt;) {
     println("Hello SnowDeer.")
 
     val t = Thread() {
