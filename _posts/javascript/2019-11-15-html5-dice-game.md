@@ -7,34 +7,32 @@ tag: [javascript, html5]
 
 ## dicegame.html
 
-{%raw%}
 <pre class="prettyprint">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dice Game</title>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Dice Game&lt;/title&gt;
 
-    <script src="/js/dice.js"></script>
-</head>
-<body>
-    <canvas id="canvas" width="400" height="200">
+    &lt;script src="/js/dice.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;canvas id="canvas" width="400" height="200"&gt;
         이 브라우저는 HTML5 Canvas를 지원하지 않습니다.
-    </canvas>
+    &lt;/canvas&gt;
 
-    <br>
+    &lt;br&gt;
 
-    <button onClick="throwDices();">주사위 던지기</button>
+    &lt;button onClick="throwDices();"&gt;주사위 던지기&lt;/button&gt;
 
-    <script>
+    &lt;script&gt;
         window.onload = function() {
             init();
         }
-    </script>
-</body>
-</html>
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </pre>
-{%endraw%}
 
 <br>
 
