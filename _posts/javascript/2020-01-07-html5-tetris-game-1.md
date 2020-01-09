@@ -15,30 +15,30 @@ Keyboard 화살표 입력을 이용해서 이동을 할 수 있는 코드를 작
 ## tetris.html
 
 <pre class="prettyprint">
-&lt;!DOCTYPE html&rt;
-&lt;html lang="en"&rt;
-&lt;head&rt;
-    &lt;meta charset="UTF-8"&rt;
-    &lt;title&rt;Tetris&lt;/title&rt;
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;title>;Tetris&lt;/title>
 
-    &lt;script src="/js/tetris.js"&rt;&lt;/script&rt;
-&lt;/head&rt;
-&lt;body&rt;
-    &lt;canvas id="canvas" width="240" height="480"&rt;
+    &lt;script src="/js/tetris.js">&lt;/script>;
+&lt;/head>
+&lt;body>
+    &lt;canvas id="canvas" width="240" height="480">
         이 브라우저는 HTML5 Canvas를 지원하지 않습니다.
-    &lt;/canvas&rt;
+    &lt;/canvas>
 
-    &lt;br&rt;
+    &lt;br>
 
-    &lt;script&rt;
+    &lt;script>
         window.onload = function() {
             init();
 
             draw();
         }
-    &lt;/script&rt;
-&lt;/body&rt;
-&lt;/html&rt;
+    &lt;/script>
+&lt;/body>
+&lt;/html>
 </pre>
 
 <br>
