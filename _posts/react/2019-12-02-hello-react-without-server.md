@@ -9,23 +9,21 @@ tag: [react]
 
 ## Hello.html
 
-{%raw%}
 <pre class="prettyprint">
-<head>
-    <script src="https://fb.me/react-0.14.3.js"></script>
-    <script src="https://fb.me/react-dom-0.14.3.js"></script>
-</head>
+&lt;head>
+    &lt;script src="https://fb.me/react-0.14.3.js">&lt;/script>
+    &lt;script src="https://fb.me/react-dom-0.14.3.js">&lt;/script>
+&lt;/head>
 
-<body>
-<div id="content">ccc</div>
-<script>
+&lt;body>
+&lt;div id="content">ccc&lt;/div>
+&lt;script>
     var h1=React.createElement('h1', null, 'Hello, snowdeer')
     ReactDOM.render(
         h1,
         document.getElementById('content')
     )
-</script>
+&lt;/script>
 
-</body>
+&lt;/body>
 </pre>
-{%endraw%}

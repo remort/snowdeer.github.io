@@ -7,6 +7,16 @@ tag: [javascript, html5]
 
 ## requestAnimationFrame
 
+### requestAnimationFrame과 setInterval 메소드의 차이
+
+`setInterval()` 메소드를 사용하게 되면 타이머를 이용해서 화면의 갱신을 하게 되는데, 타이밍이 어긋나거나 프레임 손실이 발생해서 애니메이션이 끊어지는 현상이 발생할 수 있습니다. 또한, 시스템 리소스를 많이 사용하기 때문에 성능 저하나 배터리 소모가 크게 발생할 수 있습니다. 시스템 사양이 좋지 않은 경우 애니메이션이 느려지기도 합니다.
+
+`requestAnimationFrame()` 메소드는 브라우저가 화면을 업데이트하는 경우에만 콜백 함수를 호출합니다. 브라우저가 최소화 되거나 다른 탭이 선택되는 경우 콜백 함수를 호출하지 않습니다. 콜백 호출 주기는 브라우저가 관리하기 때문에 `setInterval()` 메소드처럼 계속 호출되지 않습니다. 
+
+`setInterval()` 메소드와 `requestAnimationFrame()` 메소드는 사용법이 같기 때문에 쉽게 변환을 할 수 있습니다.
+
+<br>
+
 ## js/tetris.js
 
 <pre class="prettyprint">

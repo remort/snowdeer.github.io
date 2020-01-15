@@ -21,7 +21,7 @@ Keyboard 화살표 입력을 이용해서 이동을 할 수 있는 코드를 작
     &lt;meta charset="UTF-8">
     &lt;title>;Tetris&lt;/title>
 
-    &lt;script src="/js/tetris.js">&lt;/script>;
+    &lt;script src="/js/tetris.js">&lt;/script>
 &lt;/head>
 &lt;body>
     &lt;canvas id="canvas" width="240" height="480">
