@@ -11,5 +11,7 @@ Ubuntu 16.04 까지는 마우스 오른 버튼 메뉴에 `New Document` 항목�
 터미널을 열고 다음 명령어를 입력한다.
 
 <pre class="prettyprint">
-touch ~/Templates/Empty\ Document
+touch ~/Templates/"Empty Document.txt"
 </pre>
+
+디렉토리 명에서 알 수 있듯이, 위에서 생성한 문서 안에 특정 문구들을 저장해놓으면 새로운 문서를 생성할 때마다 해당 내용들을 템플릿처럼 사용할 수 있습니다.
