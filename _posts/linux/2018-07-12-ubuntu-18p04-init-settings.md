@@ -26,7 +26,7 @@ sudo apt upgrade
 
 ## 한글 키보드 설치
 
-한글 키보드 설치 방법은 [여기](/linux/2018/07/12/ubuntu-18p04-install-korean-keyboard/)에서 확인할 수 있습니다.
+한글 키보드 설치 방법은 [여기](/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)에서 확인할 수 있습니다.
 
 <br>
 

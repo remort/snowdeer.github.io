@@ -45,7 +45,7 @@ wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbol
 
 mkdir ~/.fonts/
 mv PowerlineSymbols.otf ~/.fonts/
-mkdir -p .config/fontconfig/conf.d 
+mkdir -p ~/.config/fontconfig/conf.d 
 
 fc-cache -vf ~/.fonts/
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
