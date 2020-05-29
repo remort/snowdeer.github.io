@@ -41,6 +41,8 @@ tag: [리눅스, Ubuntu]
     font = D2Coding 12
 </pre>
 
+저는 스크롤바가 화면에 있는게 더 편해서 위 설정에서 `scrollbar_position = hidden` 항목은 제외합니다.
+
 <br>
 
 ## Terminator 단축키

@@ -1,11 +1,12 @@
 ---
 layout: post
-title: ROS 2.0 Dashing 설치 방법(apt 이용)
+title: ROS 2.0 Eloquent 설치 방법(apt 이용)
 category: ROS2
 tag: [ROS]
 ---
 
-Ubuntu 18.04 기준입니다. MacOS 에서는 ROS 2.0 바이너리 설치는 잘 안되고 소스 빌드를 해야 되더군요. Ubuntu 19.04에서도 아래 내용으로 설치는 어렵습니다.
+Ubuntu 18.04 기준입니다. 언제부턴가 `apt install` 명령어를 통해 ROS 2.0 설치가 가능해져서 설치가 아주 수월해졌습니다.
+`Dashing` 버전과 설치 방법이 동일합니다.
 
 <br>
 
@@ -33,8 +34,8 @@ sudo sh -c 'echo "deb [arch=amd64,arm64] http://packages.ros.org/ros2/ubuntu `ls
 
 <pre class="prettyprint">
 sudo apt update
-sudo apt install ros-dashing-desktop
-sudo apt install ros-dashing-ros-base
+sudo apt install ros-eloquent-desktop
+sudo apt install ros-eloquent-ros-base
 </pre>
 
 <br>
@@ -42,7 +43,7 @@ sudo apt install ros-dashing-ros-base
 그리고 ROS2 실행 환경을 실행하려면
 
 <pre class="prettyprint">
-source /opt/ros/dashing/setup.bash
+source /opt/ros/eloquent/setup.bash
 </pre>
 
 와 같은 명령어를 실행하면 되며, `.bashrc` 등에 위 명령어를 추가할 수도 있습니다. 저는 `ZShell`을 사용 중이고 `ROS_DOMAIN_ID` 등을 별도로 지정하기 때문에 `~/.zshrc` 파일에 아래 내용을 설정해놓고 사용합니다.
@@ -50,7 +51,7 @@ source /opt/ros/dashing/setup.bash
 <pre class="prettyprint">
 function ros2env() {
   export ROS_DOMAIN_ID=$1
-  source /opt/ros/dashing/local_setup.zsh
+  source /opt/ros/eloquent/local_setup.zsh
   echo "ROS Domain ID =" $ROS_DOMAIN_ID
 }
 </pre>
