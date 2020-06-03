@@ -53,6 +53,7 @@ nav:
     - { Go: '/blog/categories/#go' }
     - { Spring Boot: '/blog/categories/#spring-boot' }
     - { React: '/blog/categories/#react' }
+    - { Flutter: '/blog/categories/#flutter' }
     
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }

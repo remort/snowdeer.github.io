@@ -1,10 +1,10 @@
 ---
 layout: post
 title: 별도 Front-end 서버없이 구동하는 React Hello World
-category: react
+category: React
 permalink: /openshift/:year/:month/:day/:title/
 
-tag: [react]
+tag: [React]
 ---
 
 ## Hello.html

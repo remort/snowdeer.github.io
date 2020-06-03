@@ -1,10 +1,10 @@
 ---
 layout: post
 title: React MacOS에 설치하는 방법
-category: react
+category: React
 permalink: /openshift/:year/:month/:day/:title/
 
-tag: [react]
+tag: [React]
 ---
 # React 설치
 
