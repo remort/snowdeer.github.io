@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Task
+title: C++ Task
 category: C++
 tag: [C++]
 ---
