@@ -67,6 +67,8 @@ eval `dircolors ~/.dir_colors/dircolors`
 그 다음 터미네이터의 `Preferences` 에서 `Profiles > Colors`의 `Built-in schemes` 항목을 엽니다. `Solarized dark` 항목이 추가되어 있는 것을 확인할 수 있습니다.
 
 저는 백그라운드 색을 `White on Black`으로 설정하며, `Palette` 항목은 `Solarized`로 설정하고 있습니다.
+(Ubuntu 20.04 기준으로는 `Foreground and Blackground`에서 `Built-in schemes`를 `White on Black`, `Palette`의 `Built-in schemes`를 `Solarized`로 설정했습니다.)
+
 
 <br>
 

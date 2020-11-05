@@ -9,7 +9,7 @@ tag: [Flutter]
 # Setup
 
 <pre class="prettyprint">
-flutter channel master
+flutter channel dev
 flutter upgrade
 flutter config --enable-macos-desktop
 </pre>
