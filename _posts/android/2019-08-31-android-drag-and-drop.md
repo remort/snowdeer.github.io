@@ -16,14 +16,14 @@ tag: [Android]
 ## Drag 시작
 
 <pre class="prettyprint">
-
-</pre>
 private fun onLongClick(View view) {
         val data = ClipData.newPlainText("message", "hello")
         val builder = View.DragShadowBuilder(view); 
 
         view.startDragAndDrop(data, builder, view, 0)
 }
+</pre>
+
 <br>
 
 ## Drag 이벤트 처리
