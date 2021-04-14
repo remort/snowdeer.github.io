@@ -58,3 +58,11 @@ ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/b
 `Shell Command: Install 'code' Command in PATH` 항목을 선택하면 됩니다.
 
 이 경우는 `/usr/local/bin/code`에 실행파일이 생성되며, `which code`로 확인할 수 있습니다.
+
+<br>
+
+## 그 외 자주 쓰는 것들
+
+<pre class="prettyprint">
+alias clion='open -a "/Applications/CLion.app"'
+</pre>
