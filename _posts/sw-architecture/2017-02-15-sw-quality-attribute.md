@@ -1,10 +1,10 @@
 ---
 layout: post
-title: SW 품질 속성 6가지
+title: SW 품질속성 6가지
 category: S/W Architecture
 permalink: /sw-architecture/:year/:month/:day/:title/
 
-tag: [품질]
+tag: [설계, 품질속성]
 ---
 
 품질 속성(QA : Quality Attribute)은 시스템이 이해 당사자의 요구 사항을 얼마나 잘 만족시키는지를
