@@ -55,6 +55,10 @@ tag: [설계, 모듈뷰]
 
 ![image](/assets/sw/007.png)
 
+<br>
+
+모듈 뷰에서 관계는 다음과 같이 표현한다.
+
 ![image](/assets/sw/008.png)
 
 <br>
