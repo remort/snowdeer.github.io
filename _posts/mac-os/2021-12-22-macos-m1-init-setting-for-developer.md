@@ -50,6 +50,8 @@ M1 Pro 14인치 기준입니다.
 ### Touch ID 설정
 터치 ID는 3개까지 등록 가능한데, 저는 오른 손 검지로 2번, 중지로 1번 등록했습니다.
 
+<br>
+
 ## Finder 설정
 `Preference` 메뉴로 가서 
 - General 탭에서 `New Finder windows show:` 항목을 `Home folder`로 설정(저는 Home이 `snowdeer`로 되어 있네요.)
@@ -111,8 +113,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## zsh 및 Oh-My-Zsh 설치
 
-<br>
-
 ### zsh 설치
 이제 맥 기본 쉘이 `zsh`이므로 바로 `Oh-My-Zsh` 설치로 넘어가면 됩니다.
 
@@ -170,15 +170,17 @@ git config --global core.quotepath false
 <br>
 
 ## 필요한 프로그램 설치
-- AppCleaner: http://freemacsoft.net/appcleaner/
-- iTerm2: https://iterm2.com
-- Visual Studio Code: https://code.visualstudio.com
-- PyCharm: https://www.jetbrains.com/pycharm/download/
-- IntelliJ: https://www.jetbrains.com/idea/download/#section=mac
+- AppCleaner: [http://freemacsoft.net/appcleaner/](http://freemacsoft.net/appcleaner/)
+- iTerm2: [https://iterm2.com](https://iterm2.com)
+- Visual Studio Code: [https://code.visualstudio.com](https://code.visualstudio.com)
+- PyCharm: [https://www.jetbrains.com/pycharm/download/](https://www.jetbrains.com/pycharm/download/)
+- IntelliJ: [https://www.jetbrains.com/idea/download/#section=mac](https://www.jetbrains.com/idea/download/#section=mac)
+- WebStorm: [https://www.jetbrains.com/webstorm/download/#section=mac](https://www.jetbrains.com/webstorm/download/#section=mac)
+- Clion: [https://www.jetbrains.com/clion/download/#section=mac](https://www.jetbrains.com/clion/download/#section=mac)
 
 아래는 사파리 툴체인이나 크롬을 이용해서 패스워드를 관리하지만, 기존에 사놓은 제품이 아까워서 설치해줍니다. ㅜㅜ;
-- Dropbox: https://www.dropbox.com/downloading?src=index
-- 1Password: https://1password.com/ko/downloads/mac/ 에서 기존 버전 6.8.9 다운로드
+- Dropbox: [https://www.dropbox.com/downloading?src=index](https://www.dropbox.com/downloading?src=index)
+- 1Password: [https://1password.com/ko/downloads/mac/](https://1password.com/ko/downloads/mac/) 에서 기존 버전 6.8.9 다운로드
 
 아래는 슬프게도 M1 칩을 지원하지 않아서 설치 못하는 어플이네요. ㅜㅜ; 
 TotalFinder는 가장 유용하게 사용한 어플인데 아쉽습니다.
@@ -193,4 +195,5 @@ brew install iproute2mac
 App Store에서도 필요한 프로그램들을 설치합니다.
 
 - Unicorn Blocker:Adblock
+- Lumafusion
 
