@@ -13,6 +13,16 @@ M1 Pro 14인치 기준입니다.
 
 <br>
 
+## 업데이트
+
+설치된 S/W들을 최신으로 업데이트합니다.
+
+<pre class="prettyprint">
+softwareupdate --all --install --force
+</pre>
+
+<br>
+
 ## 시스템 설정
 
 ### 언어 설정
@@ -177,6 +187,7 @@ git config --global core.quotepath false
 - IntelliJ: [https://www.jetbrains.com/idea/download/#section=mac](https://www.jetbrains.com/idea/download/#section=mac)
 - WebStorm: [https://www.jetbrains.com/webstorm/download/#section=mac](https://www.jetbrains.com/webstorm/download/#section=mac)
 - Clion: [https://www.jetbrains.com/clion/download/#section=mac](https://www.jetbrains.com/clion/download/#section=mac)
+- Android File Trasnfer: [https://www.android.com/filetransfer/](https://www.android.com/filetransfer/)
 
 아래는 사파리 툴체인이나 크롬을 이용해서 패스워드를 관리하지만, 기존에 사놓은 제품이 아까워서 설치해줍니다. ㅜㅜ;
 - Dropbox: [https://www.dropbox.com/downloading?src=index](https://www.dropbox.com/downloading?src=index)
@@ -184,12 +195,13 @@ git config --global core.quotepath false
 
 아래는 슬프게도 M1 칩을 지원하지 않아서 설치 못하는 어플이네요. ㅜㅜ; 
 TotalFinder는 가장 유용하게 사용한 어플인데 아쉽습니다.
-- TotalFinder: https://totalfinder.binaryage.com
+- TotalFinder: [https://totalfinder.binaryage.com](https://totalfinder.binaryage.com)
 
 그 외 `brew`를 이용해서 다음 프로그램들도 설치합니다.
 
 <pre class="prettyprint">
 brew install iproute2mac
+brew install tree
 </pre>
 
 App Store에서도 필요한 프로그램들을 설치합니다.
