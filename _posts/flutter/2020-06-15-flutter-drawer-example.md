@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
 
 하지만, 일반적인 Drawer라고 하면 Header 부분도 있어야 하고, 리스트도 있어야 하니깐 다음과 같이 꾸며줄 수 있습니다.
 
-</pre class="prettyprint">
+<pre class="prettyprint">
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Python에서 RabbitMq 사용하기 (1) - RabbitMq Utlity
+title: Python에서 RabbitMq 사용하기 (5) - RabbitMq Utlity
 category: Python
-tag: [Python, Redis, Celery]
+tag: [Python, RabbitMQ]
 ---
 
 # RabbitMq Utlity
@@ -196,7 +196,7 @@ QUEUE_NAME = "snowdeer_queue"
 
 
 def main():
-    print("<OVERVIEW>")
+    print("&lt;OVERVIEW&gt;")
     overview = rabbit.get_overview()
     print(f"overview: {overview}")
 
@@ -209,14 +209,14 @@ def main():
 
 
 def test_users():
-    print("\n<TEST USERS>")
+    print("\n&lt;TEST USERS&gt;")
 
     users = rabbit.get_users()
     print(f"users: {users}")
 
 
 def test_vhosts(vhost_name):
-    print("\n<TEST VHOSTS>")
+    print("\n&lt;TEST VHOSTS&gt;")
 
     vhosts = rabbit.get_vhosts()
     print(f"vhosts: {vhosts}")
@@ -229,7 +229,7 @@ def test_vhosts(vhost_name):
 
 
 def test_exchanges(vhost, exchange):
-    print("\n<TEST EXCHANGES>")
+    print("\n&lt;TEST EXCHANGES&gt;")
 
     exchanges = rabbit.get_exchanges(vhost)
     print(f"exchanges: {exchanges}")
@@ -242,7 +242,7 @@ def test_exchanges(vhost, exchange):
 
 
 def test_queues(vhost, queue):
-    print("\n<TEST QUEUES>")
+    print("\n&lt;TEST QUEUES&gt;")
 
     queues = rabbit.get_queues(vhost)
     print(f"queues: {queues}")
@@ -258,7 +258,7 @@ def test_queues(vhost, queue):
 
 
 def test_bindings(vhost, exchange, queue):
-    print("\n<TEST BINDINGS>")
+    print("\n&lt;TEST BINDINGS&gt;")
 
     bindings = rabbit.get_bindings(vhost)
     print(f"queues: {bindings}")

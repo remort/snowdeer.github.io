@@ -188,6 +188,7 @@ git config --global core.quotepath false
 - WebStorm: [https://www.jetbrains.com/webstorm/download/#section=mac](https://www.jetbrains.com/webstorm/download/#section=mac)
 - Clion: [https://www.jetbrains.com/clion/download/#section=mac](https://www.jetbrains.com/clion/download/#section=mac)
 - Android File Trasnfer: [https://www.android.com/filetransfer/](https://www.android.com/filetransfer/)
+- Flutter: [https://docs.flutter.dev/get-started/install/macos](https://docs.flutter.dev/get-started/install/macos)
 
 아래는 사파리 툴체인이나 크롬을 이용해서 패스워드를 관리하지만, 기존에 사놓은 제품이 아까워서 설치해줍니다. ㅜㅜ;
 - Dropbox: [https://www.dropbox.com/downloading?src=index](https://www.dropbox.com/downloading?src=index)
@@ -206,6 +207,7 @@ brew install tree
 
 App Store에서도 필요한 프로그램들을 설치합니다.
 
+- Xcode
 - Unicorn Blocker:Adblock
 - Lumafusion
 
