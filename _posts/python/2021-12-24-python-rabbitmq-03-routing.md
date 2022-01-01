@@ -122,3 +122,4 @@ channel.start_consuming()
 
 `routing_key`를 `<celerity>.<colour>.<species>`와 같은 형태로 하고, 각 Queue의 바인딩 키를 
 `*.orange.*`,  `*.*.rabbit`, `lazy.#` 등으로 설정할 수 있습니다.
+
