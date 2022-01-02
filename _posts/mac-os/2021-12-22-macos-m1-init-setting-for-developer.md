@@ -189,13 +189,17 @@ git config --global core.quotepath false
 - Clion: [https://www.jetbrains.com/clion/download/#section=mac](https://www.jetbrains.com/clion/download/#section=mac)
 - Android File Trasnfer: [https://www.android.com/filetransfer/](https://www.android.com/filetransfer/)
 - Flutter: [https://docs.flutter.dev/get-started/install/macos](https://docs.flutter.dev/get-started/install/macos)
+- Keka: [https://www.keka.io/ko/](https://www.keka.io/ko/)
+- Marta: [https://marta.sh](https://marta.sh)
 
 아래는 사파리 툴체인이나 크롬을 이용해서 패스워드를 관리하지만, 기존에 사놓은 제품이 아까워서 설치해줍니다. ㅜㅜ;
 - Dropbox: [https://www.dropbox.com/downloading?src=index](https://www.dropbox.com/downloading?src=index)
 - 1Password: [https://1password.com/ko/downloads/mac/](https://1password.com/ko/downloads/mac/) 에서 기존 버전 6.8.9 다운로드
 
 아래는 슬프게도 M1 칩을 지원하지 않아서 설치 못하는 어플이네요. ㅜㅜ; 
-TotalFinder는 가장 유용하게 사용한 어플인데 아쉽습니다.
+TotalFinder는 가장 유용하게 사용한 어플인데 아쉽습니다. 할 수 없이 위의 `Marta` 어플로 대체해서 사용하고 있습니다.
+그 외 [Path Finder](https://cocoatech.com/#/)로 대체할 수 있을 것 같긴 한데 가격이 좀 비싼 거 같아서 일단은 보류 중입니다.
+
 - TotalFinder: [https://totalfinder.binaryage.com](https://totalfinder.binaryage.com)
 
 그 외 `brew`를 이용해서 다음 프로그램들도 설치합니다.
@@ -210,4 +214,5 @@ App Store에서도 필요한 프로그램들을 설치합니다.
 - Xcode
 - Unicorn Blocker:Adblock
 - Lumafusion
+- Dropover Pro
 
