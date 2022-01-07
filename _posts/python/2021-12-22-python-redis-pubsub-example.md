@@ -50,3 +50,43 @@ r.publish(channel="snowdeer_channel",
 
 print(f"Message is sent !!\n{msg}")
 </pre>
+
+## 여러 개의 Topic을 Subscription 하는 예제
+
+<pre class="prettyprint">
+import redis
+
+
+def main():
+    r = redis.Redis(host="localhost", port=6379, db=0)
+    s = r.pubsub()
+
+    s.subscribe('chat')
+    s.subscribe('event')
+
+    while True:
+        print('waiting message...')
+        res = s.get_message(timeout=5)
+        if res is not None:
+            if res['type'] == 'message':
+                handle_message(res['channel'], res['data'])
+
+
+def handle_message(topic: str, message: str):
+    if topic == 'chat':
+        handle_message_for_chat(message)
+    elif topic == 'event':
+        handle_message_for_event(message)
+
+
+def handle_message_for_chat(message: str):
+    print(f'chat message: {message}')
+
+
+def handle_message_for_event(message: str):
+    print(f'event message: {message}')
+
+
+if __name__ == '__main__':
+    main()
+</pre>

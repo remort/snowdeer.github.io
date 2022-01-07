@@ -16,8 +16,6 @@ sudo snap install flutter --classic
 
 또는
 
-
-
 <br>
 
 # Linux Desktop App 지원
