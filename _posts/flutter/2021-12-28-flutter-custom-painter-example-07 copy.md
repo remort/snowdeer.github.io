@@ -85,8 +85,8 @@ class DraggablePainter extends CustomPainter {
 
   final double offsetX;
   final double offsetY;
-  final List&lt;Node&lt; nodeList;
-  final List&gt;Edge&gt; edgeList;
+  final List&lt;Node&gt; nodeList;
+  final List&lt;Edge&gt; edgeList;
 
   final radius = 30.0;
 
