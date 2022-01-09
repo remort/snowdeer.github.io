@@ -146,7 +146,7 @@ class DraggablePainter extends CustomPainter {
 }
 </pre>
 
-## draggabe_canvas.dart
+## draggable_canvas.dart
 
 <pre class="prettyprint">
 import 'package:flutter/material.dart';

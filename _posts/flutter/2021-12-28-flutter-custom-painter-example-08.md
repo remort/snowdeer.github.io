@@ -1,96 +1,84 @@
 ---
 layout: post
-title: Flutter Canvas 그리기 예제 - (7) Node 사이 Edge(Arrow) 그리기
+title: Flutter Canvas 그리기 예제 - (8) Node, Edge는 Model로 분리
 category: Flutter
 
 tag: [Flutter]
 ---
 
-# Node 사이 Edge 그리기
+# Node, Edge는 Model로 분리
 
-![image](/assets/flutter/014.png)
-
-사실 일일이 직접 그려도 되지만, 화살표 끝부분 처리가 너무 귀찮아서 오픈 소스를 활용했습니다.
-활용한 오픈소스는 [arrow_path 2.0.0](https://pub.dev/packages/arrow_path)입니다.
-
-아래 그림과 다양한 모양의 화살표를 만들 수 있습니다. 
-하지만, 어차피 경로(Path)는 직접 구해야 합니다.
-
-![image](/assets/flutter/015.png)
-
-## pubspec.yaml
-
-아래와 같이 `pubspec.yaml` 파일의 `dev_dependencies` 항목 아래에 `arrow_path: ^2.0.0`를 추가해줍니다.
-그리고 `flutter pub get` 명령어를 실행해줍니다.
+## drawing_model.dart
 
 <pre class="prettypriint">
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
+import 'dart:math';
 
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
-  flutter_lints: ^1.0.0
-  arrow_path: ^2.0.0
-</pre>
+import 'package:snowdeer_canvas_example/drag_and_drop/edge.dart';
+import 'package:snowdeer_canvas_example/drag_and_drop/node.dart';
 
-## node.dart
+class DrawingModel {
+  final List&lt;Node&gt; _nodeList = List.empty(growable: true);
+  final List&lt;Edge&gt; _edgeList = List.empty(growable: true);
 
-기존 코드와 거의 같습니다. `id`를 `int` 형으로 변경하긴 했는데, `String`으로 해도 코드에 큰 차이가 없습니다.
+  DrawingModel() {
+    _nodeList.clear();
+    _edgeList.clear();
+  }
 
-<pre class="prettyprint">
-class Node {
-  int id;
-  String name;
-  double x;
-  double y;
+  void addNode(Node node) {
+    _nodeList.add(node);
+  }
 
-  Node(this.id, this.name, this.x, this.y);
+  void addEdge(Edge edge) {
+    _edgeList.add(edge);
+  }
+
+  Node getNode(x, y) {
+    const radius = 30.0;
+    for (final node in _nodeList) {
+      final distance =
+          sqrt((node.x - x) * (node.x - x) + (node.y - y) * (node.y - y));
+      if (distance <= radius) {
+        return node;
+      }
+    }
+    return null;
+  }
+
+  List getNodeList() {
+    return _nodeList;
+  }
+
+  List getEdgeList() {
+    return _edgeList;
+  }
 }
 </pre>
-
-## edge.dart
-
-<pre class="prettyprint">
-class Edge {
-  int fromId;
-  int toId;
-
-  Edge(this.fromId, this.toId);
-}
-</pre>
-
-
 
 ## draggable_painter.dart
 
-<pre class="prettyprint">
+<pre class="prettypriint">
 import 'dart:math';
 
 import 'package:arrow_path/arrow_path.dart';
 import 'package:flutter/material.dart';
 
-import 'edge.dart';
-import 'node.dart';
+import 'drawing_model.dart';
 
 class DraggablePainter extends CustomPainter {
   static const gridWidth = 50.0;
   static const gridHeight = 50.0;
+  static const radius = 30.0;
 
   var _width = 0.0;
   var _height = 0.0;
 
   final double offsetX;
   final double offsetY;
-  final List&lt;Node&gt; nodeList;
-  final List&lt;Edge&gt; edgeList;
 
-  final radius = 30.0;
+  final DrawingModel model;
 
-  DraggablePainter(this.nodeList, this.edgeList, this.offsetX, this.offsetY);
+  DraggablePainter(this.model, this.offsetX, this.offsetY);
 
   void _drawBackground(Canvas canvas) {
     var paint = Paint()
@@ -135,7 +123,7 @@ class DraggablePainter extends CustomPainter {
   }
 
   Offset _getCenterPosOfNode(nodeId) {
-    for (final node in nodeList) {
+    for (final node in model.getNodeList()) {
       if (nodeId == node.id) {
         return Offset(node.x, node.y);
       }
@@ -150,7 +138,7 @@ class DraggablePainter extends CustomPainter {
       ..strokeWidth = 2
       ..isAntiAlias = true;
 
-    for (final edge in edgeList) {
+    for (final edge in model.getEdgeList()) {
       final fromPos = _getCenterPosOfNode(edge.fromId);
       final toPos = _getCenterPosOfNode(edge.toId);
 
@@ -182,11 +170,10 @@ class DraggablePainter extends CustomPainter {
       fontSize: 14,
     );
 
-    for (int i = 0; i < nodeList.length; i++) {
-      final c = Offset(nodeList[i].x, nodeList[i].y);
+    for (final node in model.getNodeList()) {
+      final c = Offset(node.x, node.y);
       canvas.drawCircle(c, radius, paint);
-      _drawText(
-          canvas, nodeList[i].x, nodeList[i].y, nodeList[i].name, textStyle);
+      _drawText(canvas, node.x, node.y, node.name, textStyle);
     }
   }
 
@@ -237,8 +224,9 @@ class DraggablePainter extends CustomPainter {
 
 ## draggable_canvas.dart
 
-<pre class="prettyprint">
+<pre class="prettypriint">
 import 'package:flutter/material.dart';
+import 'package:snowdeer_canvas_example/drag_and_drop/drawing_model.dart';
 
 import 'draggable_painter.dart';
 import 'edge.dart';
@@ -252,8 +240,7 @@ class DraggableObjectPage extends StatefulWidget {
 }
 
 class DraggableObjectPageState extends State&lt;DraggableObjectPage&gt; {
-  final List&lt;Node&gt; nodeList = List.empty(growable: true);
-  final List&lt;Edge&gt; edgeList = List.empty(growable: true);
+  final model = DrawingModel();
 
   var offsetX = 0.0;
   var offsetY = 0.0;
@@ -269,38 +256,25 @@ class DraggableObjectPageState extends State&lt;DraggableObjectPage&gt; {
   }
 
   void initNodes() {
-    nodeList.clear();
-    nodeList.add(Node(1, "Node\n1", 150.0, 210.0));
-    nodeList.add(Node(2, "Node\n2", 220.0, 40.0));
-    nodeList.add(Node(3, "Node\n3", 440.0, 240.0));
-    nodeList.add(Node(4, "Node\n4", 640.0, 150.0));
-    nodeList.add(Node(5, "Node\n5", 480.0, 350.0));
+    model.addNode(Node(1, "Node\n1", 150.0, 210.0));
+    model.addNode(Node(2, "Node\n2", 220.0, 40.0));
+    model.addNode(Node(3, "Node\n3", 440.0, 240.0));
+    model.addNode(Node(4, "Node\n4", 640.0, 150.0));
+    model.addNode(Node(5, "Node\n5", 480.0, 350.0));
   }
 
   void initEdges() {
-    edgeList.clear();
-    edgeList.add(Edge(1, 2));
-    edgeList.add(Edge(3, 2));
-    edgeList.add(Edge(5, 3));
-    edgeList.add(Edge(5, 4));
-  }
-
-  Node getNode(x, y) {
-    const radius = 30.0;
-    for (final node in nodeList) {
-      final c = Offset(node.x - x + offsetX, node.y - y + offsetY);
-      if (c.distance <= radius) {
-        return node;
-      }
-    }
-    return null;
+    model.addEdge(Edge(1, 2));
+    model.addEdge(Edge(3, 2));
+    model.addEdge(Edge(5, 3));
+    model.addEdge(Edge(5, 4));
   }
 
   void _handlePanDown(details) {
     final x = details.localPosition.dx;
     final y = details.localPosition.dy;
 
-    final node = getNode(x, y);
+    final node = model.getNode(x - offsetX, y - offsetY);
     if (node != null) {
       currentNode = node;
     } else {
@@ -331,7 +305,38 @@ class DraggableObjectPageState extends State&lt;DraggableObjectPage&gt; {
     preY = details.localPosition.dy;
   }
 
-  void _handleLongPressDown(details) {}
+  void _handleLongPressStart(details) {
+    final x = details.localPosition.dx;
+    final y = details.localPosition.dy;
+
+    final node = model.getNode(x - offsetX, y - offsetY);
+
+    if (node == null) {
+      return;
+    }
+
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return AlertDialog(
+          title: Text(node.name),
+          content: const Text("Edit node."),
+          actions: [
+            TextButton(
+              child: const Text("Ok"),
+              onPressed: () {
+                setState(() {
+                  node.name = node.name + '+';
+                });
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
 
   void _handleLongPressMoveUpdate(details) {}
 
@@ -341,11 +346,11 @@ class DraggableObjectPageState extends State&lt;DraggableObjectPage&gt; {
       body: GestureDetector(
         onPanDown: _handlePanDown,
         onPanUpdate: _handlePanUpdate,
-        onLongPressDown: _handleLongPressDown,
+        onLongPressStart: _handleLongPressStart,
         onLongPressMoveUpdate: _handleLongPressMoveUpdate,
         child: CustomPaint(
           child: Container(),
-          painter: DraggablePainter(nodeList, edgeList, offsetX, offsetY),
+          painter: DraggablePainter(model, offsetX, offsetY),
         ),
       ),
     );
