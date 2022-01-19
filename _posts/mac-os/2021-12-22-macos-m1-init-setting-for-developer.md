@@ -179,10 +179,17 @@ git config --global core.quotepath false
 
 <br>
 
+## JDK 설치
+
+[여기](https://www.oracle.com/java/technologies/downloads/#jdk17-mac)에서 dmg 파일을 다운받아 설치합니다.
+
+<br>
+
 ## 필요한 프로그램 설치
 - AppCleaner: [http://freemacsoft.net/appcleaner/](http://freemacsoft.net/appcleaner/)
 - iTerm2: [https://iterm2.com](https://iterm2.com)
 - Visual Studio Code: [https://code.visualstudio.com](https://code.visualstudio.com)
+- Android Studio: [https://developer.android.com/studio](https://developer.android.com/studio)
 - PyCharm: [https://www.jetbrains.com/pycharm/download/](https://www.jetbrains.com/pycharm/download/)
 - IntelliJ: [https://www.jetbrains.com/idea/download/#section=mac](https://www.jetbrains.com/idea/download/#section=mac)
 - WebStorm: [https://www.jetbrains.com/webstorm/download/#section=mac](https://www.jetbrains.com/webstorm/download/#section=mac)
