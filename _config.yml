@@ -54,6 +54,7 @@ nav:
     - { Spring Boot: '/blog/categories/#spring-boot' }
     - { React: '/blog/categories/#react' }
     - { Flutter: '/blog/categories/#flutter' }
+    - { Vue.js: '/blog/categories/#vue.js' }
     
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }

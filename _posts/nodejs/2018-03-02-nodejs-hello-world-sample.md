@@ -2,7 +2,7 @@
 layout: post
 title: Hello. World Sample
 category: Node.js
-permalink: /openshift/:year/:month/:day/:title/
+permalink: /nodejs/:year/:month/:day/:title/
 
 tag: [Node.js]
 ---
