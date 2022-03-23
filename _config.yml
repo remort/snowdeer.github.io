@@ -49,12 +49,12 @@ nav:
     - { Javascript: '/blog/categories/#javascript' }
     - { C++: '/blog/categories/#c' }
     - { Python: '/blog/categories/#python' }
-    - { Node.js: '/blog/categories/#node.js' }
+    - { Node.js: '/blog/categories/#node-js' }
     - { Go: '/blog/categories/#go' }
     - { Spring Boot: '/blog/categories/#spring-boot' }
     - { React: '/blog/categories/#react' }
     - { Flutter: '/blog/categories/#flutter' }
-    - { Vue.js: '/blog/categories/#vue.js' }
+    - { Vue.js: '/blog/categories/#vue-js' }
     
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { Tips: '/blog/categories/#tips' }
