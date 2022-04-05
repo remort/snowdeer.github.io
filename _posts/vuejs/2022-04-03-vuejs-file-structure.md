@@ -66,7 +66,7 @@ export default {
 
 이 부분을 공식 Vue 가이드 문서와 같은 형태로 변경하려면 다음과 같은 방법으로 해야 합니다.
 
-현재 개발하는 프로젝트의 루트 디렉토리에서 `.vscode/vetur/snippets` 디렉토리 아래 `default.vue` 파일을 생성하고 아래 내용을 채웁니다.
+현재 개발하는 프로젝트의 루트 디렉토리에서 `.vscode/vetur/snippets` 디렉토리 아래 `vue3-default.vue` 파일을 생성하고 아래 내용을 채웁니다.
 
 <pre class="prettyprint">
 &lt;script setup&gt;
