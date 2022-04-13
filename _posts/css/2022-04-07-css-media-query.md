@@ -2,7 +2,7 @@
 layout: post
 title: CSS - Responsible Web - Media Query
 category: 블로그
-permalink: /blog/:year/:month/:day/:title/
+permalink: /css/:year/:month/:day/:title/
 
 tag: [css]
 ---
