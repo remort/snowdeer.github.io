@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CSS - 폰트 크기 (em vs rem)
-category: 블로그
-permalink: /css/:year/:month/:day/:title/
+category: CSS
 
 tag: [css]
 ---

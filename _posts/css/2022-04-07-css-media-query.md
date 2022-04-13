@@ -1,8 +1,7 @@
 ---
 layout: post
 title: CSS - Responsible Web - Media Query
-category: 블로그
-permalink: /css/:year/:month/:day/:title/
+category: CSS
 
 tag: [css]
 ---
