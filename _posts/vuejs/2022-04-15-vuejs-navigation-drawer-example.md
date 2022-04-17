@@ -12,7 +12,7 @@ tag: [Vue.js, css]
 브라우저의 폭이 넓으면 슬라이딩(Sliding, Push) 방식으로 동작하며, 폭이 좁은 경우에는 오버레이(Overlay, OffCanvas)로
 동작합니다.
 
-BootStrap과 scss를 사용하지만, 실제 동작은 순수 Vue와 css로 동작합니다. 화면 크기는 Media Query를 이용해서 확인합니다.
+BootStrap과 scss를 사용하지만, 실제 동작은 순수 Vue와 css로 동작합니다. Vue 3.0의 Composition API를 활용해서 구현되었으며, 화면 크기는 Media Query를 이용해서 확인합니다.
 
 ## 필요 패키지 설치
 
