@@ -1,17 +1,33 @@
 ---
 layout: post
-title: Vue.js 3.0 기본 레이아웃 - (2) AppBar 레이아웃
+title: Vue.js 3.0 기본 레이아웃 - (3) Navigation Drawer 레이아웃
 category: Vue.js
 permalink: /vuejs/:year/:month/:day/:title/
 
 tag: [Vue.js, css]
 ---
-# AppBar 레이아웃
+# Navigation Drawer
 
 <pre class="prettyprint">
 &lt;template&gt;
   &lt;div id="wrapper"&gt;
-    &lt;div id="drawer"&gt;&lt;/div&gt;
+    &lt;div id="drawer"&gt;
+      &lt;div id="drawer-header"&gt;SnowDeer Drawer&lt;/div&gt;
+      &lt;div id="drawer-content"&gt;
+        &lt;div id="drawer-menu-item"&gt;
+          &lt;i class="bi bi-house"&gt;&lt;/i&gt;
+          &lt;span&gt;Home&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div id="drawer-menu-item"&gt;
+          &lt;i class="bi bi-gift"&gt;&lt;/i&gt;
+          &lt;span&gt;Hello&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div id="drawer-menu-item"&gt;
+          &lt;i class="bi bi-info-square"&gt;&lt;/i&gt;
+          &lt;span&gt;About&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
     &lt;div id="main"&gt;
       &lt;div id="appbar"&gt;
         &lt;div id="hamburg-menu" class="h-center v-center"&gt;
@@ -95,9 +111,33 @@ tag: [Vue.js, css]
 }
 
 #drawer {
+  display: flex;
+  flex-direction: column;
   width: 200px;
   height: 100vh;
-  background: #5585b5;
+  background: darkcyan;
+  color: white;
+}
+
+#drawer-header {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  background: teal;
+}
+
+#drawer-content {
+  flex: 1;
+}
+
+#drawer-menu-item {
+  padding: 16px;
+  cursor: pointer;
+}
+
+#drawer-menu-item:hover {
+  color: black;
+  background: turquoise;
 }
 
 #main {
@@ -110,4 +150,4 @@ tag: [Vue.js, css]
 
 </pre>
 
-![image](/assets/vue/007.png)
+![image](/assets/vue/008.png)

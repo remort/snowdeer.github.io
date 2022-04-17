@@ -59,3 +59,16 @@ export default {
   },
 };
 </pre>
+
+## &lt;script setup&gt; 내에서 사용하는 방법
+
+<pre class="prettyprint">
+&lt;script setup&gt;
+import { defineEmits } from "vue";
+
+const emit = defineEmits(["toggle-drawer"]);
+const toggleDrawer = () => {
+  emit("toggle-drawer");
+};
+&lt;/script&gt;
+</pre>

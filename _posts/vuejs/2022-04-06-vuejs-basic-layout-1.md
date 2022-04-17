@@ -6,7 +6,7 @@ permalink: /vuejs/:year/:month/:day/:title/
 
 tag: [Vue.js, css]
 ---
-# 기본 레이아웃
+# 기본 스켈레톤 레이아웃
 
 <pre class="prettyprint">
 &lt;template&gt;
