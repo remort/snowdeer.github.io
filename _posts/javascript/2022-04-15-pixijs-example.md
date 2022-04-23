@@ -8,7 +8,7 @@ tag: [javascript, html5]
 
 <pre class="prettyprint">
 &lt;template&gt;
-  &lt;div id="container" class="connections"&gt;
+  &lt;div id="container"&gt;
     &lt;canvas id="pixi-canvas"&gt;&lt;/canvas&gt;
   &lt;/div&gt;
 &lt;/template&gt;
@@ -20,11 +20,13 @@ import { onMounted } from "@vue/runtime-core";
 export default {
   setup() {
     onMounted(() => {
-      drawPixi();
-    });
-    const drawPixi = () => {
-      var canvas = document.getElementById("pixi-canvas");
+      const app = createPixiApp();
 
+      draw(app);
+    });
+
+    const createPixiApp = () => {
+      var canvas = document.getElementById("pixi-canvas");
       console.log(`window size(${window.innerWidth}, ${window.innerHeight})`);
       console.log(`canvas size(${canvas.width}, ${canvas.height})`);
 
@@ -36,6 +38,10 @@ export default {
         view: canvas,
       });
 
+      return app;
+    };
+
+    const draw = (app) => {
       const graphics = new PIXI.Graphics();
       graphics.lineStyle(8, 0x008080);
       graphics.moveTo(0, 250);
@@ -53,21 +59,13 @@ export default {
     };
 
     return {
-      drawPixi,
+      draw,
     };
   },
 };
 &lt;/script&gt;
 
-&lt;style&gt;
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
+&lt;style scoped&gt;
 #container {
   display: block;
   background: white;
