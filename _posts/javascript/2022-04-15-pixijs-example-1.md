@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pixi.js 간단한 예제 (with Vue)
+title: Pixi.js 간단한 예제 (with Vue) - (1)
 category: Javascript
 tag: [javascript, html5]
 ---
