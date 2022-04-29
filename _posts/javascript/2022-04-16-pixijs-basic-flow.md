@@ -35,7 +35,7 @@ const sprite = PIXI.Sprite.from('pikachu.png');
 
 ### Update Loop
 
-다음과 같은 코드를 통해 매 Frame 마다 화면을 갱신할 수 있습니다. `delta`에는 Tick마다 흘러간 시간이 매개변수로 전달됩니다. 따라서 `delta` 값을 이용해서 흘러간 시간을 체크할 수 있고, Frame rate도 조절할 수 있습니다. 
+다음과 같은 코드를 통해 매 Frame 마다 화면을 갱신할 수 있습니다. `delta`에는 Tick마다 흘러간 시간이 매개변수로 전달됩니다. 따라서 `delta` 값을 이용해서 흘러간 시간을 체크할 수 있고, Frame rate도 조절할 수 있습니다.
 
 <pre class="prettyprint">
 // Add a variable to count up the seconds our demo has been running
@@ -50,3 +50,5 @@ app.ticker.add((delta) => {
   sprite.x = 100.0 + Math.cos(elapsed/50.0) * 100.0;
 });
 </pre>
+
+다만 Ticker는 특정 시간 후 호출되는 Callback 함수이며, 별도로 Ticker를 지정하지 않더라도 `stage`에 오브젝트만 추가한다면 정적인 화면을 렌더링할 수 있습니다.
