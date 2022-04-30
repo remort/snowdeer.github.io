@@ -86,8 +86,8 @@ class PixiApp extends PIXI.Application {
     const viewport = new Viewport({
       screenWidth: width,
       screenHeight: height,
-      worldWidth: width / 2,
-      worldHeight: height / 2,
+      worldWidth: width * 2,
+      worldHeight: height * 2,
 
       interaction: this.renderer.plugins.interaction, // the interaction module is important for wheel to work properly when renderer.view is placed or scaled
     });
@@ -111,7 +111,7 @@ class PixiApp extends PIXI.Application {
     });
   }
 
-  #createRect(centerX, centerY, width = 50, height = 50) {
+  #createRect(centerX, centerY, width = 100, height = 100) {
     const rect = new PIXI.Graphics();
     rect.beginFill(0xff8080);
     rect.drawRect(0, 0, width, height);
