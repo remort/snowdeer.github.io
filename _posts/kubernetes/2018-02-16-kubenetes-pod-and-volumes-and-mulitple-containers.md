@@ -4,8 +4,9 @@ title: Pod, Volumes, Multiple Containers
 category: Kubernetes
 permalink: /kubernetes/:year/:month/:day/:title/
 
-tag: [Kubernetes]
+tag: [Kubernetes, k8s]
 ---
+
 # Pod
 
 Kubenetes에서 Pod는 하나 이상의 컨테이너 그룹을 의미합니다. 하나의 Pod 안에 있는 컨테이너들은 동시에 배포되며 시작, 정지, 교체(Replicated) 등의 작업도 동시에 이루어집니다.
@@ -77,7 +78,6 @@ volumeMounts:
 
 <br>
 
-
 ### pod-redis.yaml
 
 Volume 및 마운트를 정의한 Pod definition은 다음과 같습니다.
@@ -103,8 +103,8 @@ spec:
 
 Volume 타입으로는 다음과 같은 종류가 있습니다.
 
-* EmptyDir : Pod가 동작하는 동안 존재하는 새로운 디렉토리를 생성함. Pod가 죽거나 재시작되어도 데이터는 유지됨
-* HostPath : 호스트에 이미 존재하는 파일 시스템 (ex. /var/logs)
+- EmptyDir : Pod가 동작하는 동안 존재하는 새로운 디렉토리를 생성함. Pod가 죽거나 재시작되어도 데이터는 유지됨
+- HostPath : 호스트에 이미 존재하는 파일 시스템 (ex. /var/logs)
 
 <br>
 

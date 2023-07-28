@@ -4,8 +4,9 @@ title: Cluster 생성하기 (kubeadm 이용)
 category: Kubernetes
 permalink: /kubernetes/:year/:month/:day/:title/
 
-tag: [Kubernetes]
+tag: [Kubernetes, k8s]
 ---
+
 # Create your Kubenetes Cluster
 
 Kubenetes에서 클러스터(Cluster)를 생성하는 방법입니다. 보다 자세한 내용은 [여기를 참고](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)하세요.
@@ -24,13 +25,13 @@ Kubenetes에서 클러스터(Cluster)를 생성하는 방법입니다. 보다 �
 
 `master` 노드에서 다음 명령어를 입력합니다.
 
-~~~
+```
 sudo kubeadm init
-~~~ 
+```
 
 설치는 몇 분간 걸리기 때문에 기다려줍니다.
 
-~~~
+```
 $ sudo kubeadm init
 
 [init] Using Kubernetes version: v1.9.3
@@ -85,13 +86,13 @@ as root:
   kubeadm join --token f4938e.4b23af938d801cf6 172.31.1.36:6443 --discovery-token-ca-cert-hash sha256:aecc8acc0450992c780cb4b809e50b5583e37d7403480a43d0e2c3b67037c25f
 
 ubuntu@ip-172-31-1-36:~$
-~~~
+```
 
 위와 같은 메시지가 나오면 설치가 완료된 것입니다. 마지막 부분에 있는
 
-~~~
+```
 kubeadm join --token f4938e.4b23af938d801cf6 172.31.1.36:6443 --discovery-token-ca-cert-hash sha256:aecc8acc0450992c780cb4b809e50b5583e37d7403480a43d0e2c3b67037c25f
-~~~
+```
 
 부분을 메모해둡니다.
 
@@ -101,11 +102,11 @@ kubeadm join --token f4938e.4b23af938d801cf6 172.31.1.36:6443 --discovery-token-
 
 다음 명령어를 실행해서 `kubectl` 명령어의 권한을 활성화해줍니다.
 
-~~~
+```
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
-~~~
+```
 
 <br>
 
@@ -115,23 +116,23 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 Network Add-On은 다음과 같은 종류들이 있으며, 각 클러스터마다 하나의 Network Add-On만 설치 가능합니다.
 
-* Calico
-* Canal
-* Flannel
-* Kube-router
-* Romana
-* Weave Net
+- Calico
+- Canal
+- Flannel
+- Kube-router
+- Romana
+- Weave Net
 
 예를 들어 `Weave Net`은 다음 스크립트를 이용해서 설치할 수 있습니다.
 
-~~~
+```
 export kubever=$(kubectl version | base64 | tr -d '\n')
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
-~~~
+```
 
 Pod Network가 설치되고 나면 `kube-dns` Pod가 Running 상태로 바뀌게 됩니다. `kubectl get pods --all-namespaces` 명령어를 이용해서 확인할 수 있습니다.
 
-~~~
+```
 $ kubectl get pods --all-namespaces
 
 NAMESPACE     NAME                                     READY     STATUS    RESTARTS   AGE
@@ -146,7 +147,7 @@ kube-system   kube-scheduler-ip-172-31-1-36            1/1       Running   0    
 kube-system   weave-net-2tgkz                          2/2       Running   0          3m
 kube-system   weave-net-jw88d                          2/2       Running   0          3m
 kube-system   weave-net-wlxvd                          2/2       Running   0          3m
-~~~
+```
 
 <br>
 
@@ -154,7 +155,7 @@ kube-system   weave-net-wlxvd                          2/2       Running   0    
 
 `node1`과 `node2`에서 위에서 메모해둔 `kubeadm join` 스크립트를 실행합니다.
 
-~~~
+```
 $ sudo kubeadm join --token f4938e.4b23af938d801cf6 172.31.1.36:6443 --discovery-token-ca-cert-hash sha256:aecc8acc0450992c780cb4b809e50b5583e37d7403480a43d0e2c3b67037c25f
 
 [preflight] Running pre-flight checks.
@@ -171,7 +172,7 @@ This node has joined the cluster:
 * The Kubelet was informed of the new secure connection details.
 
 Run 'kubectl get nodes' on the master to see this node join the cluster.
-~~~
+```
 
 <br>
 
@@ -179,14 +180,14 @@ Run 'kubectl get nodes' on the master to see this node join the cluster.
 
 이제 `master` 노드가 생성되었고, `node1`과 `node2`가 연결(Join)되었습니다. `master` 노드에서 다음 명령어를 이용해서 노드 리스트를 조회할 수 있습니다.
 
-~~~
+```
 $ kubectl get nodes
 
 NAME               STATUS    ROLES     AGE       VERSION
 ip-172-31-1-36     Ready     master    21m       v1.9.3
 ip-172-31-15-223   Ready     <none>    18m       v1.9.3
 ip-172-31-2-21     Ready     <none>    18m       v1.9.3
-~~~
+```
 
 <br>
 
@@ -194,14 +195,14 @@ ip-172-31-2-21     Ready     <none>    18m       v1.9.3
 
 지금까지 `kubeadm`을 이용해서 작업한 내용을 종료시키기 위해서는 각 노드들을 먼저 정리를 해야 합니다. 다음 명령어를 이용해서 각 노드들의 데이터를 지울 수 있습니다.
 
-~~~
+```
 kubectl drain <node name> --delete-local-data --force --ignore-daemonsets
 
 kubectl delete node <node name>
-~~~
+```
 
 노드가 제거 완료되면 `kubeadm reset` 명령어를 이용해서 모든 상태를 원래대로 돌립니다.
 
-~~~
+```
 kubeadm reset
-~~~
+```

@@ -4,8 +4,9 @@ title: Microservice Architecture, Doocker, Kubernetes
 category: Kubernetes
 permalink: /kubernetes/:year/:month/:day/:title/
 
-tag: [Kubernetes]
+tag: [Kubernetes, k8s]
 ---
+
 # Microservice Architecture
 
 조대협님의 [Youtube 강좌](https://www.youtube.com/watch?v=xdqOxF2JqwU)를 보면서 나름대로 요약한 글입니다. 또한 SlideShare는 [여기](https://www.slideshare.net/Byungwook/micro-service-architecture-52233912)를 참고하면 됩니다.
@@ -20,14 +21,14 @@ tag: [Kubernetes]
 
 장점으로는
 
-* 단일화된 기술 사용
-* 관리가 수월함
+- 단일화된 기술 사용
+- 관리가 수월함
 
 이 있으며, 단점으로는
 
-* 여러 기술 혼용이 어렵기 때문에 부위별 적절한 기술 사용이 어려움
-* 배포 및 재기동 시간이 오래 걸림
-* 향후 수정이 용이하지 않음
+- 여러 기술 혼용이 어렵기 때문에 부위별 적절한 기술 사용이 어려움
+- 배포 및 재기동 시간이 오래 걸림
+- 향후 수정이 용이하지 않음
 
 가 있습니다.
 
@@ -41,12 +42,12 @@ tag: [Kubernetes]
 
 장점으로는
 
-* 필요한 서비스에 적절한 기술을 적용 가능 (ex. 복잡한 데이터는 RDBMS를 사용하고, 양이 많은 고속 데이터는 NoSQL을 사용한다던지, 빠른 개발로 스크립트 언어를 사용하고 튼튼한 시스템 개발로는 Java를 사용하는 등)
+- 필요한 서비스에 적절한 기술을 적용 가능 (ex. 복잡한 데이터는 RDBMS를 사용하고, 양이 많은 고속 데이터는 NoSQL을 사용한다던지, 빠른 개발로 스크립트 언어를 사용하고 튼튼한 시스템 개발로는 Java를 사용하는 등)
 
 이 있으며, 단점으로는
 
-* 여러 기술을 동시에 다뤄야 하기 때문에 운영의 부담이 커질 수 있음
-* 따라서 개발자가 떠나면 유지 보수가 어려움
+- 여러 기술을 동시에 다뤄야 하기 때문에 운영의 부담이 커질 수 있음
+- 따라서 개발자가 떠나면 유지 보수가 어려움
 
 과 같은 단점이 있습니다.
 
@@ -56,7 +57,7 @@ tag: [Kubernetes]
 
 ## 마이크로 서비스 아키텍처 구성
 
-마이크로 서비스 아키텍처 구조는 보통 다음 그림과 같습니다. 
+마이크로 서비스 아키텍처 구조는 보통 다음 그림과 같습니다.
 
 ![Image](/assets/kubernetes/003.png)
 
@@ -66,11 +67,11 @@ tag: [Kubernetes]
 
 API 게이트웨이는 클라이언트와 API 서버 앞에서 일종의 프록시 역할을 담당하며 다음과 같은 역할을 합니다.
 
-* API 인증/인가
-* Logging
-* Routing
-* 메시지 변환
-* 메시지 프로토콜 변환
+- API 인증/인가
+- Logging
+- Routing
+- 메시지 변환
+- 메시지 프로토콜 변환
 
 API 게이트웨이는 SOA ESB(Enterprise Service BUS)의 단순화 버전이라고 볼 수 있으며 필수적인 요소는 아닙니다. 잘 사용하면 좋은 컴포넌트가 될 수 있지만, 잘 못 쓰면 서비스를 망칠 수도 있기 때문에 도입은 신중하게 할 필요가 있습니다.
 
@@ -122,7 +123,7 @@ Kubernetes는 구글의 오랜 컨테이너 서비스 운영 경험의 산물이
 
 ## Pods
 
-Pod는 Kubernetes의 최소 논리 단위이며 하나의 어플을 표현하는 최소 단위이기도 합니다. 하나의 Pod에는 복수 개의 컨테이너가 포함될 수 있으며, 주로 Tightly Coupled 되는 컨테이너들을 하나의 Pod에 묶어서 사용합니다. 예를 들면 Nginx와 Tomcat를 묶는다던지 Tomcat과 Memcached를 묶을 수 있습니다. 
+Pod는 Kubernetes의 최소 논리 단위이며 하나의 어플을 표현하는 최소 단위이기도 합니다. 하나의 Pod에는 복수 개의 컨테이너가 포함될 수 있으며, 주로 Tightly Coupled 되는 컨테이너들을 하나의 Pod에 묶어서 사용합니다. 예를 들면 Nginx와 Tomcat를 묶는다던지 Tomcat과 Memcached를 묶을 수 있습니다.
 
 Pod에 있는 컨테이너들은 물리적으로 같은 서버에 생성이 되며, 같은 Pod에 있는 컨테이너들끼리는 Disk Volume을 공유할 수 있습니다.
 

@@ -4,8 +4,9 @@ title: Label, Deployment, Service
 category: Kubernetes
 permalink: /kubernetes/:year/:month/:day/:title/
 
-tag: [Kubernetes]
+tag: [Kubernetes, k8s]
 ---
+
 # Label
 
 Kubenetes를 이용해 큰 규모의 서비스를 구동하게 되면 다수의 Pod들을 운영하게 될 수 있습니다. 이 경우 다수의 Pod들을 좀 더 편리하게 관리하기 위해서 Kubenetes에서는 Label이라는 기능을 제공하고 있습니다. Label은 key-value 데이터 쌍 형태로 되어 있습니다.
@@ -106,7 +107,7 @@ $ kubectl get pods -l app=nginx
 
 만약 위의 Deployment에서 nginx 컨테이너의 버전을 `1.7.9`에서 `1.8`로 업그레이드하는 경우 다음과 같은 작업을 수행하면 됩니다.
 
-### deployment-update.yaml 
+### deployment-update.yaml
 
 <pre class="prettyprint">
 apiVersion: apps/v1
@@ -151,7 +152,6 @@ $ kubectl delete deployment nginx-deployment
 <br>
 
 # Services
-
 
 ### service.yaml
 
